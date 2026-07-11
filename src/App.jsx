@@ -10,7 +10,7 @@ import { Footer } from './components/layout/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col font-sans text-foreground bg-white">
+    <div className="min-h-screen flex flex-col font-sans text-foreground bg-background">
       <Navbar />
       <main className="flex-1">
         <HeroSection />

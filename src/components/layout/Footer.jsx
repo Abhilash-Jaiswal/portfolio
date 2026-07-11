@@ -5,15 +5,15 @@ export function Footer() {
     <footer className="w-full font-sans border-t border-gray-200">
 
       {/* Top CTA Section (White) */}
-      <div className="bg-white w-full flex flex-row items-center justify-between px-8 sm:px-12 lg:px-24 py-16 lg:py-20">
+      <div className="bg-[#F2EFE8] w-full flex flex-row items-center justify-between px-8 sm:px-12 lg:px-24 py-16 lg:py-20 border-t border-stone-200/60">
         <div className="w-1/4 hidden md:block">
-          <p className="text-xs font-bold text-gray-700 uppercase tracking-widest leading-tight">
+          <p className="text-xs font-bold text-stone-700 uppercase tracking-widest leading-tight">
             Heard <br />Enough? &rarr;
           </p>
         </div>
 
         <div className="w-full md:w-2/4 text-center">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-sans font-medium text-gray-900 tracking-tighter inline-block relative pb-3">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-sans font-medium text-stone-900 tracking-tighter inline-block relative pb-3">
             Contact me
             {/* Colored underline mimicking the image */}
             <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#FF5C58]"></div>
@@ -21,7 +21,7 @@ export function Footer() {
         </div>
 
         <div className="w-1/4 hidden md:flex justify-end">
-          <button className="w-16 h-16 bg-[#FF5C58] hover:scale-105 transition-all rounded-full flex items-center justify-center text-white cursor-pointer shadow-sm">
+          <button className="w-16 h-16 bg-[#FF5C58] hover:bg-[#e64f4b] hover:scale-105 transition-all rounded-full flex items-center justify-center text-white cursor-pointer shadow-sm">
             <ArrowRight strokeWidth={1.5} size={24} />
           </button>
         </div>
