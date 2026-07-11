@@ -10,6 +10,8 @@ const router = createBrowserRouter([
       // { path: "about", element: <About /> },
     ]
   },
-]);
+], {
+  basename: "/portfolio/"
+});
 
 export default router;
