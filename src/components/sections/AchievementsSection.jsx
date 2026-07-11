@@ -19,8 +19,8 @@ export function AchievementsSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {achievements.map((item, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="flex flex-col text-center border border-white/20 p-8 rounded-2xl bg-white/5 backdrop-blur-sm hover:bg-white/10 hover:-translate-y-1 transition-all duration-300 hover:shadow-xl hover:shadow-red-950/20"
             >
               <span className="font-serif text-4xl text-white font-bold mb-4">{item.year}</span>

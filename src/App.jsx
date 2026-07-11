@@ -1,11 +1,7 @@
 import { Navbar } from './components/layout/Navbar';
 import { HeroSection } from './components/sections/HeroSection';
 import { QuickStatsSection } from './components/sections/QuickStatsSection';
-import { LifeStorySection } from './components/sections/LifeStorySection';
-import { AchievementsSection } from './components/sections/AchievementsSection';
-import { KukCleanSection } from './components/sections/KukCleanSection';
-import { NotPausedSection } from './components/sections/NotPausedSection';
-import { InfluencerSection } from './components/sections/InfluencerSection';
+import { IntroductionSection } from './components/sections/IntroductionSection';
 import { Footer } from './components/layout/Footer';
 
 function App() {
@@ -15,11 +11,7 @@ function App() {
       <main className="flex-1">
         <HeroSection />
         <QuickStatsSection />
-        <LifeStorySection />
-        <AchievementsSection />
-        <KukCleanSection />
-        <NotPausedSection />
-        <InfluencerSection />
+        <IntroductionSection />
       </main>
       <Footer />
     </div>
@@ -27,3 +19,4 @@ function App() {
 }
 
 export default App;
+
