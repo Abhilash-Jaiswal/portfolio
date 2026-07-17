@@ -65,7 +65,7 @@ function EmptyTitle({
   return (
     <div
       data-slot="empty-title"
-      className={cn("font-heading text-sm font-medium tracking-tight", className)}
+      className={cn("font-heading text-base font-medium tracking-tight", className)}
       {...props} />
   );
 }
@@ -78,7 +78,7 @@ function EmptyDescription({
     <div
       data-slot="empty-description"
       className={cn(
-        "text-sm/relaxed text-muted-foreground [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
+        "text-base/relaxed text-muted-foreground [&>a]:underline [&>a]:underline-offset-4 [&>a:hover]:text-primary",
         className
       )}
       {...props} />
@@ -93,7 +93,7 @@ function EmptyContent({
     <div
       data-slot="empty-content"
       className={cn(
-        "flex w-full max-w-sm min-w-0 flex-col items-center gap-2.5 text-sm text-balance",
+        "flex w-full max-w-sm min-w-0 flex-col items-center gap-2.5 text-base text-balance",
         className
       )}
       {...props} />

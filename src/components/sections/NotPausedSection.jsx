@@ -6,8 +6,8 @@ export function NotPausedSection() {
 
           {/* Left Content Side */}
           <div className="w-full md:w-1/2">
-            <div className="mb-6 inline-block border-t-[3px] border-[#FF5C58] pt-2">
-              <span className="text-[#FF5C58] font-bold text-[11px] tracking-[0.2em] uppercase">Women's Health Tech</span>
+            <div className="mb-6 inline-block border-t-[3px] border-[#A054A6] pt-2">
+              <span className="text-[#A054A6] font-bold text-[11px] tracking-[0.2em] uppercase">Women's Health Tech</span>
             </div>
 
             <h2 className="font-serif text-4xl lg:text-5xl text-stone-900 mb-6 tracking-tight leading-[1.1]">notpaused.com</h2>
@@ -17,7 +17,7 @@ export function NotPausedSection() {
               ~65 million Indian women are currently in the perimenopause–menopause window, yet 75% will never receive adequate guidance. NotPaused was built so no woman has to navigate this 10–15 year transition in ignorance.
             </p>
 
-            <button className="border-b-2 border-[#FF5C58] text-[#FF5C58] font-bold text-[11px] tracking-[0.15em] uppercase pb-1 hover:text-[#e64f4b] hover:border-[#e64f4b] transition-all duration-300 cursor-pointer">
+            <button className="border-b-2 border-[#A054A6] text-[#A054A6] font-bold text-[11px] tracking-[0.15em] uppercase pb-1 hover:text-[#87458C] hover:border-[#87458C] transition-all duration-300 cursor-pointer">
               Discover the Platform
             </button>
           </div>
@@ -26,10 +26,10 @@ export function NotPausedSection() {
           <div className="w-full md:w-1/2 relative min-h-[400px]">
             {/* Decorative Element */}
             <div className="absolute right-0 top-0 w-[85%] h-full bg-white/70 backdrop-blur-md border border-stone-200/60 rounded-tr-[150px] rounded-bl-[150px] overflow-hidden flex flex-col items-center justify-center shadow-xl hover:shadow-2xl hover:translate-y-[-4px] transition-all duration-500">
-              <div className="absolute top-10 left-10 w-20 h-20 bg-[#FF5C58]/5 rounded-full"></div>
+              <div className="absolute top-10 left-10 w-20 h-20 bg-[#A054A6]/5 rounded-full"></div>
               <div className="absolute bottom-10 right-10 w-32 h-32 bg-dots opacity-20"></div>
               <div className="z-10 font-serif text-3xl text-stone-300 tracking-wide">App Preview</div>
-              <div className="z-10 text-xs text-stone-400 mt-2 font-mono uppercase tracking-widest">Coming Soon</div>
+              <div className="z-10 text-sm text-stone-400 mt-2 font-mono uppercase tracking-widest">Coming Soon</div>
             </div>
           </div>
 

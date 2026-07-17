@@ -12,7 +12,7 @@ export function LifeStorySection() {
             </p>
           </div>
 
-          <button className="border-b-2 border-[#FF5C58] text-[#FF5C58] font-bold text-[11px] tracking-[0.15em] uppercase pb-1 hover:text-[#e64f4b] hover:border-[#e64f4b] transition-all duration-300 cursor-pointer">
+          <button className="border-b-2 border-[#A054A6] text-[#A054A6] font-bold text-[11px] tracking-[0.15em] uppercase pb-1 hover:text-[#87458C] hover:border-[#87458C] transition-all duration-300 cursor-pointer">
             Read Full Story
           </button>
         </div>

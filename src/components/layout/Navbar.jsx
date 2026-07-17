@@ -82,7 +82,7 @@ export function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-      ? "bg-[#F2EFE8]/90 backdrop-blur-md border-b border-stone-200/60 shadow-sm"
+      ? "bg-[#F7ECF2]/90 backdrop-blur-md border-b border-stone-200/60 shadow-sm"
       : "bg-transparent"
       }`}>
       {/* 
@@ -99,11 +99,11 @@ export function Navbar() {
             onClick={(e) => handleNavClick(e, "#introduction")}
             className="flex items-center gap-2 group"
           >
-            <div className="w-9 h-9 rounded-full bg-[#FF5C58] flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105">
+            <div className="w-9 h-9 rounded-full bg-[#A054A6] flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105">
               <div className="absolute top-2.5 left-2.5 w-2 h-2 bg-white rounded-full"></div>
-              <div className="absolute bottom-0 w-full h-1/2 bg-[#FF5C58] brightness-75"></div>
+              <div className="absolute bottom-0 w-full h-1/2 bg-[#A054A6] brightness-75"></div>
             </div>
-            <span className="font-serif font-bold text-lg tracking-tight text-stone-900 group-hover:text-[#FF5C58] transition-colors">Kirti.</span>
+            <span className="font-serif font-bold text-lg tracking-tight text-stone-900 group-hover:text-[#A054A6] transition-colors">Kirti.</span>
           </a>
         </div>
 
@@ -115,8 +115,8 @@ export function Navbar() {
               href={item.path}
               onClick={(e) => handleNavClick(e, item.path)}
               className={`transition-all duration-200 pb-1.5 border-b-2 ${isActive(item.path)
-                ? "border-[#FF5C58] text-[#FF5C58] font-semibold"
-                : "border-transparent text-stone-600 hover:text-[#FF5C58]"
+                ? "border-[#A054A6] text-[#A054A6] font-semibold"
+                : "border-transparent text-stone-600 hover:text-[#A054A6]"
                 }`}
             >
               {item.name}
@@ -136,7 +136,7 @@ export function Navbar() {
             <input
               type="text"
               placeholder="SEARCH"
-              className="pl-9 pr-4 py-2 w-36 lg:w-44 rounded-full border border-stone-300 focus:outline-none focus:border-[#FF5C58] focus:ring-1 focus:ring-[#FF5C58] text-[10px] font-bold tracking-[0.15em] transition-all bg-white/60 focus:bg-white text-stone-850 placeholder-stone-400 uppercase"
+              className="pl-9 pr-4 py-2 w-36 lg:w-44 rounded-full border border-stone-300 focus:outline-none focus:border-[#A054A6] focus:ring-1 focus:ring-[#A054A6] text-[10px] font-bold tracking-[0.15em] transition-all bg-white/60 focus:bg-white text-stone-850 placeholder-stone-400 uppercase"
             />
           </div>
         </div>

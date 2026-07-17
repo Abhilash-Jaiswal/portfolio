@@ -11,7 +11,7 @@ export function KukCleanSection() {
         </div>
 
         <div className="relative z-10 text-center">
-          <h2 className="font-serif text-5xl md:text-6xl text-[#FF5C58] tracking-tight font-bold mb-4 drop-shadow-sm">KuK Clean</h2>
+          <h2 className="font-serif text-5xl md:text-6xl text-[#A054A6] tracking-tight font-bold mb-4 drop-shadow-sm">KuK Clean</h2>
           <p className="text-stone-700 text-[11px] uppercase tracking-[0.2em] font-bold">Plant-Based Wellness</p>
         </div>
       </div>
@@ -26,7 +26,7 @@ export function KukCleanSection() {
         </p>
 
         <div className="flex gap-4">
-          <button className="border border-[#FF5C58] text-[#FF5C58] font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3 btn-custom-shape hover:bg-[#FF5C58] hover:text-white hover:shadow-lg hover:shadow-red-200 transition-all duration-300 cursor-pointer">
+          <button className="border border-[#A054A6] text-[#A054A6] font-bold text-[11px] tracking-[0.15em] uppercase px-8 py-3 btn-custom-shape hover:bg-[#A054A6] hover:text-white hover:shadow-lg hover:shadow-red-200 transition-all duration-300 cursor-pointer">
             Explore Products
           </button>
         </div>

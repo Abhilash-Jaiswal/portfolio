@@ -6,7 +6,7 @@ export function AchievementsSection() {
   ];
 
   return (
-    <section id="achievements" className="py-24 bg-[#FF5C58] relative overflow-hidden">
+    <section id="achievements" className="py-24 bg-[#A054A6] relative overflow-hidden">
       {/* Decorative vector background details */}
       <div className="absolute top-[-10%] right-[-5%] w-[300px] h-[300px] rounded-full bg-white/5 pointer-events-none"></div>
       <div className="absolute bottom-[-10%] left-[-5%] w-[200px] h-[200px] rounded-full bg-white/5 pointer-events-none"></div>
@@ -25,7 +25,7 @@ export function AchievementsSection() {
             >
               <span className="font-serif text-4xl text-white font-bold mb-4">{item.year}</span>
               <h3 className="font-bold text-white text-[13px] tracking-widest uppercase mb-3">{item.title}</h3>
-              <p className="text-white/90 font-light text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-white/90 font-light text-base leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
