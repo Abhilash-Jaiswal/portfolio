@@ -30,12 +30,12 @@ export function IntroductionSection() {
         
         {/* Bio & Intro Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-12 space-y-6">
             <div className="inline-block border-t-[3px] border-[#A054A6] pt-2">
               <span className="text-[#A054A6] font-bold text-sm tracking-[0.2em] uppercase">Who Is Kirti Yadav?</span>
             </div>
             <h2 className="font-serif text-4xl lg:text-5xl text-stone-900 font-bold tracking-tight leading-tight">
-              Bridging Corporate Precision <br/> with <span className="text-[#A054A6]">Holistic Wellness</span>
+              Bridging Corporate Precision with <span className="text-[#A054A6]">Holistic Wellness</span>
             </h2>
             <p className="text-stone-700 text-base lg:text-lg font-light leading-relaxed text-justify">
               An entrepreneur, certified holistic nutritionist, new-age mother, and dedicated vegan. I build wellness ecosystems rooted in real, clean food, honest evidence-based knowledge, and deep, supportive communities.
@@ -44,7 +44,7 @@ export function IntroductionSection() {
               "Real food is medicine. Knowledge is power. Community is everything."
             </div>
           </div>
-
+{/* 
           <div className="lg:col-span-5 bg-white/60 border border-stone-200/50 p-8 rounded-2xl shadow-sm">
             <h3 className="font-serif text-lg text-stone-900 font-bold mb-6">Core Identity</h3>
             <div className="space-y-4">
@@ -58,7 +58,7 @@ export function IntroductionSection() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Philosophy vs Mission Tabs Selector */}

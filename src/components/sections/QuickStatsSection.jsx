@@ -24,10 +24,10 @@ export function QuickStatsSection() {
 
         <div className="hidden md:block w-px h-12 bg-stone-200"></div>
 
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <span className="font-serif text-5xl font-bold text-[#A054A6] mb-2">65M</span>
           <span className="text-stone-500 text-[11px] font-bold tracking-[0.2em] uppercase">Target Market</span>
-        </div>
+        </div> */}
 
       </div>
     </section>

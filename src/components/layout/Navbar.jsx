@@ -66,7 +66,8 @@ export function Navbar() {
     { name: "Achievements", path: "#achievements" },
     { name: "KuK Clean Wellness", path: "#kuk-clean" },
     { name: "notpaused.com", path: "#notpaused" },
-    { name: "Influencer", path: "#influencer" }
+    { name: "Influencer", path: "#influencer" },
+    { name: "Mentorship", path: "#mentorship" }
   ];
 
   const handleNavClick = (e, path) => {
