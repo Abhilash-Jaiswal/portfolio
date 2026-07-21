@@ -1,17 +1,15 @@
 import { Navbar } from './components/layout/Navbar';
-import { HeroSection } from './components/sections/HeroSection';
-import { QuickStatsSection } from './components/sections/QuickStatsSection';
-import { IntroductionSection } from './components/sections/IntroductionSection';
 import { Footer } from './components/layout/Footer';
+import { Outlet } from 'react-router-dom';
+import { ScrollToTop } from './components/utils/ScrollToTop';
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col font-sans text-foreground bg-background">
+      <ScrollToTop />
       <Navbar />
       <main className="flex-1">
-        <HeroSection />
-        <QuickStatsSection />
-        <IntroductionSection />
+        <Outlet />
       </main>
       <Footer />
     </div>
@@ -19,4 +17,3 @@ function App() {
 }
 
 export default App;
-

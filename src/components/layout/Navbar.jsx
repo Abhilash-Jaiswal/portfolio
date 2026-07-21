@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 export function Navbar() {
@@ -17,87 +17,36 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const [activeSection, setActiveSection] = useState("introduction");
-  const activeSectionRef = useRef("introduction");
-
-  useEffect(() => {
-    activeSectionRef.current = activeSection;
-  }, [activeSection]);
-
-  useEffect(() => {
-    const handleScrollActive = () => {
-      const sections = [
-        "introduction",
-        "life-story",
-        "achievements",
-        "kuk-clean",
-        "notpaused",
-        "influencer"
-      ];
-
-      const offset = 120; // offset detection height
-
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= offset && rect.bottom > offset) {
-            if (activeSectionRef.current !== section) {
-              setActiveSection(section);
-            }
-            break;
-          }
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScrollActive);
-    handleScrollActive();
-    return () => window.removeEventListener("scroll", handleScrollActive);
-  }, []);
-
-  const isActive = (path) => {
-    return activeSection === path.substring(1);
-  };
-
   const navItems = [
-    { name: "Introduction", path: "#introduction" },
-    { name: "Life Story", path: "#life-story" },
-    { name: "Achievements", path: "#achievements" },
-    { name: "KuK Clean Wellness", path: "#kuk-clean" },
-    { name: "notpaused.com", path: "#notpaused" },
-    { name: "Influencer", path: "#influencer" },
-    { name: "Mentorship", path: "#mentorship" }
+    { name: "Introduction", path: "/" },
+    { name: "Life Story", path: "/life-story" },
+    { name: "Achievements", path: "/achievements" },
+    { name: "KuK Clean Wellness", path: "/kuk-clean" },
+    { name: "notpaused.com", path: "/notpaused" },
+    { name: "Influencer", path: "/influencer" },
   ];
 
-  const handleNavClick = (e, path) => {
-    e.preventDefault();
-    const targetId = path.substring(1);
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth"
-      });
+  const isActive = (path) => {
+    const current = location.pathname.replace(/\/$/, "");
+    const target = path.replace(/\/$/, "");
+    if (target === "") {
+      return current === "" || current.endsWith("/portfolio");
     }
+    return current.endsWith(target);
   };
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
       ? "bg-[#F7ECF2]/90 backdrop-blur-md border-b border-stone-200/60 shadow-sm"
-      : "bg-transparent"
+      : "bg-[#F7ECF2]/80 backdrop-blur-sm border-b border-stone-200/40"
       }`}>
-      {/* 
-        A premium fluid transition from height h-24 (not scrolled) 
-        to h-20 (scrolled) for a sleek micro-animation response.
-      */}
       <div className={`flex w-full items-center justify-between px-6 lg:px-16 transition-all duration-300 ${isScrolled ? "h-20" : "h-24"
         }`}>
 
-        {/* Left Side (Logo wrapping Link) */}
+        {/* Left Side (Logo) */}
         <div className="flex-shrink-0">
-          <a
-            href="#introduction"
-            onClick={(e) => handleNavClick(e, "#introduction")}
+          <Link
+            to="/"
             className="flex items-center gap-2 group"
           >
             <div className="w-9 h-9 rounded-full bg-[#A054A6] flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105">
@@ -105,23 +54,22 @@ export function Navbar() {
               <div className="absolute bottom-0 w-full h-1/2 bg-[#A054A6] brightness-75"></div>
             </div>
             <span className="font-serif font-bold text-lg tracking-tight text-stone-900 group-hover:text-[#A054A6] transition-colors">Kirti.</span>
-          </a>
+          </Link>
         </div>
 
-        {/* Center Side (Navigation Links) */}
+        {/* Center Side (Navigation Links as Separate Pages) */}
         <div className="hidden xl:flex items-center justify-center gap-6 xl:gap-8 font-medium text-[11px] tracking-[0.15em] uppercase">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.path}
-              onClick={(e) => handleNavClick(e, item.path)}
+              to={item.path}
               className={`transition-all duration-200 pb-1.5 border-b-2 ${isActive(item.path)
                 ? "border-[#A054A6] text-[#A054A6] font-semibold"
                 : "border-transparent text-stone-600 hover:text-[#A054A6]"
                 }`}
             >
               {item.name}
-            </a>
+            </Link>
           ))}
         </div>
 
