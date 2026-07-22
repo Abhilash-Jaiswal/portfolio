@@ -37,8 +37,8 @@ export function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-      ? "bg-[#F7ECF2]/90 backdrop-blur-md border-b border-stone-200/60 shadow-sm"
-      : "bg-[#F7ECF2]/80 backdrop-blur-sm border-b border-stone-200/40"
+      ? "bg-[#F7ECF2]/80 backdrop-blur-md border-b border-stone-200/60 shadow-sm"
+      : "bg-transparent border-b border-transparent"
       }`}>
       <div className={`flex w-full items-center justify-between px-6 lg:px-16 transition-all duration-300 ${isScrolled ? "h-20" : "h-24"
         }`}>
@@ -53,12 +53,12 @@ export function Navbar() {
               <div className="absolute top-2.5 left-2.5 w-2 h-2 bg-white rounded-full"></div>
               <div className="absolute bottom-0 w-full h-1/2 bg-[#A054A6] brightness-75"></div>
             </div>
-            <span className="font-serif font-bold text-lg tracking-tight text-stone-900 group-hover:text-[#A054A6] transition-colors">Kirti.</span>
+            <span className="font-serif font-bold text-xl tracking-tight text-stone-900 group-hover:text-[#A054A6] transition-colors">Kirti.</span>
           </Link>
         </div>
 
         {/* Center Side (Navigation Links as Separate Pages) */}
-        <div className="hidden xl:flex items-center justify-center gap-6 xl:gap-8 font-medium text-[11px] tracking-[0.15em] uppercase">
+        <div className="hidden xl:flex items-center justify-center gap-6 xl:gap-8 font-medium text-sm tracking-[0.12em] uppercase">
           {navItems.map((item) => (
             <Link
               key={item.name}
@@ -85,7 +85,7 @@ export function Navbar() {
             <input
               type="text"
               placeholder="SEARCH"
-              className="pl-9 pr-4 py-2 w-36 lg:w-44 rounded-full border border-stone-300 focus:outline-none focus:border-[#A054A6] focus:ring-1 focus:ring-[#A054A6] text-[10px] font-bold tracking-[0.15em] transition-all bg-white/60 focus:bg-white text-stone-850 placeholder-stone-400 uppercase"
+              className="pl-9 pr-4 py-2 w-36 lg:w-44 rounded-full border border-stone-300 focus:outline-none focus:border-[#A054A6] focus:ring-1 focus:ring-[#A054A6] text-xs font-bold tracking-[0.15em] transition-all bg-white/60 focus:bg-white text-stone-850 placeholder-stone-400 uppercase"
             />
           </div>
         </div>
