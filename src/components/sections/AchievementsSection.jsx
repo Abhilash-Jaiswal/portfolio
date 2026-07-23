@@ -13,23 +13,23 @@ function useReveal(ref) {
 }
 
 const milestones = [
-  { year: "2024", category: "Award", emoji: "🏆", color: "from-[#A863AD] to-[#8E4C93]", title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders." },
-  { year: "2024", category: "Speaking", emoji: "🎤", color: "from-[#A863AD] to-[#8E4C93]", title: "ASSOCHAM Rajasthan Startup Summit", short: "Speaker on 'Women Leading the Race' at RIC, Jaipur." },
-  { year: "2024", category: "Pitching", emoji: "🚀", color: "from-[#A863AD] to-[#8E4C93]", title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel." },
-  { year: "2024", category: "Jury", emoji: "⚖️", color: "from-[#A863AD] to-[#8E4C93]", title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuK Clean won Best Women-Led Startup." },
-  { year: "2023", category: "Govt Grant", emoji: "🌾", color: "from-[#A863AD] to-[#8E4C93]", title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0, Hyderabad." },
-  { year: "2023", category: "Incubation", emoji: "🎓", color: "from-[#A863AD] to-[#8E4C93]", title: "Goldman Sachs GS10K — IIM Bangalore", short: "Completed the GS 10,000 Women Entrepreneur Program, NSRCEL." },
-  { year: "2022", category: "Corporate B2B", emoji: "🏢", color: "from-[#A863AD] to-[#8E4C93]", title: "Applied Materials India Wellness Session", short: "Led 2-hour session on plant-based nutrition for 180 employees." },
-  { year: "2022", category: "Jury & Academic", emoji: "📚", color: "from-[#A863AD] to-[#8E4C93]", title: "CAIAS Jury & ISBR Guest Speaker", short: "Jury member for startup awards; guest speaker at ISBR Business School." },
-  { year: "2020", category: "Media", emoji: "📰", color: "from-[#A863AD] to-[#8E4C93]", title: "India Today, YourStory, Deccan Herald", short: "#EatLikeKirti initiative covered nationally during COVID-19 lockdown." },
-  { year: "2020", category: "Media", emoji: "🎙️", color: "from-[#A863AD] to-[#8E4C93]", title: "Interviewed by Shradha Sharma — YourStory", short: "Invited to tell KuK Clean's story to India's startup ecosystem." },
-  { year: "2020", category: "Community", emoji: "💬", color: "from-[#A863AD] to-[#8E4C93]", title: "#EatLikeKirti — 21-Day Initiative", short: "21 consecutive live sessions; 10 webinars in 21 days during lockdown." },
-  { year: "Early", category: "Education", emoji: "🧒", color: "from-[#A863AD] to-[#8E4C93]", title: "EuroKids · Advaya Shaale · Prakriti", short: "Nutrition and wellness awareness sessions at early childhood institutions." },
+  { year: "2024", category: "Award", emoji: "🏆", color: "from-[#5B21B6] to-[#3B0764]", title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders." },
+  { year: "2024", category: "Speaking", emoji: "🎤", color: "from-[#5B21B6] to-[#3B0764]", title: "ASSOCHAM Rajasthan Startup Summit", short: "Speaker on 'Women Leading the Race' at RIC, Jaipur." },
+  { year: "2024", category: "Pitching", emoji: "🚀", color: "from-[#5B21B6] to-[#3B0764]", title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel." },
+  { year: "2024", category: "Jury", emoji: "⚖️", color: "from-[#5B21B6] to-[#3B0764]", title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuK Clean won Best Women-Led Startup." },
+  { year: "2023", category: "Govt Grant", emoji: "🌾", color: "from-[#5B21B6] to-[#3B0764]", title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0, Hyderabad." },
+  { year: "2023", category: "Incubation", emoji: "🎓", color: "from-[#5B21B6] to-[#3B0764]", title: "Goldman Sachs GS10K — IIM Bangalore", short: "Completed the GS 10,000 Women Entrepreneur Program, NSRCEL." },
+  { year: "2022", category: "Corporate B2B", emoji: "🏢", color: "from-[#5B21B6] to-[#3B0764]", title: "Applied Materials India Wellness Session", short: "Led 2-hour session on plant-based nutrition for 180 employees." },
+  { year: "2022", category: "Jury & Academic", emoji: "📚", color: "from-[#5B21B6] to-[#3B0764]", title: "CAIAS Jury & ISBR Guest Speaker", short: "Jury member for startup awards; guest speaker at ISBR Business School." },
+  { year: "2020", category: "Media", emoji: "📰", color: "from-[#5B21B6] to-[#3B0764]", title: "India Today, YourStory, Deccan Herald", short: "#EatLikeKirti initiative covered nationally during COVID-19 lockdown." },
+  { year: "2020", category: "Media", emoji: "🎙️", color: "from-[#5B21B6] to-[#3B0764]", title: "Interviewed by Shradha Sharma — YourStory", short: "Invited to tell KuK Clean's story to India's startup ecosystem." },
+  { year: "2020", category: "Community", emoji: "💬", color: "from-[#5B21B6] to-[#3B0764]", title: "#EatLikeKirti — 21-Day Initiative", short: "21 consecutive live sessions; 10 webinars in 21 days during lockdown." },
+  { year: "Early", category: "Education", emoji: "🧒", color: "from-[#5B21B6] to-[#3B0764]", title: "EuroKids · Advaya Shaale · Prakriti", short: "Nutrition and wellness awareness sessions at early childhood institutions." },
 ];
 
 const chapters = [
   {
-    num: "01", emoji: "🎓", grad: "from-[#A863AD] to-[#8E4C93]", accent: "#A863AD",
+    num: "01", emoji: "🎓", grad: "from-[#5B21B6] to-[#3B0764]", accent: "#5B21B6",
     title: "Goldman Sachs & IIM Bangalore",
     sub: "GS10K Women Entrepreneur Program — NSRCEL",
     paras: [
@@ -39,7 +39,7 @@ const chapters = [
     ],
   },
   {
-    num: "02", emoji: "🌾", grad: "from-[#A863AD] to-[#8E4C93]", accent: "#A863AD",
+    num: "02", emoji: "🌾", grad: "from-[#5B21B6] to-[#3B0764]", accent: "#5B21B6",
     title: "ICAR-IIMR Grant-in-Aid",
     sub: "RKVY-RAFTAAR · Ministry of Agriculture & Farmers' Welfare",
     paras: [
@@ -49,7 +49,7 @@ const chapters = [
     ],
   },
   {
-    num: "03", emoji: "📰", grad: "from-[#A863AD] to-[#8E4C93]", accent: "#A863AD",
+    num: "03", emoji: "📰", grad: "from-[#5B21B6] to-[#3B0764]", accent: "#5B21B6",
     title: "National Media Features",
     sub: "India Today · YourStory · Bangalore Insider · Deccan Herald",
     paras: [
@@ -59,7 +59,7 @@ const chapters = [
     ],
   },
   {
-    num: "04", emoji: "🏆", grad: "from-[#A863AD] to-[#8E4C93]", accent: "#A863AD",
+    num: "04", emoji: "🏆", grad: "from-[#5B21B6] to-[#3B0764]", accent: "#5B21B6",
     title: "Awards, Stages & Jury Roles",
     sub: "Womenpreneur 2024 · ASSOCHAM · CAIAS · Women Leadership Conclave",
     paras: [
@@ -75,10 +75,10 @@ export function AchievementsSection() {
   useReveal(ref);
 
   return (
-    <section id="achievements" ref={ref} className="bg-[#FAF8FB] border-b border-[#E5DCE8]/60 scroll-mt-20">
+    <section id="achievements" ref={ref} className="bg-[#F8FAFC] border-b border-[#E2E8F0]/60 scroll-mt-20">
 
       {/* ── HERO BANNER ── */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-[#A863AD] via-[#8E4C93] to-[#7F4484] py-28 px-6 md:px-12 lg:px-20">
+      <div className="relative overflow-hidden bg-gradient-to-br from-[#3B0764] via-[#5B21B6] to-[#7C3AED] py-28 px-6 md:px-12 lg:px-20">
         <div className="absolute -top-24 -left-16 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float" />
         <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }} />
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
@@ -89,7 +89,7 @@ export function AchievementsSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             A Record Built on <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-200 to-[#E7C9E8] animate-text-gradient">Conviction, Not Chance</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-[#EDE9FE] animate-text-gradient">Conviction, Not Chance</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             From a kitchen in Bangalore to national stages, government grants, and institutional recognition — a track record shaped entirely by purpose-driven entrepreneurship.
@@ -108,8 +108,8 @@ export function AchievementsSection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-20 space-y-20">
 
         {/* Opening */}
-        <div className="reveal max-w-4xl mx-auto bg-white/60 border-l-4 border-[#A863AD] rounded-r-3xl px-8 py-6 shadow-sm">
-          <p className="font-serif text-lg italic text-[#2E2433] leading-relaxed">
+        <div className="reveal max-w-4xl mx-auto bg-white/60 border-l-4 border-[#5B21B6] rounded-r-3xl px-8 py-6 shadow-sm">
+          <p className="font-serif text-lg italic text-[#0F172A] leading-relaxed">
             "Recognition, when it is earned rather than sought, carries a different weight. Every milestone connects to the same mission — not a list of accomplishments, but a narrative of systemic credibility."
           </p>
         </div>
@@ -118,37 +118,37 @@ export function AchievementsSection() {
         {chapters.map((ch, ci) => (
           <div key={ch.num} className="space-y-8">
             <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
-              <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${ch.grad} flex items-center justify-center shadow-lg timeline-dot flex-shrink-0`}>
+              <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${ch.grad} flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white`}>
                 <span className="text-2xl">{ch.emoji}</span>
               </div>
               <div>
                 <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1" style={{ color: ch.accent }}>Recognition 0{ci + 1}</span>
-                <h2 className="font-serif text-2xl lg:text-3xl text-[#2E2433] font-bold tracking-tight">{ch.title}</h2>
-                <p className="text-[#6F6476] text-xs font-medium tracking-widest uppercase mt-1">{ch.sub}</p>
+                <h2 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold tracking-tight">{ch.title}</h2>
+                <p className="text-[#475569] text-xs font-medium tracking-widest uppercase mt-1">{ch.sub}</p>
               </div>
             </div>
             <div className="reveal pl-6 border-l-2 rounded-r-xl" style={{ borderColor: ch.accent }}>
-              <p className="text-[#6F6476] text-base font-light leading-relaxed">{ch.paras[0]}</p>
+              <p className="text-[#475569] text-base font-light leading-relaxed">{ch.paras[0]}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               {ch.paras.slice(1).map((p, i) => (
-                <div key={i} className={`reveal shimmer-card bg-white/80 border border-[#E5DCE8]/60 p-7 rounded-3xl shadow-sm hover:shadow-lg hover:border-[#A863AD]/30 hover:-translate-y-1 transition-all duration-300`} style={{ transitionDelay: `${i * 100}ms` }}>
-                  <p className="text-[#6F6476] text-sm font-light leading-relaxed text-justify">{p}</p>
+                <div key={i} className={`reveal shimmer-card bg-white/80 border border-[#E2E8F0]/60 p-7 rounded-3xl shadow-sm hover:shadow-lg hover:border-[#5B21B6]/30 hover:-translate-y-1 transition-all duration-300`} style={{ transitionDelay: `${i * 100}ms` }}>
+                  <p className="text-[#475569] text-sm font-light leading-relaxed text-justify">{p}</p>
                 </div>
               ))}
             </div>
             {ci < chapters.length - 1 && (
               <div className="reveal flex items-center gap-4 pt-4">
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E5DCE8] to-transparent" />
-                <div className="w-2 h-2 rounded-full bg-[#A863AD] opacity-40 animate-pulse" />
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E5DCE8] to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent" />
+                <div className="w-2 h-2 rounded-full bg-[#5B21B6] opacity-40 animate-pulse" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent" />
               </div>
             )}
           </div>
         ))}
 
         {/* Quote Banner */}
-        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#A863AD] via-[#8E4C93] to-[#7F4484] p-10 lg:p-14 text-center shadow-2xl">
+        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#3B0764] via-[#5B21B6] to-[#7C3AED] p-10 lg:p-14 text-center shadow-2xl">
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute -left-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
@@ -166,31 +166,31 @@ export function AchievementsSection() {
         </div>
 
         {/* Timeline Cards Grid */}
-        <div className="border-t border-[#E5DCE8]/60 pt-16">
+        <div className="border-t border-[#E2E8F0]/60 pt-16">
           <div className="reveal text-center mb-12">
-            <div className="inline-block border-t-[3px] border-[#A863AD] pt-2 mb-4">
-              <span className="text-[#A863AD] font-bold text-sm tracking-[0.2em] uppercase">Complete Recognition Timeline</span>
+            <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2 mb-4">
+              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Complete Recognition Timeline</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl text-[#2E2433] font-bold">Every Milestone, in Sequence</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">Every Milestone, in Sequence</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {milestones.map((item, idx) => (
               <div
                 key={idx}
-                className="reveal shimmer-card bg-white/80 border border-[#E5DCE8]/60 p-6 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-[#A863AD]/30 transition-all duration-300 group"
+                className="reveal shimmer-card bg-white/80 border border-[#E2E8F0]/60 p-6 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-[#5B21B6]/30 transition-all duration-300 group"
                 style={{ transitionDelay: `${(idx % 3) * 80}ms` }}
               >
-                <div className="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
+                <div className="flex items-center justify-between mb-4 pb-3 border-b border-slate-100">
                   <div className="flex items-center gap-2">
-                    <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-sm`}>
+                    <div className={`w-9 h-9 rounded-xl bg-gradient-to-br ${item.color} flex items-center justify-center shadow-sm text-white`}>
                       <span className="text-sm">{item.emoji}</span>
                     </div>
-                    <span className="font-serif text-xl font-bold text-[#A863AD]">{item.year}</span>
+                    <span className="font-serif text-xl font-bold text-[#5B21B6]">{item.year}</span>
                   </div>
-                  <span className="bg-[#F4EFF6] text-[#A863AD] text-[9px] font-bold tracking-widest uppercase px-2 py-1 rounded-full">{item.category}</span>
+                  <span className="bg-[#F1F5F9] text-[#5B21B6] text-[9px] font-bold tracking-widest uppercase px-2 py-1 rounded-full">{item.category}</span>
                 </div>
-                <h4 className="font-serif font-bold text-[#2E2433] text-sm mb-2 leading-snug group-hover:text-[#A863AD] transition-colors">{item.title}</h4>
-                <p className="text-[#6F6476] text-xs font-light leading-relaxed">{item.short}</p>
+                <h4 className="font-serif font-bold text-[#0F172A] text-sm mb-2 leading-snug group-hover:text-[#5B21B6] transition-colors">{item.title}</h4>
+                <p className="text-[#475569] text-xs font-light leading-relaxed">{item.short}</p>
               </div>
             ))}
           </div>

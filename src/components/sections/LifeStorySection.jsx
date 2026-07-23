@@ -19,8 +19,8 @@ const CHAPTERS = [
     num: "01", emoji: "💼",
     title: "The Foundation Years",
     sub: "AIG · Target · IBM",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "Before Kirti Yadav became a certified holistic nutritionist, a founder, a speaker, or a mentor, she was something far more ordinary and far more valuable: a professional who knew how to think at scale.",
     cards: [
       { heading: "AIG — The Discipline of Precision", body: "At AIG, the global financial powerhouse, Kirti was immersed in risk management and large-scale institutional operations. She developed a discipline of analytical thinking — the ability to look at a problem from ten angles before committing to a single direction. That precision would later inform how she designed product formulations, built unit economics, and structured business plans rigorous enough to pass India's most demanding incubation programmes." },
@@ -33,8 +33,8 @@ const CHAPTERS = [
     num: "02", emoji: "🌱",
     title: "The Turning Point",
     sub: "Motherhood & The Revelation of Nourishment",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "The most important pivots in life rarely announce themselves with fanfare. They arrive quietly, wrapped in something personal. For Kirti Yadav, that pivot arrived with the birth of her daughter.",
     cards: [
       { heading: "Standing in Supermarket Aisles", body: "Motherhood changed everything in a deeply practical, visceral way. Kirti found herself turning product labels over and over — reading ingredient lists that seemed designed to confuse rather than inform. Emulsifiers. Artificial flavours. Refined sugars hiding behind nineteen different aliases. A mother's instinct has its own kind of intelligence. Something was deeply wrong with what the Indian food market was offering families trying to make better choices." },
@@ -47,8 +47,8 @@ const CHAPTERS = [
     num: "03", emoji: "🍃",
     title: "Building KuK Clean",
     sub: "A Mother's Refusal to Compromise",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "Kirti did not launch KuK Clean with venture capital backing or a dedicated team. She launched it with a conviction born at her own kitchen table and a quality standard established by her daughter's most honest reactions.",
     cards: [
       { heading: "The Non-Negotiable Standard", body: "The rule was simple: if her daughter asked for 'one more', the product was ready. If she was silent, it went back to the kitchen. Co-founded with her husband Akar Misra — whose credentials span Goldman Sachs, JP Morgan, and IBM — KuK Clean was built on twin foundations: nutritional science and genuine deliciousness. Clean, plant-based nutrition is not about deprivation. It is about discovering the extraordinary flavour that real, unprocessed ingredients produce when treated with knowledge." },
@@ -61,8 +61,8 @@ const CHAPTERS = [
     num: "04", emoji: "📢",
     title: "The Pandemic as Accelerant",
     sub: "#EatLikeKirti · Leading with Generosity",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "When COVID-19 brought India to a standstill in March 2020, many businesses retreated into survival mode. Kirti Yadav moved in the opposite direction.",
     cards: [
       { heading: "21 Days, 21 Live Sessions", body: "She launched the #EatLikeKirti initiative — twenty-one consecutive days of live social media sessions on whole-food, plant-based nutrition. Every day, she showed up. She cooked, explained, answered questions, and debunked myths. She hosted ten interactive webinars in those twenty-one days — teaching people not just what to eat but how to think about food, how to read labels, and how to cook in ways that preserved nutrition without sacrificing taste." },
@@ -75,8 +75,8 @@ const CHAPTERS = [
     num: "05", emoji: "🏆",
     title: "Institutional Validation",
     sub: "Goldman Sachs · IIMR · Awards · National Recognition",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "Great ideas must eventually meet rigorous scrutiny. Kirti Yadav welcomed that scrutiny, and it found her entirely prepared.",
     cards: [
       { heading: "Goldman Sachs GS10K — IIM Bangalore", body: "Her selection for the Goldman Sachs 10,000 Women Entrepreneur Program at NSRCEL, IIM Bangalore, signalled that what she had built from her kitchen table was institutionally credible. The GS10K programme is among India's most selective entrepreneurship initiatives. It gave her access to mentorship, a global women's network, and strategic frameworks for sustainable scaling — and the confidence to operate at a different level." },
@@ -89,8 +89,8 @@ const CHAPTERS = [
     num: "06", emoji: "🌸",
     title: "The Birth of notpaused.com",
     sub: "Dismantling the Last Great Taboo in Indian Women's Health",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "There are problems invisible not because they are small, but because the silence around them has been so thoroughly normalised that even the people experiencing them believe they must endure in private.",
     cards: [
       { heading: "A Trained Nutritionist, Unprepared", body: "When Kirti began her own perimenopause journey, she found a startling absence of India-specific, culturally relevant information. Even she, with all her training and resources, was unprepared. That experience was galvanising. If a trained nutritionist could feel lost, what was happening to the sixty-five million Indian women navigating this transition with none of those advantages? Three out of four would receive no adequate guidance whatsoever." },
@@ -103,8 +103,8 @@ const CHAPTERS = [
     num: "07", emoji: "🤝",
     title: "The Mentor, the Speaker, the Voice",
     sub: "Giving Back Without Calculation",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "Alongside everything she was building, Kirti was also giving. Not strategically, not for the recognition it might generate, but because she understood — from her own journey — how much it matters to have someone extend a hand.",
     cards: [
       { heading: "Educating the Next Generation of Founders", body: "She served as guest speaker at ISBR Business School, sharing unfiltered entrepreneurship lessons with students beginning to think about building something of their own. She was invited to mentor at Incube Nation, where early-stage founders need guidance that is not just strategic but deeply human — the candid, contextual wisdom that business school curricula often leave out." },
@@ -117,8 +117,8 @@ const CHAPTERS = [
     num: "08", emoji: "🌍",
     title: "A Vision for Generations",
     sub: "Building for Generations, Not Quarters",
-    color: "from-[#A863AD] to-[#8E4C93]",
-    accent: "#A863AD",
+    color: "from-[#5B21B6] to-[#3B0764]",
+    accent: "#5B21B6",
     intro: "Kirti Yadav does not think in quarters. She thinks in generations. The ambition beneath everything she has built is institutional health — systemic, lasting, and accessible to all.",
     cards: [
       { heading: "KuK Clean — National Scale", body: "Expanding plant-based, clean-label product ranges and establishing deep corporate B2B wellness systems that bring genuine nutrition into the workplace as a structural benefit rather than an occasional initiative. The goal is not market share — it is to change what Indian families consider normal when it comes to food." },
@@ -136,8 +136,8 @@ function ChapterPill({ chap, active, onClick }) {
       onClick={() => onClick(chap.num)}
       className={`flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer whitespace-nowrap
         ${active
-          ? "bg-[#A863AD] text-white shadow-md shadow-[#A863AD]/30 scale-105"
-          : "bg-white/70 text-[#6F6476] border border-[#E5DCE8]/60 hover:bg-white hover:text-[#A863AD]"}`}
+          ? "bg-[#5B21B6] text-white shadow-md shadow-[#5B21B6]/30 scale-105"
+          : "bg-white/70 text-[#475569] border border-[#E2E8F0]/60 hover:bg-white hover:text-[#5B21B6]"}`}
     >
       <span>{chap.emoji}</span>
       <span>Ch {chap.num}</span>
@@ -156,11 +156,11 @@ function StoryCard({ heading, body, delay = 0 }) {
   return (
     <div
       ref={ref}
-      className="reveal shimmer-card bg-white/85 border border-[#E5DCE8]/60 p-7 rounded-3xl shadow-sm hover:shadow-lg hover:border-[#A863AD]/30 hover:-translate-y-1 transition-all duration-400 group"
+      className="reveal shimmer-card bg-white/85 border border-[#E2E8F0]/60 p-7 rounded-3xl shadow-sm hover:shadow-lg hover:border-[#5B21B6]/30 hover:-translate-y-1 transition-all duration-400 group"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <h4 className="font-serif font-bold text-[#2E2433] text-base mb-3 group-hover:text-[#A863AD] transition-colors">{heading}</h4>
-      <p className="text-[#6F6476] text-sm font-light leading-relaxed text-justify">{body}</p>
+      <h4 className="font-serif font-bold text-[#0F172A] text-base mb-3 group-hover:text-[#5B21B6] transition-colors">{heading}</h4>
+      <p className="text-[#475569] text-sm font-light leading-relaxed text-justify">{body}</p>
     </div>
   );
 }
@@ -192,10 +192,10 @@ export function LifeStorySection() {
   const active = CHAPTERS.find((c) => c.num === activeChap);
 
   return (
-    <section id="life-story" className="bg-[#FAF8FB] border-b border-[#E5DCE8]/60 scroll-mt-20">
+    <section id="life-story" className="bg-[#F8FAFC] border-b border-[#E2E8F0]/60 scroll-mt-20">
 
       {/* ── HERO BANNER ────────────────────────────── */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-[#A863AD] via-[#8E4C93] to-[#7F4484] py-28 px-6 md:px-12 lg:px-20">
+      <div className="relative overflow-hidden bg-gradient-to-br from-[#3B0764] via-[#5B21B6] to-[#7C3AED] py-28 px-6 md:px-12 lg:px-20">
         {/* Animated blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-[-30%] right-[-5%] w-[400px] h-[400px] bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }} />
@@ -211,7 +211,7 @@ export function LifeStorySection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             Chapters of Purpose <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-200 to-purple-200 animate-text-gradient">and Evolution</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-[#EDE9FE] animate-text-gradient">and Evolution</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             From Fortune 500 boardrooms to a kitchen table in Bangalore — the story of how one woman's questions became two platforms, a movement, and a mission that continues to grow.
@@ -230,7 +230,7 @@ export function LifeStorySection() {
       </div>
 
       {/* ── STICKY CHAPTER NAV ─────────────────────── */}
-      <div className="sticky top-20 z-40 bg-[#FAF8FB]/95 backdrop-blur-md border-b border-[#E5DCE8]/60 shadow-sm">
+      <div className="sticky top-20 z-40 bg-[#F8FAFC]/95 backdrop-blur-md border-b border-[#E2E8F0]/60 shadow-sm">
         <div className="container mx-auto px-6 md:px-12 lg:px-20 py-3">
           <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
             {CHAPTERS.map((c) => (
@@ -242,8 +242,8 @@ export function LifeStorySection() {
 
       {/* ── OPENING PULL QUOTE ─────────────────────── */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-8">
-        <div className="reveal max-w-4xl mx-auto bg-white/60 border-l-4 border-[#A863AD] rounded-r-3xl px-8 py-6 shadow-sm">
-          <p className="font-serif text-lg lg:text-xl italic text-[#2E2433] leading-relaxed">
+        <div className="reveal max-w-4xl mx-auto bg-white/60 border-l-4 border-[#5B21B6] rounded-r-3xl px-8 py-6 shadow-sm">
+          <p className="font-serif text-lg lg:text-xl italic text-[#0F172A] leading-relaxed">
             "There is a certain kind of person who does not simply adapt to the world as it is. Instead, they keep asking whether it could be better — better food, better knowledge, better care for the people they love. Kirti Yadav is that kind of person."
           </p>
         </div>
@@ -266,8 +266,8 @@ export function LifeStorySection() {
                 </div>
                 <div>
                   <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1" style={{ color: chap.accent }}>Chapter {chap.num}</span>
-                  <h2 className="font-serif text-2xl lg:text-3xl text-[#2E2433] font-bold tracking-tight leading-tight">{chap.title}</h2>
-                  <p className="text-[#6F6476] text-xs font-medium tracking-widest uppercase mt-1">{chap.sub}</p>
+                  <h2 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold tracking-tight leading-tight">{chap.title}</h2>
+                  <p className="text-[#475569] text-xs font-medium tracking-widest uppercase mt-1">{chap.sub}</p>
                 </div>
               </div>
               {/* Chapter progress indicator */}
@@ -276,7 +276,7 @@ export function LifeStorySection() {
                   <div
                     key={i}
                     onClick={() => scrollToChap(CHAPTERS[i].num)}
-                    className={`h-1.5 rounded-full cursor-pointer transition-all duration-500 ${CHAPTERS[i].num === chap.num ? "w-8 bg-[#A863AD]" : "w-2 bg-[#E5DCE8] hover:bg-[#A863AD]/50"}`}
+                    className={`h-1.5 rounded-full cursor-pointer transition-all duration-500 ${CHAPTERS[i].num === chap.num ? "w-8 bg-[#5B21B6]" : "w-2 bg-[#E2E8F0] hover:bg-[#5B21B6]/50"}`}
                   />
                 ))}
               </div>
@@ -287,7 +287,7 @@ export function LifeStorySection() {
               className="reveal mb-10 pl-6 border-l-2 rounded-r-xl py-1"
               style={{ borderColor: chap.accent }}
             >
-              <p className="text-[#6F6476] text-base lg:text-lg font-light leading-relaxed">{chap.intro}</p>
+              <p className="text-[#475569] text-base lg:text-lg font-light leading-relaxed">{chap.intro}</p>
             </div>
 
             {/* Story cards grid */}
@@ -299,31 +299,31 @@ export function LifeStorySection() {
 
             {/* Closing line */}
             <div className="reveal max-w-3xl">
-              <div className="flex items-start gap-4 bg-gradient-to-r from-stone-50 to-white/60 border border-[#E5DCE8]/60 rounded-2xl px-6 py-5 shadow-sm">
+              <div className="flex items-start gap-4 bg-gradient-to-r from-stone-50 to-white/60 border border-[#E2E8F0]/60 rounded-2xl px-6 py-5 shadow-sm">
                 <span className="text-2xl flex-shrink-0 mt-0.5">✦</span>
-                <p className="text-[#6F6476] text-sm font-medium leading-relaxed italic">{chap.closing}</p>
+                <p className="text-[#475569] text-sm font-medium leading-relaxed italic">{chap.closing}</p>
               </div>
             </div>
 
             {/* Divider — not after last */}
             {ci < CHAPTERS.length - 1 && (
               <div className="mt-20 reveal flex items-center gap-4">
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E5DCE8] to-transparent" />
-                <div className="w-2 h-2 rounded-full bg-[#A863AD] opacity-40 animate-pulse" />
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E5DCE8] to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent" />
+                <div className="w-2 h-2 rounded-full bg-[#5B21B6] opacity-40 animate-pulse" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E2E8F0] to-transparent" />
               </div>
             )}
           </div>
         ))}
       </div>
 
-      {/* ── PHILOSOPHY CARDS (Ch 08 embeds these inline above; keep as standalone) ── */}
+      {/* ── PHILOSOPHY CARDS ── */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 pb-20">
         <div className="reveal text-center mb-12">
-          <div className="inline-block border-t-[3px] border-[#A863AD] pt-2 mb-4">
-            <span className="text-[#A863AD] font-bold text-sm tracking-[0.2em] uppercase">Three Convictions That Organise an Entire Life</span>
+          <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2 mb-4">
+            <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Three Convictions That Organise an Entire Life</span>
           </div>
-          <h3 className="font-serif text-2xl lg:text-3xl text-[#2E2433] font-bold">A Philosophy Lived Out Loud</h3>
+          <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">A Philosophy Lived Out Loud</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {[
@@ -333,12 +333,12 @@ export function LifeStorySection() {
           ].map((p, i) => (
             <div
               key={i}
-              className="reveal shimmer-card bg-white/80 border border-[#E5DCE8]/60 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:border-[#A863AD]/30 hover:-translate-y-1 transition-all duration-300"
+              className="reveal shimmer-card bg-white/80 border border-[#E2E8F0]/60 p-8 rounded-3xl shadow-sm hover:shadow-xl hover:border-[#5B21B6]/30 hover:-translate-y-1 transition-all duration-300"
               style={{ transitionDelay: `${i * 100}ms` }}
             >
               <div className="w-12 h-12 rounded-full chapter-tag-gradient flex items-center justify-center text-white font-bold text-sm mb-4 shadow-md">{p.n}</div>
-              <h4 className="font-serif font-bold text-[#2E2433] text-lg mb-3">{p.title}</h4>
-              <p className="text-[#6F6476] text-sm font-light leading-relaxed">{p.body}</p>
+              <h4 className="font-serif font-bold text-[#0F172A] text-lg mb-3">{p.title}</h4>
+              <p className="text-[#475569] text-sm font-light leading-relaxed">{p.body}</p>
             </div>
           ))}
         </div>
@@ -346,7 +346,7 @@ export function LifeStorySection() {
 
       {/* ── CLOSING QUOTE BANNER ───────────────────── */}
       <div className="mx-6 md:mx-12 lg:mx-20 mb-20 reveal">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#A863AD] via-[#8E4C93] to-[#7F4484] p-12 lg:p-16 text-center shadow-2xl">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#3B0764] via-[#5B21B6] to-[#7C3AED] p-12 lg:p-16 text-center shadow-2xl">
           {/* decorative blobs */}
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute -left-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-xl" />
