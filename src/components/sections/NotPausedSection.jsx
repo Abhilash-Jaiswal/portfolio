@@ -12,29 +12,36 @@ function useReveal(ref) {
   }, []);
 }
 
+const pillars = [
+  { icon: "🛡️", grad: "from-[#5B21B6] to-[#3B0764]", title: "Safe Community", desc: "Vetted, non-judgmental peer support spaces for 1,100+ women across 7 metro chapters — breaking the silence and shame around midlife transitions." },
+  { icon: "🩺", grad: "from-[#5B21B6] to-[#3B0764]", title: "Expert Support", desc: "Access to certified holistic nutritionists, gynaecologists, fitness coaches, and mental health professionals specializing in midlife health." },
+  { icon: "📊", grad: "from-[#5B21B6] to-[#3B0764]", title: "Symptom Tracking", desc: "Evidence-based guidance covering 34+ recognized perimenopause symptoms — from sleep disturbances and brain fog to joint pain and mood shifts." },
+  { icon: "📚", grad: "from-[#5B21B6] to-[#3B0764]", title: "Trusted Education", desc: "India-specific, culturally rooted health literacy built for Indian bodies, diets, and family dynamics — not adapted from Western templates." },
+];
+
 const principles = [
-  { icon: "🤝", grad: "from-[#5B21B6] to-[#3B0764]", title: "Open & Inclusive", desc: "No dietary ideology pushed. All approaches welcomed. Women are treated as intelligent, empowered adults capable of making their own decisions." },
-  { icon: "💬", grad: "from-[#5B21B6] to-[#3B0764]", title: "WhatsApp-First", desc: "85–95% open rates versus 22% for email. Meeting women where they already are — on the platform they use every day." },
-  { icon: "✨", grad: "from-[#5B21B6] to-[#3B0764]", title: "Aspirational Identity", desc: "Visual and verbal identity shows women thriving — travelling solo, trekking, active and vibrant at midlife. Not victims. Champions." },
-  { icon: "🇮🇳", grad: "from-[#5B21B6] to-[#3B0764]", title: "India-Specific", desc: "Content, case studies, food references, and expert voices tailored to Indian bodies, diets, and family dynamics. Not adapted from Western frameworks." },
-  { icon: "🩺", grad: "from-[#5B21B6] to-[#3B0764]", title: "Knowledge → Community → Doctors", desc: "Build trust through education, deepen through belonging, scale through clinical partnerships. The three-stage model of holistic support." },
+  { icon: "🤝", grad: "from-[#5B21B6] to-[#3B0764]", title: "Open & Inclusive", desc: "No single dietary or medical ideology pushed. All approaches welcomed — treating women as intelligent, empowered decision-makers." },
+  { icon: "💬", grad: "from-[#5B21B6] to-[#3B0764]", title: "WhatsApp-Native (85-95% Open)", desc: "Meeting women on the platform they use every single day, driving unprecedented engagement compared to traditional email (22%)." },
+  { icon: "✨", grad: "from-[#5B21B6] to-[#3B0764]", title: "Aspirational Midlife", desc: "Reframing midlife as an active, vibrant chapter — solo travel, trekking, career peaks, and personal strength, not decline." },
+  { icon: "🇮🇳", grad: "from-[#5B21B6] to-[#3B0764]", title: "India-Specific Frameworks", desc: "Tailored to Indian family dynamics, kitchen ingredients, and cultural realities rather than imported Western guidelines." },
+  { icon: "🩺", grad: "from-[#5B21B6] to-[#3B0764]", title: "Holistic Care Arc", desc: "Bridging nutrition, community belonging, and clinical gynaecological access for end-to-end midlife wellness." },
 ];
 
 const services = [
   {
     icon: "👩", grad: "from-[#5B21B6] to-[#3B0764]",
-    title: "For Individual Women",
-    items: ["Personalised 1-on-1 nutrition & menopause consultations", "Group guidance workshops & masterclasses", "WhatsApp community — warm, non-judgmental, always active", "City chapters across 7 major Indian metros"],
+    title: "5-Month 1:1 Perimenopause Coaching",
+    items: ["Personalised midlife nutrition & symptom management", "Strength & mobility routines for bone density", "Sleep, stress & metabolic health optimization", "Vetted 1,100+ member WhatsApp community access"],
   },
   {
     icon: "🏢", grad: "from-[#5B21B6] to-[#3B0764]",
-    title: "For Corporates",
-    items: ["Menopause-at-work employee education sessions", "HR team sensitisation & policy consulting", "Multi-session midlife wellness programmes", "Retention-focused support for senior women professionals"],
+    title: "Corporate Menopause Clinics",
+    items: ["Employee education sessions for senior women leaders", "HR team sensitisation & menopause policy building", "Retaining female executive talent during midlife", "Multi-session midlife wellness masterclasses"],
   },
   {
     icon: "🏫", grad: "from-[#5B21B6] to-[#3B0764]",
-    title: "For Educational Institutions",
-    items: ["Menopause wellness sessions for teaching staff", "Hormonal health awareness for senior students", "Health-literate institution building", "Reducing stigma from the classroom up"],
+    title: "Institutional & Community Workshops",
+    items: ["Menopause awareness for educators & institutions", "Destigmatizing midlife health in family circles", "Group masterclasses on hormonal nutrition", "City chapter meetups across 7 Indian metros"],
   },
 ];
 
@@ -55,17 +62,17 @@ export function NotPausedSection() {
         <div className="relative z-10 max-w-5xl animate-fade-in-up">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
-            notpaused.com
+            NotPaused.com · Founded 2025
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
-            India's First Holistic <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-200 to-[#E7C9E8] animate-text-gradient">Menopause Platform</span>
+            India's Dedicated <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-pink-200 to-[#E7C9E8] animate-text-gradient">Perimenopause & Midlife Platform</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-            Menopause is not a pause. It is a comma — a breath before the most powerful chapter of a woman's life. notpaused.com was built to make sure no Indian woman navigates it alone.
+            Menopause is not a pause. It is a comma — a breath before the most powerful chapter of a woman's life. NotPaused.com was built to ensure no Indian woman navigates it alone.
           </p>
           <div className="flex flex-wrap gap-8 mt-12">
-            {[["65M+", "Women in India"], ["75%", "Without Guidance"], ["7", "City Chapters"], ["WhatsApp", "Native Platform"]].map(([n, l]) => (
+            {[["65M+", "Women in India Window"], ["75%", "Lack Guidance"], ["1,100+", "WhatsApp Members"], ["7 Metros", "City Chapters"]].map(([n, l]) => (
               <div key={l}>
                 <span className="font-serif text-3xl font-bold text-white block">{n}</span>
                 <span className="text-white/60 text-xs uppercase tracking-widest">{l}</span>
@@ -81,12 +88,12 @@ export function NotPausedSection() {
         <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-r from-[#5B21B6] to-[#3B0764] p-10 text-white text-center shadow-xl">
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
           <div className="relative z-10 space-y-3 max-w-4xl mx-auto">
-            <span className="bg-white/15 border border-white/20 text-white text-[9px] font-bold tracking-widest uppercase px-4 py-2 rounded-full inline-block">The Scale of the Problem</span>
+            <span className="bg-white/15 border border-white/20 text-white text-[9px] font-bold tracking-widest uppercase px-4 py-2 rounded-full inline-block">The National Scale</span>
             <p className="font-serif text-xl lg:text-3xl font-bold leading-relaxed">
               65 MILLION Indian women are currently in the perimenopause–menopause window. <br />
-              <span className="font-light italic text-xl">75% will never receive proper guidance.</span>
+              <span className="font-light italic text-xl">75% navigate it without medical guidance or awareness.</span>
             </p>
-            <p className="text-white/80 text-sm font-light">notpaused.com exists for every single one of them.</p>
+            <p className="text-white/80 text-sm font-light">NotPaused.com was founded in 2025 by Kirti Yadav to bridge this precise gap.</p>
           </div>
         </div>
 
@@ -98,19 +105,19 @@ export function NotPausedSection() {
             </div>
             <div>
               <span className="block text-[10px] font-bold tracking-[0.3em] uppercase text-[#5B21B6] mb-1">Chapter 01</span>
-              <h2 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">The Personal Origin</h2>
-              <p className="text-[#475569] text-xs font-medium tracking-widest uppercase mt-1">Why a trained nutritionist found herself unprepared — and what she did about it</p>
+              <h2 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">The Personal Origin (2025)</h2>
+              <p className="text-[#475569] text-xs font-medium tracking-widest uppercase mt-1">Why a certified nutritionist found herself unprepared — and built the solution</p>
             </div>
           </div>
           <div className="reveal pl-6 border-l-2 border-[#5B21B6] rounded-r-xl">
             <p className="text-[#475569] text-base font-light leading-relaxed">
-              Kirti Yadav is a certified holistic nutritionist. She has spent years studying how food affects the body, and years more sharing that knowledge with communities across India. Yet when she began her own perimenopause journey, she found herself confronting a startling absence. Even she, with all her training and resources, could not find India-specific, culturally sensitive, practically useful information about what was happening to her body.
+              Kirti Yadav is an AFPA-certified holistic nutritionist specializing in herbal and natural strategies for menopause. Yet when she confronted her own perimenopause symptoms at 40, she found herself facing a stark reality: even with professional training, India-specific, culturally relevant guidance was virtually non-existent.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
-              { h: "What Women Were Being Told", b: "\"Just eat less and exercise more.\" \"This is normal for your age.\" No guidance. No education. No community. Just a door quietly closed. Superstition, silence, misattributed symptoms, and a pervasive cultural belief that the discomforts of menopause were simply something women were expected to endure in private." },
-              { h: "The Refusal to Accept That", b: "notpaused.com was Kirti's refusal to accept that closed door. Built not from theory but from experience — from the visceral understanding of what it means to need something and not be able to find it. The platform she designed was everything she had wished existed: honest, evidence-based, India-specific, non-judgmental, delivered through the channels Indian women actually use." },
+              { h: "The Cultural Silence", b: "Women in India are routinely told 'it's just age' or 'endure it in private'. Brain fog, joint pain, sleep disruption, anxiety, and weight redistribution are misattributed or dismissed. No guidance. No community. Just silence." },
+              { h: "The Refusal to Accept That", b: "NotPaused.com was born in 2025 as Kirti's direct refusal to accept that silence. Built from lived experience and evidence-based nutrition, it provides women 35+ with a trusted ecosystem of education, coaching, and peer support." },
             ].map((item, i) => (
               <div key={i} className="reveal shimmer-card bg-white/80 border border-[#E2E8F0]/60 p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-[#5B21B6]/30 transition-all duration-300" style={{ transitionDelay: `${i * 100}ms` }}>
                 <h4 className="font-serif font-bold text-[#0F172A] text-base mb-3">{item.h}</h4>
@@ -120,43 +127,32 @@ export function NotPausedSection() {
           </div>
         </div>
 
-        {/* Ch 02 — Name & Platform */}
-        <div className="space-y-8">
-          <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#5B21B6] to-[#3B0764] flex items-center justify-center shadow-lg timeline-dot flex-shrink-0">
-              <span className="text-2xl">🌸</span>
+        {/* 4-Pillar Architecture */}
+        <div>
+          <div className="reveal text-center mb-10">
+            <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2 mb-4">
+              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Solution Architecture</span>
             </div>
-            <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase text-[#5B21B6] mb-1">Chapter 02</span>
-              <h2 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">A Declaration, Not Just a Platform</h2>
-              <p className="text-[#475569] text-xs font-medium tracking-widest uppercase mt-1">Why the name itself is a mission statement</p>
-            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">The Four Pillars of NotPaused.com</h3>
           </div>
-          <div className="reveal pl-6 border-l-2 border-[#5B21B6] rounded-r-xl">
-            <p className="text-[#475569] text-base font-light leading-relaxed">
-              The name notpaused.com is not a brand exercise. It is a statement of belief. Menopause is not a pause — not a withdrawal from life, not a diminishment of capability, not a retreat from relevance. It is a transition. Demanding, often disorienting, and frequently misunderstood — but also the gateway to the most liberated chapter of a woman's life. The name says, with complete intentionality: this is not the end of your story. This is a comma, not a full stop.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            {[
-              { h: "Genuinely Inclusive", b: "Unlike other women's health platforms, notpaused.com does not push hormone replacement therapy as the default solution. It does not lead with supplement sales. It does not reduce the complexity of menopause to a diet plan. It treats women as the intelligent, multidimensional adults they are — capable of processing nuanced, evidence-based information and making their own informed choices about their health." },
-              { h: "India-Specific by Design", b: "The content is built specifically for Indian women. It references Indian foods, Indian cooking methods, and the Indian cultural contexts that shape how women experience their bodies, their families, and their sense of self. This specificity is not a limitation. It is the platform's greatest asset — and the gap that no Western-adapted platform has ever been able to fill." },
-            ].map((item, i) => (
-              <div key={i} className="reveal shimmer-card bg-white/80 border border-[#E2E8F0]/60 p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 hover:border-[#5B21B6]/30 transition-all duration-300" style={{ transitionDelay: `${i * 100}ms` }}>
-                <h4 className="font-serif font-bold text-[#0F172A] text-base mb-3">{item.h}</h4>
-                <p className="text-[#475569] text-sm font-light leading-relaxed text-justify">{item.b}</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {pillars.map((p, i) => (
+              <div key={i} className="reveal shimmer-card bg-white/80 border border-[#E2E8F0]/60 p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 hover:border-[#5B21B6]/30 transition-all duration-300 space-y-3" style={{ transitionDelay: `${i * 80}ms` }}>
+                <div className={`w-12 h-12 rounded-2xl bg-gradient-to-br ${p.grad} flex items-center justify-center text-xl shadow-md text-white`}>{p.icon}</div>
+                <h4 className="font-serif font-bold text-[#0F172A] text-sm">{p.title}</h4>
+                <p className="text-[#475569] text-xs font-light leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Services */}
+        {/* Services & Coaching */}
         <div>
           <div className="reveal text-center mb-12">
             <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2 mb-4">
-              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Three Verticals, One Mission</span>
+              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Services & Corporate Offerings</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">Who notpaused.com Serves</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">How NotPaused.com Serves Women & Employers</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((s, i) => (
@@ -180,9 +176,9 @@ export function NotPausedSection() {
         <div>
           <div className="reveal text-center mb-10">
             <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2 mb-4">
-              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Platform Principles</span>
+              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Core Philosophy</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">What Makes notpaused.com Different</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">What Sets NotPaused.com Apart</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {principles.map((p, i) => (
@@ -195,10 +191,10 @@ export function NotPausedSection() {
           </div>
         </div>
 
-        {/* City Chapters */}
+        {/* City Chapters & Community Reach */}
         <div className="reveal bg-white/80 border border-[#E2E8F0]/60 p-8 rounded-3xl shadow-sm text-center space-y-5">
-          <span className="text-[#5B21B6] font-bold text-xs tracking-widest uppercase block">WhatsApp-Native Community Chapters</span>
-          <p className="text-[#475569] text-sm font-light max-w-2xl mx-auto">City chapters ensure local relevance — local doctors, local foods, local conversations — combined with the scale and warmth of a national community.</p>
+          <span className="text-[#5B21B6] font-bold text-xs tracking-widest uppercase block">1,100+ Member WhatsApp Ecosystem across 7 Metro Chapters</span>
+          <p className="text-[#475569] text-sm font-light max-w-2xl mx-auto">Vetted WhatsApp groups connecting women with local gynaecologists, nutritionists, and peer circles across India's largest metros.</p>
           <div className="flex flex-wrap justify-center gap-3">
             {cityChapters.map((city) => (
               <span key={city} className="bg-[#F1F5F9] text-[#0F172A] text-xs font-semibold px-4 py-2 rounded-full border border-[#E2E8F0] hover:bg-[#E7C9E8]/30 transition-colors">
@@ -215,11 +211,11 @@ export function NotPausedSection() {
           <div className="relative z-10 space-y-5 max-w-4xl mx-auto">
             <span className="bg-white/15 border border-white/20 text-white text-[9px] font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full inline-block">Why It Was Built</span>
             <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
-              "I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be."
+              "I built NotPaused.com because I was that woman looking for answers. Now I make sure no Indian woman has to go through perimenopause alone."
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · notpaused.com</span>
+              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused.com</span>
               <div className="w-8 h-px bg-white/40" />
             </div>
           </div>

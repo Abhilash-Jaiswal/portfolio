@@ -16,116 +16,116 @@ function useReveal() {
 /* ─── Chapter data ───────────────────────────────── */
 const CHAPTERS = [
   {
-    num: "01", emoji: "💼",
-    title: "The Foundation Years",
-    sub: "AIG · Target · IBM",
+    num: "01", emoji: "🎓",
+    title: "Computer Science & Corporate Mastery (2005–2014)",
+    sub: "HBTI Kanpur · IBM · Target · AIG",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "Before Kirti Yadav became a certified holistic nutritionist, a founder, a speaker, or a mentor, she was something far more ordinary and far more valuable: a professional who knew how to think at scale.",
+    intro: "Before Kirti Yadav became a certified holistic nutritionist, founder, speaker, or mentor, she built a robust 9-year corporate career in data engineering and corporate training — laying the analytical foundation for everything she would build later.",
     cards: [
-      { heading: "AIG — The Discipline of Precision", body: "At AIG, the global financial powerhouse, Kirti was immersed in risk management and large-scale institutional operations. She developed a discipline of analytical thinking — the ability to look at a problem from ten angles before committing to a single direction. That precision would later inform how she designed product formulations, built unit economics, and structured business plans rigorous enough to pass India's most demanding incubation programmes." },
-      { heading: "Target — Understanding People at Scale", body: "Target operates at the intersection of commerce and psychology. Working within that culture, Kirti sharpened her commercial instincts — an intuitive grasp of consumer behaviour, brand positioning, and the mechanics of building something that genuinely connects with people. That insight became the invisible architecture behind every product she would later launch: designed to win in real kitchens, with real families." },
-      { heading: "IBM — The Art of Designing Systems", body: "IBM was where systems thinking became a natural language. Kirti learned to see not just the problem in front of her, but the entire ecosystem around it. She does not build products; she builds platforms. Both KuK Clean and notpaused.com are interconnected systems designed to grow, evolve, and serve communities at scale. That thinking was planted at IBM." },
+      { heading: "Education & Tech Roots (2001–2009)", body: "Kirti graduated with a BTech in Computer Science from HBTI Kanpur in 2005, followed by a C-PGDBA in IT from Symbiosis. She began her corporate journey at IBM Global Process Services (2005–2011) as a Data Warehousing Consultant, mastering data systems and complex analytical frameworks." },
+      { heading: "Global Project Leadership & Target (2011–2013)", body: "Joining Target India as Project Lead for Data Integration, Kirti spent 1.5 years onsite in the US working as a project coordinator for Chartis/AIG. During her corporate career, she conducted over 130 technical and leadership interviews, honing her keen understanding of people and performance." },
+      { heading: "Training Manager at AIG (2013–2014)", body: "Transitioning to AIG as Training Manager, Kirti built the entire Training Department from scratch, personally training over 1,000 corporate professionals. 'I am a people's person, and I love interacting with people,' she recalls. This role planted the seed for her future coaching and public speaking identity." },
     ],
-    closing: "By the time she stepped away from her corporate career, she carried three distinct, complementary forms of intelligence — financial acumen, consumer insight, and systems thinking. She was already, in the most complete sense, prepared for what was coming.",
+    closing: "A decade across global technology giants gave Kirti analytical rigor, systems thinking, and leadership confidence — tools that would prove indispensable when building her own ventures.",
   },
   {
-    num: "02", emoji: "🌱",
-    title: "The Turning Point",
-    sub: "Motherhood & The Revelation of Nourishment",
+    num: "02", emoji: "👶",
+    title: "Motherhood, Health Crisis & Transformation (2014–2018)",
+    sub: "Preterm Birth · 28kg Weight Loss · Plattershare",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "The most important pivots in life rarely announce themselves with fanfare. They arrive quietly, wrapped in something personal. For Kirti Yadav, that pivot arrived with the birth of her daughter.",
+    intro: "In 2014, Kirti's life changed course completely. The birth of her daughter prematurely triggered postpartum complications — weight gain, high cholesterol, and elevated blood pressure — forcing a fundamental reset.",
     cards: [
-      { heading: "Standing in Supermarket Aisles", body: "Motherhood changed everything in a deeply practical, visceral way. Kirti found herself turning product labels over and over — reading ingredient lists that seemed designed to confuse rather than inform. Emulsifiers. Artificial flavours. Refined sugars hiding behind nineteen different aliases. A mother's instinct has its own kind of intelligence. Something was deeply wrong with what the Indian food market was offering families trying to make better choices." },
-      { heading: "A Personal Health Transformation", body: "During pregnancy, Kirti experienced the physical consequences of a diet not truly nourishing her — significant weight gain, persistent fatigue, digestive discomfort, and nutritional imbalances. She began exploring whole-food, plant-based nutrition not as a trend but as a genuine response to what her body was telling her. The transformation she experienced was profound. Energy returned. Balance was restored. A realisation crystallised: the food she had been eating before was not the food her body had been designed for." },
-      { heading: "The Question That Would Not Leave", body: "If she, a well-educated professional with access to information, had been eating in a way that undermined her health — what was happening to millions of Indian families with even fewer tools to navigate the marketplace? That question would not leave her. It would eventually become the foundation of everything she built." },
+      { heading: "A Life-Changing Catalyst (2014)", body: "Faced with health complications after her daughter's premature birth, Kirti stepped away from her corporate career. Driven by a mother's refusal to compromise and a deep desire to heal, she turned to researching natural health solutions, whole foods, and plant-based nutrition." },
+      { heading: "The 28 kg Transformation (2018)", body: "By adopting a disciplined, whole-food plant-based lifestyle, Kirti lost 28 kg, reversed her health markers, and restored her vitality. The realization struck with power: 'If I can lose weight and become healthier following a plant-based lifestyle, it might help others as well.'" },
+      { heading: "Plattershare & Community Seed (2014–2018)", body: "During this transitional chapter, Kirti co-founded Plattershare, one of India's first food networking platforms, pioneering digital campaigns. In 2018, she left Plattershare to dive full-time into nutrition, launching a Facebook group that grew to 5,000 members — the seed of KuKClean." },
     ],
-    closing: "The discovery was personal, but its implications were vast. The gap between what families were being told was good for them and what genuinely was — that gap became the mission.",
+    closing: "What began as a personal struggle for survival and recovery transformed into a profound calling: bringing plate-level change to Indian families.",
   },
   {
-    num: "03", emoji: "🍃",
-    title: "Building KuK Clean",
-    sub: "A Mother's Refusal to Compromise",
+    num: "03", emoji: "🥗",
+    title: "The Birth & Growth of KuKClean (2021–2023)",
+    sub: "Clean-Label Foods · IIM Bangalore · RKVY-RAFTAAR",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "Kirti did not launch KuK Clean with venture capital backing or a dedicated team. She launched it with a conviction born at her own kitchen table and a quality standard established by her daughter's most honest reactions.",
+    intro: "In July 2021, amid the COVID-19 pandemic, Kirti incorporated KuKClean Foods and Consulting Pvt Ltd alongside her husband and co-founder Akar Misra, creating a clean-label food brand rooted in transparency.",
     cards: [
-      { heading: "The Non-Negotiable Standard", body: "The rule was simple: if her daughter asked for 'one more', the product was ready. If she was silent, it went back to the kitchen. Co-founded with her husband Akar Misra — whose credentials span Goldman Sachs, JP Morgan, and IBM — KuK Clean was built on twin foundations: nutritional science and genuine deliciousness. Clean, plant-based nutrition is not about deprivation. It is about discovering the extraordinary flavour that real, unprocessed ingredients produce when treated with knowledge." },
-      { heading: "The Unglamorous Early Days", body: "Kirti wore every hat the business required — founder, nutritionist, recipe developer, quality curator, and in the most literal sense, delivery person. She drove across Bangalore personally delivering products, building a relationship with every customer. Every delivery was a conversation. Every feedback was data. Every satisfied customer confirmed that the gap she had identified was real and that what she was creating was genuinely filling it." },
-      { heading: "Growth Built on Trust", body: "The product range grew deliberately: healthy Indian sweets without refined sugar or dairy; stone-ground nut butters preserving natural oils; baked snacks as real alternatives to deep-fried snacking; millet-based cereals bringing ancient grains into modern mornings. What KuK Clean did not do was equally important — it never compromised on ingredient transparency. The business grew entirely through word of mouth. Growth came because the products delivered what they promised." },
+      { heading: "The 'Kitchen You' Philosophy", body: "KuKClean stands for 'Kitchen' (KuK) + 'Clean', doubling as 'Kitchen, You' — teaching families how to cook clean in their own kitchens. Product standards were set by her daughter's honest reactions: 'When my daughter eats my snacks and says, Mummy, I'm so lucky to have you, that's why I make laddus.'" },
+      { heading: "IIM Bangalore & Institutional Grants", body: "KuKClean was selected and incubated at IIM Bangalore's Women Startup Programme (Cohort 3 - WSP3), named among the 'Top 50 Women-Led Ventures'. She graduated from the Goldman Sachs 10,000 Women (GS10K) program at NSRCEL IIMB and received the RKVY-RAFTAAR Grant-in-Aid from ICAR-IIMR." },
+      { heading: "Bootstrapped Traction & B2B Expansion", body: "Without VC funding, KuKClean generated ₹14 Lakhs in revenue in its first 7 bootstrapped months. The brand expanded into B2B supply — providing nut butters to cafes and positioning artisanal laddus into corporate Thalis for bulk canteen buyers, while employing women from disadvantaged backgrounds." },
     ],
-    closing: "No advertising. No purchased influence. Just trust, earned one product and one conversation at a time.",
+    closing: "Incubated at top national institutes, KuKClean proved that clean-label, plant-based Indian gourmet treats could build a thriving business without sacrificing a single gram of flavour.",
   },
   {
     num: "04", emoji: "📢",
-    title: "The Pandemic as Accelerant",
-    sub: "#EatLikeKirti · Leading with Generosity",
+    title: "COVID-19 Leadership & #EatLikeKirti (2020–2021)",
+    sub: "21 Days Live · Professional Certifications · National Media",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "When COVID-19 brought India to a standstill in March 2020, many businesses retreated into survival mode. Kirti Yadav moved in the opposite direction.",
+    intro: "When the 2020 lockdown forced families indoors, Kirti turned uncertainty into nationwide education, showing up every day to guide thousands of Indian households toward immune resilience.",
     cards: [
-      { heading: "21 Days, 21 Live Sessions", body: "She launched the #EatLikeKirti initiative — twenty-one consecutive days of live social media sessions on whole-food, plant-based nutrition. Every day, she showed up. She cooked, explained, answered questions, and debunked myths. She hosted ten interactive webinars in those twenty-one days — teaching people not just what to eat but how to think about food, how to read labels, and how to cook in ways that preserved nutrition without sacrificing taste." },
-      { heading: "A Nation Cooking Differently", body: "The response was extraordinary. Households across India began cooking differently. Community members started sharing their transformations in real time — photographs of meals, messages about energy changes, accounts of children eating vegetables for the first time. This moment established, publicly and irrefutably, what kind of leader Kirti was: she did not retreat to safety when the world became uncertain. She moved toward people." },
-      { heading: "National Media Recognition", body: "India Today published a feature on KuK Clean. Bangalore Insider profiled her story of navigating the crisis. And Shradha Sharma, founder of YourStory — India's most influential startup media platform — invited her to tell her story. These were signals that the conversation Kirti was trying to start was resonating far beyond Bangalore. The country was ready for what she was offering." },
+      { heading: "21 Days Live & 10 Webinars", body: "Kirti launched the #EatLikeKirti initiative, conducting 21 consecutive days of live social media broadcasts and 10 interactive webinars during lockdown. She taught families practical whole-food cooking, label literacy, and plant-based nutrition." },
+      { heading: "Official Certifications (AFPA USA)", body: "To solidify her clinical expertise, Kirti earned formal credentials as a Certified Holistic Nutritionist (AFPA, USA), Plant-Based Athlete Coach (AFPA), and Specialist in Herbal & Natural Strategies for Menopause (AFPA)." },
+      { heading: "National Press Features", body: "Her lockdown initiative was featured nationally by India Today ('Cooking in a Crisis'), YourStory (video interview with Shradha Sharma), Deccan Herald, The Better India, and Bangalore Insider." },
     ],
-    closing: "Lead with generosity. Lead with knowledge. Lead without fear. That posture — forged during lockdown — became the founding philosophy of everything she built going forward.",
+    closing: "Leading with generosity during crisis established Kirti as a trusted, evidence-based authority in holistic wellness across India.",
   },
   {
-    num: "05", emoji: "🏆",
-    title: "Institutional Validation",
-    sub: "Goldman Sachs · IIMR · Awards · National Recognition",
+    num: "05", emoji: "🌸",
+    title: "Founding NotPaused.com (2025–Present)",
+    sub: "Women 35+ · Breaking Menopause Stigma · WhatsApp Movement",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "Great ideas must eventually meet rigorous scrutiny. Kirti Yadav welcomed that scrutiny, and it found her entirely prepared.",
+    intro: "In 2025, Kirti confronted a startling personal blind spot: despite being a certified nutritionist, she experienced sleepless nights and unrecognized perimenopause symptoms because public awareness was practically non-existent.",
     cards: [
-      { heading: "Goldman Sachs GS10K — IIM Bangalore", body: "Her selection for the Goldman Sachs 10,000 Women Entrepreneur Program at NSRCEL, IIM Bangalore, signalled that what she had built from her kitchen table was institutionally credible. The GS10K programme is among India's most selective entrepreneurship initiatives. It gave her access to mentorship, a global women's network, and strategic frameworks for sustainable scaling — and the confidence to operate at a different level." },
-      { heading: "ICAR-IIMR Government Grant", body: "The Grant-in-Aid under RKVY-RAFTAAR from the Indian Institute of Millets Research — celebrated at the International Nutri Cereal Convention 5.0 in Hyderabad during the UN International Year of Millets — confirmed that KuK Clean's millet work was not just entrepreneurially sound, but agriculturally, scientifically, and nationally relevant. An incubatee at Nutrihub, positioned at the precise intersection of agritech innovation and consumer health." },
-      { heading: "Awards, Stages & Jury Roles", body: "The Womenpreneur Achievers Award 2024 placed her among Karnataka's most distinguished women leaders. She spoke at the ASSOCHAM Rajasthan Startup Summit. She was nationally selected to pitch at the Women Leadership Conclave before diplomats and academics. And at CAIAS, having won the Best Women-Led Startup Award, she was invited back — as jury member. From winner to judge: the entire arc of her journey, captured in miniature." },
+      { heading: "The Unrecognized Symptom Catalyst", body: "'Even a nutritionist like me was not aware that my menopause was hitting, because nobody really talks about it,' Kirti reflects. Realizing that 75% of India's 65 million midlife women receive no guidance, she took the plunge to build a dedicated movement." },
+      { heading: "A Rebuttal to 'Pausing'", body: "She named the platform NotPaused.com — a direct rebuttal to the idea that women pause after menopause. Built for women 35+, the platform offers a free, vetted WhatsApp community of 1,100+ members across 7 metros and a 5-month 1:1 Perimenopause Coaching Program." },
+      { heading: "Four-Pillar Solution Architecture", body: "NotPaused is expanding into corporate menopause awareness clinics and building a multidisciplinary bench (physiotherapists, doctors, journaling & meditation experts) to deliver Safe Community, Expert Support, Symptom Tracking, and Trusted Education." },
     ],
-    closing: "Every recognition connects to the same mission. Together, they form not a list of accomplishments, but a narrative of systemic credibility.",
+    closing: "'I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be.'",
   },
   {
-    num: "06", emoji: "🌸",
-    title: "The Birth of notpaused.com",
-    sub: "Dismantling the Last Great Taboo in Indian Women's Health",
+    num: "06", emoji: "🏆",
+    title: "Awards, Corporate Impact & Mentorship",
+    sub: "Womenpreneur 2024 · 100+ Corporate Sessions · Walmart Vriddhi",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "There are problems invisible not because they are small, but because the silence around them has been so thoroughly normalised that even the people experiencing them believe they must endure in private.",
+    intro: "From corporate boardrooms to national stages, Kirti's track record combines public leadership with practical mentoring for the next generation of founders.",
     cards: [
-      { heading: "A Trained Nutritionist, Unprepared", body: "When Kirti began her own perimenopause journey, she found a startling absence of India-specific, culturally relevant information. Even she, with all her training and resources, was unprepared. That experience was galvanising. If a trained nutritionist could feel lost, what was happening to the sixty-five million Indian women navigating this transition with none of those advantages? Three out of four would receive no adequate guidance whatsoever." },
-      { heading: "A Declaration, Not Just a Platform", body: "notpaused.com was born from a refusal to accept that silence. The name itself is a statement of intent: menopause is not a pause — not an ending or a retreat from life. It is a comma; a breath before the most liberated chapter of a woman's existence. The platform was designed to provide what the market entirely failed to offer: honest, evidence-based, India-specific knowledge, delivered through WhatsApp — the format Indian women actually use — wrapped in community that is warm and non-judgmental." },
-      { heading: "Three Verticals, One Mission", body: "For individual women: personalised consultations, group guidance, and WhatsApp city chapters across Delhi, Mumbai, Bangalore, Chennai, Hyderabad, Pune, and Ahmedabad. For corporates: menopause-at-work programmes addressing a critical gap in women's professional support. For schools: building health-literate institutions where women's health is spoken about honestly, with knowledge, and without shame. Every service connects to the same thread: no Indian woman navigates this alone." },
+      { heading: "National Awards & Pitching Stages", body: "Honoured with the Womenpreneur Achievers Award 2024 and selected nationally for the Women Leadership Conclave 2024 (pitching before IIT Guwahati & Embassy of Israel). Speaker at ASSOCHAM Rajasthan Startup Summit ('Women Leading the Race')." },
+      { heading: "100+ Corporate Wellness Sessions", body: "Delivered wellness talks and menu consultations for over 100 corporate organizations and 10,000+ lives, including JP Morgan, Goldman Sachs, Microsoft, IBM, ISRO, Siemens, Applied Materials, Reliance, and HDFC." },
+      { heading: "Startup & Institutional Mentorship", body: "Active mentor under the Walmart Vriddhi Mentoring Program, guest speaker at ISBR Business School, jury member at CAIAS Startup Summit, and mentor for student programs at Ique Nation Venture and FKCCI." },
     ],
-    closing: "\"I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be.\" — Kirti Yadav",
+    closing: "From winning startup awards to serving as a jury judge and mentor, her journey represents the complete evolution of a purpose-driven leader.",
   },
   {
-    num: "07", emoji: "🤝",
-    title: "The Mentor, the Speaker, the Voice",
-    sub: "Giving Back Without Calculation",
+    num: "07", emoji: "☀️",
+    title: "Personal Discipline & The Daily Routine",
+    sub: "Non-Negotiable Mornings · 'Keep Going' Mantra",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "Alongside everything she was building, Kirti was also giving. Not strategically, not for the recognition it might generate, but because she understood — from her own journey — how much it matters to have someone extend a hand.",
+    intro: "Kirti is a firm believer in practicing exactly what she preaches. Her daily energy is anchored in a strict, non-negotiable 2 to 3 hour morning routine.",
     cards: [
-      { heading: "Educating the Next Generation of Founders", body: "She served as guest speaker at ISBR Business School, sharing unfiltered entrepreneurship lessons with students beginning to think about building something of their own. She was invited to mentor at Incube Nation, where early-stage founders need guidance that is not just strategic but deeply human — the candid, contextual wisdom that business school curricula often leave out." },
-      { heading: "Health Literacy from the Earliest Years", body: "She conducted nutrition and wellness sessions at EuroKids, Advaya Shaale, and Prakriti — institutions committed to holistic child development — and designed specialised child diet plans at Junior Toes. Kirti's conviction is that health literacy, like language, must be introduced in formative years. A child who learns to understand food grows into an adult who makes better choices not out of willpower but out of genuine understanding." },
-      { heading: "Corporate Wellness — Proof of Concept", body: "The Applied Materials India session — a two-hour programme on plant-based nutrition for 180 employees — produced one of the most memorable responses of her career: 'If we get to eat like this every day, we're more than happy to switch.' It proved what she had always believed: the barrier to healthy eating is almost never desire. It is access and knowledge. Given the right information and the right experience, people choose well. Always." },
+      { heading: "The 6-Step Morning Ritual", body: "1. Meditation for mental clarity, 2. Reflective Journaling, 3. Reading nutrition and motivational literature, 4. Cooking a fresh, healthy meal for her family, 5. 45 minutes of strength training, 6. Getting ready for work. These hours are non-negotiable on most days." },
+      { heading: "Personal Mantra: 'Keep Going'", body: "Her personal mantra is 'Keep Going' — telling herself to keep moving in a direction, finding peace and purpose along the way. She pairs this with her signature philosophy: 'It's a journey, not a goal — compounding beats sparks.'" },
+      { heading: "Horizontal Success & Single Ikigai", body: "Rather than climbing a single corporate ladder, Kirti measures achievement by horizontal success — tackling multiple causes (nutrition, menopause, mentoring). All ventures express one core ikigai: bringing plate-level change to families." },
     ],
-    closing: "Building, earning, and then giving back. That is the rhythm of a life lived with purpose rather than calculation.",
+    closing: "This grounded daily discipline provides the strength and stamina behind everything she creates across KuKClean, NotPaused, and corporate coaching.",
   },
   {
-    num: "08", emoji: "🌍",
-    title: "A Vision for Generations",
-    sub: "Building for Generations, Not Quarters",
+    num: "08", emoji: "🔮",
+    title: "Vision for 2030 & Future Aspirations",
+    sub: "1 Million Plates · Public Health Policy · Go With Slow",
     color: "from-[#5B21B6] to-[#3B0764]",
     accent: "#5B21B6",
-    intro: "Kirti Yadav does not think in quarters. She thinks in generations. The ambition beneath everything she has built is institutional health — systemic, lasting, and accessible to all.",
+    intro: "Kirti Yadav builds with a long-term perspective, focusing on deep, lasting societal impact rather than quick viral moments.",
     cards: [
-      { heading: "KuK Clean — National Scale", body: "Expanding plant-based, clean-label product ranges and establishing deep corporate B2B wellness systems that bring genuine nutrition into the workplace as a structural benefit rather than an occasional initiative. The goal is not market share — it is to change what Indian families consider normal when it comes to food." },
-      { heading: "notpaused.com — A National Ecosystem", body: "A community of 100,000 women active in WhatsApp networks. India's most comprehensive menopause knowledge base. A curated panel of 50+ verified Indian doctors available for teleconsultation. City chapters across India. Corporate and school programme integrations. The architecture of a platform that will outlast any single campaign or trend." },
-      { heading: "The Ambition Beneath the Ambition", body: "Every Indian child with access to clean food. Every Indian woman entering midlife with the knowledge, the confidence, and the community she needs to thrive. These are not modest goals — they are the goals of someone who has looked at what is possible and decided that the possible is not enough. She did not build a brand. She built a life, and she shared it." },
+      { heading: "1 Million Plate-Level Change by 2030", body: "'By 2030, I want one million people to change their plate, even if it's a small change — because India is becoming the diabetic capital of the world. Good, clean food close to nature can heal you.'" },
+      { heading: "Near-Term Focus (Next 5 Years)", body: "For the next five years, her primary focus is building NotPaused.com into a nationwide movement, scaling WhatsApp city chapters, corporate clinics, and a multidisciplinary health coach bench." },
+      { heading: "Long-Term Ambition (Public Health Policy)", body: "As a 'go-with-slow' builder who tackles new systemic problems every 5–7 years, her 7-year vision is to work in the public health sector, contributing to national policy changes around nutrition and women's health." },
     ],
-    closing: "The integration of personal experience and professional identity is the source of everything real about what Kirti Yadav has created.",
+    closing: "'I do not believe in hierarchy. I am a community-led leader — if everyone comes together, it is a better venture than building a hierarchy.'",
   },
 ];
 
@@ -206,20 +206,20 @@ export function LifeStorySection() {
           <div className="animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
-              Life Story
+              Life Story & Leadership Narrative
             </div>
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
-            Chapters of Purpose <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-[#EDE9FE] animate-text-gradient">and Evolution</span>
+            A Journey of Conviction, <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-[#EDE9FE] animate-text-gradient">Compounding & Purpose</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            From Fortune 500 boardrooms to a kitchen table in Bangalore — the story of how one woman's questions became two platforms, a movement, and a mission that continues to grow.
+            From Data Warehousing Consultant at IBM to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.
           </p>
 
           {/* Stats row */}
           <div className="flex flex-wrap gap-8 mt-12 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-            {[["9", "Chapters"], ["2", "Brands Founded"], ["10+", "Years of Impact"]].map(([n, l]) => (
+            {[["8", "Detailed Chapters"], ["2005", "Career Journey Began"], ["28 kg", "Health Reset"], ["1M", "Plate Goal 2030"]].map(([n, l]) => (
               <div key={l}>
                 <span className="font-serif text-3xl font-bold text-white block">{n}</span>
                 <span className="text-white/60 text-xs uppercase tracking-widest">{l}</span>
@@ -244,8 +244,9 @@ export function LifeStorySection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 pt-20 pb-8">
         <div className="reveal max-w-4xl mx-auto bg-white/60 border-l-4 border-[#5B21B6] rounded-r-3xl px-8 py-6 shadow-sm">
           <p className="font-serif text-lg lg:text-xl italic text-[#0F172A] leading-relaxed">
-            "There is a certain kind of person who does not simply adapt to the world as it is. Instead, they keep asking whether it could be better — better food, better knowledge, better care for the people they love. Kirti Yadav is that kind of person."
+            "It's a journey, not a goal — compounding beats sparks. Keep going. You have to keep finding your peace and your purpose, because it's all about moving forward in your journey."
           </p>
+          <span className="text-[#5B21B6] text-xs font-bold uppercase tracking-wider block mt-3">— Kirti Yadav</span>
         </div>
       </div>
 
@@ -299,8 +300,8 @@ export function LifeStorySection() {
 
             {/* Closing line */}
             <div className="reveal max-w-3xl">
-              <div className="flex items-start gap-4 bg-gradient-to-r from-stone-50 to-white/60 border border-[#E2E8F0]/60 rounded-2xl px-6 py-5 shadow-sm">
-                <span className="text-2xl flex-shrink-0 mt-0.5">✦</span>
+              <div className="flex items-start gap-4 bg-gradient-to-r from-slate-50 to-white/60 border border-[#E2E8F0]/60 rounded-2xl px-6 py-5 shadow-sm">
+                <span className="text-2xl flex-shrink-0 mt-0.5 text-[#5B21B6]">✦</span>
                 <p className="text-[#475569] text-sm font-medium leading-relaxed italic">{chap.closing}</p>
               </div>
             </div>
@@ -321,15 +322,15 @@ export function LifeStorySection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 pb-20">
         <div className="reveal text-center mb-12">
           <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2 mb-4">
-            <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Three Convictions That Organise an Entire Life</span>
+            <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Leadership Philosophy & Core Convictions</span>
           </div>
-          <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">A Philosophy Lived Out Loud</h3>
+          <h3 className="font-serif text-2xl lg:text-3xl text-[#0F172A] font-bold">A Practice Lived Out Loud</h3>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
           {[
-            { n: "01", title: "Health is a Daily Practice", body: "Health is not a destination reached through shortcuts. It is the accumulation of thousands of small, conscious choices — what you put into your body, how you move, how you rest. There are no shortcuts, and Kirti has never pretended otherwise." },
-            { n: "02", title: "Clean-Label Integrity is Non-Negotiable", body: "Every product on KuK Clean, without exception, is something her family eats. This is not a marketing claim — it is the operational standard every product must meet before it reaches a customer. In a market full of wellness veneer, this commitment is both radical and refreshing." },
-            { n: "03", title: "Empathy is a Core Competency", body: "Meeting people where they are — without judgment, without prescription — is the animating principle of both her platforms. Whether it is a woman navigating her first menopause symptom or a professional trying to eat better: begin with warmth, build with knowledge." },
+            { n: "01", title: "Storyteller & Community Leadership", body: "'I am a community-led leader. I believe that if everyone comes together, it is a better venture than building a hierarchy. I do not believe in hierarchy, honestly.' Everything Kirti builds starts with storytelling and genuine connection." },
+            { n: "02", title: "Practice What You Preach", body: "Kirti's 2 to 3 hour daily morning ritual — meditation, journaling, reading, family meal prep, and 45 minutes of strength training — is non-negotiable. She preaches only what she embodies herself every single day." },
+            { n: "03", title: "Horizontal Success over Vertical Climbing", body: "Kirti measures achievement by horizontal success — the breadth of causes tackled and lives touched (KuKClean, NotPaused, mentorship) — rather than climbing a traditional corporate ladder. All express her single ikigai." },
           ].map((p, i) => (
             <div
               key={i}
@@ -354,10 +355,10 @@ export function LifeStorySection() {
 
           <div className="relative z-10 space-y-6 max-w-4xl mx-auto">
             <span className="bg-white/15 text-white text-[9px] font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full inline-block border border-white/20">
-              Core Ethos
+              Personal Mantra
             </span>
             <p className="font-serif text-2xl lg:text-3xl text-white italic leading-relaxed">
-              "I have always believed that the most important things in life — food, health, community — should be accessible to everyone. That is the thread that runs through everything I have built."
+              "Keep Going. I tell myself that you have to just keep going in a direction, and you have to keep finding your peace and your purpose, because it's all about moving forward in your journey."
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-white/40" />
