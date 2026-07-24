@@ -23,24 +23,7 @@ export function HeroSection() {
                <p className="text-[#5A6F6A] text-base lg:text-lg font-normal mb-10 max-w-[360px] leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                   Our job is filling your day with honest nutrition and with flavour that keeps you coming back.
                </p>
-
-               {/* CTA Row */}
-               <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 mb-16 animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-                  <button 
-                   className="w-full sm:w-auto bg-[#1A4A44] text-white text-sm font-bold tracking-widest uppercase px-8 py-3.5 rounded-full flex items-center justify-center gap-2 shadow-lg hover:bg-[#0D2E2A] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 cursor-pointer"
-                  >
-                     Get Started
-                  </button>
-
-                  <button className="flex items-center gap-3 text-[#2C3A37] font-semibold text-base group cursor-pointer hover:text-[#1A4A44] transition-colors">
-                     <span className="w-10 h-10 rounded-full border border-[#DCE6E4] flex items-center justify-center group-hover:border-[#1A4A44] group-hover:bg-[#1A4A44]/5 transition-colors">
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                           <path d="M2 1.5L10 6L2 10.5V1.5Z" fill="currentColor" />
-                        </svg>
-                     </span>
-                     Watch Video
-                  </button>
-               </div>
+ 
 
                {/* Happy Community */}
                <div className="flex items-center gap-4">
@@ -67,7 +50,7 @@ export function HeroSection() {
          <div className="hidden lg:flex w-1/2 relative items-center justify-center">
 
             {/* Big Circle */}
-            <div className="absolute top-1/2 left-1/2 right-[35%] -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px] bg-[#1A4A44]/90 rounded-full z-0" />
+            <div className="absolute top-1/2 left-1/2 right-[35%] -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px]   z-0" />
 
             {/* Dotted Arc */}
             <div className="absolute top-[18%] right-[6%] w-[90px] h-[90px] border-2 border-dashed border-[#D4A051]/60 rounded-full z-10 animate-[spin_20s_linear_infinite]" />
@@ -100,15 +83,15 @@ export function HeroSection() {
 
             {/* Courier Card */}
             <div className="absolute bottom-[22%] left-[2%] bg-white/95 backdrop-blur-md border border-[#DCE6E4]/50 rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 z-30 w-[230px] hover:translate-y-[-4px] transition-transform duration-300">
-               <div className="w-9 h-9 rounded-full bg-[#1A4A44] flex-shrink-0 flex items-center justify-center text-white font-bold text-sm select-none">KY</div>
-               <div className="flex-1">
-                  <p className="text-base font-bold text-[#2C3A37] leading-tight">KIRTI YADAV</p>
-               </div>
-               <div className="w-8 h-8 rounded-full bg-[#D4A051] flex items-center justify-center flex-shrink-0 text-white shadow-sm hover:bg-[#E8C28A] transition-colors cursor-pointer">
+                 <div className="w-8 h-8 rounded-full bg-[#D4A051] flex items-center justify-center flex-shrink-0 text-white shadow-sm hover:bg-[#E8C28A] transition-colors cursor-pointer">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
                      <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.5 3 2.9 3.4 2.5 4 2.5h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" />
                   </svg>
                </div>
+               <div className="flex-1">
+                  <p className="text-base font-bold text-[#2C3A37] leading-tight">KIRTI YADAV</p>
+               </div>
+              
             </div>
 
          </div>

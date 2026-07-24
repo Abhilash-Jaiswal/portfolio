@@ -24,84 +24,183 @@ export function IntroductionSection() {
     "Founder — KuK Clean Wellness & notpaused.com platforms"
   ];
 
+  // Theme colors
+  const theme = {
+    primary: "#b76e4a",      // terracotta
+    primaryLight: "#d9b094",
+    primarySoft: "#f5ede8",
+    dark: "#2d2a24",
+    muted: "#4a453e",
+    border: "#e8e0d8"
+  };
+
   return (
-    <section id="introduction-details" className="py-24 bg-[#F8FAFC] border-b border-[#E2E8F0]/60 scroll-mt-20">
-      <div className="container mx-auto px-6 md:px-12 lg:px-20">
+    <section 
+      id="introduction-details" 
+      className="py-24 px-4 md:px-8 lg:px-12 scroll-mt-20"
+      style={{ backgroundColor: "#fcf9f6", borderBottom: `1px solid ${theme.border}60` }}
+    >
+      <div className="max-w-6xl mx-auto">
         
         {/* Bio & Intro Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20 items-center">
           <div className="lg:col-span-12 space-y-6">
-            <div className="inline-block border-t-[3px] border-[#5B21B6] pt-2">
-              <span className="text-[#5B21B6] font-bold text-sm tracking-[0.2em] uppercase">Who Is Kirti Yadav?</span>
+            <div 
+              className="inline-block border-t-[3px] pt-2"
+              style={{ borderColor: theme.primary }}
+            >
+              <span 
+                className="font-bold text-sm tracking-[0.2em] uppercase"
+                style={{ color: theme.primary }}
+              >
+                <i className="fas fa-seedling mr-2" style={{ color: theme.primary }}></i> Who Is Kirti Yadav?
+              </span>
             </div>
-            <h2 className="font-serif text-4xl lg:text-5xl text-[#0F172A] font-bold tracking-tight leading-tight">
-              Bridging Corporate Precision with <span className="text-[#5B21B6]">Holistic Wellness</span>
+            <h2 
+              className="font-serif text-4xl lg:text-5xl font-bold tracking-tight leading-tight"
+              style={{ color: theme.dark }}
+            >
+              Bridging Corporate Precision with <span style={{ color: theme.primary }}>Holistic Wellness</span>
             </h2>
-            <p className="text-[#475569] text-base lg:text-lg font-light leading-relaxed text-justify">
+            <p 
+              className="text-base lg:text-lg font-light leading-relaxed text-justify max-w-3xl"
+              style={{ color: theme.muted }}
+            >
               An entrepreneur, certified holistic nutritionist, new-age mother, and dedicated vegan. I build wellness ecosystems rooted in real, clean food, honest evidence-based knowledge, and deep, supportive communities.
             </p>
-            <div className="border-l-2 border-[#5B21B6] pl-6 my-6 italic text-[#0F172A] font-serif text-base leading-relaxed">
-              "Real food is medicine. Knowledge is power. Community is everything."
+            <div 
+              className="border-l-2 pl-6 my-6 italic font-serif text-base leading-relaxed max-w-2xl"
+              style={{ borderColor: theme.primary, color: theme.dark }}
+            >
+              “Real food is medicine. Knowledge is power. Community is everything.”
             </div>
           </div>
         </div>
 
-        {/* Philosophy vs Mission Tabs Selector */}
+        {/* Philosophy vs Mission Tabs */}
         <div className="mb-20">
-          <div className="flex border-b border-[#E2E8F0] mb-8 justify-center lg:justify-start">
+          <div 
+            className="flex border-b mb-8 justify-center lg:justify-start gap-2"
+            style={{ borderColor: theme.border }}
+          >
             <button
               onClick={() => setActiveTab("philosophy")}
-              className={`pb-4 px-6 font-bold text-sm tracking-wider uppercase transition-all border-b-2 cursor-pointer ${
-                activeTab === "philosophy" ? "border-[#5B21B6] text-[#5B21B6]" : "border-transparent text-[#475569] hover:text-[#0F172A]"
+              className={`pb-4 px-6 font-bold text-sm tracking-wider uppercase transition-all cursor-pointer border-b-2 ${
+                activeTab === "philosophy" 
+                  ? `text-[${theme.primary}] border-[${theme.primary}]` 
+                  : `text-[${theme.muted}] border-transparent hover:text-[${theme.dark}]`
               }`}
+              style={{
+                color: activeTab === "philosophy" ? theme.primary : theme.muted,
+                borderBottomColor: activeTab === "philosophy" ? theme.primary : "transparent"
+              }}
+              onMouseEnter={(e) => {
+                if (activeTab !== "philosophy") {
+                  e.currentTarget.style.borderBottomColor = theme.primary + "66";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (activeTab !== "philosophy") {
+                  e.currentTarget.style.borderBottomColor = "transparent";
+                }
+              }}
             >
               Core Philosophy
             </button>
             <button
               onClick={() => setActiveTab("mission")}
-              className={`pb-4 px-6 font-bold text-sm tracking-wider uppercase transition-all border-b-2 cursor-pointer ${
-                activeTab === "mission" ? "border-[#5B21B6] text-[#5B21B6]" : "border-transparent text-[#475569] hover:text-[#0F172A]"
+              className={`pb-4 px-6 font-bold text-sm tracking-wider uppercase transition-all cursor-pointer border-b-2 ${
+                activeTab === "mission" 
+                  ? `text-[${theme.primary}] border-[${theme.primary}]` 
+                  : `text-[${theme.muted}] border-transparent hover:text-[${theme.dark}]`
               }`}
+              style={{
+                color: activeTab === "mission" ? theme.primary : theme.muted,
+                borderBottomColor: activeTab === "mission" ? theme.primary : "transparent"
+              }}
+              onMouseEnter={(e) => {
+                if (activeTab !== "mission") {
+                  e.currentTarget.style.borderBottomColor = theme.primary + "66";
+                }
+              }}
+              onMouseLeave={(e) => {
+                if (activeTab !== "mission") {
+                  e.currentTarget.style.borderBottomColor = "transparent";
+                }
+              }}
             >
               Core Mission
             </button>
           </div>
 
-          <div className="bg-white/80 border border-[#E2E8F0]/60 p-8 rounded-3xl shadow-sm">
+          <div 
+            className="bg-white/80 border p-8 rounded-3xl shadow-sm"
+            style={{ borderColor: `${theme.border}60` }}
+          >
             {activeTab === "philosophy" ? (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-[#5B21B6]/10 flex items-center justify-center text-[#5B21B6] font-bold text-base">01</div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base">Health is a Daily Choice</h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">Health is a consistent, daily practice of conscious, nourishing choices—never a destination reached through shortcuts or quick-fix synthetic supplements.</p>
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-base"
+                    style={{ backgroundColor: `${theme.primary}15`, color: theme.primary }}
+                  >
+                    01
+                  </div>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Health is a Daily Choice</h4>
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>Health is a consistent, daily practice of conscious, nourishing choices—never a destination reached through shortcuts or quick-fix synthetic supplements.</p>
                 </div>
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-[#5B21B6]/10 flex items-center justify-center text-[#5B21B6] font-bold text-base">02</div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base">Clean-Label Standards</h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">We advocate for clean-label, plant-based nutrition at KuK Clean and apply a deeply inclusive, evidence-based, non-prescriptive approach at notpaused.com.</p>
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-base"
+                    style={{ backgroundColor: `${theme.primary}15`, color: theme.primary }}
+                  >
+                    02
+                  </div>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Clean-Label Standards</h4>
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>We advocate for clean-label, plant-based nutrition at KuK Clean and apply a deeply inclusive, evidence-based, non-prescriptive approach at notpaused.com.</p>
                 </div>
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-[#5B21B6]/10 flex items-center justify-center text-[#5B21B6] font-bold text-base">03</div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base">Empathy & Warmth</h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">We meet individuals exactly where they are in their wellness journeys—free from rigid rules, dietary dogma, or any compromise on personal warmth.</p>
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-base"
+                    style={{ backgroundColor: `${theme.primary}15`, color: theme.primary }}
+                  >
+                    03
+                  </div>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Empathy & Warmth</h4>
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>We meet individuals exactly where they are in their wellness journeys—free from rigid rules, dietary dogma, or any compromise on personal warmth.</p>
                 </div>
               </div>
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-[#5B21B6]/10 flex items-center justify-center text-[#5B21B6] font-bold text-base">01</div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base">Democratizing Clean Food</h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">Through KuK Clean Wellness, we democratize plant-based food systems, proving that nutrient-dense, clean food can be exceptionally delicious.</p>
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-base"
+                    style={{ backgroundColor: `${theme.primary}15`, color: theme.primary }}
+                  >
+                    01
+                  </div>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Democratizing Clean Food</h4>
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>Through KuK Clean Wellness, we democratize plant-based food systems, proving that nutrient-dense, clean food can be exceptionally delicious.</p>
                 </div>
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-[#5B21B6]/10 flex items-center justify-center text-[#5B21B6] font-bold text-base">02</div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base">Dismantling Taboos</h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">Through notpaused.com, we dismantle the last great taboo in Indian women's health—menopause—providing clinical-level guidance and community support.</p>
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-base"
+                    style={{ backgroundColor: `${theme.primary}15`, color: theme.primary }}
+                  >
+                    02
+                  </div>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Dismantling Taboos</h4>
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>Through notpaused.com, we dismantle the last great taboo in Indian women's health—menopause—providing clinical-level guidance and community support.</p>
                 </div>
                 <div className="space-y-3">
-                  <div className="w-10 h-10 rounded-full bg-[#5B21B6]/10 flex items-center justify-center text-[#5B21B6] font-bold text-base">03</div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base">Systemic Access</h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">Ensuring that every Indian woman, regardless of demographic or background, has open access to nourishing food, honest health information, and deep community.</p>
+                  <div 
+                    className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-base"
+                    style={{ backgroundColor: `${theme.primary}15`, color: theme.primary }}
+                  >
+                    03
+                  </div>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Systemic Access</h4>
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>Ensuring that every Indian woman, regardless of demographic or background, has open access to nourishing food, honest health information, and deep community.</p>
                 </div>
               </div>
             )}
@@ -109,10 +208,19 @@ export function IntroductionSection() {
         </div>
 
         {/* Highlighted Quote Box */}
-        <div className="bg-[#5B21B6] rounded-3xl p-8 lg:p-12 text-white mb-20 relative overflow-hidden shadow-xl shadow-[#3B0764]/10">
-          <div className="absolute right-[-10%] bottom-[-20%] w-[300px] h-[300px] bg-white/5 rounded-full pointer-events-none"></div>
+        <div 
+          className="rounded-3xl p-8 lg:p-12 text-white mb-20 relative overflow-hidden shadow-xl"
+          style={{ backgroundColor: theme.primary }}
+        >
+          <div 
+            className="absolute right-[-10%] bottom-[-20%] w-[300px] h-[300px] rounded-full pointer-events-none"
+            style={{ backgroundColor: "rgba(255,255,255,0.05)" }}
+          ></div>
           <div className="relative z-10 space-y-6">
-            <span className="bg-white/10 text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full inline-block">
+            <span 
+              className="text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full inline-block"
+              style={{ backgroundColor: "rgba(255,255,255,0.1)" }}
+            >
               Founders' Manifesto
             </span>
             <p className="font-serif text-2xl lg:text-3xl italic leading-relaxed">
@@ -128,54 +236,77 @@ export function IntroductionSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 items-stretch">
           
           {/* Credentials at a Glance */}
-          <div className="lg:col-span-6 bg-white/60 border border-[#E2E8F0]/50 p-8 rounded-3xl shadow-sm">
-            <h3 className="font-serif text-xl text-[#0F172A] font-bold mb-6 pb-2 border-b border-[#E2E8F0]">
+          <div 
+            className="lg:col-span-6 bg-white/60 border p-8 rounded-3xl shadow-sm"
+            style={{ borderColor: `${theme.border}50` }}
+          >
+            <h3 
+              className="font-serif text-xl font-bold mb-6 pb-2 border-b"
+              style={{ color: theme.dark, borderColor: theme.border }}
+            >
               Credentials at a Glance
             </h3>
             <ul className="space-y-4">
               {credentials.map((cred, idx) => (
-                <li key={idx} className="flex gap-3 text-sm text-[#475569] leading-relaxed font-light">
-                  <span className="text-[#5B21B6] font-bold">✓</span>
+                <li key={idx} className="flex gap-3 text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
+                  <span style={{ color: theme.primary, fontWeight: "bold" }}>✓</span>
                   <span>{cred}</span>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Unique Position */}
-          <div className="lg:col-span-6 bg-white/60 border border-[#E2E8F0]/50 p-8 rounded-3xl shadow-sm flex flex-col justify-between">
+          {/* Unique Positioning */}
+          <div 
+            className="lg:col-span-6 bg-white/60 border p-8 rounded-3xl shadow-sm flex flex-col justify-between"
+            style={{ borderColor: `${theme.border}50` }}
+          >
             <div>
-              <h3 className="font-serif text-xl text-[#0F172A] font-bold mb-6 pb-2 border-b border-[#E2E8F0]">
+              <h3 
+                className="font-serif text-xl font-bold mb-6 pb-2 border-b"
+                style={{ color: theme.dark, borderColor: theme.border }}
+              >
                 Unique Positioning
               </h3>
-              <p className="text-[#475569] text-sm font-light tracking-widest uppercase mb-6 block">
+              <p 
+                className="text-sm font-light tracking-widest uppercase mb-6 block"
+                style={{ color: theme.muted }}
+              >
                 In the Indian Wellness Landscape
               </p>
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base mb-1.5">
+                  <h4 className="font-serif font-bold text-base mb-1.5" style={{ color: theme.dark }}>
                     Corporate Credibility Meets Government Validation
                   </h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                     The convergence of Fortune 500 corporate strategy with government-validated agritech, incubated under IIM Bangalore and ICAR-IIMR, brings unprecedented rigor to community wellness.
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-serif font-bold text-[#0F172A] text-base mb-1.5">
+                  <h4 className="font-serif font-bold text-base mb-1.5" style={{ color: theme.dark }}>
                     Uncompromising Personal Authenticity
                   </h4>
-                  <p className="text-[#475569] text-sm leading-relaxed font-light">
+                  <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                     I do not perform a persona or sell standard products. I live my values publicly, with my family's nourishment and community well-being as the single standard for everything I launch.
                   </p>
                 </div>
               </div>
             </div>
             
-            <div className="mt-8 p-4 rounded-xl bg-[#F1F5F9]/50 border border-[#E2E8F0] text-center">
-              <span className="text-[#475569] text-[10px] font-bold tracking-widest uppercase block mb-1">Differentiator</span>
-              <p className="text-[#0F172A] text-sm font-medium font-serif leading-relaxed">
-                "Integration of personal experience and professional identity is the greatest value in a crowded wellness market."
+            <div 
+              className="mt-8 p-4 rounded-xl border text-center"
+              style={{ backgroundColor: `${theme.primarySoft}50`, borderColor: theme.border }}
+            >
+              <span 
+                className="text-[10px] font-bold tracking-widest uppercase block mb-1"
+                style={{ color: theme.muted }}
+              >
+                Differentiator
+              </span>
+              <p className="text-sm font-medium font-serif leading-relaxed" style={{ color: theme.dark }}>
+                “Integration of personal experience and professional identity is the greatest value in a crowded wellness market.”
               </p>
             </div>
           </div>
@@ -183,38 +314,47 @@ export function IntroductionSection() {
         </div>
 
         {/* Vision for the Next Chapter */}
-        <div className="border-t border-[#E2E8F0]/60 pt-20">
+        <div className="border-t pt-20" style={{ borderColor: `${theme.border}60` }}>
           <div className="text-center mb-12">
-            <h3 className="font-serif text-2xl text-[#0F172A] font-bold">Vision for the Next Chapter</h3>
-            <p className="text-[#475569] text-sm font-light mt-2 uppercase tracking-widest">Scaling Systemic Change Across India</p>
+            <h3 className="font-serif text-2xl font-bold" style={{ color: theme.dark }}>Vision for the Next Chapter</h3>
+            <p className="text-sm font-light mt-2 uppercase tracking-widest" style={{ color: theme.muted }}>Scaling Systemic Change Across India</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0]/60 shadow-sm flex flex-col justify-between hover:border-[#5B21B6]/20 transition-all duration-300">
+            <div 
+              className="p-6 rounded-2xl bg-white border shadow-sm hover:border-theme transition-all duration-300"
+              style={{ borderColor: `${theme.border}60` }}
+            >
               <div className="space-y-3">
-                <span className="text-[#475569] font-serif text-3xl font-extrabold block select-none">I</span>
-                <h4 className="font-serif font-bold text-[#0F172A] text-base uppercase">KuK Clean Wellness</h4>
-                <p className="text-[#475569] text-sm leading-relaxed font-light">
+                <span className="font-serif text-3xl font-extrabold block select-none" style={{ color: theme.muted }}>I</span>
+                <h4 className="font-serif font-bold text-base uppercase" style={{ color: theme.dark }}>KuK Clean Wellness</h4>
+                <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                   Expanding our plant-based, clean-label product ranges, and establishing deep, customized corporate B2B wellness systems.
                 </p>
               </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0]/60 shadow-sm flex flex-col justify-between hover:border-[#5B21B6]/20 transition-all duration-300">
+            <div 
+              className="p-6 rounded-2xl bg-white border shadow-sm hover:border-theme transition-all duration-300"
+              style={{ borderColor: `${theme.border}60` }}
+            >
               <div className="space-y-3">
-                <span className="text-[#475569] font-serif text-3xl font-extrabold block select-none">II</span>
-                <h4 className="font-serif font-bold text-[#5B21B6] text-base uppercase">notpaused.com</h4>
-                <p className="text-[#475569] text-sm leading-relaxed font-light">
+                <span className="font-serif text-3xl font-extrabold block select-none" style={{ color: theme.muted }}>II</span>
+                <h4 className="font-serif font-bold text-base uppercase" style={{ color: theme.primary }}>notpaused.com</h4>
+                <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                   Building toward a 100,000-strong WhatsApp-native women's community and integrating a clinical, national doctor empanelment network.
                 </p>
               </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-white border border-[#E2E8F0]/60 shadow-sm flex flex-col justify-between hover:border-[#5B21B6]/20 transition-all duration-300">
+            <div 
+              className="p-6 rounded-2xl bg-white border shadow-sm hover:border-theme transition-all duration-300"
+              style={{ borderColor: `${theme.border}60` }}
+            >
               <div className="space-y-3">
-                <span className="text-[#475569] font-serif text-3xl font-extrabold block select-none">III</span>
-                <h4 className="font-serif font-bold text-[#0F172A] text-base uppercase">Systemic Ambition</h4>
-                <p className="text-[#475569] text-sm leading-relaxed font-light">
+                <span className="font-serif text-3xl font-extrabold block select-none" style={{ color: theme.muted }}>III</span>
+                <h4 className="font-serif font-bold text-base uppercase" style={{ color: theme.dark }}>Systemic Ambition</h4>
+                <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                   Our core mission is institutional health: ensuring every Indian child has access to clean food, and every Indian woman enters midlife with knowledge, confidence, and community.
                 </p>
               </div>

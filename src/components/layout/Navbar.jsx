@@ -41,7 +41,7 @@ export function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-      ? "bg-[#F8FAFC]/85 backdrop-blur-md border-b border-[#E2E8F0]/60 shadow-sm"
+      ? "bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#DCE6E4] shadow-sm"
       : "bg-transparent border-b border-transparent"
       }`}>
       <div className={`flex w-full items-center justify-between px-6 lg:px-16 transition-all duration-300 ${isScrolled ? "h-20" : "h-24"
@@ -53,11 +53,11 @@ export function Navbar() {
             to="/"
             className="flex items-center gap-2 group"
           >
-            <div className="w-9 h-9 rounded-full bg-[#5B21B6] flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105 border border-white/20">
-              <div className="absolute top-2.5 left-2.5 w-2 h-2 bg-white rounded-full"></div>
-              <div className="absolute bottom-0 w-full h-1/2 bg-[#3B0764]"></div>
+            <div className="w-9 h-9 rounded-full bg-[#1A4A44] flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105 border border-white/20">
+              <div className="absolute top-2.5 left-2.5 w-2 h-2 bg-[#D4A051] rounded-full"></div>
+              <div className="absolute bottom-0 w-full h-1/2 bg-[#0D2E2A]"></div>
             </div>
-            <span className={`font-serif font-bold text-xl tracking-tight transition-colors ${useDarkText ? "text-[#0F172A] group-hover:text-[#5B21B6]" : "text-white group-hover:text-white/80"
+            <span className={`font-serif font-bold text-xl tracking-tight transition-colors ${useDarkText ? "text-[#2C3A37] group-hover:text-[#1A4A44]" : "text-white group-hover:text-white/80"
               }`}>Kirti.</span>
           </Link>
         </div>
@@ -71,8 +71,8 @@ export function Navbar() {
                 key={item.name}
                 to={item.path}
                 className={`transition-all duration-200 pb-1.5 border-b-2 ${active
-                  ? useDarkText ? "border-[#5B21B6] text-[#5B21B6] font-semibold" : "border-white text-white font-semibold"
-                  : useDarkText ? "border-transparent text-[#475569] hover:text-[#5B21B6]" : "border-transparent text-white/80 hover:text-white"
+                  ? useDarkText ? "border-[#D4A051] text-[#1A4A44] font-semibold" : "border-white text-white font-semibold"
+                  : useDarkText ? "border-transparent text-[#5A6F6A] hover:text-[#1A4A44]" : "border-transparent text-white/80 hover:text-white"
                   }`}
               >
                 {item.name}
@@ -84,7 +84,7 @@ export function Navbar() {
         {/* Right Side (Search Bar) */}
         <div className="flex items-center justify-end">
           <div className="relative flex items-center">
-            <span className={`absolute left-3 transition-colors ${useDarkText ? "text-[#475569]" : "text-white/80"}`}>
+            <span className={`absolute left-3 transition-colors ${useDarkText ? "text-[#5A6F6A]" : "text-white/80"}`}>
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="11" cy="11" r="8"></circle>
                 <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
@@ -94,7 +94,7 @@ export function Navbar() {
               type="text"
               placeholder="SEARCH"
               className={`pl-9 pr-4 py-2 w-36 lg:w-44 rounded-full border text-xs font-bold tracking-[0.15em] transition-all uppercase focus:outline-none ${useDarkText
-                ? "border-[#E2E8F0] focus:border-[#5B21B6] focus:ring-1 focus:ring-[#5B21B6] bg-white/60 focus:bg-white text-[#0F172A] placeholder-[#475569]"
+                ? "border-[#DCE6E4] focus:border-[#1A4A44] focus:ring-1 focus:ring-[#1A4A44] bg-white/60 focus:bg-white text-[#2C3A37] placeholder-[#5A6F6A]"
                 : "border-white/30 focus:border-white focus:ring-1 focus:ring-white bg-white/10 focus:bg-white/20 text-white placeholder-white/70"
                 }`}
             />
