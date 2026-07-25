@@ -1,4 +1,12 @@
 import { useEffect, useRef } from "react";
+import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
+import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
+import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
+import img4 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.11 (1).jpeg";
+import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
+import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
+
+const wellnessImages = [img1, img2, img3, img4, img5, img6];
 
 function useReveal(ref) {
   useEffect(() => {
@@ -34,7 +42,7 @@ const products = [
 const b2bFocus = [
   { num: "01", icon: "🍱", title: "Corporate Thalis & Canteen Supply", desc: "Supplying artisanal clean-label laddus directly to corporate canteens and caterers as part of daily corporate Thalis (meal trays)." },
   { num: "02", icon: "☕", title: "Cafe Menu Consulting & Supply", desc: "Partnering directly with cafes to supply stone-ground nut butters and consult on clean-label, plant-based menu redesigns." },
-  { num: "03", icon: "🛍️", title: "Direct-to-Consumer & Bulk Gifting", desc: "Direct sales via kukclean.com plus bespoke onboarding and festival hampers for corporate clients (Cisco, Biocon, Loyalytics.ai)." },
+  { num: "03", icon: "🛍️", title: "Direct-to-Consumer & Bulk Gifting", desc: <>Direct sales via <a href="https://www.kukclean.com/" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:opacity-80">kukclean.com</a> plus bespoke onboarding and festival hampers for corporate clients (Cisco, Biocon, Loyalytics.ai).</> },
   { num: "04", icon: "👩‍🍳", title: "Empowering Women Artisans", desc: "Every batch is handcrafted by a dedicated production team that employs women from economically disadvantaged backgrounds." },
 ];
 
@@ -51,24 +59,35 @@ export function KukCleanSection() {
   useReveal(ref);
 
   return (
-    <section 
-      id="kuk-clean" 
-      ref={ref} 
+    <section
+      id="kuk-clean"
+      ref={ref}
       className="border-b scroll-mt-20"
-      style={{ 
+      style={{
         backgroundColor: theme.bg,
         borderColor: `${theme.border}60`
       }}
     >
 
       {/* ── HERO BANNER ── */}
-      <div 
+      <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
         style={{ backgroundColor: theme.primary }}
       >
-        <div className="absolute -top-24 -right-16 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float" />
-        <div className="absolute -bottom-20 -left-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "1.5s" }} />
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          src="https://cdn.shopify.com/videos/c/o/v/94b06b00c93544bcb8f744155ee632c8.mp4"
+        />
+        <div className="absolute inset-0 z-0" style={{ backgroundColor: `${theme.primary}80` }} />
+        <div className="absolute inset-0 z-0 bg-black/30" />
+
+        <div className="absolute z-0 -top-24 -right-16 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float pointer-events-none" />
+        <div className="absolute z-0 -bottom-20 -left-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float pointer-events-none" style={{ animationDelay: "1.5s" }} />
+        <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
         <div className="relative z-10 max-w-5xl animate-fade-in-up">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
@@ -81,6 +100,19 @@ export function KukCleanSection() {
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Born in Kirti's kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant-based food and extraordinary Indian taste belong together.
           </p>
+
+          <div className="mt-8">
+            <a
+              href="https://www.kukclean.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-white text-[#b76e4a] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white/90 transition-colors shadow-lg"
+            >
+              Visit KuKClean
+              <span className="ml-2">→</span>
+            </a>
+          </div>
+
           <div className="flex flex-wrap gap-8 mt-12">
             {[["₹14 Lakhs", "First 7 Mo Revenue"], ["IIMB WSP3", "Top 50 Venture"], ["ICAR-IIMR", "Govt Grant"], ["1M Plates", "Goal by 2030"]].map(([n, l]) => (
               <div key={l}>
@@ -95,7 +127,7 @@ export function KukCleanSection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-20 space-y-20">
 
         {/* Opening Pull Quote */}
-        <div 
+        <div
           className="reveal max-w-4xl mx-auto bg-white/60 border-l-4 rounded-r-3xl px-8 py-6 shadow-sm"
           style={{ borderColor: theme.primary }}
         >
@@ -108,7 +140,7 @@ export function KukCleanSection() {
         {/* Ch 01 — Origin & The Kitchen Standard */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
-            <div 
+            <div
               className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
               style={{ backgroundColor: theme.primary }}
             >
@@ -120,7 +152,7 @@ export function KukCleanSection() {
               <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}>From a Facebook recipe group to incorporated venture with Akar Misra</p>
             </div>
           </div>
-          <div 
+          <div
             className="reveal pl-6 border-l-2 rounded-r-xl"
             style={{ borderColor: theme.primary }}
           >
@@ -129,11 +161,11 @@ export function KukCleanSection() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div 
+            <div
               className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               style={{ borderColor: `${theme.border}60` }}
             >
-              <h4 
+              <h4
                 className="font-serif font-bold text-base mb-3 transition-colors"
                 style={{ color: theme.dark }}
                 onMouseEnter={(e) => e.currentTarget.style.color = theme.primary}
@@ -145,7 +177,7 @@ export function KukCleanSection() {
                 KuKClean generated ₹14 Lakhs in revenue within its first 7 bootstrapped months. Built without heavy ad spend or paid endorsements, the brand grew organically through word-of-mouth, 1,000+ original vegan recipes, and community trust.
               </p>
             </div>
-            <div 
+            <div
               className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
               style={{ borderColor: `${theme.border}60`, transitionDelay: "100ms" }}
             >
@@ -160,7 +192,7 @@ export function KukCleanSection() {
         {/* Ch 02 — Agritech & IIM Incubation */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
-            <div 
+            <div
               className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
               style={{ backgroundColor: theme.primary }}
             >
@@ -172,7 +204,7 @@ export function KukCleanSection() {
               <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}>Government grants, agritech incubation, and FSSAI / APEDA / DPIIT approvals</p>
             </div>
           </div>
-          <div 
+          <div
             className="reveal pl-6 border-l-2 rounded-r-xl"
             style={{ borderColor: theme.primary }}
           >
@@ -185,7 +217,7 @@ export function KukCleanSection() {
         {/* B2B Focus Section */}
         <div>
           <div className="reveal text-center mb-10">
-            <div 
+            <div
               className="inline-block border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
@@ -195,15 +227,15 @@ export function KukCleanSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {b2bFocus.map((b, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="reveal shimmer-card bg-white/80 border p-6 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 space-y-3"
-                style={{ 
+                style={{
                   borderColor: `${theme.border}60`,
                   transitionDelay: `${i * 80}ms`
                 }}
               >
-                <div 
+                <div
                   className="w-10 h-10 rounded-full flex items-center justify-center text-lg text-white font-bold"
                   style={{ backgroundColor: theme.primary }}
                 >
@@ -220,7 +252,7 @@ export function KukCleanSection() {
         {/* Product Catalog */}
         <div>
           <div className="reveal text-center mb-10">
-            <div 
+            <div
               className="inline-block border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
@@ -230,15 +262,15 @@ export function KukCleanSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {products.map((p, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-4"
-                style={{ 
+                style={{
                   borderColor: `${theme.border}60`,
                   transitionDelay: `${i * 80}ms`
                 }}
               >
-                <div 
+                <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-md text-xl timeline-dot text-white"
                   style={{ backgroundColor: theme.primary }}
                 >
@@ -252,13 +284,13 @@ export function KukCleanSection() {
         </div>
 
         {/* Featured Asset: The Salad Formula eBook */}
-        <div 
+        <div
           className="reveal bg-white/80 border p-10 rounded-3xl shadow-sm space-y-8"
           style={{ borderColor: `${theme.border}60` }}
         >
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 pb-6 border-b" style={{ borderColor: theme.border }}>
             <div>
-              <span 
+              <span
                 className="text-white text-[9px] font-bold tracking-widest uppercase px-3 py-1 rounded-full inline-block mb-2"
                 style={{ backgroundColor: theme.primary }}
               >
@@ -278,10 +310,10 @@ export function KukCleanSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {saladFormulaBlocks.map((b, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="p-5 rounded-2xl border space-y-2"
-                style={{ 
+                style={{
                   backgroundColor: theme.primarySoft,
                   borderColor: theme.border
                 }}
@@ -293,8 +325,36 @@ export function KukCleanSection() {
           </div>
         </div>
 
+        {/* Wellness & Analysis Assessment Images */}
+        <div className="pt-10">
+          <div className="reveal text-center mb-10">
+            <div
+              className="inline-block border-t-[3px] pt-2 mb-4"
+              style={{ borderColor: theme.primary }}
+            >
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Wellness Assessment</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Ku-ku Wellness & Analysis</h3>
+          </div>
+          <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {wellnessImages.map((imageSrc, idx) => (
+              <div
+                key={idx}
+                className="overflow-hidden rounded-3xl shadow-sm border hover:shadow-xl transition-all duration-300 group"
+                style={{ borderColor: `${theme.border}60` }}
+              >
+                <img
+                  src={imageSrc}
+                  alt={`Wellness Analysis Assessment ${idx + 1}`}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 max-h-96"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Closing Quote Banner */}
-        <div 
+        <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
           style={{ backgroundColor: theme.primary }}
         >
