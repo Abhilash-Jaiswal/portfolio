@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { BookOpen } from "lucide-react";
 
 function useReveal(ref) {
   useEffect(() => {
@@ -54,6 +55,14 @@ const services = [
     title: "Institutional & Community Workshops",
     items: ["Menopause awareness for educators & institutions", "Destigmatizing midlife health in family circles", "Group masterclasses on hormonal nutrition", "City chapter meetups across 7 Indian metros"],
   },
+];
+
+const saladFormulaBlocks = [
+  { step: "1. Base", text: "Spinach, Fenugreek, Cabbage, Sprouted Mung, Millets (Pearl/Sorghum/Finger), Raw Papaya, Cucumber, Amaranth Leaves, Sweet Potato, Red Cabbage, Foxtail Millet, Sprouted Chickpeas." },
+  { step: "2. Protein", text: "Chickpeas, Kidney Beans, Green Peas, Tofu, Peanuts, Black-Eyed Peas, Soya Chunks, Red Lentils, Moth Beans, Horse Gram, Black Gram, Split Mung Beans, Edamame." },
+  { step: "3. Crunch", text: "Sesame Seeds, Fox Nuts (Makhana), Roasted Chickpeas, Pumpkin Seeds, Flax Seeds, Roasted Peanuts, Cashews, Almonds, Watermelon Seeds, Sunflower Seeds, Chironji, Walnuts." },
+  { step: "4. Color & Freshness", text: "Beetroot, Pomegranate, Carrot, Raw Mango, Mint, Coriander, Curry Leaves, Tomato, Bell Pepper, Red Onion, Radish, Indian Gooseberry (Amla), Basil, Spring Onion." },
+  { step: "5. Dressing", text: "Lemon, Mustard Oil, Sesame Oil, Ginger-Garlic, Cumin Powder, Black Salt, Jaggery, Tamarind, Chaat Masala, Groundnut Oil, Carom Seeds (Ajwain), Amchur, Coconut Oil." },
 ];
 
 const cityChapters = ["Delhi", "Mumbai", "Bangalore", "Chennai", "Hyderabad", "Pune", "Ahmedabad"];
@@ -199,6 +208,50 @@ export function NotPausedSection() {
           </div>
         </div>
 
+        {/* Featured Asset: The Salad Formula eBook */}
+        <div
+          className="reveal bg-gradient-to-br from-white to-[#f5ede8]/40 border p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
+          style={{ borderColor: theme.border }}
+        >
+          <div className="absolute top-0 right-0 w-80 h-80 bg-white/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b relative z-10" style={{ borderColor: `${theme.border}80` }}>
+            <div className="space-y-4">
+              <span
+                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2"
+                style={{ backgroundColor: theme.primary }}
+              >
+                <BookOpen size={14} /> Lead Magnet Asset
+              </span>
+              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight" style={{ color: theme.dark }}>&quot;The Salad Formula&quot; eBook</h3>
+              <p className="text-sm font-medium uppercase tracking-[0.1em]" style={{ color: theme.muted }}>An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
+            </div>
+            <div className="md:text-right hidden sm:block">
+              <span className="text-sm font-bold block mb-1" style={{ color: theme.primary }}>By Kirti Yadav</span>
+              <span className="text-xs uppercase tracking-wider block" style={{ color: theme.muted }}>Certified Holistic Nutritionist</span>
+            </div>
+          </div>
+
+          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10" style={{ color: theme.muted }}>
+            "I started KuKClean with one simple belief: the plate in front of you can change your whole life — and it doesn't need to be complicated, imported, or expensive to do it. My mission is simple: one million plates, changed for the better by 2030."
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 mt-10">
+            {saladFormulaBlocks.map((b, idx) => (
+              <div
+                key={idx}
+                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-white space-y-3 hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm" style={{ backgroundColor: theme.primary }}>{b.step.charAt(0)}</div>
+                  <span className="font-serif font-bold text-lg" style={{ color: theme.primary }}>{b.step.substring(3)}</span>
+                </div>
+                <p className="text-sm font-light leading-relaxed pl-13" style={{ color: theme.muted, marginLeft: "3rem" }}>{b.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Services & Coaching */}
         <div>
           <div className="reveal text-center mb-12">
@@ -235,6 +288,50 @@ export function NotPausedSection() {
                     </li>
                   ))}
                 </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Featured Asset: The Salad Formula eBook */}
+        <div
+          className="reveal bg-gradient-to-br from-white to-[#f5ede8]/40 border p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
+          style={{ borderColor: theme.border }}
+        >
+          <div className="absolute top-0 right-0 w-80 h-80 bg-white/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b relative z-10" style={{ borderColor: `${theme.border}80` }}>
+            <div className="space-y-4">
+              <span
+                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2"
+                style={{ backgroundColor: theme.primary }}
+              >
+                <BookOpen size={14} /> Lead Magnet Asset
+              </span>
+              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight" style={{ color: theme.dark }}>&quot;The Salad Formula&quot; eBook</h3>
+              <p className="text-sm font-medium uppercase tracking-[0.1em]" style={{ color: theme.muted }}>An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
+            </div>
+            <div className="md:text-right hidden sm:block">
+              <span className="text-sm font-bold block mb-1" style={{ color: theme.primary }}>By Kirti Yadav</span>
+              <span className="text-xs uppercase tracking-wider block" style={{ color: theme.muted }}>Certified Holistic Nutritionist</span>
+            </div>
+          </div>
+
+          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10" style={{ color: theme.muted }}>
+            "I started KuKClean with one simple belief: the plate in front of you can change your whole life — and it doesn't need to be complicated, imported, or expensive to do it. My mission is simple: one million plates, changed for the better by 2030."
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 mt-10">
+            {saladFormulaBlocks.map((b, idx) => (
+              <div
+                key={idx}
+                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-white space-y-3 hover:-translate-y-1 transition-transform duration-300"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm" style={{ backgroundColor: theme.primary }}>{b.step.charAt(0)}</div>
+                  <span className="font-serif font-bold text-lg" style={{ color: theme.primary }}>{b.step.substring(3)}</span>
+                </div>
+                <p className="text-sm font-light leading-relaxed pl-13" style={{ color: theme.muted, marginLeft: "3rem" }}>{b.text}</p>
               </div>
             ))}
           </div>

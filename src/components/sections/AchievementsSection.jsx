@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Award, Users, Star, Mic, MapPin } from "lucide-react";
 
 function useReveal(ref) {
   useEffect(() => {
@@ -62,6 +63,37 @@ const pressCoverage = [
   { source: "The Better India", title: "Plant-Based Vegan Sugar-Free Delights", desc: "Featured for creating clean-label Indian sweets suitable for health-conscious families & diabetes management." },
   { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Keynote presentation to HR leaders on why corporates must prioritize employee nutrition." },
   { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by Rajasthan State Government to inspire young women founders." },
+];
+
+const speakingEngagements = [
+  {
+    event: "ASSOCHAM Rajasthan Startup Summit",
+    icon: Award,
+    role: "Keynote Speaker",
+    location: "RIC, Jaipur",
+    detail: "Spoke before national policymakers on 'Women Leading the Race'."
+  },
+  {
+    event: "HR Association of India",
+    icon: Users,
+    role: "Corporate Keynote",
+    location: "Virtual Summit",
+    detail: "Address to HR Vice Presidents on integrating midlife wellness into workplace policy."
+  },
+  {
+    event: "iStart Rajasthan",
+    icon: Star,
+    role: "State Mentor & Speaker",
+    location: "Jaipur",
+    detail: "Invited by Rajasthan State Government to inspire early-stage women founders."
+  },
+  {
+    event: "International Podcast (Gigi Carter)",
+    icon: Mic,
+    role: "Featured Health Expert",
+    location: "Global Podcast",
+    detail: "Interviewed on plant-based athletic performance and midlife hormonal health."
+  },
 ];
 
 const linkedinRecs = [
@@ -227,6 +259,45 @@ export function AchievementsSection() {
                 </span>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Public Speaking */}
+        <div>
+          <div className="reveal text-center mb-16">
+            <div className="inline-block border-t-[3px] pt-2 mb-4" style={{ borderColor: theme.primary }}>
+              <span className="text-[#2d2a24] font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>
+                <Mic className="w-4 h-4 relative -top-0.5 inline-block text-[#b76e4a] mr-2" />
+                Public Speaking
+              </span>
+            </div>
+            <br />
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Keynotes & Panels</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {speakingEngagements.map((se, i) => {
+              const Icon = se.icon;
+              return (
+                <div
+                  key={i}
+                  className="reveal shimmer-card bg-white/80 border p-8 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 space-y-4"
+                  style={{ borderColor: `${theme.border}60`, transitionDelay: `${i * 80}ms` }}
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <div className="w-12 h-12 rounded-xl bg-[#fcf9f6] flex items-center justify-center border border-[#e8e0d8] text-[#b76e4a] group-hover:scale-110 transition-transform">
+                      <Icon className="w-6 h-6" strokeWidth={1.5} />
+                    </div>
+                    <span className="text-[#b76e4a] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 bg-[#f5ede8] px-2 py-1 rounded truncate">
+                      <MapPin className="w-3 h-3 shrink-0" />
+                      <span className="truncate">{se.location}</span>
+                    </span>
+                  </div>
+                  <h4 className="font-serif font-bold text-[#2d2a24] text-lg leading-tight">{se.event}</h4>
+                  <p className="text-[11px] text-[#2d2a24] uppercase tracking-wider font-bold mb-2">{se.role}</p>
+                  <p className="text-[#4a453e] text-sm font-light leading-relaxed border-t border-[#e8e0d8] pt-3">{se.detail}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
 
