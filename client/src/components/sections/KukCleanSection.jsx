@@ -21,15 +21,15 @@ function useReveal(ref) {
   }, []);
 }
 
-// Theme colours — deep plum / blush
+// Theme colors
 const theme = {
-  primary:      "#6B2D3E",
-  primaryLight: "#C9828F",
-  primarySoft:  "#F3E0E3",
-  dark:         "#0F0A0B",
-  muted:        "#7A5A60",
-  border:       "#EACFD3",
-  bg:           "#FDF8F8"
+  primary: "#b76e4a",      // terracotta
+  primaryLight: "#d9b094",
+  primarySoft: "#f5ede8",
+  dark: "#2d2a24",
+  muted: "#4a453e",
+  border: "#e8e0d8",
+  bg: "#fcf9f6"
 };
 
 const products = [
@@ -96,7 +96,7 @@ export function KukCleanSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             Kitchen You. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E4BCC2] to-[#F3E0E3] animate-text-gradient">Consciously Nourishing.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#d9b094] to-[#f5ede8] animate-text-gradient">Consciously Nourishing.</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Born in Kirti's kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant-based food and extraordinary Indian taste belong together.
@@ -107,7 +107,7 @@ export function KukCleanSection() {
               href="https://www.kukclean.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-white text-[#6B2D3E] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#FDF8F8] transition-colors shadow-lg"
+              className="inline-flex items-center justify-center rounded-full bg-white text-[#b76e4a] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white/90 transition-colors shadow-lg"
             >
               Visit KuKClean
               <span className="ml-2">→</span>
