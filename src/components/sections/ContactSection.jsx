@@ -5,15 +5,15 @@ export function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
-  // Theme colors
+  // Theme colours — deep plum / blush
   const theme = {
-    primary: "#b76e4a",      // terracotta
-    primaryLight: "#d9b094",
-    primarySoft: "#f5ede8",
-    dark: "#2d2a24",
-    muted: "#4a453e",
-    border: "#e8e0d8",
-    bg: "#fcf9f6"
+    primary:      "#6B2D3E",
+    primaryLight: "#C9828F",
+    primarySoft:  "#F3E0E3",
+    dark:         "#0F0A0B",
+    muted:        "#7A5A60",
+    border:       "#EACFD3",
+    bg:           "#FDF8F8"
   };
 
   const handleSubmit = (e) => {

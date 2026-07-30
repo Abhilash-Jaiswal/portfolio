@@ -12,15 +12,15 @@ function useReveal(ref) {
   }, []);
 }
 
-// Theme colors
+// Theme colours — deep plum / blush
 const theme = {
-  primary: "#b76e4a",      // terracotta
-  primaryLight: "#d9b094",
-  primarySoft: "#f5ede8",
-  dark: "#2d2a24",
-  muted: "#4a453e",
-  border: "#e8e0d8",
-  bg: "#fcf9f6"
+  primary:      "#6B2D3E",
+  primaryLight: "#C9828F",
+  primarySoft:  "#F3E0E3",
+  dark:         "#0F0A0B",
+  muted:        "#7A5A60",
+  border:       "#EACFD3",
+  bg:           "#FDF8F8"
 };
 
 const milestones = [
@@ -122,7 +122,7 @@ export function AchievementsSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             Institutional Credibility & <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#d9b094] to-[#f5ede8] animate-text-gradient">Real-World Impact</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E4BCC2] to-[#F3E0E3] animate-text-gradient">Real-World Impact</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             From IIM Bangalore incubation and Government of India grants to 100+ corporate sessions and national media features — a record built strictly on conviction.

@@ -24,21 +24,21 @@ export function IntroductionSection() {
     "Founder — KuK Clean Wellness & notpaused.com platforms"
   ];
 
-  // Theme colors
+  // Theme colours — deep plum / blush
   const theme = {
-    primary: "#b76e4a",      // terracotta
-    primaryLight: "#d9b094",
-    primarySoft: "#f5ede8",
-    dark: "#2d2a24",
-    muted: "#4a453e",
-    border: "#e8e0d8"
+    primary:      "#6B2D3E",
+    primaryLight: "#C9828F",
+    primarySoft:  "#F3E0E3",
+    dark:         "#0F0A0B",
+    muted:        "#7A5A60",
+    border:       "#EACFD3"
   };
 
   return (
-    <section 
-      id="introduction-details" 
+    <section
+      id="introduction-details"
       className="py-24 px-4 md:px-8 lg:px-12 scroll-mt-20"
-      style={{ backgroundColor: "#fcf9f6", borderBottom: `1px solid ${theme.border}60` }}
+      style={{ backgroundColor: "#FDF8F8", borderBottom: `1px solid ${theme.border}` }}
     >
       <div className="max-w-6xl mx-auto">
         

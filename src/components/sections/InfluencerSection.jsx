@@ -172,22 +172,22 @@ export function InfluencerSection() {
     <section
       id="influencer"
       ref={ref}
-      className="bg-[#FAF7F2] border-b border-[#E8E0D6] scroll-mt-20"
+      className="bg-[#FDF8F8] border-b border-[#EACFD3] scroll-mt-20"
     >
       {/* ── HERO BANNER ── */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-[#1A4A44] via-[#0D2E2A] to-[#2D6B63] py-28 px-6 md:px-12 lg:px-20">
-        <div className="absolute -top-24 -left-16 w-[450px] h-[450px] bg-[#D4A051]/10 rounded-full blur-3xl animate-float" />
-        <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-[#D4A051]/15 rounded-full blur-2xl animate-float" style={{ animationDelay: "1.8s" }} />
+      <div className="relative overflow-hidden bg-gradient-to-br from-[#6B2D3E] via-[#4A1E2B] to-[#3A1623] py-28 px-6 md:px-12 lg:px-20">
+        <div className="absolute -top-24 -left-16 w-[450px] h-[450px] bg-[#E4BCC2]/8 rounded-full blur-3xl animate-float" />
+        <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-[#E4BCC2]/10 rounded-full blur-2xl animate-float" style={{ animationDelay: "1.8s" }} />
         <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
         <div className="relative z-10 max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-20">
           <div className="flex-1 animate-fade-in-up">
             <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
-              <Sparkles className="w-3 h-3 text-[#D4A051] animate-pulse" />
+              <Sparkles className="w-3 h-3 text-[#E4BCC2] animate-pulse" />
               Influencer & Brand Collaborations
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
               A Voice Built on <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#E8C28A] via-[#D4A051] to-[#F0DCC8] animate-text-gradient">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F3E0E3] via-[#E4BCC2] to-[#FDF8F8] animate-text-gradient">
                 Authenticity & Expertise
               </span>
             </h1>
@@ -219,8 +219,8 @@ export function InfluencerSection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-24 space-y-32">
 
         {/* Opening Quote */}
-        <div className="reveal max-w-4xl mx-auto bg-[#FAF7F2]/90 border-l-4 border-[#D4A051] rounded-r-3xl px-8 py-6 shadow-sm">
-          <p className="font-serif text-lg italic text-[#2C3A37] leading-relaxed">
+          <div className="reveal max-w-4xl mx-auto bg-[#FAF2F3]/90 border-l-4 border-[#6B2D3E] rounded-r-3xl px-8 py-6 shadow-sm">
+          <p className="font-serif text-lg italic text-[#0F0A0B] leading-relaxed">
             "There is a meaningful difference between an influencer who became interested in wellness and a wellness expert who developed an audience. Kirti Yadav is unambiguously the latter."
           </p>
         </div>
@@ -228,11 +228,11 @@ export function InfluencerSection() {
         {/* Digital Reach Platforms */}
         <div>
           <div className="reveal text-center mb-16">
-            <div className="inline-block border-t-[3px] border-[#D4A051] pt-2 mb-4">
-              <span className="text-[#1A4A44] font-bold text-sm tracking-[0.2em] uppercase">📊 Ecosystem Reach</span>
+            <div className="inline-block border-t-[3px] border-[#6B2D3E] pt-2 mb-4">
+              <span className="text-[#6B2D3E] font-bold text-sm tracking-[0.2em] uppercase">📊 Ecosystem Reach</span>
             </div>
             <br />
-            <h2 className="font-serif text-3xl lg:text-4xl text-[#2C3A37] font-bold">Digital Platforms & Active Communities</h2>
+            <h2 className="font-serif text-3xl lg:text-4xl text-[#0F0A0B] font-bold">Digital Platforms & Active Communities</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {platforms.map((p, i) => {
@@ -245,7 +245,7 @@ export function InfluencerSection() {
                   key={i}
                   className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4 flex flex-col items-start block"
                   style={{
-                    borderColor: '#E8E0D6',
+                  borderColor: '#EACFD3',
                     transitionDelay: `${i * 80}ms`
                   }}
                 >
@@ -253,11 +253,11 @@ export function InfluencerSection() {
                     <Icon className="w-6 h-6" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 w-full">
-                    <span className="text-[#1A4A44] text-[10px] uppercase font-bold tracking-[0.1em] block mb-2">{p.count}</span>
-                    <h4 className="font-serif font-bold text-lg text-[#2C3A37] leading-tight">{p.name}</h4>
-                    <span className="text-[#5A6F6A] text-xs font-semibold block mt-1">{p.handle}</span>
+                    <span className="text-[#6B2D3E] text-[10px] uppercase font-bold tracking-[0.1em] block mb-2">{p.count}</span>
+                    <h4 className="font-serif font-bold text-lg text-[#0F0A0B] leading-tight">{p.name}</h4>
+                    <span className="text-[#7A5A60] text-xs font-semibold block mt-1">{p.handle}</span>
                   </div>
-                  <p className="text-[#5A6F6A] text-sm font-light leading-relaxed">{p.desc}</p>
+                  <p className="text-[#7A5A60] text-sm font-light leading-relaxed">{p.desc}</p>
                 </a>
               );
             })}
@@ -267,14 +267,14 @@ export function InfluencerSection() {
         {/* Brand Collaborators */}
         <div>
           <div className="reveal text-center mb-16">
-            <div className="inline-block border-t-[3px] border-[#D4A051] pt-2 mb-4">
-              <span className="text-[#1A4A44] font-bold text-sm tracking-[0.2em] uppercase whitespace-nowrap">
-                <Heart className="w-4 h-4 inline-block relative -top-0.5 text-[#D4A051] mr-2" />
+            <div className="inline-block border-t-[3px] border-[#6B2D3E] pt-2 mb-4">
+              <span className="text-[#6B2D3E] font-bold text-sm tracking-[0.2em] uppercase whitespace-nowrap">
+                <Heart className="w-4 h-4 inline-block relative -top-0.5 text-[#C9828F] mr-2" />
                 Collaborations & Brand Partners
               </span>
             </div>
             <br />
-            <h3 className="font-serif text-3xl lg:text-4xl text-[#2C3A37] font-bold">Trusted by Clean Brands</h3>
+            <h3 className="font-serif text-3xl lg:text-4xl text-[#0F0A0B] font-bold">Trusted by Clean Brands</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {brandPartners.map((bp, i) => {
@@ -282,19 +282,19 @@ export function InfluencerSection() {
               return (
                 <div
                   key={i}
-                  className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border border-[#E8E0D6] p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-5"
+                  className="reveal shimmer-card group bg-white/80 backdrop-blur-sm border border-[#EACFD3] p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-5"
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
                   <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#1A4A44]/10 flex shrink-0 items-center justify-center text-2xl group-hover:bg-[#1A4A44] group-hover:text-white transition-colors duration-500">
-                      <Icon className="w-6 h-6" strokeWidth={1.5} />
+                    <div className="w-12 h-12 rounded-2xl bg-[#F3E0E3] flex shrink-0 items-center justify-center text-2xl group-hover:bg-[#6B2D3E] group-hover:text-white transition-colors duration-500">
+                      <Icon className="w-6 h-6" style={{ color: "#6B2D3E" }} strokeWidth={1.5} />
                     </div>
-                    <span className="bg-[#1A4A44] text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full inline-block">
+                    <span className="bg-[#6B2D3E] text-white text-[9px] font-bold uppercase tracking-widest px-3 py-1.5 rounded-full inline-block">
                       {bp.category}
                     </span>
                   </div>
-                  <h4 className="font-serif font-bold text-[#2C3A37] text-xl">{bp.name}</h4>
-                  <p className="text-[#5A6F6A] text-sm font-light leading-relaxed">{bp.desc}</p>
+                  <h4 className="font-serif font-bold text-[#0F0A0B] text-xl">{bp.name}</h4>
+                  <p className="text-[#7A5A60] text-sm font-light leading-relaxed">{bp.desc}</p>
                 </div>
               );
             })}
@@ -304,14 +304,14 @@ export function InfluencerSection() {
         {/* Keynote Speaking & Public Appearances */}
         <div>
           <div className="reveal text-center mb-16">
-            <div className="inline-block border-t-[3px] border-[#D4A051] pt-2 mb-4">
-              <span className="text-[#1A4A44] font-bold text-sm tracking-[0.2em] uppercase">
-                <Mic className="w-4 h-4 relative -top-0.5 inline-block text-[#D4A051] mr-2" />
+            <div className="inline-block border-t-[3px] border-[#6B2D3E] pt-2 mb-4">
+              <span className="text-[#6B2D3E] font-bold text-sm tracking-[0.2em] uppercase">
+                <Mic className="w-4 h-4 relative -top-0.5 inline-block text-[#C9828F] mr-2" />
                 Public Speaking
               </span>
             </div>
             <br />
-            <h3 className="font-serif text-3xl lg:text-4xl text-[#2C3A37] font-bold">Keynotes & Panels</h3>
+            <h3 className="font-serif text-3xl lg:text-4xl text-[#0F0A0B] font-bold">Keynotes & Panels</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {speakingEngagements.map((se, i) => {
@@ -319,21 +319,21 @@ export function InfluencerSection() {
               return (
                 <div
                   key={i}
-                  className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border border-[#E8E0D6] p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4"
+                  className="reveal shimmer-card group bg-white/80 backdrop-blur-sm border border-[#EACFD3] p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4"
                   style={{ transitionDelay: `${i * 100}ms` }}
                 >
                   <div className="flex items-start justify-between mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-[#FAF7F2] flex items-center justify-center border border-[#E8E0D6] text-[#D4A051] group-hover:scale-110 transition-transform">
+                    <div className="w-12 h-12 rounded-xl bg-[#FAF2F3] flex items-center justify-center border border-[#EACFD3] text-[#6B2D3E] group-hover:scale-110 transition-transform">
                       <Icon className="w-6 h-6" strokeWidth={1.5} />
                     </div>
-                    <span className="text-[#D4A051] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 bg-[#D4A051]/10 px-2 py-1 rounded truncate">
+                    <span className="text-[#6B2D3E] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 bg-[#F3E0E3] px-2 py-1 rounded truncate">
                       <MapPin className="w-3 h-3 shrink-0" />
                       <span className="truncate">{se.location}</span>
                     </span>
                   </div>
-                  <h4 className="font-serif font-bold text-[#2C3A37] text-lg leading-tight">{se.event}</h4>
-                  <p className="text-[11px] text-[#1A4A44] uppercase tracking-wider font-bold mb-2">{se.role}</p>
-                  <p className="text-[#5A6F6A] text-sm font-light leading-relaxed border-t border-[#E8E0D6] pt-3">{se.detail}</p>
+                  <h4 className="font-serif font-bold text-[#0F0A0B] text-lg leading-tight">{se.event}</h4>
+                  <p className="text-[11px] text-[#6B2D3E] uppercase tracking-wider font-bold mb-2">{se.role}</p>
+                  <p className="text-[#7A5A60] text-sm font-light leading-relaxed border-t border-[#EACFD3] pt-3">{se.detail}</p>
                 </div>
               );
             })}
@@ -341,12 +341,12 @@ export function InfluencerSection() {
         </div>
 
         {/* Media Kit CTA Banner */}
-        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#1A4A44] via-[#0D2E2A] to-[#2D6B63] p-10 lg:p-14 text-white text-center shadow-2xl space-y-6">
-          <div className="absolute -right-16 -top-16 w-64 h-64 bg-[#D4A051]/10 rounded-full blur-2xl" />
-          <div className="absolute -left-16 -bottom-16 w-48 h-48 bg-[#D4A051]/5 rounded-full blur-2xl" />
+        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#6B2D3E] via-[#4A1E2B] to-[#3A1623] p-10 lg:p-14 text-white text-center shadow-2xl space-y-6">
+          <div className="absolute -right-16 -top-16 w-64 h-64 bg-[#E4BCC2]/8 rounded-full blur-2xl" />
+          <div className="absolute -left-16 -bottom-16 w-48 h-48 bg-[#E4BCC2]/5 rounded-full blur-2xl" />
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">
             <span className="bg-white/10 border border-white/20 text-white text-[9px] font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full inline-block flex items-center gap-2">
-              <Zap className="w-3 h-3 text-[#D4A051]" />
+              <Zap className="w-3 h-3 text-[#E4BCC2]" />
               Work With Kirti
             </span>
             <h3 className="font-serif text-2xl lg:text-4xl font-bold">Request Kirti's Brand Media Kit</h3>
@@ -356,7 +356,7 @@ export function InfluencerSection() {
             <div className="pt-4 flex flex-wrap justify-center gap-4">
               <a
                 href="mailto:kirti.yadav29@gmail.com"
-                className="bg-[#D4A051] text-[#0D2E2A] font-bold text-xs px-6 py-3 rounded-full shadow-lg hover:bg-[#E8C28A] transition-all flex items-center gap-2"
+                className="bg-[#E4BCC2] text-[#4A1E2B] font-bold text-xs px-6 py-3 rounded-full shadow-lg hover:bg-[#F3E0E3] transition-all flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
                 Email: kirti.yadav29@gmail.com

@@ -13,15 +13,15 @@ function useReveal() {
   }, []);
 }
 
-// Theme colors
+// Theme colours — deep plum / blush
 const theme = {
-  primary: "#b76e4a",      // terracotta
-  primaryLight: "#d9b094",
-  primarySoft: "#f5ede8",
-  dark: "#2d2a24",
-  muted: "#4a453e",
-  border: "#e8e0d8",
-  bg: "#fcf9f6"
+  primary:      "#6B2D3E",
+  primaryLight: "#C9828F",
+  primarySoft:  "#F3E0E3",
+  dark:         "#0F0A0B",
+  muted:        "#7A5A60",
+  border:       "#EACFD3",
+  bg:           "#FDF8F8"
 };
 
 /* ─── Chapter data ───────────────────────────────── */
@@ -228,9 +228,9 @@ export function LifeStorySection() {
     >
 
       {/* ── HERO BANNER ────────────────────────────── */}
-      <div 
+      <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ backgroundColor: theme.primary }}
+        style={{ background: `linear-gradient(135deg, ${theme.primary} 0%, ${theme.primaryDark || "#4A1E2B"} 100%)` }}
       >
         {/* Animated blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-float" />
@@ -247,7 +247,7 @@ export function LifeStorySection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             A Journey of Conviction, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#d9b094] to-[#f5ede8] animate-text-gradient">Compounding & Purpose</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E4BCC2] to-[#F3E0E3] animate-text-gradient">Compounding & Purpose</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             From Data Warehousing Consultant at IBM to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.

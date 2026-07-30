@@ -1,20 +1,16 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Search } from "lucide-react";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [searchVal, setSearchVal] = useState("");
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const onScroll = () => setIsScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const navItems = [
@@ -27,76 +23,107 @@ export function Navbar() {
   ];
 
   const currentPath = location.pathname.replace(/\/$/, "");
-  const isHomePage = currentPath === "" || currentPath === "/portfolio" || currentPath.endsWith("/portfolio");
 
   const isActive = (path) => {
     const target = path.replace(/\/$/, "");
-    if (target === "") {
-      return currentPath === "" || currentPath.endsWith("/portfolio");
-    }
+    if (target === "") return currentPath === "" || currentPath.endsWith("/portfolio");
     return currentPath.endsWith(target);
   };
 
-  const useDarkText = isScrolled || isHomePage;
-
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
-      ? "bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#DCE6E4] shadow-sm"
-      : "bg-transparent border-b border-transparent"
-      }`}>
-      <div className={`flex w-full items-center justify-between px-6 lg:px-16 transition-all duration-300 ${isScrolled ? "h-20" : "h-24"
-        }`}>
+    <nav
+      className="fixed top-0 left-0 w-full z-50 transition-all duration-400"
+      style={{
+        backgroundColor: isScrolled ? "rgba(253,248,248,0.92)" : "transparent",
+        backdropFilter: isScrolled ? "blur(20px) saturate(1.4)" : "none",
+        WebkitBackdropFilter: isScrolled ? "blur(20px) saturate(1.4)" : "none",
+        borderBottom: isScrolled ? "1px solid rgba(234,207,211,0.7)" : "1px solid transparent",
+        boxShadow: isScrolled ? "0 2px 24px rgba(107,45,62,0.06)" : "none"
+      }}
+    >
+      <div
+        className="flex w-full items-center justify-between px-6 lg:px-16 transition-all duration-300"
+        style={{ height: isScrolled ? "72px" : "88px" }}
+      >
 
-        {/* Left Side (Logo) */}
+        {/* Logo */}
         <div className="flex-shrink-0">
-          <Link
-            to="/"
-            className="flex items-center gap-2 group"
-          >
-            <div className="w-9 h-9 rounded-full bg-[#1A4A44] flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105 border border-white/20">
-              <div className="absolute top-2.5 left-2.5 w-2 h-2 bg-[#D4A051] rounded-full"></div>
-              <div className="absolute bottom-0 w-full h-1/2 bg-[#0D2E2A]"></div>
+          <Link to="/" className="flex items-center gap-2.5 group">
+            <div
+              className="w-9 h-9 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-sm"
+              style={{ backgroundColor: "#6B2D3E" }}
+            >
+              <div
+                className="w-2.5 h-2.5 rounded-full"
+                style={{ backgroundColor: "#E4BCC2" }}
+              />
             </div>
-            <span className={`font-serif font-bold text-xl tracking-tight transition-colors ${useDarkText ? "text-[#2C3A37] group-hover:text-[#1A4A44]" : "text-white group-hover:text-white/80"
-              }`}>Kirti.</span>
+            <span
+              className="font-serif font-bold text-[1.35rem] tracking-tight transition-colors duration-200"
+              style={{ color: "#0F0A0B" }}
+            >
+              Kirti<span style={{ color: "#6B2D3E" }}>.</span>
+            </span>
           </Link>
         </div>
 
-        {/* Center Side (Navigation Links as Separate Pages) */}
-        <div className="hidden xl:flex items-center justify-center gap-6 xl:gap-8 font-medium text-sm tracking-[0.12em] uppercase">
+        {/* Nav links */}
+        <div className="hidden xl:flex items-center justify-center gap-7 font-body font-medium text-[11px] tracking-[0.14em] uppercase">
           {navItems.map((item) => {
             const active = isActive(item.path);
             return (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`transition-all duration-200 pb-1.5 border-b-2 ${active
-                  ? useDarkText ? "border-[#D4A051] text-[#1A4A44] font-semibold" : "border-white text-white font-semibold"
-                  : useDarkText ? "border-transparent text-[#5A6F6A] hover:text-[#1A4A44]" : "border-transparent text-white/80 hover:text-white"
-                  }`}
+                className="relative pb-1 transition-colors duration-200 group"
+                style={{ color: active ? "#6B2D3E" : "#7A5A60" }}
               >
-                {item.name}
+                <span className={active ? "font-bold" : "group-hover:text-[#6B2D3E] transition-colors"}>
+                  {item.name}
+                </span>
+                {/* Animated underline */}
+                <span
+                  className="absolute bottom-0 left-0 h-[1.5px] rounded-full transition-all duration-300"
+                  style={{
+                    backgroundColor: "#6B2D3E",
+                    width: active ? "100%" : "0%",
+                  }}
+                />
               </Link>
             );
           })}
         </div>
 
-        {/* Right Side (Search Bar) */}
+        {/* Search */}
         <div className="flex items-center justify-end">
           <div className="relative flex items-center">
-            <span className={`absolute left-3 transition-colors ${useDarkText ? "text-[#5A6F6A]" : "text-white/80"}`}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
+            <span
+              className="absolute left-3.5 pointer-events-none transition-colors"
+              style={{ color: "#6B2D3E" }}
+            >
+              <Search className="w-3.5 h-3.5" />
             </span>
             <input
               type="text"
+              value={searchVal}
+              onChange={e => setSearchVal(e.target.value)}
               placeholder="SEARCH"
-              className={`pl-9 pr-4 py-2 w-36 lg:w-44 rounded-full border text-xs font-bold tracking-[0.15em] transition-all uppercase focus:outline-none ${useDarkText
-                ? "border-[#DCE6E4] focus:border-[#1A4A44] focus:ring-1 focus:ring-[#1A4A44] bg-white/60 focus:bg-white text-[#2C3A37] placeholder-[#5A6F6A]"
-                : "border-white/30 focus:border-white focus:ring-1 focus:ring-white bg-white/10 focus:bg-white/20 text-white placeholder-white/70"
-                }`}
+              className="pl-9 pr-4 py-2.5 w-36 lg:w-44 rounded-full text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-200 focus:outline-none focus:w-48 lg:focus:w-52"
+              style={{
+                border: "1.5px solid #EACFD3",
+                backgroundColor: isScrolled ? "rgba(255,255,255,0.8)" : "rgba(255,255,255,0.4)",
+                color: "#0F0A0B",
+              }}
+              onFocus={e => {
+                e.target.style.borderColor = "#6B2D3E";
+                e.target.style.boxShadow = "0 0 0 3px rgba(107,45,62,0.10)";
+                e.target.style.backgroundColor = "rgba(255,255,255,0.95)";
+              }}
+              onBlur={e => {
+                e.target.style.borderColor = "#EACFD3";
+                e.target.style.boxShadow = "none";
+                e.target.style.backgroundColor = isScrolled ? "rgba(255,255,255,0.8)" : "rgba(255,255,255,0.4)";
+              }}
             />
           </div>
         </div>
