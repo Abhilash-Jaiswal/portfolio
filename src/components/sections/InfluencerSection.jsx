@@ -71,7 +71,6 @@ const platforms = [
     name: "LinkedIn",
     handle: "in/yadavkirti",
     link: "https://www.linkedin.com/in/yadavkirti/",
-    count: "6,000+ Followers",
     desc: "Corporate wellness positioning, thought leadership articles, and enterprise founder networking."
   },
   {
@@ -80,7 +79,6 @@ const platforms = [
     name: "Instagram",
     handle: "@nutritionist.kirti",
     link: "https://www.instagram.com/nutritionist.kirti/",
-    count: "4,500+ Followers",
     desc: "Daily touchpoint — real-time plant nutrition tips, Q&A, and authentic unfiltered midlife health content."
   },
   {
@@ -89,27 +87,10 @@ const platforms = [
     name: "Facebook Community",
     handle: "plantbasednutritionist_kirti",
     link: null,
-    count: "5,000+ Group Members",
     desc: "Original vegan recipe sharing, live Q&As, and deep community discussions for Indian families."
   },
-  {
-    icon: WhatsappIcon,
-    grad: "from-[#25D366] to-[#128C7E]",
-    name: "WhatsApp Ecosystem",
-    handle: "7 Metro Chapters",
-    link: null,
-    count: "1,100+ Active Members",
-    desc: "85–95% open rates. High-intent community drops, perimenopause guidance, and curated recommendations."
-  },
-  {
-    icon: YoutubeIcon,
-    grad: "from-[#FF0000] to-[#CC0000]",
-    name: "YouTube & Podcasts",
-    handle: "@plantbasednutritionistkirti",
-    link: null,
-    count: "10,000+ Views",
-    desc: "Long-form nutrition education, Gigi Carter international podcast guest, and YourStory video interviews."
-  },
+
+  
 ];
 
 const brandPartners = [
@@ -130,37 +111,6 @@ const brandPartners = [
     icon: Store,
     category: "Organic Retail Partner",
     desc: "In-store and digital wellness campaigns promoting clean-label Indian snack alternatives."
-  },
-];
-
-const speakingEngagements = [
-  {
-    event: "ASSOCHAM Rajasthan Startup Summit",
-    icon: Award,
-    role: "Keynote Speaker",
-    location: "RIC, Jaipur",
-    detail: "Spoke before national policymakers on 'Women Leading the Race'."
-  },
-  {
-    event: "HR Association of India",
-    icon: Users,
-    role: "Corporate Keynote",
-    location: "Virtual Summit",
-    detail: "Address to HR Vice Presidents on integrating midlife wellness into workplace policy."
-  },
-  {
-    event: "iStart Rajasthan",
-    icon: Star,
-    role: "State Mentor & Speaker",
-    location: "Jaipur",
-    detail: "Invited by Rajasthan State Government to inspire early-stage women founders."
-  },
-  {
-    event: "International Podcast (Gigi Carter)",
-    icon: Mic,
-    role: "Featured Health Expert",
-    location: "Global Podcast",
-    detail: "Interviewed on plant-based athletic performance and midlife hormonal health."
   },
 ];
 
@@ -195,12 +145,7 @@ export function InfluencerSection() {
               A certified nutritionist and 2x founder who developed an audience — not a social media performer. Connecting clean brands with high-intent Indian families.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-16 pt-10 border-t border-white/20">
-              {[["6,000+", "LinkedIn Network"], ["4,500+", "Instagram Reach"], ["1,100+", "WhatsApp Members"], ["5,000+", "Facebook Group"]].map(([n, l]) => (
-                <div key={l} className="group cursor-default">
-                  <span className="font-serif text-3xl md:text-4xl font-bold text-white block group-hover:-translate-y-1 transition-transform duration-300">{n}</span>
-                  <span className="text-white/70 text-[10px] uppercase tracking-[0.25em] font-medium mt-2 block">{l}</span>
-                </div>
-              ))}
+              
             </div>
           </div>
 
@@ -234,7 +179,7 @@ export function InfluencerSection() {
             <br />
             <h2 className="font-serif text-3xl lg:text-4xl text-[#2C3A37] font-bold">Digital Platforms & Active Communities</h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {platforms.map((p, i) => {
               const Icon = p.icon;
               return (
@@ -243,7 +188,7 @@ export function InfluencerSection() {
                   target={p.link ? "_blank" : "_self"}
                   rel="noopener noreferrer"
                   key={i}
-                  className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4 flex flex-col items-start block"
+                  className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4 flex flex-col items-start block w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(20%-1.2rem)] max-w-[340px]"
                   style={{
                     borderColor: '#E8E0D6',
                     transitionDelay: `${i * 80}ms`
@@ -253,7 +198,6 @@ export function InfluencerSection() {
                     <Icon className="w-6 h-6" strokeWidth={1.5} />
                   </div>
                   <div className="flex-1 w-full">
-                    <span className="text-[#1A4A44] text-[10px] uppercase font-bold tracking-[0.1em] block mb-2">{p.count}</span>
                     <h4 className="font-serif font-bold text-lg text-[#2C3A37] leading-tight">{p.name}</h4>
                     <span className="text-[#5A6F6A] text-xs font-semibold block mt-1">{p.handle}</span>
                   </div>
@@ -295,45 +239,6 @@ export function InfluencerSection() {
                   </div>
                   <h4 className="font-serif font-bold text-[#2C3A37] text-xl">{bp.name}</h4>
                   <p className="text-[#5A6F6A] text-sm font-light leading-relaxed">{bp.desc}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Keynote Speaking & Public Appearances */}
-        <div>
-          <div className="reveal text-center mb-16">
-            <div className="inline-block border-t-[3px] border-[#D4A051] pt-2 mb-4">
-              <span className="text-[#1A4A44] font-bold text-sm tracking-[0.2em] uppercase">
-                <Mic className="w-4 h-4 relative -top-0.5 inline-block text-[#D4A051] mr-2" />
-                Public Speaking
-              </span>
-            </div>
-            <br />
-            <h3 className="font-serif text-3xl lg:text-4xl text-[#2C3A37] font-bold">Keynotes & Panels</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {speakingEngagements.map((se, i) => {
-              const Icon = se.icon;
-              return (
-                <div
-                  key={i}
-                  className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border border-[#E8E0D6] p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4"
-                  style={{ transitionDelay: `${i * 100}ms` }}
-                >
-                  <div className="flex items-start justify-between mb-2">
-                    <div className="w-12 h-12 rounded-xl bg-[#FAF7F2] flex items-center justify-center border border-[#E8E0D6] text-[#D4A051] group-hover:scale-110 transition-transform">
-                      <Icon className="w-6 h-6" strokeWidth={1.5} />
-                    </div>
-                    <span className="text-[#D4A051] text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 bg-[#D4A051]/10 px-2 py-1 rounded truncate">
-                      <MapPin className="w-3 h-3 shrink-0" />
-                      <span className="truncate">{se.location}</span>
-                    </span>
-                  </div>
-                  <h4 className="font-serif font-bold text-[#2C3A37] text-lg leading-tight">{se.event}</h4>
-                  <p className="text-[11px] text-[#1A4A44] uppercase tracking-wider font-bold mb-2">{se.role}</p>
-                  <p className="text-[#5A6F6A] text-sm font-light leading-relaxed border-t border-[#E8E0D6] pt-3">{se.detail}</p>
                 </div>
               );
             })}

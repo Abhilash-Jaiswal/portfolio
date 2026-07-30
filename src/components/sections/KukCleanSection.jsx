@@ -33,11 +33,11 @@ const theme = {
 };
 
 const products = [
-  { icon: <Leaf size={24} />, title: "Organic Ragi & Almond Laddus", desc: "Organic, gluten-free, calcium-rich Ragi Laddus & Kashmiri Almond Protein Laddus with roasted Bengal gram and jaggery powder. No refined sugar, no dairy." },
-  { icon: <Sparkles size={24} />, title: "Date Bites & Sugar-Free Treats", desc: "Premium Arabic dates blended with cashews, almonds, pumpkin seeds, dried figs, and aromatic spices (cardamom & cloves)." },
-  { icon: <Heart size={24} />, title: "Baked Mathri & Millet Chivda", desc: "Baked Ajwain Whole Wheat Mathri & Roasted Jowar Chivda — wholesome, low-sodium, non-fried alternatives for guilt-free crunch." },
-  { icon: <ChefHat size={24} />, title: "Stone-Ground Nut Butters & Dips", desc: "Slow stone-ground to preserve natural micronutrients and healthy oils that high-heat industrial processing destroys. 100% clean label." },
-  { icon: <Star size={24} />, title: "Artisanal Gift Hampers", desc: "KuKClean Wholesome, Sweet n Savour, and Healthy Nibbles gift hampers — handmade with customized packaging for corporate & festive gifting." },
+  { icon: <Leaf size={24} />, title: "Organic Ragi & Almond Laddus", desc: "Wholesome, gluten-free, and naturally sweetened—our Ragi Laddus are a calcium-rich powerhouse made with organic finger millet. The Kashmiri Almond Protein Laddus combine roasted Bengal gram and jaggery powder for a protein-packed bite. Zero refined sugar, zero dairy, 100% pure goodness." },
+  { icon: <Sparkles size={24} />, title: "Date Bites & Sugar-Free Treats", desc: "Nature's candy, elevated. Premium Arabic dates are hand-pitted and blended with crunchy cashews, almonds, pumpkin seeds, dried figs, and a warm whisper of cardamom & cloves. A guilt-free indulgence that satisfies your sweet tooth and nourishes your body—no added sugar, ever."},
+  { icon: <Heart size={24} />, title: "Baked Mathri & Millet Chivda", desc: "Crunch without the guilt. Our Ajwain Whole Wheat Mathri is baked, not fried—crispy, aromatic, and low-sodium. The Roasted Jowar Chivda is a millet-based marvel, tossed with subtle spices for a savory snack that's light on salt but heavy on flavor. Traditional taste, modern health." },
+  { icon: <ChefHat size={24} />, title: "Stone-Ground Nut Butters & Dips", desc: "Slow and steady wins the health race. Our nut butters are crafted the old-fashioned way—stone-ground at low temperatures to preserve every precious micronutrient, enzyme, and healthy oil that high-heat processing destroys. 100% clean label, pure nutty perfection." },
+  { icon: <Star size={24} />, title: "Artisanal Gift Hampers", desc: "Give the gift of health, thoughtfully curated. Choose from our KuKClean Wholesome, Sweet n Savour, or Healthy Nibbles hampers—each hand-assembled with our best-selling products and customized packaging for corporate gifting, festive celebrations, or simply spreading joy. Made for sharing, crafted for caring" },
 ];
 
 const b2bFocus = [
@@ -175,7 +175,7 @@ export function KukCleanSection() {
                 ₹14 Lakhs Bootstrapped Growth
               </h4>
               <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
-                KuKClean generated ₹14 Lakhs in revenue within its first 7 bootstrapped months. Built without heavy ad spend or paid endorsements, the brand grew organically through word-of-mouth, 1,000+ original vegan recipes, and community trust.
+                n just 7 months, KuKClean achieved ₹14 Lakhs in revenue—entirely bootstrapped and built on trust, not advertising. No heavy ad spends, no paid influencer endorsements. Just the power of 1,000+ original vegan recipes, a growing community of health-conscious food lovers, and the relentless word-of-mouth that comes from making food that truly nourishes. Proof that authentic quality speaks for itself.
               </p>
             </div>
             <div
@@ -184,7 +184,7 @@ export function KukCleanSection() {
             >
               <h4 className="font-serif font-bold text-base mb-3" style={{ color: theme.dark }}>Employing Disadvantaged Women</h4>
               <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
-                Beyond nutrition, KuKClean carries social impact at its heart — employing women from economically disadvantaged backgrounds to handcraft every batch of clean-label sweets, savories, and stone-ground nut butter.
+                Our mission goes far beyond the plate. Every batch of our clean-label sweets, savories, and stone-ground nut butters is handcrafted by women from economically disadvantaged backgrounds. We provide dignified employment, fair wages, and skill development—transforming lives, one recipe at a time. Because real nourishment isn't just about what's in the food; it's about who makes it and how they're valued.
               </p>
             </div>
           </div>
@@ -286,50 +286,8 @@ export function KukCleanSection() {
           </div>
         </div>
 
-        {/* Featured Asset: The Salad Formula eBook */}
-        <div
-          className="reveal bg-gradient-to-br from-white to-[#f5ede8]/40 border p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
-          style={{ borderColor: theme.border }}
-        >
-          <div className="absolute top-0 right-0 w-80 h-80 bg-white/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
 
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b relative z-10" style={{ borderColor: `${theme.border}80` }}>
-            <div className="space-y-4">
-              <span
-                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2"
-                style={{ backgroundColor: theme.primary }}
-              >
-                <BookOpen size={14} /> Lead Magnet Asset
-              </span>
-              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight" style={{ color: theme.dark }}>"The Salad Formula" eBook</h3>
-              <p className="text-sm font-medium uppercase tracking-[0.1em]" style={{ color: theme.muted }}>An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
-            </div>
-            <div className="md:text-right hidden sm:block">
-              <span className="text-sm font-bold block mb-1" style={{ color: theme.primary }}>By Kirti Yadav</span>
-              <span className="text-xs uppercase tracking-wider block" style={{ color: theme.muted }}>Certified Holistic Nutritionist</span>
-            </div>
-          </div>
-
-          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10" style={{ color: theme.muted }}>
-            "I started KuKClean with one simple belief: the plate in front of you can change your whole life — and it doesn't need to be complicated, imported, or expensive to do it. My mission is simple: one million plates, changed for the better by 2030."
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 mt-10">
-            {saladFormulaBlocks.map((b, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-white space-y-3 hover:-translate-y-1 transition-transform duration-300"
-              >
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm" style={{ backgroundColor: theme.primary }}>{b.step.charAt(0)}</div>
-                  <span className="font-serif font-bold text-lg" style={{ color: theme.primary }}>{b.step.substring(3)}</span>
-                </div>
-                <p className="text-sm font-light leading-relaxed pl-13" style={{ color: theme.muted, marginLeft: "3rem" }}>{b.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
+        
         {/* Wellness & Analysis Assessment Images */}
         <div className="pt-10">
           <div className="reveal text-center mb-10">
@@ -339,7 +297,7 @@ export function KukCleanSection() {
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Wellness Assessment</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Ku-ku Wellness & Analysis</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Kuk Clean Wellness & Analysis</h3>
           </div>
           <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {wellnessImages.map((imageSrc, idx) => (
