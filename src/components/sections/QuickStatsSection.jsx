@@ -2,13 +2,13 @@ import { Calendar, Users, Building2, Award } from "lucide-react";
 
 // ── Shared theme ──────────────────────────────────
 export const THEME = {
-  primary:      "#6B2D3E",   // deep plum
-  primaryDark:  "#4A1E2B",   // darker plum
-  primaryLight: "#C9828F",   // dusty rose
-  primarySoft:  "#F3E0E3",   // blush surface
+  primary:      "#B85470",   // rose-mauve
+  primaryDark:  "#2D121A",   // rich dark plum
+  primaryLight: "#D4889C",   // dusty rose
+  primarySoft:  "#FAF0F2",   // soft blush surface
   blush:        "#E4BCC2",   // hero blush
-  dark:         "#0F0A0B",   // rich black
-  muted:        "#7A5A60",   // muted mauve
+  dark:         "#2D121A",   // rich dark text
+  muted:        "#7A5A62",   // muted mauve
   border:       "#EACFD3",   // blush border
   bg:           "#FDF8F8",   // warm white
 };
@@ -32,15 +32,16 @@ export function QuickStatsSection() {
           return (
             <div
               key={i}
-              className="flex flex-col items-center p-5 rounded-2xl transition-all duration-300 cursor-default group"
-              onMouseEnter={e => e.currentTarget.style.backgroundColor = "rgba(228,188,194,0.18)"}
+              className="flex flex-col items-center p-5 rounded-2xl transition-all duration-300 cursor-default group hover:-translate-y-1 hover:shadow-lg"
+              style={{ backgroundColor: "transparent" }}
+              onMouseEnter={e => e.currentTarget.style.backgroundColor = THEME.primarySoft}
               onMouseLeave={e => e.currentTarget.style.backgroundColor = "transparent"}
             >
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110"
-                style={{ backgroundColor: THEME.primarySoft }}
+                className="w-12 h-12 rounded-2xl flex items-center justify-center mb-3 transition-transform duration-300 group-hover:scale-110 shadow-sm"
+                style={{ backgroundColor: THEME.primarySoft, color: THEME.primary }}
               >
-                <Icon className="w-5 h-5" style={{ color: THEME.primary }} />
+                <Icon className="w-5 h-5" strokeWidth={1.5} />
               </div>
               <span
                 className="font-serif font-bold mb-1 tracking-tight leading-none"

@@ -15,7 +15,8 @@ import {
   Award,
   Store,
   PlayCircle,
-  Droplet
+  Droplet,
+  BarChart3
 } from "lucide-react";
 import kirtiImage from "../../assets/kirti_profile.jpg";
 
@@ -125,7 +126,7 @@ export function InfluencerSection() {
       className="bg-[#FDF8F8] border-b border-[#EACFD3] scroll-mt-20"
     >
       {/* ── HERO BANNER ── */}
-      <div className="relative overflow-hidden bg-gradient-to-br from-[#6B2D3E] via-[#4A1E2B] to-[#3A1623] py-28 px-6 md:px-12 lg:px-20">
+      <div className="relative overflow-hidden bg-gradient-to-br from-[#B85470] via-[#9A4060] to-[#8C405A] py-28 px-6 md:px-12 lg:px-20">
         <div className="absolute -top-24 -left-16 w-[450px] h-[450px] bg-[#E4BCC2]/8 rounded-full blur-3xl animate-float" />
         <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-[#E4BCC2]/10 rounded-full blur-2xl animate-float" style={{ animationDelay: "1.8s" }} />
         <div className="absolute inset-0 opacity-[0.06]" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.4) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
@@ -174,7 +175,10 @@ export function InfluencerSection() {
         <div>
           <div className="reveal text-center mb-16">
             <div className="inline-block border-t-[3px] border-[#6B2D3E] pt-2 mb-4">
-              <span className="text-[#6B2D3E] font-bold text-sm tracking-[0.2em] uppercase">📊 Ecosystem Reach</span>
+              <span className="text-[#6B2D3E] font-bold text-sm tracking-[0.2em] uppercase flex items-center justify-center gap-2">
+                <BarChart3 className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
+                Ecosystem Reach
+              </span>
             </div>
             <br />
             <h2 className="font-serif text-3xl lg:text-4xl text-[#0F0A0B] font-bold">Digital Platforms & Active Communities</h2>
@@ -246,7 +250,7 @@ export function InfluencerSection() {
         </div>
 
         {/* Media Kit CTA Banner */}
-        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#6B2D3E] via-[#4A1E2B] to-[#3A1623] p-10 lg:p-14 text-white text-center shadow-2xl space-y-6">
+        <div className="reveal relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#B85470] via-[#9A4060] to-[#8C405A] p-10 lg:p-14 text-white text-center shadow-2xl space-y-6">
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-[#E4BCC2]/8 rounded-full blur-2xl" />
           <div className="absolute -left-16 -bottom-16 w-48 h-48 bg-[#E4BCC2]/5 rounded-full blur-2xl" />
           <div className="relative z-10 max-w-3xl mx-auto space-y-4">

@@ -21,13 +21,12 @@ function useReveal(ref) {
   }, []);
 }
 
-// Theme colours — deep plum / blush
 const theme = {
-  primary:      "#6B2D3E",
-  primaryLight: "#C9828F",
-  primarySoft:  "#F3E0E3",
-  dark:         "#0F0A0B",
-  muted:        "#7A5A60",
+  primary:      "#B85470",   // rose-mauve
+  primaryLight: "#D4889C",
+  primarySoft:  "#FAF0F2",
+  dark:         "#2D121A",
+  muted:        "#7A5A62",
   border:       "#EACFD3",
   bg:           "#FDF8F8"
 };
@@ -73,7 +72,7 @@ export function KukCleanSection() {
       {/* ── HERO BANNER ── */}
       <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ backgroundColor: theme.primary }}
+        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
       >
         <video
           autoPlay
@@ -83,8 +82,8 @@ export function KukCleanSection() {
           className="absolute inset-0 w-full h-full object-cover z-0"
           src="https://cdn.shopify.com/videos/c/o/v/94b06b00c93544bcb8f744155ee632c8.mp4"
         />
-        <div className="absolute inset-0 z-0" style={{ backgroundColor: `${theme.primary}80` }} />
-        <div className="absolute inset-0 z-0 bg-black/30" />
+        <div className="absolute inset-0 z-0 bg-[#6B2D3E]/35 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 z-0 bg-black/40" />
 
         <div className="absolute z-0 -top-24 -right-16 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float pointer-events-none" />
         <div className="absolute z-0 -bottom-20 -left-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float pointer-events-none" style={{ animationDelay: "1.5s" }} />
@@ -319,7 +318,7 @@ export function KukCleanSection() {
         {/* Closing Quote Banner */}
         <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
-          style={{ backgroundColor: theme.primary }}
+          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
         >
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />

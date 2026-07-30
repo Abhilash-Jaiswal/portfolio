@@ -1,287 +1,101 @@
-import { ArrowDown, ArrowRight, Sparkles, Star, Users, BadgeCheck } from "lucide-react";
+import { ArrowDown, MessageCircle } from "lucide-react";
 import heroImage from "../../assets/Image.png";
 
 export function HeroSection() {
   return (
     <section
       id="introduction"
-      className="relative min-h-screen w-full flex items-center justify-center overflow-hidden"
-      style={{ backgroundColor: "#E4BCC2" }}
+      className="relative w-full flex flex-col justify-between overflow-hidden"
+      style={{
+        background: "linear-gradient(180deg, #D9A0AC 0%, #CC8E9A 55%, #C2808E 100%)"
+      }}
     >
-      {/* ── Layered background blobs ── */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        aria-hidden="true"
+      {/* ── Fixed Floating "Questions? Get Help" Pill (Marie Forleo Style) ── */}
+      <a
+        href="#contact"
+        className="fixed bottom-6 right-6 z-40 bg-white/95 backdrop-blur-md border border-[#EACFD3] text-[#2D121A] px-5 py-2.5 rounded-full shadow-2xl flex items-center gap-2.5 text-xs font-semibold hover:scale-105 transition-all duration-300 group"
       >
-        {/* Large radial glow top-right */}
+        <span>Questions? Get Help</span>
+        <div className="w-6 h-6 rounded-full bg-[#B85470]/10 flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors">
+          <MessageCircle className="w-3.5 h-3.5" strokeWidth={2} />
+        </div>
+      </a>
+
+      {/* ─────────────────────────────────────────────────────────────
+          TOP HERO: Huge Bright White Serif Typography ("KIRTI YADAV") + Cutout
+         ───────────────────────────────────────────────────────────── */}
+      <div className="relative min-h-[84vh] lg:min-h-[88vh] w-full flex flex-col justify-between items-center pt-20 px-4 sm:px-8">
+
+        {/* ── Background Giant Bright White Typography ("KIRTI YADAV") ── */}
         <div
-          className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full"
-          style={{
-            background: "radial-gradient(circle, rgba(255,255,255,0.35) 0%, transparent 70%)"
-          }}
-        />
-        {/* Soft blush bottom-left */}
-        <div
-          className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full animate-float-slow"
-          style={{
-            background: "radial-gradient(circle, rgba(107,45,62,0.10) 0%, transparent 70%)"
-          }}
-        />
-        {/* Subtle centre vignette */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(160deg, rgba(255,255,255,0.18) 0%, transparent 50%, rgba(107,45,62,0.06) 100%)"
-          }}
-        />
+          className="absolute inset-0 pt-8 flex flex-col items-center justify-center pointer-events-none select-none z-0 overflow-hidden"
+          aria-hidden="true"
+        >
+          <h1 className="font-serif text-[21vw] sm:text-[19vw] lg:text-[16vw] font-bold leading-[0.80] tracking-tight text-white uppercase text-center drop-shadow-lg opacity-100">
+            KIRTI
+            <br />
+            YADAV
+          </h1>
+        </div>
+
+        {/* ── Center Cutout Portrait Image ── */}
+        <div className="relative z-10 flex-1 flex items-end justify-center w-full max-w-4xl pt-6">
+          <img
+            src={heroImage}
+            alt="Kirti Yadav"
+            className="max-h-[62vh] sm:max-h-[70vh] lg:max-h-[77vh] w-auto object-contain object-bottom filter drop-shadow-2xl transition-transform duration-700 hover:scale-[1.01]"
+            onError={(e) => {
+              e.target.style.display = "none";
+            }}
+          />
+        </div>
+
+        {/* ── Oval Scroll Down Button ( ( ↓ ) Marie Forleo Style ) ── */}
+        <div className="relative z-20 pb-4 pt-2">
+          <a
+            href="#sub-hero-intro"
+            className="group flex flex-col items-center text-white hover:text-white transition-all duration-300"
+            aria-label="Scroll down"
+          >
+            <div className="w-9 h-16 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-[#B85470] shadow-xl bg-white/15 backdrop-blur-sm">
+              <ArrowDown className="w-4.5 h-4.5 animate-bounce text-white group-hover:text-[#B85470]" strokeWidth={2.5} />
+            </div>
+          </a>
+        </div>
       </div>
 
-      {/* ── Main layout ── */}
-      <div className="relative z-10 max-w-[1320px] w-full mx-auto px-6 sm:px-10 lg:px-16 pt-32 pb-20 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      {/* ─────────────────────────────────────────────────────────────
+          SUB-HERO INTRO SECTION: Handwritten "Hey!" on Color Border Line + Marie Forleo Copy
+         ───────────────────────────────────────────────────────────── */}
+      <div
+        id="sub-hero-intro"
+        className="relative z-10 w-full pt-10 pb-20 px-6 sm:px-12 lg:px-20 border-t border-white/40"
+        style={{
+          background: "linear-gradient(180deg, #E6C2C9 0%, #DFB4BD 100%)"
+        }}
+      >
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-16 relative">
 
-        {/* ── LEFT COLUMN ── */}
-        <div className="lg:col-span-7 flex flex-col justify-center space-y-7">
-
-          {/* Category tags */}
-          <div
-            className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-bold tracking-[0.22em] uppercase"
-            style={{ color: "#4A1E2B" }}
-          >
-            <span>Founder</span>
-            <span style={{ color: "#6B2D3E", opacity: 0.5 }}>·</span>
-            <span>Nutritionist</span>
-            <span style={{ color: "#6B2D3E", opacity: 0.5 }}>·</span>
-            <span>Menopause Coach</span>
-            <span style={{ color: "#6B2D3E", opacity: 0.5 }}>·</span>
-            <span>Mentor</span>
+          {/* Left: Handwritten "Hey!" Script Font sitting directly ON THE BORDER line of both background colors */}
+          <div className="flex-shrink-0 -mt-24 sm:-mt-28 lg:-mt-36 text-center lg:text-left z-20 pointer-events-none">
+            <span
+              className="font-script text-8xl sm:text-9xl lg:text-[11rem] font-normal text-white leading-none inline-block transform -rotate-6 select-none filter drop-shadow-md"
+            >
+              Hey!
+            </span>
           </div>
 
-          {/* Main headline */}
-          <h1
-            className="font-serif font-bold leading-[1.06] tracking-tight"
-            style={{ color: "#0F0A0B", fontSize: "clamp(2.6rem, 5.5vw, 4.25rem)" }}
-          >
-            Nourishing lives,<br />
-            building{" "}
-            <span
-              className="italic animate-text-gradient"
-              style={{
-                backgroundImage: "linear-gradient(135deg, #4A1E2B 0%, #6B2D3E 40%, #C9828F 70%, #4A1E2B 100%)",
-                WebkitBackgroundClip: "text",
-                backgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundSize: "200% auto"
-              }}
-            >
-              movements.
-            </span>
-          </h1>
-
-          {/* Greeting */}
-          <div className="space-y-2 max-w-lg">
-            <div className="flex items-baseline gap-2.5">
-              <span className="font-script text-4xl leading-none" style={{ color: "#6B2D3E" }}>
-                Hey!
-              </span>
-              <span className="font-serif font-bold text-xl" style={{ color: "#0F0A0B" }}>
-                I'm Kirti
-              </span>
-            </div>
-            <p
-              className="text-base lg:text-[1.05rem] font-normal leading-relaxed"
-              style={{ color: "#4A1E2B", maxWidth: "420px" }}
-            >
-              A founder, certified nutritionist, and builder of kinder systems —
-              for bodies, workplaces, and the lives we're still becoming.
+          {/* Right / Centered: Minimal Marie Forleo Intro Copy */}
+          <div className="flex-1 text-center lg:text-left pt-2">
+            <p className="text-xl sm:text-2xl lg:text-3xl font-light text-[#2D121A] leading-relaxed tracking-wide max-w-3xl">
+              I'm Kirti. An entrepreneur, speaker and certified nutritionist dedicated to helping you{" "}
+              <strong className="font-bold text-[#2D121A]">
+                create a healthy body, business and life you love.
+              </strong>
             </p>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-wrap items-center gap-4 pt-1">
-            <a
-              href="#introduction-details"
-              className="group inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm transition-all duration-300 shadow-lg hover:shadow-xl active:scale-[0.97]"
-              style={{
-                backgroundColor: "#6B2D3E",
-                color: "#FFFFFF",
-                boxShadow: "0 4px 24px rgba(107,45,62,0.28)"
-              }}
-              onMouseEnter={e => e.currentTarget.style.backgroundColor = "#4A1E2B"}
-              onMouseLeave={e => e.currentTarget.style.backgroundColor = "#6B2D3E"}
-            >
-              Explore my work
-              <ArrowRight
-                className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
-              />
-            </a>
-            <a
-              href="/life-story"
-              className="group inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full font-semibold text-sm border-2 transition-all duration-300 active:scale-[0.97]"
-              style={{
-                borderColor: "#6B2D3E",
-                color: "#6B2D3E",
-                backgroundColor: "transparent"
-              }}
-              onMouseEnter={e => {
-                e.currentTarget.style.backgroundColor = "#6B2D3E";
-                e.currentTarget.style.color = "#FFFFFF";
-              }}
-              onMouseLeave={e => {
-                e.currentTarget.style.backgroundColor = "transparent";
-                e.currentTarget.style.color = "#6B2D3E";
-              }}
-            >
-              Read my story
-            </a>
-          </div>
-
-          {/* Keep reading */}
-          <div className="pt-1">
-            <a
-              href="#introduction-details"
-              className="inline-flex items-center gap-2 text-xs font-semibold group transition-colors"
-              style={{ color: "#4A1E2B" }}
-            >
-              <span className="tracking-widest uppercase">Keep reading</span>
-              <ArrowDown
-                className="w-3.5 h-3.5 group-hover:translate-y-1 transition-transform duration-300"
-              />
-            </a>
-          </div>
-
-          {/* Community badge */}
-          <div
-            className="pt-5 border-t flex items-center gap-4 max-w-sm"
-            style={{ borderColor: "rgba(107,45,62,0.2)" }}
-          >
-            <div className="flex -space-x-2.5">
-              {["K","Y","M"].map((l, i) => (
-                <div
-                  key={i}
-                  className="w-9 h-9 rounded-full border-2 flex items-center justify-center text-xs font-bold"
-                  style={{
-                    backgroundColor: ["#6B2D3E","#4A1E2B","#C9828F"][i],
-                    borderColor: "#E4BCC2",
-                    color: "#FFFFFF"
-                  }}
-                >
-                  {l}
-                </div>
-              ))}
-            </div>
-            <div>
-              <div className="flex items-center gap-1.5 text-xs font-bold" style={{ color: "#0F0A0B" }}>
-                <Users className="w-3.5 h-3.5" style={{ color: "#6B2D3E" }} />
-                Our Happy Community
-              </div>
-              <p className="text-xs flex items-center gap-1 mt-0.5" style={{ color: "#7A5A60" }}>
-                <Star className="w-3 h-3 fill-current" style={{ color: "#6B2D3E" }} />
-                <span className="font-bold" style={{ color: "#0F0A0B" }}>4.9</span>
-                <span>(1,200+ Clients)</span>
-              </p>
-            </div>
-          </div>
         </div>
-
-        {/* ── RIGHT COLUMN — Portrait card ── */}
-        <div className="lg:col-span-5 flex items-center justify-center lg:justify-end">
-          <div
-            className="relative w-full max-w-[400px] group"
-            style={{ aspectRatio: "4/5" }}
-          >
-            {/* Main card */}
-            <div
-              className="w-full h-full rounded-[2.5rem] flex flex-col justify-between p-5 transition-all duration-500 group-hover:shadow-2xl"
-              style={{
-                background: "linear-gradient(145deg, rgba(255,255,255,0.70) 0%, rgba(255,255,255,0.40) 100%)",
-                backdropFilter: "blur(16px)",
-                WebkitBackdropFilter: "blur(16px)",
-                border: "1.5px solid rgba(255,255,255,0.85)",
-                boxShadow: "0 8px 48px rgba(107,45,62,0.14), inset 0 1px 0 rgba(255,255,255,0.6)"
-              }}
-            >
-              {/* Portrait image area */}
-              <div
-                className="relative w-full rounded-2xl overflow-hidden flex items-center justify-center"
-                style={{ height: "72%", backgroundColor: "rgba(228,188,194,0.30)" }}
-              >
-                <img
-                  src={heroImage}
-                  alt="Kirti Yadav — Founder, Nutritionist"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                  onError={e => { e.target.style.display = "none"; }}
-                />
-                {/* Holistic badge */}
-                <div
-                  className="absolute top-3 right-3 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[10px] font-bold"
-                  style={{
-                    backgroundColor: "rgba(255,255,255,0.88)",
-                    backdropFilter: "blur(8px)",
-                    color: "#6B2D3E",
-                    border: "1px solid rgba(255,255,255,0.6)"
-                  }}
-                >
-                  <BadgeCheck className="w-3.5 h-3.5" />
-                  Certified Nutritionist
-                </div>
-                {/* Sparkle decoration */}
-                <div
-                  className="absolute bottom-3 left-3 w-8 h-8 rounded-full flex items-center justify-center"
-                  style={{ backgroundColor: "#6B2D3E" }}
-                >
-                  <Sparkles className="w-4 h-4 text-white" />
-                </div>
-              </div>
-
-              {/* Quote area */}
-              <div className="pt-3 pb-1 space-y-1.5">
-                <p
-                  className="font-serif italic text-sm leading-snug"
-                  style={{ color: "#0F0A0B" }}
-                >
-                  "A little more human, a little more hopeful — always in motion."
-                </p>
-                <div
-                  className="flex items-center justify-between text-[10px] font-bold uppercase tracking-widest pt-2"
-                  style={{
-                    color: "#7A5A60",
-                    borderTop: "1px solid rgba(107,45,62,0.15)"
-                  }}
-                >
-                  <span>Portrait · Kirti Yadav</span>
-                  <span style={{ color: "#6B2D3E" }}>2026</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Floating badge — top-left */}
-            <div
-              className="absolute -top-4 -left-4 px-3.5 py-2 rounded-2xl text-[11px] font-bold shadow-lg animate-float"
-              style={{
-                backgroundColor: "#6B2D3E",
-                color: "#FFFFFF",
-                animationDelay: "0.5s"
-              }}
-            >
-              10+ yrs expertise
-            </div>
-
-            {/* Floating stats badge — bottom-right */}
-            <div
-              className="absolute -bottom-4 -right-4 px-3.5 py-2.5 rounded-2xl text-[11px] font-bold shadow-lg animate-float"
-              style={{
-                backgroundColor: "#FFFFFF",
-                color: "#6B2D3E",
-                border: "1px solid rgba(228,188,194,0.6)",
-                animationDelay: "1.2s"
-              }}
-            >
-              <span className="font-serif text-lg font-bold block leading-none">500+</span>
-              <span style={{ color: "#7A5A60", fontWeight: 600 }}>clients helped</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section>
   );

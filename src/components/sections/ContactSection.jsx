@@ -7,11 +7,11 @@ export function ContactSection() {
 
   // Theme colours — deep plum / blush
   const theme = {
-    primary:      "#6B2D3E",
-    primaryLight: "#C9828F",
-    primarySoft:  "#F3E0E3",
-    dark:         "#0F0A0B",
-    muted:        "#7A5A60",
+    primary:      "#B85470",
+    primaryLight: "#D4889C",
+    primarySoft:  "#FAF0F2",
+    dark:         "#2D121A",
+    muted:        "#7A5A62",
     border:       "#EACFD3",
     bg:           "#FDF8F8"
   };

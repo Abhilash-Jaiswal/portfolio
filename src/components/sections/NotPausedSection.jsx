@@ -1,5 +1,20 @@
 import { useEffect, useRef } from "react";
-import { BookOpen } from "lucide-react";
+import {
+  BookOpen,
+  Shield,
+  Stethoscope,
+  BarChart3,
+  Users,
+  MessageSquare,
+  Sparkles,
+  Globe,
+  UserCheck,
+  Building2,
+  Building,
+  Lightbulb,
+  Heart,
+  Award
+} from "lucide-react";
 
 function useReveal(ref) {
   useEffect(() => {
@@ -13,45 +28,44 @@ function useReveal(ref) {
   }, []);
 }
 
-// Theme colours — deep plum / blush
 const theme = {
-  primary:      "#6B2D3E",
-  primaryLight: "#C9828F",
-  primarySoft:  "#F3E0E3",
-  dark:         "#0F0A0B",
-  muted:        "#7A5A60",
+  primary:      "#B85470",   // rose-mauve
+  primaryLight: "#D4889C",
+  primarySoft:  "#FAF0F2",
+  dark:         "#2D121A",
+  muted:        "#7A5A62",
   border:       "#EACFD3",
   bg:           "#FDF8F8"
 };
 
 const pillars = [
-  { icon: "🛡️", title: "Safe Community", desc: "Vetted, non-judgmental peer support spaces for 1,100+ women across 7 metro chapters — breaking the silence and shame around midlife transitions." },
-  { icon: "🩺", title: "Expert Support", desc: "Access to certified holistic nutritionists, gynaecologists, fitness coaches, and mental health professionals specializing in midlife health." },
-  { icon: "📊", title: "Symptom Tracking", desc: "Evidence-based guidance covering 34+ recognized perimenopause symptoms — from sleep disturbances and brain fog to joint pain and mood shifts." },
-  { icon: "📚", title: "Trusted Education", desc: "India-specific, culturally rooted health literacy built for Indian bodies, diets, and family dynamics — not adapted from Western templates." },
+  { icon: Shield, title: "Safe Community", desc: "Vetted, non-judgmental peer support spaces for 1,100+ women across 7 metro chapters — breaking the silence and shame around midlife transitions." },
+  { icon: Stethoscope, title: "Expert Support", desc: "Access to certified holistic nutritionists, gynaecologists, fitness coaches, and mental health professionals specializing in midlife health." },
+  { icon: BarChart3, title: "Symptom Tracking", desc: "Evidence-based guidance covering 34+ recognized perimenopause symptoms — from sleep disturbances and brain fog to joint pain and mood shifts." },
+  { icon: BookOpen, title: "Trusted Education", desc: "India-specific, culturally rooted health literacy built for Indian bodies, diets, and family dynamics — not adapted from Western templates." },
 ];
 
 const principles = [
-  { icon: "🤝", title: "Open & Inclusive", desc: "No single dietary or medical ideology pushed. All approaches welcomed — treating women as intelligent, empowered decision-makers." },
-  { icon: "💬", title: "WhatsApp-Native (85-95% Open)", desc: "Meeting women on the platform they use every single day, driving unprecedented engagement compared to traditional email (22%)." },
-  { icon: "✨", title: "Aspirational Midlife", desc: "Reframing midlife as an active, vibrant chapter — solo travel, trekking, career peaks, and personal strength, not decline." },
-  { icon: "🇮🇳", title: "India-Specific Frameworks", desc: "Tailored to Indian family dynamics, kitchen ingredients, and cultural realities rather than imported Western guidelines." },
-  { icon: "🩺", title: "Holistic Care Arc", desc: "Bridging nutrition, community belonging, and clinical gynaecological access for end-to-end midlife wellness." },
+  { icon: Users, title: "Open & Inclusive", desc: "No single dietary or medical ideology pushed. All approaches welcomed — treating women as intelligent, empowered decision-makers." },
+  { icon: MessageSquare, title: "WhatsApp-Native (85-95% Open)", desc: "Meeting women on the platform they use every single day, driving unprecedented engagement compared to traditional email (22%)." },
+  { icon: Sparkles, title: "Aspirational Midlife", desc: "Reframing midlife as an active, vibrant chapter — solo travel, trekking, career peaks, and personal strength, not decline." },
+  { icon: Globe, title: "India-Specific Frameworks", desc: "Tailored to Indian family dynamics, kitchen ingredients, and cultural realities rather than imported Western guidelines." },
+  { icon: Heart, title: "Holistic Care Arc", desc: "Bridging nutrition, community belonging, and clinical gynaecological access for end-to-end midlife wellness." },
 ];
 
 const services = [
   {
-    icon: "👩",
+    icon: UserCheck,
     title: "5-Month 1:1 Perimenopause Coaching",
     items: ["Personalised midlife nutrition & symptom management", "Strength & mobility routines for bone density", "Sleep, stress & metabolic health optimization", "Vetted 1,100+ member WhatsApp community access"],
   },
   {
-    icon: "🏢",
+    icon: Building2,
     title: "Corporate Menopause Clinics",
     items: ["Employee education sessions for senior women leaders", "HR team sensitisation & menopause policy building", "Retaining female executive talent during midlife", "Multi-session midlife wellness masterclasses"],
   },
   {
-    icon: "🏫",
+    icon: Building,
     title: "Institutional & Community Workshops",
     items: ["Menopause awareness for educators & institutions", "Destigmatizing midlife health in family circles", "Group masterclasses on hormonal nutrition", "City chapter meetups across 7 Indian metros"],
   },
@@ -59,13 +73,9 @@ const services = [
 
 const saladFormulaBlocks = [
   { step: "1. Base", text: "Spinach, Fenugreek, Cabbage, Sprouted Mung, Millets (Pearl/Sorghum/Finger), Raw Papaya, Cucumber, Amaranth Leaves, Sweet Potato, Red Cabbage, Foxtail Millet, Sprouted Chickpeas." },
-  { step: "2. Protein", text: "Chickpeas, Kidney Beans, Green Peas, Tofu, Peanuts, Black-Eyed Peas, Soya Chunks, Red Lentils, Moth Beans, Horse Gram, Black Gram, Split Mung Beans, Edamame." },
-  { step: "3. Crunch", text: "Sesame Seeds, Fox Nuts (Makhana), Roasted Chickpeas, Pumpkin Seeds, Flax Seeds, Roasted Peanuts, Cashews, Almonds, Watermelon Seeds, Sunflower Seeds, Chironji, Walnuts." },
-  { step: "4. Color & Freshness", text: "Beetroot, Pomegranate, Carrot, Raw Mango, Mint, Coriander, Curry Leaves, Tomato, Bell Pepper, Red Onion, Radish, Indian Gooseberry (Amla), Basil, Spring Onion." },
-  { step: "5. Dressing", text: "Lemon, Mustard Oil, Sesame Oil, Ginger-Garlic, Cumin Powder, Black Salt, Jaggery, Tamarind, Chaat Masala, Groundnut Oil, Carom Seeds (Ajwain), Amchur, Coconut Oil." },
+  { step: "2. Crunch", text: "Roasted Pumpkin Seeds, Toasted Almonds, Walnuts, Roasted Chana, Sesame Seeds, Sun-dried Tomatoes, Pomegranate Arils." },
+  { step: "3. Dressing", text: "Lemon Juice, Extra Virgin Olive Oil, Apple Cider Vinegar, Cold-pressed Mustard Oil, Rock Salt, Roasted Cumin, Black Pepper, Garlic." },
 ];
-
-const cityChapters = ["Delhi", "Mumbai", "Bangalore", "Chennai", "Hyderabad", "Pune", "Ahmedabad"];
 
 export function NotPausedSection() {
   const ref = useRef(null);
@@ -83,14 +93,15 @@ export function NotPausedSection() {
     >
 
       {/* ── HERO BANNER ── */}
-      <div 
+      <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ backgroundColor: theme.primary }}
+        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
       >
         <div className="absolute -top-24 -right-16 w-[450px] h-[450px] bg-white/5 rounded-full blur-3xl animate-float" />
         <div className="absolute -bottom-20 -left-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }} />
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
-        <div className="relative z-10 max-w-5xl animate-fade-in-up">
+        
+        <div className="relative z-10 max-w-5xl">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
             NotPaused.com · Founded 2025
@@ -118,7 +129,7 @@ export function NotPausedSection() {
         {/* Problem Stat Banner */}
         <div 
           className="reveal relative overflow-hidden rounded-3xl p-10 text-white text-center shadow-xl"
-          style={{ backgroundColor: theme.primary }}
+          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
         >
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
           <div className="relative z-10 space-y-3 max-w-4xl mx-auto">
@@ -135,22 +146,20 @@ export function NotPausedSection() {
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
             <div 
-              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
-              style={{ backgroundColor: theme.primary }}
+              className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0 text-white bg-[#B85470]"
             >
-              <span className="text-2xl">💡</span>
+              <Lightbulb className="w-7 h-7 text-white" strokeWidth={1.5} />
             </div>
             <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1" style={{ color: theme.primary }}>Chapter 01</span>
-              <h2 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>The Personal Origin (2025)</h2>
-              <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}>Why a certified nutritionist found herself unprepared — and built the solution</p>
+              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1 text-[#B85470]">Chapter 01</span>
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">The Personal Origin (2025)</h2>
+              <p className="text-xs font-medium tracking-widest uppercase mt-1 text-[#7A5A60]">Why a certified nutritionist found herself unprepared — and built the solution</p>
             </div>
           </div>
           <div 
-            className="reveal pl-6 border-l-2 rounded-r-xl"
-            style={{ borderColor: theme.primary }}
+            className="reveal pl-6 border-l-2 rounded-r-xl border-[#B85470]"
           >
-            <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
+            <p className="text-base font-light leading-relaxed text-[#7A5A60]">
               Kirti Yadav is an AFPA-certified holistic nutritionist specializing in herbal and natural strategies for menopause. Yet when she confronted her own perimenopause symptoms at 40, she found herself facing a stark reality: even with professional training, India-specific, culturally relevant guidance was virtually non-existent.
             </p>
           </div>
@@ -161,14 +170,10 @@ export function NotPausedSection() {
             ].map((item, i) => (
               <div 
                 key={i} 
-                className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-                style={{ 
-                  borderColor: `${theme.border}60`,
-                  transitionDelay: `${i * 100}ms`
-                }}
+                className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <h4 className="font-serif font-bold text-base mb-3" style={{ color: theme.dark }}>{item.h}</h4>
-                <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>{item.b}</p>
+                <h4 className="font-serif font-bold text-base mb-3 text-[#0F0A0B]">{item.h}</h4>
+                <p className="text-sm font-light leading-relaxed text-justify text-[#7A5A60]">{item.b}</p>
               </div>
             ))}
           </div>
@@ -178,61 +183,57 @@ export function NotPausedSection() {
         <div>
           <div className="reveal text-center mb-10">
             <div 
-              className="inline-block border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B85470]"
             >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Solution Architecture</span>
+              <Shield className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B85470]">Solution Architecture</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>The Four Pillars of NotPaused.com</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">The Four Pillars of NotPaused.com</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {pillars.map((p, i) => (
-              <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
-                style={{ 
-                  borderColor: `${theme.border}60`,
-                  transitionDelay: `${i * 80}ms`
-                }}
-              >
+            {pillars.map((p, i) => {
+              const Icon = p.icon;
+              return (
                 <div 
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center text-xl shadow-md text-white"
-                  style={{ backgroundColor: theme.primary }}
+                  key={i} 
+                  className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
                 >
-                  {p.icon}
+                  <div 
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#F3E0E3] text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm"
+                  >
+                    <Icon className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <h4 className="font-serif font-bold text-sm text-[#0F0A0B]">{p.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#7A5A60]">{p.desc}</p>
                 </div>
-                <h4 className="font-serif font-bold text-sm" style={{ color: theme.dark }}>{p.title}</h4>
-                <p className="text-xs font-light leading-relaxed" style={{ color: theme.muted }}>{p.desc}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
         {/* Featured Asset: The Salad Formula eBook */}
         <div
-          className="reveal bg-gradient-to-br from-white to-[#f5ede8]/40 border p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
-          style={{ borderColor: theme.border }}
+          className="reveal bg-gradient-to-br from-white to-[#FDF8F8] border border-[#EACFD3] p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-80 h-80 bg-white/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#F3E0E3]/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
 
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b relative z-10" style={{ borderColor: `${theme.border}80` }}>
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b border-[#EACFD3] relative z-10">
             <div className="space-y-4">
               <span
-                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2"
-                style={{ backgroundColor: theme.primary }}
+                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2 bg-[#B85470]"
               >
-                <BookOpen size={14} /> Lead Magnet Asset
+                <BookOpen size={14} strokeWidth={1.5} /> Lead Magnet Asset
               </span>
-              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight" style={{ color: theme.dark }}>&quot;The Salad Formula&quot; eBook</h3>
-              <p className="text-sm font-medium uppercase tracking-[0.1em]" style={{ color: theme.muted }}>An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
+              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight text-[#0F0A0B]">&quot;The Salad Formula&quot; eBook</h3>
+              <p className="text-sm font-medium uppercase tracking-[0.1em] text-[#7A5A60]">An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
             </div>
             <div className="md:text-right hidden sm:block">
-              <span className="text-sm font-bold block mb-1" style={{ color: theme.primary }}>By Kirti Yadav</span>
-              <span className="text-xs uppercase tracking-wider block" style={{ color: theme.muted }}>Certified Holistic Nutritionist</span>
+              <span className="text-sm font-bold block mb-1 text-[#B85470]">By Kirti Yadav</span>
+              <span className="text-xs uppercase tracking-wider block text-[#7A5A60]">Certified Holistic Nutritionist</span>
             </div>
           </div>
 
-          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10" style={{ color: theme.muted }}>
+          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10 text-[#7A5A60]">
             "I started KuKClean with one simple belief: the plate in front of you can change your whole life — and it doesn't need to be complicated, imported, or expensive to do it. My mission is simple: one million plates, changed for the better by 2030."
           </p>
 
@@ -240,176 +241,101 @@ export function NotPausedSection() {
             {saladFormulaBlocks.map((b, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-white space-y-3 hover:-translate-y-1 transition-transform duration-300"
+                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-[#EACFD3] space-y-3 hover:-translate-y-1 transition-transform duration-300"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm" style={{ backgroundColor: theme.primary }}>{b.step.charAt(0)}</div>
-                  <span className="font-serif font-bold text-lg" style={{ color: theme.primary }}>{b.step.substring(3)}</span>
+                  <div className="w-9 h-9 rounded-2xl flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm bg-[#B85470]">{b.step.charAt(0)}</div>
+                  <span className="font-serif font-bold text-lg text-[#B85470]">{b.step.substring(3)}</span>
                 </div>
-                <p className="text-sm font-light leading-relaxed pl-13" style={{ color: theme.muted, marginLeft: "3rem" }}>{b.text}</p>
+                <p className="text-sm font-light leading-relaxed text-[#7A5A60]">{b.text}</p>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Services & Coaching */}
-        <div>
-          <div className="reveal text-center mb-12">
-            <div 
-              className="inline-block border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
-            >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Services & Corporate Offerings</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>How NotPaused.com Serves Women & Employers</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {services.map((s, i) => (
-              <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-5"
-                style={{ 
-                  borderColor: `${theme.border}60`,
-                  transitionDelay: `${i * 100}ms`
-                }}
-              >
-                <div 
-                  className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl shadow-md timeline-dot text-white"
-                  style={{ backgroundColor: theme.primary }}
-                >
-                  {s.icon}
-                </div>
-                <h4 className="font-serif font-bold text-lg" style={{ color: theme.dark }}>{s.title}</h4>
-                <ul className="space-y-2">
-                  {s.items.map((item, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm font-light" style={{ color: theme.muted }}>
-                      <span className="mt-0.5 flex-shrink-0" style={{ color: theme.primary }}>✦</span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Featured Asset: The Salad Formula eBook */}
-        <div
-          className="reveal bg-gradient-to-br from-white to-[#f5ede8]/40 border p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
-          style={{ borderColor: theme.border }}
-        >
-          <div className="absolute top-0 right-0 w-80 h-80 bg-white/50 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
-
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b relative z-10" style={{ borderColor: `${theme.border}80` }}>
-            <div className="space-y-4">
-              <span
-                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2"
-                style={{ backgroundColor: theme.primary }}
-              >
-                <BookOpen size={14} /> Lead Magnet Asset
-              </span>
-              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight" style={{ color: theme.dark }}>&quot;The Salad Formula&quot; eBook</h3>
-              <p className="text-sm font-medium uppercase tracking-[0.1em]" style={{ color: theme.muted }}>An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
-            </div>
-            <div className="md:text-right hidden sm:block">
-              <span className="text-sm font-bold block mb-1" style={{ color: theme.primary }}>By Kirti Yadav</span>
-              <span className="text-xs uppercase tracking-wider block" style={{ color: theme.muted }}>Certified Holistic Nutritionist</span>
-            </div>
-          </div>
-
-          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10" style={{ color: theme.muted }}>
-            "I started KuKClean with one simple belief: the plate in front of you can change your whole life — and it doesn't need to be complicated, imported, or expensive to do it. My mission is simple: one million plates, changed for the better by 2030."
-          </p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10 mt-10">
-            {saladFormulaBlocks.map((b, idx) => (
-              <div
-                key={idx}
-                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-white space-y-3 hover:-translate-y-1 transition-transform duration-300"
-              >
-                <div className="flex items-center gap-4 mb-3">
-                  <div className="w-9 h-9 rounded-full flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm" style={{ backgroundColor: theme.primary }}>{b.step.charAt(0)}</div>
-                  <span className="font-serif font-bold text-lg" style={{ color: theme.primary }}>{b.step.substring(3)}</span>
-                </div>
-                <p className="text-sm font-light leading-relaxed pl-13" style={{ color: theme.muted, marginLeft: "3rem" }}>{b.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Platform Principles */}
+        {/* Core Operating Principles */}
         <div>
           <div className="reveal text-center mb-10">
             <div 
-              className="inline-block border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B85470]"
             >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Philosophy</span>
+              <Award className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B85470]">Brand Ethos</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>What Sets NotPaused.com Apart</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">Core Operating Principles</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
-            {principles.map((p, i) => (
-              <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
-                style={{ 
-                  borderColor: `${theme.border}60`,
-                  transitionDelay: `${i * 80}ms`
-                }}
-              >
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {principles.map((pr, i) => {
+              const Icon = pr.icon;
+              return (
                 <div 
-                  className="w-12 h-12 rounded-2xl flex items-center justify-center text-xl shadow-md text-white"
-                  style={{ backgroundColor: theme.primary }}
+                  key={i} 
+                  className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
                 >
-                  {p.icon}
+                  <div className="w-12 h-12 rounded-2xl bg-[#F3E0E3] flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm">
+                    <Icon className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <h4 className="font-serif font-bold text-base text-[#0F0A0B]">{pr.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#7A5A60]">{pr.desc}</p>
                 </div>
-                <h4 className="font-serif font-bold text-sm" style={{ color: theme.dark }}>{p.title}</h4>
-                <p className="text-xs font-light leading-relaxed" style={{ color: theme.muted }}>{p.desc}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
 
-        {/* City Chapters & Community Reach */}
-        <div 
-          className="reveal bg-white/80 border p-8 rounded-3xl shadow-sm text-center space-y-5"
-          style={{ borderColor: `${theme.border}60` }}
-        >
-          <span className="font-bold text-xs tracking-widest uppercase block" style={{ color: theme.primary }}>1,100+ Member WhatsApp Ecosystem across 7 Metro Chapters</span>
-          <p className="text-sm font-light max-w-2xl mx-auto" style={{ color: theme.muted }}>Vetted WhatsApp groups connecting women with local gynaecologists, nutritionists, and peer circles across India's largest metros.</p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {cityChapters.map((city) => (
-              <span 
-                key={city} 
-                className="text-xs font-semibold px-4 py-2 rounded-full border transition-colors"
-                style={{ 
-                  backgroundColor: theme.primarySoft,
-                  color: theme.dark,
-                  borderColor: theme.border
-                }}
-              >
-                📍 {city}
-              </span>
-            ))}
+        {/* Services & Community Offerings */}
+        <div>
+          <div className="reveal text-center mb-10">
+            <div 
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B85470]"
+            >
+              <Users className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B85470]">Ecosystem Programs</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">Services &amp; Community Offerings</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {services.map((s, i) => {
+              const Icon = s.icon;
+              return (
+                <div 
+                  key={i} 
+                  className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-5 flex flex-col justify-between group"
+                >
+                  <div className="space-y-4">
+                    <div className="w-12 h-12 rounded-2xl bg-[#F3E0E3] flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm">
+                      <Icon className="w-6 h-6" strokeWidth={1.5} />
+                    </div>
+                    <h4 className="font-serif font-bold text-lg text-[#0F0A0B]">{s.title}</h4>
+                    <ul className="space-y-2.5 pt-2 border-t border-[#EACFD3]">
+                      {s.items.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5 text-xs font-light text-[#7A5A60]">
+                          <span className="text-[#B85470] font-bold">•</span>
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
 
         {/* Closing Quote */}
         <div 
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
-          style={{ backgroundColor: theme.primary }}
+          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
         >
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
-          <div className="relative z-10 space-y-5 max-w-4xl mx-auto">
-            <span className="bg-white/15 border border-white/20 text-white text-[9px] font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full inline-block">Why It Was Built</span>
-            <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
-              "I built NotPaused.com because I was that woman looking for answers. Now I make sure no Indian woman has to go through perimenopause alone."
+          <div className="relative z-10 max-w-3xl mx-auto space-y-4">
+            <p className="font-serif text-xl lg:text-2xl italic text-white leading-relaxed">
+              "We are building the platform we wished existed when we first needed answers. For every Indian woman who was told to just endure midlife in silence — this space is for you."
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused.com</span>
+              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder of NotPaused.com</span>
               <div className="w-8 h-px bg-white/40" />
             </div>
           </div>
