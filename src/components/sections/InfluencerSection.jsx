@@ -138,9 +138,9 @@ export function InfluencerSection() {
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
               A Voice Built on <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F3E0E3] via-[#E4BCC2] to-[#FDF8F8] animate-text-gradient">
-                Authenticity & Expertise
-              </span>
+            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">
+              Authenticity &amp; Expertise
+            </span>
             </h1>
             <p className="text-white/80 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
               A certified nutritionist and 2x founder who developed an audience — not a social media performer. Connecting clean brands with high-intent Indian families.

@@ -59,58 +59,34 @@
 
 /* ══════════════════════════════════════════════════════════════
    DESIGN TOKENS — Soft Rose-Blush & Dark Plum Palette
-   (Extracted from user reference image for high-end luxury feel)
    ══════════════════════════════════════════════════════════════ */
 :root {
-  /* Backgrounds */
   --background: #FDF8F8;
   --foreground: #2D121A;
-
-  /* Cards */
   --card: #FFFFFF;
   --card-foreground: #2D121A;
   --popover: #FFFFFF;
   --popover-foreground: #2D121A;
-
-  /* Brand — Rose-Mauve Primary & Rich Plum Dark */
   --primary: #B85470;
   --primary-dark: #2D121A;
   --primary-light: #D4889C;
   --primary-foreground: #FFFFFF;
-
-  /* Secondary surfaces */
   --secondary: #F5E2E6;
   --secondary-foreground: #2D121A;
   --secondary-bg: #FAF0F2;
-
-  /* Muted */
   --muted: #F5E2E6;
   --muted-foreground: #7A5A62;
-
-  /* Accent — Hero Rose Blush */
   --accent: #E4BCC2;
   --accent-soft: #FAF0F2;
   --accent-foreground: #2D121A;
-
-  /* States & Borders */
   --destructive: #DC2626;
   --destructive-foreground: #FFFFFF;
   --border: #EACFD3;
   --input: #EACFD3;
   --ring: #B85470;
-
-  /* Semantic text */
   --text-primary: #2D121A;
   --text-secondary: #7A5A62;
-
-  /* Radius & Sidebar */
   --radius: 0.75rem;
-  --sidebar: #FAF0F2;
-  --sidebar-foreground: #2D121A;
-  --sidebar-primary: #B85470;
-  --sidebar-primary-foreground: #FFFFFF;
-  --sidebar-border: #EACFD3;
-  --sidebar-ring: #B85470;
 }
 
 /* ══════════════════════════════════════
@@ -140,18 +116,18 @@
 }
 
 /* ══════════════════════════════════════
-   ANIMATION & COLOR COMBINATION UTILITIES
+   HIGH-VISIBILITY COLOR ANIMATIONS
    ══════════════════════════════════════ */
 @layer utilities {
 
-  /* Dynamic Gradient Text Animation */
-  .animate-text-gradient {
-    background: linear-gradient(135deg, #2D121A 0%, #B85470 40%, #D4889C 70%, #2D121A 100%);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: text-gradient 5s linear infinite;
+  /* High-Visibility Color Pulse Animation for Headings */
+  .animate-color-glow {
+    animation: text-color-glow 4s ease-in-out infinite;
+  }
+
+  /* Smooth Color Shift for Accents */
+  .animate-accent-color {
+    animation: accent-color-shift 5s linear infinite;
   }
 
   /* Soft Ambient Pulse Glow */
@@ -175,27 +151,41 @@
     top: 0; left: -100%;
     width: 60%;
     height: 100%;
-    background: linear-gradient(120deg, transparent 0%, rgba(228,188,194,0.18) 50%, transparent 100%);
-    animation: shimmer-sweep 5s ease-in-out infinite;
+    background: linear-gradient(120deg, transparent 0%, rgba(228,188,194,0.22) 50%, transparent 100%);
+    animation: shimmer-sweep 4.5s ease-in-out infinite;
   }
 
-  /* Card Hover Glow Transition */
+  /* Card Hover Elevation */
   .card-hover-glow {
     transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
   .card-hover-glow:hover {
     transform: translateY(-6px);
-    box-shadow: 0 20px 50px -10px rgba(184, 84, 112, 0.18);
+    box-shadow: 0 20px 50px -10px rgba(184, 84, 112, 0.22);
   }
 }
 
 /* ══════════════════════════════════════
    KEYFRAMES
    ══════════════════════════════════════ */
-@keyframes text-gradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+@keyframes text-color-glow {
+  0%, 100% {
+    color: #E4BCC2;
+    text-shadow: 0 0 16px rgba(228, 188, 194, 0.45);
+  }
+  50% {
+    color: #FFF0F3;
+    text-shadow: 0 0 24px rgba(255, 240, 243, 0.65);
+  }
+}
+
+@keyframes accent-color-shift {
+  0%, 100% {
+    color: #B85470;
+  }
+  50% {
+    color: #D4889C;
+  }
 }
 
 @keyframes pulse-glow {
