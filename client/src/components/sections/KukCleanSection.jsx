@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
 import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
 import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
@@ -22,13 +22,13 @@ function useReveal(ref) {
 }
 
 const theme = {
-  primary:      "#B85470",   // rose-mauve
-  primaryLight: "#D4889C",
-  primarySoft:  "#FAF0F2",
-  dark:         "#2D121A",
-  muted:        "#7A5A62",
-  border:       "#EACFD3",
-  bg:           "#FDF8F8"
+  primary:      "#B55E79",   // rose-mauve
+  primaryLight: "#E6BEC6",
+  primarySoft:  "#F4D9DE",
+  dark:         "#2E2326",
+  muted:        "#5F5358",
+  border:       "#E8CDD3",
+  bg:           "#FCF8F7"
 };
 
 const products = [
@@ -72,7 +72,7 @@ export function KukCleanSection() {
       {/* ── HERO BANNER ── */}
       <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
+        style={{ background: `linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)` }}
       >
         <video
           autoPlay
@@ -106,7 +106,7 @@ export function KukCleanSection() {
               href="https://www.kukclean.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-white text-[#6B2D3E] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#FDF8F8] transition-colors shadow-lg"
+              className="inline-flex items-center justify-center rounded-full bg-white text-[#6B2D3E] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#FCF8F7] transition-colors shadow-lg"
             >
               Visit KuKClean
               <span className="ml-2">→</span>
@@ -318,7 +318,7 @@ export function KukCleanSection() {
         {/* Closing Quote Banner */}
         <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
-          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
+          style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />

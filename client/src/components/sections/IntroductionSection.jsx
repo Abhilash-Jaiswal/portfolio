@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import {
   Leaf,
   Heart,
@@ -43,19 +43,19 @@ export function IntroductionSection() {
 
   // Theme colours — rose-mauve / blush
   const theme = {
-    primary:      "#B85470",
-    primaryLight: "#D4889C",
-    primarySoft:  "#FAF0F2",
-    dark:         "#2D121A",
-    muted:        "#7A5A62",
-    border:       "#EACFD3"
+    primary:      "#B55E79",
+    primaryLight: "#E6BEC6",
+    primarySoft:  "#F4D9DE",
+    dark:         "#2E2326",
+    muted:        "#5F5358",
+    border:       "#E8CDD3"
   };
 
   return (
     <section
       id="introduction-details"
       className="py-24 px-4 md:px-8 lg:px-12 scroll-mt-20"
-      style={{ backgroundColor: "#FDF8F8", borderBottom: `1px solid ${theme.border}` }}
+      style={{ backgroundColor: "#FCF8F7", borderBottom: `1px solid ${theme.border}` }}
     >
       <div className="max-w-6xl mx-auto">
         
@@ -66,7 +66,7 @@ export function IntroductionSection() {
               className="inline-flex items-center gap-2 border-t-[3px] pt-2"
               style={{ borderColor: theme.primary }}
             >
-              <Sprout className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
+              <Sprout className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
               <span 
                 className="font-bold text-sm tracking-[0.2em] uppercase"
                 style={{ color: theme.primary }}
@@ -102,16 +102,16 @@ export function IntroductionSection() {
             return (
               <div
                 key={idx}
-                className="group bg-white/80 border border-[#EACFD3] p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4"
+                className="group bg-white/80 border border-[#E8CDD3] p-6 rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-start gap-4"
               >
-                <div className="w-12 h-12 rounded-2xl bg-[#F3E0E3] flex shrink-0 items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm">
+                <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex shrink-0 items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
                   <Icon className="w-6 h-6" strokeWidth={1.5} />
                 </div>
                 <div className="space-y-1">
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-[#B85470]">
+                  <span className="text-[10px] font-bold tracking-widest uppercase text-[#B55E79]">
                     {item.label}
                   </span>
-                  <p className="font-serif font-bold text-sm text-[#0F0A0B] leading-snug">
+                  <p className="font-serif font-bold text-sm text-[#2E2326] leading-snug">
                     {item.value}
                   </p>
                 </div>
@@ -158,7 +158,7 @@ export function IntroductionSection() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="space-y-3">
                   <div 
-                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F3E0E3] text-[#B85470]"
+                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F4D9DE] text-[#B55E79]"
                   >
                     01
                   </div>
@@ -167,7 +167,7 @@ export function IntroductionSection() {
                 </div>
                 <div className="space-y-3">
                   <div 
-                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F3E0E3] text-[#B85470]"
+                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F4D9DE] text-[#B55E79]"
                   >
                     02
                   </div>
@@ -176,7 +176,7 @@ export function IntroductionSection() {
                 </div>
                 <div className="space-y-3">
                   <div 
-                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F3E0E3] text-[#B85470]"
+                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F4D9DE] text-[#B55E79]"
                   >
                     03
                   </div>
@@ -188,7 +188,7 @@ export function IntroductionSection() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div className="space-y-3">
                   <div 
-                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F3E0E3] text-[#B85470]"
+                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F4D9DE] text-[#B55E79]"
                   >
                     01
                   </div>
@@ -197,7 +197,7 @@ export function IntroductionSection() {
                 </div>
                 <div className="space-y-3">
                   <div 
-                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F3E0E3] text-[#B85470]"
+                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F4D9DE] text-[#B55E79]"
                   >
                     02
                   </div>
@@ -206,7 +206,7 @@ export function IntroductionSection() {
                 </div>
                 <div className="space-y-3">
                   <div 
-                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F3E0E3] text-[#B85470]"
+                    className="w-10 h-10 rounded-2xl flex items-center justify-center font-bold text-sm bg-[#F4D9DE] text-[#B55E79]"
                   >
                     03
                   </div>
@@ -221,7 +221,7 @@ export function IntroductionSection() {
         {/* Highlighted Quote Box */}
         <div 
           className="rounded-3xl p-8 lg:p-12 text-white mb-20 relative overflow-hidden shadow-xl"
-          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
+          style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
           <div 
             className="absolute right-[-10%] bottom-[-20%] w-[300px] h-[300px] rounded-full pointer-events-none"
@@ -252,7 +252,7 @@ export function IntroductionSection() {
             style={{ borderColor: `${theme.border}50` }}
           >
             <div className="flex items-center gap-2.5 mb-6 pb-2 border-b" style={{ borderColor: theme.border }}>
-              <ShieldCheck className="w-5 h-5 text-[#B85470]" strokeWidth={1.5} />
+              <ShieldCheck className="w-5 h-5 text-[#B55E79]" strokeWidth={1.5} />
               <h3 
                 className="font-serif text-xl font-bold"
                 style={{ color: theme.dark }}
@@ -263,7 +263,7 @@ export function IntroductionSection() {
             <ul className="space-y-4">
               {credentials.map((cred, idx) => (
                 <li key={idx} className="flex items-start gap-3 text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
-                  <CheckCircle2 className="w-4 h-4 shrink-0 text-[#B85470] mt-0.5" strokeWidth={2} />
+                  <CheckCircle2 className="w-4 h-4 shrink-0 text-[#B55E79] mt-0.5" strokeWidth={2} />
                   <span>{cred}</span>
                 </li>
               ))}
@@ -277,7 +277,7 @@ export function IntroductionSection() {
           >
             <div>
               <div className="flex items-center gap-2.5 mb-6 pb-2 border-b" style={{ borderColor: theme.border }}>
-                <TrendingUp className="w-5 h-5 text-[#B85470]" strokeWidth={1.5} />
+                <TrendingUp className="w-5 h-5 text-[#B55E79]" strokeWidth={1.5} />
                 <h3 
                   className="font-serif text-xl font-bold"
                   style={{ color: theme.dark }}
@@ -286,7 +286,7 @@ export function IntroductionSection() {
                 </h3>
               </div>
               <p 
-                className="text-xs font-bold tracking-widest uppercase mb-6 block text-[#B85470]"
+                className="text-xs font-bold tracking-widest uppercase mb-6 block text-[#B55E79]"
               >
                 In the Indian Wellness Landscape
               </p>
@@ -316,7 +316,7 @@ export function IntroductionSection() {
               style={{ backgroundColor: `${theme.primarySoft}50`, borderColor: theme.border }}
             >
               <span 
-                className="text-[10px] font-bold tracking-widest uppercase block mb-1 text-[#B85470]"
+                className="text-[10px] font-bold tracking-widest uppercase block mb-1 text-[#B55E79]"
               >
                 Differentiator
               </span>
@@ -331,7 +331,7 @@ export function IntroductionSection() {
         {/* Vision for the Next Chapter */}
         <div className="border-t pt-20" style={{ borderColor: `${theme.border}60` }}>
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 bg-[#F3E0E3] px-4 py-1.5 rounded-full text-[#B85470] text-xs font-bold uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 bg-[#F4D9DE] px-4 py-1.5 rounded-full text-[#B55E79] text-xs font-bold uppercase tracking-widest mb-3">
               <Users className="w-3.5 h-3.5" strokeWidth={1.5} />
               Future Roadmap
             </div>
@@ -341,9 +341,9 @@ export function IntroductionSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div 
-              className="p-6 rounded-2xl bg-white border border-[#EACFD3] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
+              className="p-6 rounded-2xl bg-white border border-[#E8CDD3] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
             >
-              <span className="w-10 h-10 rounded-2xl bg-[#F3E0E3] text-[#B85470] font-serif font-bold text-base flex items-center justify-center">I</span>
+              <span className="w-10 h-10 rounded-2xl bg-[#F4D9DE] text-[#B55E79] font-serif font-bold text-base flex items-center justify-center">I</span>
               <h4 className="font-serif font-bold text-base uppercase" style={{ color: theme.dark }}>KuK Clean Wellness</h4>
               <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                 Expanding our plant-based, clean-label product ranges, and establishing deep, customized corporate B2B wellness systems.
@@ -351,9 +351,9 @@ export function IntroductionSection() {
             </div>
 
             <div 
-              className="p-6 rounded-2xl bg-white border border-[#EACFD3] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
+              className="p-6 rounded-2xl bg-white border border-[#E8CDD3] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
             >
-              <span className="w-10 h-10 rounded-2xl bg-[#F3E0E3] text-[#B85470] font-serif font-bold text-base flex items-center justify-center">II</span>
+              <span className="w-10 h-10 rounded-2xl bg-[#F4D9DE] text-[#B55E79] font-serif font-bold text-base flex items-center justify-center">II</span>
               <h4 className="font-serif font-bold text-base uppercase" style={{ color: theme.primary }}>notpaused.com</h4>
               <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                 Building toward a 100,000-strong WhatsApp-native women's community and integrating a clinical, national doctor empanelment network.
@@ -361,9 +361,9 @@ export function IntroductionSection() {
             </div>
 
             <div 
-              className="p-6 rounded-2xl bg-white border border-[#EACFD3] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
+              className="p-6 rounded-2xl bg-white border border-[#E8CDD3] shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3"
             >
-              <span className="w-10 h-10 rounded-2xl bg-[#F3E0E3] text-[#B85470] font-serif font-bold text-base flex items-center justify-center">III</span>
+              <span className="w-10 h-10 rounded-2xl bg-[#F4D9DE] text-[#B55E79] font-serif font-bold text-base flex items-center justify-center">III</span>
               <h4 className="font-serif font-bold text-base uppercase" style={{ color: theme.dark }}>Systemic Ambition</h4>
               <p className="text-sm leading-relaxed font-light" style={{ color: theme.muted }}>
                 Our core mission is institutional health: ensuring every Indian child has access to clean food, and every Indian woman enters midlife with knowledge, confidence, and community.

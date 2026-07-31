@@ -1,4 +1,4 @@
-import { InfluencerSection } from '../components/sections/InfluencerSection';
+﻿import { InfluencerSection } from '../components/sections/InfluencerSection';
 
 export function InfluencerPage() {
   return (

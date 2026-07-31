@@ -1,4 +1,4 @@
-import { ArrowDown, MessageCircle } from "lucide-react";
+﻿import { ArrowDown, MessageCircle } from "lucide-react";
 import heroImage from "../../assets/Image.png";
 
 export function HeroSection() {
@@ -7,16 +7,16 @@ export function HeroSection() {
       id="introduction"
       className="relative w-full flex flex-col justify-between overflow-hidden"
       style={{
-        background: "linear-gradient(180deg, #D9A0AC 0%, #CC8E9A 55%, #C2808E 100%)"
+        background: "linear-gradient(180deg, #DDB5BE 0%, #CF99A6 55%, #C48F9C 100%)"
       }}
     >
       {/* ── Fixed Floating "Questions? Get Help" Pill (Marie Forleo Style) ── */}
       <a
         href="#contact"
-        className="fixed bottom-6 right-6 z-40 bg-white/95 backdrop-blur-md border border-[#EACFD3] text-[#2D121A] px-5 py-2.5 rounded-full shadow-2xl flex items-center gap-2.5 text-xs font-semibold hover:scale-105 transition-all duration-300 group"
+        className="fixed bottom-6 right-6 z-40 bg-white/95 backdrop-blur-md border border-[#E8CDD3] text-[#2E2326] px-5 py-2.5 rounded-full shadow-2xl flex items-center gap-2.5 text-xs font-semibold hover:scale-105 transition-all duration-300 group"
       >
         <span>Questions? Get Help</span>
-        <div className="w-6 h-6 rounded-full bg-[#B85470]/10 flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors">
+        <div className="w-6 h-6 rounded-full bg-[#B55E79]/10 flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors">
           <MessageCircle className="w-3.5 h-3.5" strokeWidth={2} />
         </div>
       </a>
@@ -57,8 +57,8 @@ export function HeroSection() {
             className="group flex flex-col items-center text-white hover:text-white transition-all duration-300"
             aria-label="Scroll down"
           >
-            <div className="w-9 h-16 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-[#B85470] shadow-xl bg-white/15 backdrop-blur-sm">
-              <ArrowDown className="w-4.5 h-4.5 animate-bounce text-white group-hover:text-[#B85470]" strokeWidth={2.5} />
+            <div className="w-9 h-16 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-[#B55E79] shadow-xl bg-white/15 backdrop-blur-sm">
+              <ArrowDown className="w-4.5 h-4.5 animate-bounce text-white group-hover:text-[#B55E79]" strokeWidth={2.5} />
             </div>
           </a>
         </div>
@@ -71,7 +71,7 @@ export function HeroSection() {
         id="sub-hero-intro"
         className="relative z-10 w-full pt-10 pb-20 px-6 sm:px-12 lg:px-20 border-t border-white/40"
         style={{
-          background: "linear-gradient(180deg, #E6C2C9 0%, #DFB4BD 100%)"
+          background: "linear-gradient(180deg, #EDD4D9 0%, #E6BEC6 100%)"
         }}
       >
         <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-16 relative">
@@ -87,9 +87,9 @@ export function HeroSection() {
 
           {/* Right / Centered: Minimal Marie Forleo Intro Copy */}
           <div className="flex-1 text-center lg:text-left pt-2">
-            <p className="text-xl sm:text-2xl lg:text-3xl font-light text-[#2D121A] leading-relaxed tracking-wide max-w-3xl">
+            <p className="text-xl sm:text-2xl lg:text-3xl font-light text-[#2E2326] leading-relaxed tracking-wide max-w-3xl">
               I'm Kirti. An entrepreneur, speaker and certified nutritionist dedicated to helping you{" "}
-              <strong className="font-bold text-[#2D121A]">
+              <strong className="font-bold text-[#2E2326]">
                 create a healthy body, business and life you love.
               </strong>
             </p>

@@ -1,16 +1,16 @@
-import { Calendar, Users, Building2, Award } from "lucide-react";
+﻿import { Calendar, Users, Building2, Award } from "lucide-react";
 
 // ── Shared theme ──────────────────────────────────
 export const THEME = {
-  primary:      "#B85470",   // rose-mauve
-  primaryDark:  "#2D121A",   // rich dark plum
-  primaryLight: "#D4889C",   // dusty rose
-  primarySoft:  "#FAF0F2",   // soft blush surface
-  blush:        "#E4BCC2",   // hero blush
-  dark:         "#2D121A",   // rich dark text
-  muted:        "#7A5A62",   // muted mauve
-  border:       "#EACFD3",   // blush border
-  bg:           "#FDF8F8",   // warm white
+  primary:      "#B55E79",   // rose-mauve
+  primaryDark:  "#2E2326",   // rich dark plum
+  primaryLight: "#E6BEC6",   // dusty rose
+  primarySoft:  "#F4D9DE",   // soft blush surface
+  blush:        "#E6BEC6",   // hero blush
+  dark:         "#2E2326",   // rich dark text
+  muted:        "#5F5358",   // muted mauve
+  border:       "#E8CDD3",   // blush border
+  bg:           "#FCF8F7",   // warm white
 };
 
 export function QuickStatsSection() {

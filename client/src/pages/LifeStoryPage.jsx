@@ -1,4 +1,4 @@
-import { LifeStorySection } from '../components/sections/LifeStorySection';
+﻿import { LifeStorySection } from '../components/sections/LifeStorySection';
 
 export function LifeStoryPage() {
   return (

@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { ArrowRight, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export function ContactSection() {
@@ -7,13 +7,13 @@ export function ContactSection() {
 
   // Theme colours — deep plum / blush
   const theme = {
-    primary:      "#B85470",
-    primaryLight: "#D4889C",
-    primarySoft:  "#FAF0F2",
-    dark:         "#2D121A",
-    muted:        "#7A5A62",
-    border:       "#EACFD3",
-    bg:           "#FDF8F8"
+    primary:      "#B55E79",
+    primaryLight: "#E6BEC6",
+    primarySoft:  "#F4D9DE",
+    dark:         "#2E2326",
+    muted:        "#5F5358",
+    border:       "#E8CDD3",
+    bg:           "#FCF8F7"
   };
 
   const handleSubmit = (e) => {

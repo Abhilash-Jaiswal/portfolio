@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+﻿import { useEffect, useRef } from "react";
 import {
   BookOpen,
   Shield,
@@ -29,13 +29,13 @@ function useReveal(ref) {
 }
 
 const theme = {
-  primary:      "#B85470",   // rose-mauve
-  primaryLight: "#D4889C",
-  primarySoft:  "#FAF0F2",
-  dark:         "#2D121A",
-  muted:        "#7A5A62",
-  border:       "#EACFD3",
-  bg:           "#FDF8F8"
+  primary:      "#B55E79",   // rose-mauve
+  primaryLight: "#E6BEC6",
+  primarySoft:  "#F4D9DE",
+  dark:         "#2E2326",
+  muted:        "#5F5358",
+  border:       "#E8CDD3",
+  bg:           "#FCF8F7"
 };
 
 const pillars = [
@@ -95,7 +95,7 @@ export function NotPausedSection() {
       {/* ── HERO BANNER ── */}
       <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
+        style={{ background: `linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)` }}
       >
         <div className="absolute -top-24 -right-16 w-[450px] h-[450px] bg-white/5 rounded-full blur-3xl animate-float" />
         <div className="absolute -bottom-20 -left-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }} />
@@ -129,7 +129,7 @@ export function NotPausedSection() {
         {/* Problem Stat Banner */}
         <div 
           className="reveal relative overflow-hidden rounded-3xl p-10 text-white text-center shadow-xl"
-          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
+          style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
           <div className="relative z-10 space-y-3 max-w-4xl mx-auto">
@@ -146,20 +146,20 @@ export function NotPausedSection() {
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
             <div 
-              className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0 text-white bg-[#B85470]"
+              className="w-14 h-14 rounded-2xl flex items-center justify-center shadow-lg flex-shrink-0 text-white bg-[#B55E79]"
             >
               <Lightbulb className="w-7 h-7 text-white" strokeWidth={1.5} />
             </div>
             <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1 text-[#B85470]">Chapter 01</span>
-              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">The Personal Origin (2025)</h2>
-              <p className="text-xs font-medium tracking-widest uppercase mt-1 text-[#7A5A60]">Why a certified nutritionist found herself unprepared — and built the solution</p>
+              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1 text-[#B55E79]">Chapter 01</span>
+              <h2 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Personal Origin (2025)</h2>
+              <p className="text-xs font-medium tracking-widest uppercase mt-1 text-[#5F5358]">Why a certified nutritionist found herself unprepared — and built the solution</p>
             </div>
           </div>
           <div 
-            className="reveal pl-6 border-l-2 rounded-r-xl border-[#B85470]"
+            className="reveal pl-6 border-l-2 rounded-r-xl border-[#B55E79]"
           >
-            <p className="text-base font-light leading-relaxed text-[#7A5A60]">
+            <p className="text-base font-light leading-relaxed text-[#5F5358]">
               Kirti Yadav is an AFPA-certified holistic nutritionist specializing in herbal and natural strategies for menopause. Yet when she confronted her own perimenopause symptoms at 40, she found herself facing a stark reality: even with professional training, India-specific, culturally relevant guidance was virtually non-existent.
             </p>
           </div>
@@ -170,10 +170,10 @@ export function NotPausedSection() {
             ].map((item, i) => (
               <div 
                 key={i} 
-                className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <h4 className="font-serif font-bold text-base mb-3 text-[#0F0A0B]">{item.h}</h4>
-                <p className="text-sm font-light leading-relaxed text-justify text-[#7A5A60]">{item.b}</p>
+                <h4 className="font-serif font-bold text-base mb-3 text-[#2E2326]">{item.h}</h4>
+                <p className="text-sm font-light leading-relaxed text-justify text-[#5F5358]">{item.b}</p>
               </div>
             ))}
           </div>
@@ -183,12 +183,12 @@ export function NotPausedSection() {
         <div>
           <div className="reveal text-center mb-10">
             <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B85470]"
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
             >
-              <Shield className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B85470]">Solution Architecture</span>
+              <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">The Four Pillars of NotPaused.com</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused.com</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => {
@@ -196,15 +196,15 @@ export function NotPausedSection() {
               return (
                 <div 
                   key={i} 
-                  className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
+                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
                 >
                   <div 
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#F3E0E3] text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm"
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#F4D9DE] text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm"
                   >
                     <Icon className="w-6 h-6" strokeWidth={1.5} />
                   </div>
-                  <h4 className="font-serif font-bold text-sm text-[#0F0A0B]">{p.title}</h4>
-                  <p className="text-xs font-light leading-relaxed text-[#7A5A60]">{p.desc}</p>
+                  <h4 className="font-serif font-bold text-sm text-[#2E2326]">{p.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
                 </div>
               );
             })}
@@ -213,27 +213,27 @@ export function NotPausedSection() {
 
         {/* Featured Asset: The Salad Formula eBook */}
         <div
-          className="reveal bg-gradient-to-br from-white to-[#FDF8F8] border border-[#EACFD3] p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
+          className="reveal bg-gradient-to-br from-white to-[#FCF8F7] border border-[#E8CDD3] p-12 lg:p-16 rounded-[3rem] shadow-xl space-y-12 relative overflow-hidden"
         >
-          <div className="absolute top-0 right-0 w-80 h-80 bg-[#F3E0E3]/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#F4D9DE]/40 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
 
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b border-[#EACFD3] relative z-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pb-8 border-b border-[#E8CDD3] relative z-10">
             <div className="space-y-4">
               <span
-                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2 bg-[#B85470]"
+                className="text-white text-[10px] font-bold tracking-[0.2em] uppercase px-4 py-1.5 rounded-full inline-flex items-center gap-2 bg-[#B55E79]"
               >
                 <BookOpen size={14} strokeWidth={1.5} /> Lead Magnet Asset
               </span>
-              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight text-[#0F0A0B]">&quot;The Salad Formula&quot; eBook</h3>
-              <p className="text-sm font-medium uppercase tracking-[0.1em] text-[#7A5A60]">An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
+              <h3 className="font-serif text-3xl lg:text-4xl font-bold leading-tight text-[#2E2326]">&quot;The Salad Formula&quot; eBook</h3>
+              <p className="text-sm font-medium uppercase tracking-[0.1em] text-[#5F5358]">An Indian Ingredient Guide to Building the Perfect Salad — Every Time</p>
             </div>
             <div className="md:text-right hidden sm:block">
-              <span className="text-sm font-bold block mb-1 text-[#B85470]">By Kirti Yadav</span>
-              <span className="text-xs uppercase tracking-wider block text-[#7A5A60]">Certified Holistic Nutritionist</span>
+              <span className="text-sm font-bold block mb-1 text-[#B55E79]">By Kirti Yadav</span>
+              <span className="text-xs uppercase tracking-wider block text-[#5F5358]">Certified Holistic Nutritionist</span>
             </div>
           </div>
 
-          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10 text-[#7A5A60]">
+          <p className="text-base lg:text-lg font-serif italic leading-relaxed max-w-4xl relative z-10 text-[#5F5358]">
             "I started KuKClean with one simple belief: the plate in front of you can change your whole life — and it doesn't need to be complicated, imported, or expensive to do it. My mission is simple: one million plates, changed for the better by 2030."
           </p>
 
@@ -241,13 +241,13 @@ export function NotPausedSection() {
             {saladFormulaBlocks.map((b, idx) => (
               <div
                 key={idx}
-                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-[#EACFD3] space-y-3 hover:-translate-y-1 transition-transform duration-300"
+                className="p-6 rounded-2xl bg-white/80 backdrop-blur-md shadow-sm border border-[#E8CDD3] space-y-3 hover:-translate-y-1 transition-transform duration-300"
               >
                 <div className="flex items-center gap-4 mb-3">
-                  <div className="w-9 h-9 rounded-2xl flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm bg-[#B85470]">{b.step.charAt(0)}</div>
-                  <span className="font-serif font-bold text-lg text-[#B85470]">{b.step.substring(3)}</span>
+                  <div className="w-9 h-9 rounded-2xl flex items-center justify-center text-white text-[13px] font-bold shrink-0 shadow-sm bg-[#B55E79]">{b.step.charAt(0)}</div>
+                  <span className="font-serif font-bold text-lg text-[#B55E79]">{b.step.substring(3)}</span>
                 </div>
-                <p className="text-sm font-light leading-relaxed text-[#7A5A60]">{b.text}</p>
+                <p className="text-sm font-light leading-relaxed text-[#5F5358]">{b.text}</p>
               </div>
             ))}
           </div>
@@ -257,12 +257,12 @@ export function NotPausedSection() {
         <div>
           <div className="reveal text-center mb-10">
             <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B85470]"
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
             >
-              <Award className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B85470]">Brand Ethos</span>
+              <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Brand Ethos</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">Core Operating Principles</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Core Operating Principles</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {principles.map((pr, i) => {
@@ -270,13 +270,13 @@ export function NotPausedSection() {
               return (
                 <div 
                   key={i} 
-                  className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
+                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-[#F3E0E3] flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm">
+                  <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
                     <Icon className="w-6 h-6" strokeWidth={1.5} />
                   </div>
-                  <h4 className="font-serif font-bold text-base text-[#0F0A0B]">{pr.title}</h4>
-                  <p className="text-xs font-light leading-relaxed text-[#7A5A60]">{pr.desc}</p>
+                  <h4 className="font-serif font-bold text-base text-[#2E2326]">{pr.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{pr.desc}</p>
                 </div>
               );
             })}
@@ -287,12 +287,12 @@ export function NotPausedSection() {
         <div>
           <div className="reveal text-center mb-10">
             <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B85470]"
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
             >
-              <Users className="w-4 h-4 text-[#B85470]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B85470]">Ecosystem Programs</span>
+              <Users className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Ecosystem Programs</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#0F0A0B]">Services &amp; Community Offerings</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Services &amp; Community Offerings</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {services.map((s, i) => {
@@ -300,17 +300,17 @@ export function NotPausedSection() {
               return (
                 <div 
                   key={i} 
-                  className="reveal shimmer-card bg-white/80 border border-[#EACFD3] p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-5 flex flex-col justify-between group"
+                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-5 flex flex-col justify-between group"
                 >
                   <div className="space-y-4">
-                    <div className="w-12 h-12 rounded-2xl bg-[#F3E0E3] flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors duration-500 shadow-sm">
+                    <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
                       <Icon className="w-6 h-6" strokeWidth={1.5} />
                     </div>
-                    <h4 className="font-serif font-bold text-lg text-[#0F0A0B]">{s.title}</h4>
-                    <ul className="space-y-2.5 pt-2 border-t border-[#EACFD3]">
+                    <h4 className="font-serif font-bold text-lg text-[#2E2326]">{s.title}</h4>
+                    <ul className="space-y-2.5 pt-2 border-t border-[#E8CDD3]">
                       {s.items.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2.5 text-xs font-light text-[#7A5A60]">
-                          <span className="text-[#B85470] font-bold">•</span>
+                        <li key={idx} className="flex items-start gap-2.5 text-xs font-light text-[#5F5358]">
+                          <span className="text-[#B55E79] font-bold">•</span>
                           <span>{item}</span>
                         </li>
                       ))}
@@ -325,7 +325,7 @@ export function NotPausedSection() {
         {/* Closing Quote */}
         <div 
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
-          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
+          style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
