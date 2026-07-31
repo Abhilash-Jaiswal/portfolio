@@ -138,7 +138,7 @@ export function InfluencerSection() {
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
               A Voice Built on <br />
-            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">
               Authenticity &amp; Expertise
             </span>
             </h1>

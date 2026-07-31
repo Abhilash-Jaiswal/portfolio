@@ -1,4 +1,4 @@
-import { Camera, MonitorPlay, Briefcase } from "lucide-react";
+﻿import { Camera, MonitorPlay, Briefcase } from "lucide-react";
 
 export function Footer() {
   return (

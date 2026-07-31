@@ -156,16 +156,6 @@
     transform: translateX(0);
   }
 
-  /* High-Visibility Color Pulse Animation for Headings */
-  .animate-color-glow {
-    animation: text-color-glow 4s ease-in-out infinite;
-  }
-
-  /* Smooth Color Shift for Accents */
-  .animate-accent-color {
-    animation: accent-color-shift 5s linear infinite;
-  }
-
   /* Soft Ambient Pulse Glow */
   .animate-pulse-glow {
     animation: pulse-glow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -200,6 +190,16 @@
     box-shadow: 0 20px 50px -10px rgba(181, 94, 121, 0.22);
   }
 
+  /* Animated Gradient Text */
+  .gradient-text-animated {
+    background: linear-gradient(120deg, #FFFFFF 0%, #FFE5EC 25%, #E9F5B8 50%, #E6BEC6 75%, #FFFFFF 100%);
+    background-size: 250% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-gradient-shift 6s ease-in-out infinite;
+    display: inline-block;
+  }
+
   /* Fade-in-up animation */
   .animate-fade-in-up {
     animation: fade-in-up 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
@@ -210,6 +210,17 @@
 /* ══════════════════════════════════════
    KEYFRAMES
    ══════════════════════════════════════ */
+@keyframes text-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 @keyframes text-color-glow {
   0%, 100% {
     color: #E6BEC6;

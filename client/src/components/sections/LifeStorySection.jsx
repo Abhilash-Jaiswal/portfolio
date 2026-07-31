@@ -248,7 +248,7 @@ export function LifeStorySection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             A Journey of Conviction, <br />
-            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">Compounding &amp; Purpose</span>
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Compounding &amp; Purpose</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             From Data Warehousing Consultant at IBM to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.

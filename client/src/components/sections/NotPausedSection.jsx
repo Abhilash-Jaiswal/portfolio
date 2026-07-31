@@ -108,7 +108,7 @@ export function NotPausedSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             India's Dedicated <br />
-            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">Perimenopause &amp; Midlife Platform</span>
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Perimenopause &amp; Midlife Platform</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Menopause is not a pause. It is a comma — a breath before the most powerful chapter of a woman's life. NotPaused.com was built to ensure no Indian woman navigates it alone.
