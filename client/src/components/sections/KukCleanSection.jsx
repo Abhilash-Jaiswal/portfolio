@@ -21,15 +21,14 @@ function useReveal(ref) {
   }, []);
 }
 
-// Theme colors
 const theme = {
-  primary: "#b76e4a",      // terracotta
-  primaryLight: "#d9b094",
-  primarySoft: "#f5ede8",
-  dark: "#2d2a24",
-  muted: "#4a453e",
-  border: "#e8e0d8",
-  bg: "#fcf9f6"
+  primary:      "#B85470",   // rose-mauve
+  primaryLight: "#D4889C",
+  primarySoft:  "#FAF0F2",
+  dark:         "#2D121A",
+  muted:        "#7A5A62",
+  border:       "#EACFD3",
+  bg:           "#FDF8F8"
 };
 
 const products = [
@@ -73,7 +72,7 @@ export function KukCleanSection() {
       {/* ── HERO BANNER ── */}
       <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ backgroundColor: theme.primary }}
+        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
       >
         <video
           autoPlay
@@ -83,8 +82,8 @@ export function KukCleanSection() {
           className="absolute inset-0 w-full h-full object-cover z-0"
           src="https://cdn.shopify.com/videos/c/o/v/94b06b00c93544bcb8f744155ee632c8.mp4"
         />
-        <div className="absolute inset-0 z-0" style={{ backgroundColor: `${theme.primary}80` }} />
-        <div className="absolute inset-0 z-0 bg-black/30" />
+        <div className="absolute inset-0 z-0 bg-[#6B2D3E]/35 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 z-0 bg-black/40" />
 
         <div className="absolute z-0 -top-24 -right-16 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float pointer-events-none" />
         <div className="absolute z-0 -bottom-20 -left-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float pointer-events-none" style={{ animationDelay: "1.5s" }} />
@@ -96,7 +95,7 @@ export function KukCleanSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             Kitchen You. <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#d9b094] to-[#f5ede8] animate-text-gradient">Consciously Nourishing.</span>
+            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">Consciously Nourishing.</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Born in Kirti's kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant-based food and extraordinary Indian taste belong together.
@@ -107,7 +106,7 @@ export function KukCleanSection() {
               href="https://www.kukclean.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center rounded-full bg-white text-[#b76e4a] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-white/90 transition-colors shadow-lg"
+              className="inline-flex items-center justify-center rounded-full bg-white text-[#6B2D3E] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#FDF8F8] transition-colors shadow-lg"
             >
               Visit KuKClean
               <span className="ml-2">→</span>
@@ -319,7 +318,7 @@ export function KukCleanSection() {
         {/* Closing Quote Banner */}
         <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
-          style={{ backgroundColor: theme.primary }}
+          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
         >
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />

@@ -1,101 +1,102 @@
+import { ArrowDown, MessageCircle } from "lucide-react";
 import heroImage from "../../assets/Image.png";
 
 export function HeroSection() {
-   return (
-      <section id="introduction" className="relative min-h-screen w-full flex overflow-hidden bg-[#FAF7F2]">
+  return (
+    <section
+      id="introduction"
+      className="relative w-full flex flex-col justify-between overflow-hidden"
+      style={{
+        background: "linear-gradient(180deg, #D9A0AC 0%, #CC8E9A 55%, #C2808E 100%)"
+      }}
+    >
+      {/* ── Fixed Floating "Questions? Get Help" Pill (Marie Forleo Style) ── */}
+      <a
+        href="#contact"
+        className="fixed bottom-6 right-6 z-40 bg-white/95 backdrop-blur-md border border-[#EACFD3] text-[#2D121A] px-5 py-2.5 rounded-full shadow-2xl flex items-center gap-2.5 text-xs font-semibold hover:scale-105 transition-all duration-300 group"
+      >
+        <span>Questions? Get Help</span>
+        <div className="w-6 h-6 rounded-full bg-[#B85470]/10 flex items-center justify-center text-[#B85470] group-hover:bg-[#B85470] group-hover:text-white transition-colors">
+          <MessageCircle className="w-3.5 h-3.5" strokeWidth={2} />
+        </div>
+      </a>
 
-         {/* Left Content */}
-         <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 sm:px-12 lg:px-20 py-24 relative z-20">
-            <div className="max-w-[480px]">
+      {/* ─────────────────────────────────────────────────────────────
+          TOP HERO: Huge Bright White Serif Typography ("KIRTI YADAV") + Cutout
+         ───────────────────────────────────────────────────────────── */}
+      <div className="relative min-h-[84vh] lg:min-h-[88vh] w-full flex flex-col justify-between items-center pt-20 px-4 sm:px-8">
 
-               {/* Badge */}
-               <div className="inline-flex items-center gap-2 bg-[#1A4A44]/10 text-[#1A4A44] text-sm font-semibold px-4 py-2 rounded-full mb-8 w-fit tracking-wide">
-                  Consciously Nourishing <span>🌿</span>
-               </div>
+        {/* ── Background Giant Bright White Typography ("KIRTI YADAV") ── */}
+        <div
+          className="absolute inset-0 pt-8 flex flex-col items-center justify-center pointer-events-none select-none z-0 overflow-hidden"
+          aria-hidden="true"
+        >
+          <h1 className="font-serif text-[21vw] sm:text-[19vw] lg:text-[16vw] font-bold leading-[0.80] tracking-tight text-white uppercase text-center drop-shadow-lg opacity-100">
+            KIRTI
+            <br />
+            YADAV
+          </h1>
+        </div>
 
-               {/* Headline */}
-               <h1 className="font-serif font-extrabold text-5xl lg:text-6xl leading-[1.15] tracking-tight text-[#2C3A37] mb-6 animate-fade-in-up">
-                  Be The Change<br />
-                  Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1A4A44] to-[#D4A051] animate-text-gradient">Health Deserves</span>
-               </h1>
+        {/* ── Center Cutout Portrait Image ── */}
+        <div className="relative z-10 flex-1 flex items-end justify-center w-full max-w-4xl pt-6">
+          <img
+            src={heroImage}
+            alt="Kirti Yadav"
+            className="max-h-[62vh] sm:max-h-[70vh] lg:max-h-[77vh] w-auto object-contain object-bottom filter drop-shadow-2xl transition-transform duration-700 hover:scale-[1.01]"
+            onError={(e) => {
+              e.target.style.display = "none";
+            }}
+          />
+        </div>
 
-               {/* Paragraph */}
-               <p className="text-[#5A6F6A] text-base lg:text-lg font-normal mb-10 max-w-[360px] leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-                  Our job is filling your day with honest nutrition and with flavour that keeps you coming back.
-               </p>
- 
-
-               {/* Happy Community */}
-               <div className="flex items-center gap-4">
-                  <div className="flex -space-x-3">
-                     {["#D4A051", "#1A4A44", "#2D6B63"].map((color, i) => (
-                        <div
-                           key={i}
-                           className="w-10 h-10 rounded-full border-2 border-[#FAF7F2]"
-                           style={{ backgroundColor: color }}
-                        />
-                     ))}
-                  </div>
-                  <div>
-                     <p className="text-base font-bold text-[#2C3A37]">👥 Our Happy Community </p>
-                     <p className="text-sm text-[#5A6F6A]">
-                        <span className="text-[#D4A051]">★</span> 4.8 <span className="font-normal"> (1,200+ Clients)</span>
-                     </p>
-                  </div>
-               </div>
+        {/* ── Oval Scroll Down Button ( ( ↓ ) Marie Forleo Style ) ── */}
+        <div className="relative z-20 pb-4 pt-2">
+          <a
+            href="#sub-hero-intro"
+            className="group flex flex-col items-center text-white hover:text-white transition-all duration-300"
+            aria-label="Scroll down"
+          >
+            <div className="w-9 h-16 rounded-full border-2 border-white flex items-center justify-center transition-all duration-300 group-hover:bg-white group-hover:text-[#B85470] shadow-xl bg-white/15 backdrop-blur-sm">
+              <ArrowDown className="w-4.5 h-4.5 animate-bounce text-white group-hover:text-[#B85470]" strokeWidth={2.5} />
             </div>
-         </div>
+          </a>
+        </div>
+      </div>
 
-         {/* Right Visual */}
-         <div className="hidden lg:flex w-1/2 relative items-center justify-center">
+      {/* ─────────────────────────────────────────────────────────────
+          SUB-HERO INTRO SECTION: Handwritten "Hey!" on Color Border Line + Marie Forleo Copy
+         ───────────────────────────────────────────────────────────── */}
+      <div
+        id="sub-hero-intro"
+        className="relative z-10 w-full pt-10 pb-20 px-6 sm:px-12 lg:px-20 border-t border-white/40"
+        style={{
+          background: "linear-gradient(180deg, #E6C2C9 0%, #DFB4BD 100%)"
+        }}
+      >
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-16 relative">
 
-            {/* Big Circle */}
-            <div className="absolute top-1/2 left-1/2 right-[35%] -translate-x-1/2 -translate-y-1/2 w-[420px] h-[420px]   z-0" />
+          {/* Left: Handwritten "Hey!" Script Font */}
+          <div className="flex-shrink-0 -mt-24 sm:-mt-28 lg:-mt-36 text-center lg:text-left z-20 pointer-events-none">
+            <span
+              className="font-script text-8xl sm:text-9xl lg:text-[11rem] font-normal text-white leading-none inline-block transform -rotate-6 select-none filter drop-shadow-md"
+            >
+              Hey!
+            </span>
+          </div>
 
-            {/* Dotted Arc */}
-            <div className="absolute top-[18%] right-[6%] w-[90px] h-[90px] border-2 border-dashed border-[#D4A051]/60 rounded-full z-10 animate-[spin_20s_linear_infinite]" />
+          {/* Right / Centered: Minimal Marie Forleo Intro Copy */}
+          <div className="flex-1 text-center lg:text-left pt-2">
+            <p className="text-xl sm:text-2xl lg:text-3xl font-light text-[#2D121A] leading-relaxed tracking-wide max-w-3xl">
+              I'm Kirti. An entrepreneur, speaker and certified nutritionist dedicated to helping you{" "}
+              <strong className="font-bold text-[#2D121A]">
+                create a healthy body, business and life you love.
+              </strong>
+            </p>
+          </div>
 
-            {/* Leaf Icon */}
-            <div className="absolute top-[10%] right-[18%] text-2xl z-10 hover:scale-125 transition-transform duration-300 cursor-default select-none">🌿</div>
-
-            {/* Small dot accents */}
-            <div className="absolute bottom-[12%] left-[8%] w-2.5 h-2.5 rounded-full bg-[#D4A051] z-10" />
-            <div className="absolute top-[45%] right-[3%] w-2.5 h-2.5 rounded-full bg-[#D4A051] z-10" />
-
-            {/* Clock Badge */}
-            <div className="absolute top-[14%] left-[14%] w-16 h-16 bg-[#D4A051] rounded-2xl rotate-6 flex items-center justify-center z-20 shadow-lg hover:rotate-12 transition-transform duration-300">
-               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M12 7v5l3 3" strokeLinecap="round" />
-               </svg>
-            </div>
-
-            {/* Portrait */}
-            <div className="relative z-10 w-[420px] h-[520px] flex items-end justify-center">
-               <div className="relative w-full h-full rounded-t-full overflow-hidden shadow-2xl border-4 border-white/20">
-                  <img
-                     src={heroImage}
-                     alt="Happy customer"
-                     className="h-full w-full object-cover object-top hover:scale-105 transition-transform duration-700"
-                  />
-               </div>
-            </div>
-
-            {/* Courier Card */}
-            <div className="absolute bottom-[22%] left-[2%] bg-white/95 backdrop-blur-md border border-[#DCE6E4]/50 rounded-2xl shadow-xl px-4 py-3 flex items-center gap-3 z-30 w-[230px] hover:translate-y-[-4px] transition-transform duration-300">
-                 <div className="w-8 h-8 rounded-full bg-[#D4A051] flex items-center justify-center flex-shrink-0 text-white shadow-sm hover:bg-[#E8C28A] transition-colors cursor-pointer">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="white">
-                     <path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.5 3 2.9 3.4 2.5 4 2.5h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z" />
-                  </svg>
-               </div>
-               <div className="flex-1">
-                  <p className="text-base font-bold text-[#2C3A37] leading-tight">KIRTI YADAV</p>
-               </div>
-              
-            </div>
-
-         </div>
-
-      </section>
-   );
+        </div>
+      </div>
+    </section>
+  );
 }

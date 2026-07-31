@@ -5,15 +5,15 @@ export function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
 
-  // Theme colors
+  // Theme colours — deep plum / blush
   const theme = {
-    primary: "#b76e4a",      // terracotta
-    primaryLight: "#d9b094",
-    primarySoft: "#f5ede8",
-    dark: "#2d2a24",
-    muted: "#4a453e",
-    border: "#e8e0d8",
-    bg: "#fcf9f6"
+    primary:      "#B85470",
+    primaryLight: "#D4889C",
+    primarySoft:  "#FAF0F2",
+    dark:         "#2D121A",
+    muted:        "#7A5A62",
+    border:       "#EACFD3",
+    bg:           "#FDF8F8"
   };
 
   const handleSubmit = (e) => {
@@ -75,7 +75,7 @@ export function ContactSection() {
                 <MessageCircle size={18} style={{ color: theme.primary }} />
                 <div>
                   <span className="text-[10px] font-bold uppercase tracking-wider block" style={{ color: theme.muted }}>WhatsApp Channels</span>
-                  <span className="text-sm font-semibold" style={{ color: theme.dark }}>Native B2B & Menopause Communities</span>
+                  <span className="text-sm font-semibold" style={{ color: theme.dark }}>Native B2B &amp; Menopause Communities</span>
                 </div>
               </div>
 
@@ -83,7 +83,7 @@ export function ContactSection() {
                 <MapPin size={18} style={{ color: theme.primary }} />
                 <div>
                   <span className="text-[10px] font-bold uppercase tracking-wider block" style={{ color: theme.muted }}>Ecosystem HQ</span>
-                  <span className="text-sm font-semibold" style={{ color: theme.dark }}>Bangalore & Hyderabad, India</span>
+                  <span className="text-sm font-semibold" style={{ color: theme.dark }}>Bangalore &amp; Hyderabad, India</span>
                 </div>
               </div>
             </div>

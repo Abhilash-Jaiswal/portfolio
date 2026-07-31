@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { GraduationCap, Heart, Leaf, Mic, Flower2, Award, Sun } from "lucide-react";
 
 /* ─── Scroll-reveal hook ─────────────────────────── */
 function useReveal() {
@@ -13,21 +14,20 @@ function useReveal() {
   }, []);
 }
 
-// Theme colors
 const theme = {
-  primary: "#b76e4a",      // terracotta
-  primaryLight: "#d9b094",
-  primarySoft: "#f5ede8",
-  dark: "#2d2a24",
-  muted: "#4a453e",
-  border: "#e8e0d8",
-  bg: "#fcf9f6"
+  primary:      "#B85470",   // rose-mauve
+  primaryLight: "#D4889C",
+  primarySoft:  "#FAF0F2",
+  dark:         "#2D121A",
+  muted:        "#7A5A62",
+  border:       "#EACFD3",
+  bg:           "#FDF8F8"
 };
 
 /* ─── Chapter data ───────────────────────────────── */
 const CHAPTERS = [
   {
-    num: "01", emoji: "🎓",
+    num: "01", icon: GraduationCap,
     title: "Computer Science & Corporate Mastery (2005–2014)",
     sub: "HBTI Kanpur · IBM · Target · AIG",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -41,7 +41,7 @@ const CHAPTERS = [
     closing: "A decade across global technology giants gave Kirti analytical rigor, systems thinking, and leadership confidence — tools that would prove indispensable when building her own ventures.",
   },
   {
-    num: "02", emoji: "👶",
+    num: "02", icon: Heart,
     title: "Motherhood, Health Crisis & Transformation (2014–2018)",
     sub: "Preterm Birth · 28kg Weight Loss · Plattershare",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -55,7 +55,7 @@ const CHAPTERS = [
     closing: "What began as a personal struggle for survival and recovery transformed into a profound calling: bringing plate-level change to Indian families.",
   },
   {
-    num: "03", emoji: "🥗",
+    num: "03", icon: Leaf,
     title: "The Birth & Growth of KuKClean (2021–2023)",
     sub: "Clean-Label Foods · IIM Bangalore · RKVY-RAFTAAR",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -69,7 +69,7 @@ const CHAPTERS = [
     closing: "Incubated at top national institutes, KuKClean proved that clean-label, plant-based Indian gourmet treats could build a thriving business without sacrificing a single gram of flavour.",
   },
   {
-    num: "04", emoji: "📢",
+    num: "04", icon: Mic,
     title: "COVID-19 Leadership & #EatLikeKirti (2020–2021)",
     sub: "21 Days Live · Professional Certifications · National Media",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -83,7 +83,7 @@ const CHAPTERS = [
     closing: "Leading with generosity during crisis established Kirti as a trusted, evidence-based authority in holistic wellness across India.",
   },
   {
-    num: "05", emoji: "🌸",
+    num: "05", icon: Flower2,
     title: "Founding NotPaused.com (2025–Present)",
     sub: "Women 35+ · Breaking Menopause Stigma · WhatsApp Movement",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -97,7 +97,7 @@ const CHAPTERS = [
     closing: "'I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be.'",
   },
   {
-    num: "06", emoji: "🏆",
+    num: "06", icon: Award,
     title: "Awards, Corporate Impact & Mentorship",
     sub: "Womenpreneur 2024 · 100+ Corporate Sessions · Walmart Vriddhi",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -111,7 +111,7 @@ const CHAPTERS = [
     closing: "From winning startup awards to serving as a jury judge and mentor, her journey represents the complete evolution of a purpose-driven leader.",
   },
   {
-    num: "07", emoji: "☀️",
+    num: "07", icon: Sun,
     title: "Personal Discipline & The Daily Routine",
     sub: "Non-Negotiable Mornings · 'Keep Going' Mantra",
     color: `from-[${theme.primary}] to-[${theme.dark}]`,
@@ -142,12 +142,13 @@ const CHAPTERS = [
 
 /* ─── Chapter Nav Pill ───────────────────────────── */
 function ChapterPill({ chap, active, onClick }) {
+  const Icon = chap.icon;
   return (
     <button
       onClick={() => onClick(chap.num)}
       className={`flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer whitespace-nowrap
         ${active
-          ? "text-white shadow-md shadow-[#b76e4a]/30 scale-105"
+          ? "text-white shadow-md shadow-[#B85470]/30 scale-105"
           : "bg-white/70 border border-[#e8e0d8]/60 hover:bg-white"}`}
       style={{
         backgroundColor: active ? theme.primary : "rgba(255,255,255,0.7)",
@@ -155,7 +156,7 @@ function ChapterPill({ chap, active, onClick }) {
         borderColor: active ? "transparent" : `${theme.border}60`
       }}
     >
-      <span>{chap.emoji}</span>
+      {Icon && <Icon className="w-3.5 h-3.5" strokeWidth={1.5} />}
       <span>Ch {chap.num}</span>
     </button>
   );
@@ -228,9 +229,9 @@ export function LifeStorySection() {
     >
 
       {/* ── HERO BANNER ────────────────────────────── */}
-      <div 
+      <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ backgroundColor: theme.primary }}
+        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
       >
         {/* Animated blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-float" />
@@ -247,7 +248,7 @@ export function LifeStorySection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             A Journey of Conviction, <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#d9b094] to-[#f5ede8] animate-text-gradient">Compounding & Purpose</span>
+            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">Compounding &amp; Purpose</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             From Data Warehousing Consultant at IBM to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.
@@ -417,7 +418,7 @@ export function LifeStorySection() {
       <div className="mx-6 md:mx-12 lg:mx-20 mb-20 reveal">
         <div 
           className="relative overflow-hidden rounded-3xl p-12 lg:p-16 text-center shadow-2xl"
-          style={{ backgroundColor: theme.primary }}
+          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
         >
           {/* decorative blobs */}
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
