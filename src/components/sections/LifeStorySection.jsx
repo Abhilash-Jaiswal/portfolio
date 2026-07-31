@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+﻿import { useEffect, useRef, useState } from "react";
 import { GraduationCap, Heart, Leaf, Mic, Flower2, Award, Sun } from "lucide-react";
 
 /* ─── Scroll-reveal hook ─────────────────────────── */
@@ -15,13 +15,13 @@ function useReveal() {
 }
 
 const theme = {
-  primary:      "#B85470",   // rose-mauve
-  primaryLight: "#D4889C",
-  primarySoft:  "#FAF0F2",
-  dark:         "#2D121A",
-  muted:        "#7A5A62",
-  border:       "#EACFD3",
-  bg:           "#FDF8F8"
+  primary:      "#B55E79",   // rose-mauve
+  primaryLight: "#E6BEC6",
+  primarySoft:  "#F4D9DE",
+  dark:         "#2E2326",
+  muted:        "#5F5358",
+  border:       "#E8CDD3",
+  bg:           "#FCF8F7"
 };
 
 /* ─── Chapter data ───────────────────────────────── */
@@ -148,8 +148,8 @@ function ChapterPill({ chap, active, onClick }) {
       onClick={() => onClick(chap.num)}
       className={`flex items-center gap-2 px-4 py-2 rounded-full text-[10px] font-bold tracking-widest uppercase transition-all duration-300 cursor-pointer whitespace-nowrap
         ${active
-          ? "text-white shadow-md shadow-[#B85470]/30 scale-105"
-          : "bg-white/70 border border-[#e8e0d8]/60 hover:bg-white"}`}
+          ? "text-white shadow-md shadow-[#B55E79]/30 scale-105"
+          : "bg-white/70 border border-[#E8CDD3]/60 hover:bg-white"}`}
       style={{
         backgroundColor: active ? theme.primary : "rgba(255,255,255,0.7)",
         color: active ? "white" : theme.muted,
@@ -231,7 +231,7 @@ export function LifeStorySection() {
       {/* ── HERO BANNER ────────────────────────────── */}
       <div
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
-        style={{ background: `linear-gradient(135deg, #B85470 0%, #8C405A 100%)` }}
+        style={{ background: `linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)` }}
       >
         {/* Animated blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-float" />
@@ -248,7 +248,7 @@ export function LifeStorySection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6 animate-fade-in-up" style={{ animationDelay: "0.15s" }}>
             A Journey of Conviction, <br />
-            <span className="font-serif font-bold italic drop-shadow-sm animate-color-glow">Compounding &amp; Purpose</span>
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Compounding &amp; Purpose</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
             From Data Warehousing Consultant at IBM to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.
@@ -367,9 +367,9 @@ export function LifeStorySection() {
             {/* Divider — not after last */}
             {ci < CHAPTERS.length - 1 && (
               <div className="mt-20 reveal flex items-center gap-4">
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#e8e0d8] to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E8CDD3] to-transparent" />
                 <div className="w-2 h-2 rounded-full opacity-40 animate-pulse" style={{ backgroundColor: theme.primary }} />
-                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#e8e0d8] to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E8CDD3] to-transparent" />
               </div>
             )}
           </div>
@@ -418,7 +418,7 @@ export function LifeStorySection() {
       <div className="mx-6 md:mx-12 lg:mx-20 mb-20 reveal">
         <div 
           className="relative overflow-hidden rounded-3xl p-12 lg:p-16 text-center shadow-2xl"
-          style={{ background: "linear-gradient(135deg, #B85470 0%, #8C405A 100%)" }}
+          style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
           {/* decorative blobs */}
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
