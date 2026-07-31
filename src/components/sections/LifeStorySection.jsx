@@ -268,7 +268,7 @@ export function LifeStorySection() {
 
       {/* ── STICKY CHAPTER NAV ─────────────────────── */}
       <div 
-        className="sticky top-20 z-40 backdrop-blur-md border-b shadow-sm"
+        className="sticky top-16 z-40 backdrop-blur-md border-b shadow-sm"
         style={{ 
           backgroundColor: `${theme.bg}95`,
           borderColor: `${theme.border}60`
