@@ -2,8 +2,11 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "./App.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
 import { MyStoryPage } from "./pages/MyStoryPage.jsx";
+import { WorkWithMePage } from "./pages/WorkWithMePage.jsx";
 import { MyVenturesPage } from "./pages/MyVenturesPage.jsx";
-import { InfluencerPage } from "./pages/InfluencerPage.jsx";
+import { PressPage } from "./pages/PressPage.jsx";
+import { LatestPage } from "./pages/LatestPage.jsx";
+import { ContactPage } from "./pages/ContactPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,13 +14,16 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <HomePage /> },
-      { path: "my-story", element: <MyStoryPage /> },
-      { path: "life-story", element: <Navigate to="/my-story" replace /> },
-      { path: "achievements", element: <Navigate to="/my-story" replace /> },
+      { path: "life-story", element: <MyStoryPage /> },
+      { path: "my-story", element: <Navigate to="/life-story" replace /> },
+      { path: "work-with-me", element: <WorkWithMePage /> },
       { path: "my-ventures", element: <MyVenturesPage /> },
       { path: "kuk-clean", element: <Navigate to="/my-ventures?tab=kuk-clean" replace /> },
       { path: "notpaused", element: <Navigate to="/my-ventures?tab=notpaused" replace /> },
-      { path: "influencer", element: <InfluencerPage /> },
+      { path: "press", element: <PressPage /> },
+      { path: "achievements", element: <Navigate to="/press" replace /> },
+      { path: "latest", element: <LatestPage /> },
+      { path: "contact", element: <ContactPage /> },
     ]
   },
 ], {

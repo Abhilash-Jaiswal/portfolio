@@ -1,11 +1,25 @@
-import { useSearchParams } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { KukCleanSection } from "../components/sections/KukCleanSection";
 import { NotPausedSection } from "../components/sections/NotPausedSection";
-import { Sparkles } from "lucide-react";
+import { Sparkles, Leaf } from "lucide-react";
 
 export function MyVenturesPage() {
-  const [searchParams] = useSearchParams();
-  const currentTab = searchParams.get("tab") === "notpaused" ? "notpaused" : "kuk-clean";
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        // Slight delay ensures the page is fully rendered before scrolling
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 100);
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [location]);
 
   return (
     <div className="min-h-screen bg-[#FCF8F7]">
@@ -18,27 +32,29 @@ export function MyVenturesPage() {
       >
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/70 backdrop-blur-sm border border-[#E8CDD3] text-[#B55E79] text-xs font-bold uppercase tracking-[0.2em] shadow-sm mb-4">
+          <div className="inline-flex items-center gap-2 bg-white/40 border border-white/60 text-[#B55E79] text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-6 backdrop-blur-md">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Entrepreneurial Journey</span>
+            <span>My Ventures</span>
           </div>
 
-          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2E2326] tracking-tight mb-4">
-            My Ventures
+          <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#2E2326] font-bold tracking-tight leading-[1.1] mb-6">
+            Two ventures, one belief: <br className="hidden sm:block" />
+            <span className="font-serif italic text-[#B55E79]">Life gets better when we make room for what matters.</span>
           </h1>
-          <p className="font-body text-base sm:text-lg text-[#5F5358] max-w-2xl mx-auto leading-relaxed">
-            Building purpose-driven wellness brands grounded in clean nutrition, empowerment, and evidence-based living.
+          <p className="text-[#5F5358] text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto">
+            From cleaning up the plate to breaking the silence around menopause — these are the spaces I've built to support the lives we're still becoming.
           </p>
         </div>
       </div>
 
-      {/* Active Venture Section */}
-      <div>
-        {currentTab === "kuk-clean" ? (
+      <div className="flex flex-col">
+        {/* Equal billing side by side (stacked vertically since they are complex sections) */}
+        <div id="kuk-clean" className="scroll-mt-24">
           <KukCleanSection />
-        ) : (
+        </div>
+        <div id="notpaused" className="scroll-mt-24">
           <NotPausedSection />
-        )}
+        </div>
       </div>
     </div>
   );

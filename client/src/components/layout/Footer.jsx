@@ -1,4 +1,5 @@
-﻿import { Camera, MonitorPlay, Briefcase } from "lucide-react";
+import { Link } from "react-router-dom";
+import { Camera, MonitorPlay, Briefcase, MessageCircle } from "lucide-react";
 
 export function Footer() {
   return (
@@ -23,171 +24,65 @@ export function Footer() {
 
           {/* Column 1: Brand Statement */}
           <div className="lg:w-[30%] lg:pr-8">
-            {/* Mini brand dot */}
-            <div className="flex items-center gap-2.5 mb-4">
-              <div
-                className="w-7 h-7 rounded-full flex items-center justify-center"
-                style={{ backgroundColor: "#CF99A6" }}
-              >
-                <div className="w-2 h-2 rounded-full bg-white/80" />
-              </div>
-              <span
-                className="font-serif font-bold text-base tracking-tight"
-                style={{ color: "#2E2326" }}
-              >
-                Kirti<span style={{ color: "#B55E79" }}>.</span>
-              </span>
-            </div>
-
             <h3
-              className="text-2xl lg:text-3xl font-serif font-bold leading-tight tracking-tight"
+              className="text-2xl lg:text-3xl font-serif font-bold leading-tight tracking-tight mb-2"
               style={{ color: "#2E2326" }}
             >
-              Wellness architecture for the modern lifestyle
-              <span style={{ color: "#B55E79" }}>&reg;</span>
+              KIRTI YADAV
             </h3>
             <p
-              className="mt-3 text-sm font-normal leading-relaxed"
+              className="text-sm font-normal leading-relaxed"
               style={{ color: "#5F5358" }}
             >
-              Built on lived experience. Grounded in evidence.
-              Designed for real Indian families.
+              Founder, Nutritionist, Menopause Coach, Corporate Wellness Partner, Startup Mentor, and Lifelong Explorer. Bengaluru, India.
             </p>
           </div>
 
-          {/* Column 2: Kuk Clean Contact */}
-          <div className="lg:w-[20%]">
+          {/* Column 2: Work With Me */}
+          <div className="lg:w-[25%]">
             <h4
-              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-3"
+              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-4"
               style={{ color: "#B55E79" }}
             >
-              KuK Clean
+              WORK WITH ME
             </h4>
-            <div
-              className="text-sm font-normal space-y-1 mb-4 leading-relaxed"
-              style={{ color: "#5F5358" }}
-            >
-              <p>
-                <a
-                  href="mailto:hello@kukclean.com"
-                  className="transition-colors"
-                  style={{
-                    textDecoration: "underline",
-                    textDecorationColor: "rgba(181,94,121,0.3)",
-                    textUnderlineOffset: "4px",
-                    color: "#5F5358"
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.color = "#B55E79"}
-                  onMouseLeave={e => e.currentTarget.style.color = "#5F5358"}
-                >
-                  hello@kukclean.com
-                </a>
-              </p>
-              <p>+91 98765 43210</p>
-              <p>Nutrihub ICAR-IIMR, Hyderabad</p>
+            <div className="flex flex-col gap-2.5 text-xs font-medium" style={{ color: "#5F5358" }}>
+              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Lifestyle Transformation Program</Link>
+              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Corporate Wellness</Link>
+              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Menopause Program</Link>
+              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Startup Mentoring</Link>
+              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Brand Collaborations</Link>
+              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">School Programs</Link>
             </div>
-            <a
-              href="https://kukclean.com"
-              className="text-[10px] font-bold tracking-[0.2em] uppercase pb-1 transition-colors inline-block"
-              style={{ borderBottom: "1.5px solid #CF99A6", color: "#2E2326" }}
-              onMouseEnter={e => { e.currentTarget.style.color = "#B55E79"; e.currentTarget.style.borderBottomColor = "#B55E79"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "#2E2326"; e.currentTarget.style.borderBottomColor = "#CF99A6"; }}
-            >
-              VISIT STORE &nearr;
-            </a>
           </div>
 
-          {/* Column 3: NotPaused Contact */}
-          <div className="lg:w-[20%]">
+          {/* Column 3: Explore */}
+          <div className="lg:w-[25%]">
             <h4
-              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-3"
+              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-4"
               style={{ color: "#B55E79" }}
             >
-              NotPaused.com
+              EXPLORE
             </h4>
-            <div
-              className="text-sm font-normal space-y-1 mb-4 leading-relaxed"
-              style={{ color: "#5F5358" }}
-            >
-              <p>
-                <a
-                  href="mailto:community@notpaused.com"
-                  className="transition-colors"
-                  style={{
-                    textDecoration: "underline",
-                    textDecorationColor: "rgba(181,94,121,0.3)",
-                    textUnderlineOffset: "4px",
-                    color: "#5F5358"
-                  }}
-                  onMouseEnter={e => e.currentTarget.style.color = "#B55E79"}
-                  onMouseLeave={e => e.currentTarget.style.color = "#5F5358"}
-                >
-                  community@notpaused.com
-                </a>
-              </p>
-              <p>+91 98765 43210</p>
-              <p>Community HQ, Bangalore</p>
+            <div className="flex flex-col gap-2.5 text-xs font-medium" style={{ color: "#5F5358" }}>
+              <Link to="/life-story" className="hover:text-[#B55E79] transition-colors">Life Story</Link>
+              <Link to="/press" className="hover:text-[#B55E79] transition-colors">Press</Link>
+              <Link to="/latest" className="hover:text-[#B55E79] transition-colors">Latest</Link>
+              <Link to="/contact" className="hover:text-[#B55E79] transition-colors">Contact</Link>
             </div>
-            <a
-              href="https://notpaused.com"
-              className="text-[10px] font-bold tracking-[0.2em] uppercase pb-1 transition-colors inline-block"
-              style={{ borderBottom: "1.5px solid #CF99A6", color: "#2E2326" }}
-              onMouseEnter={e => { e.currentTarget.style.color = "#B55E79"; e.currentTarget.style.borderBottomColor = "#B55E79"; }}
-              onMouseLeave={e => { e.currentTarget.style.color = "#2E2326"; e.currentTarget.style.borderBottomColor = "#CF99A6"; }}
-            >
-              VISIT PLATFORM &nearr;
-            </a>
           </div>
 
-          {/* Column 4: Newsletter & Socials */}
-          <div className="lg:w-[30%]">
+          {/* Column 4: My Ventures */}
+          <div className="lg:w-[20%]">
             <h4
-              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-3"
+              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-4"
               style={{ color: "#B55E79" }}
             >
-              WANT TO BE THE HEALTHIEST IN YOUR OFFICE?
+              MY VENTURES
             </h4>
-            <a
-              href="#"
-              className="text-sm font-medium underline underline-offset-4 transition-colors inline-block mb-6"
-              style={{ textDecorationColor: "rgba(181,94,121,0.35)", color: "#2E2326" }}
-              onMouseEnter={e => e.currentTarget.style.color = "#B55E79"}
-              onMouseLeave={e => e.currentTarget.style.color = "#2E2326"}
-            >
-              SIGN UP FOR OUR NEWSLETTER &rarr;
-            </a>
-
-            <h4
-              className="text-[10px] font-bold tracking-[0.2em] uppercase mb-3"
-              style={{ color: "#B55E79" }}
-            >
-              FOLLOW US
-            </h4>
-            <div className="flex gap-4" style={{ color: "#CF99A6" }}>
-              <a
-                href="#"
-                className="transition-all hover:scale-110 transform duration-200"
-                onMouseEnter={e => e.currentTarget.style.color = "#B55E79"}
-                onMouseLeave={e => e.currentTarget.style.color = "#CF99A6"}
-              >
-                <Camera size={18} strokeWidth={1.5} />
-              </a>
-              <a
-                href="#"
-                className="transition-all hover:scale-110 transform duration-200"
-                onMouseEnter={e => e.currentTarget.style.color = "#B55E79"}
-                onMouseLeave={e => e.currentTarget.style.color = "#CF99A6"}
-              >
-                <MonitorPlay size={18} strokeWidth={1.5} />
-              </a>
-              <a
-                href="#"
-                className="transition-all hover:scale-110 transform duration-200"
-                onMouseEnter={e => e.currentTarget.style.color = "#B55E79"}
-                onMouseLeave={e => e.currentTarget.style.color = "#CF99A6"}
-              >
-                <Briefcase size={18} strokeWidth={1.5} />
-              </a>
+            <div className="flex flex-col gap-2.5 text-xs font-medium" style={{ color: "#5F5358" }}>
+              <a href="https://kukclean.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#B55E79] transition-colors">KuKClean</a>
+              <a href="https://notpaused.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#B55E79] transition-colors">NotPaused</a>
             </div>
           </div>
 
@@ -195,11 +90,37 @@ export function Footer() {
 
         {/* Bottom bar */}
         <div
-          className="mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] font-medium"
+          className="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] font-medium"
           style={{ borderTop: "1px solid #E8CDD3", color: "#5F5358" }}
         >
-          <span>&copy; {new Date().getFullYear()} Kirti Yadav. All rights reserved.</span>
-          <span style={{ color: "#CF99A6" }}>KuK Clean Wellness &middot; NotPaused.com</span>
+          <span>&copy; Kirti Yadav.</span>
+          
+          <div className="flex items-center gap-4">
+            <span>Stay in touch:</span>
+            <div className="flex items-center gap-3">
+              <a
+                href="#"
+                className="transition-all hover:scale-110 transform duration-200 hover:text-[#B55E79]"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle size={14} strokeWidth={2} />
+              </a>
+              <a
+                href="#"
+                className="transition-all hover:scale-110 transform duration-200 hover:text-[#B55E79]"
+                aria-label="Instagram"
+              >
+                <Camera size={14} strokeWidth={2} />
+              </a>
+              <a
+                href="#"
+                className="transition-all hover:scale-110 transform duration-200 hover:text-[#B55E79]"
+                aria-label="LinkedIn"
+              >
+                <Briefcase size={14} strokeWidth={2} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

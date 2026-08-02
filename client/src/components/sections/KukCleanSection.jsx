@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
 import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
 import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
@@ -22,18 +22,18 @@ function useReveal(ref) {
 }
 
 const theme = {
-  primary:      "#B55E79",   // rose-mauve
+  primary: "#B55E79",   // rose-mauve
   primaryLight: "#E6BEC6",
-  primarySoft:  "#F4D9DE",
-  dark:         "#2E2326",
-  muted:        "#5F5358",
-  border:       "#E8CDD3",
-  bg:           "#FCF8F7"
+  primarySoft: "#F4D9DE",
+  dark: "#2E2326",
+  muted: "#5F5358",
+  border: "#E8CDD3",
+  bg: "#FCF8F7"
 };
 
 const products = [
   { icon: <Leaf size={24} />, title: "Organic Ragi & Almond Laddus", desc: "Wholesome, gluten-free, and naturally sweetened—our Ragi Laddus are a calcium-rich powerhouse made with organic finger millet. The Kashmiri Almond Protein Laddus combine roasted Bengal gram and jaggery powder for a protein-packed bite. Zero refined sugar, zero dairy, 100% pure goodness." },
-  { icon: <Sparkles size={24} />, title: "Date Bites & Sugar-Free Treats", desc: "Nature's candy, elevated. Premium Arabic dates are hand-pitted and blended with crunchy cashews, almonds, pumpkin seeds, dried figs, and a warm whisper of cardamom & cloves. A guilt-free indulgence that satisfies your sweet tooth and nourishes your body—no added sugar, ever."},
+  { icon: <Sparkles size={24} />, title: "Date Bites & Sugar-Free Treats", desc: "Nature's candy, elevated. Premium Arabic dates are hand-pitted and blended with crunchy cashews, almonds, pumpkin seeds, dried figs, and a warm whisper of cardamom & cloves. A guilt-free indulgence that satisfies your sweet tooth and nourishes your body—no added sugar, ever." },
   { icon: <Heart size={24} />, title: "Baked Mathri & Millet Chivda", desc: "Crunch without the guilt. Our Ajwain Whole Wheat Mathri is baked, not fried—crispy, aromatic, and low-sodium. The Roasted Jowar Chivda is a millet-based marvel, tossed with subtle spices for a savory snack that's light on salt but heavy on flavor. Traditional taste, modern health." },
   { icon: <ChefHat size={24} />, title: "Stone-Ground Nut Butters & Dips", desc: "Slow and steady wins the health race. Our nut butters are crafted the old-fashioned way—stone-ground at low temperatures to preserve every precious micronutrient, enzyme, and healthy oil that high-heat processing destroys. 100% clean label, pure nutty perfection." },
   { icon: <Star size={24} />, title: "Artisanal Gift Hampers", desc: "Give the gift of health, thoughtfully curated. Choose from our KuKClean Wholesome, Sweet n Savour, or Healthy Nibbles hampers—each hand-assembled with our best-selling products and customized packaging for corporate gifting, festive celebrations, or simply spreading joy. Made for sharing, crafted for caring" },
@@ -113,14 +113,7 @@ export function KukCleanSection() {
             </a>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-16 pt-10 border-t border-white/20">
-            {[["₹14 Lakhs", "First 7 Mo Revenue"], ["IIMB WSP3", "Top 50 Venture"], ["ICAR-IIMR", "Govt Grant"], ["1M Plates", "Goal by 2030"]].map(([n, l]) => (
-              <div key={l} className="group cursor-default">
-                <span className="font-serif text-3xl md:text-4xl font-bold text-white block group-hover:-translate-y-1 transition-transform duration-300">{n}</span>
-                <span className="text-white/70 text-[10px] uppercase tracking-[0.25em] font-medium mt-2 block">{l}</span>
-              </div>
-            ))}
-          </div>
+
         </div>
       </div>
 
@@ -157,7 +150,7 @@ export function KukCleanSection() {
             style={{ borderColor: theme.primary }}
           >
             <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
-              Incorporated in July 2021 as KuKClean Foods and Consulting Pvt Ltd, the venture is co-founded with Kirti's husband, Akar Misra, who runs operations full-time alongside a dedicated production team. Product quality is tested against one human standard — Kirti's daughter. 'When my daughter eats my snacks and says, Mummy, I'm so lucky to have you, that's why I make laddus.'
+              Incorporated as KuKClean Foods and Consulting Pvt Ltd, the venture is co-founded with Kirti's husband, Akar Misra, who runs operations full-time alongside a dedicated production team. Product quality is tested against one human standard — Kirti's daughter. 'When my daughter eats my snacks and says, Mummy, I'm so lucky to have you, that's why I make laddus.'
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -286,7 +279,7 @@ export function KukCleanSection() {
         </div>
 
 
-        
+
         {/* Wellness & Analysis Assessment Images */}
         <div className="pt-10">
           <div className="reveal text-center mb-10">

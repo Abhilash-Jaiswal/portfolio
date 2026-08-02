@@ -14,17 +14,20 @@ export function Navbar() {
   }, []);
 
   const navItems = [
-    { name: "Introduction", path: "/" },
-    { name: "My Story", path: "/my-story" },
+    { name: "Home", path: "/" },
+    { name: "Life Story", path: "/life-story" },
+    { name: "Work with Me", path: "/work-with-me" },
     {
       name: "My Ventures",
       path: "/my-ventures",
       subItems: [
-        { name: "KuK Clean", path: "/my-ventures?tab=kuk-clean", icon: Leaf },
-        { name: "notpaused.com", path: "/my-ventures?tab=notpaused", icon: Sparkles },
+        { name: "KuK Clean", path: "/my-ventures#kuk-clean", icon: Leaf },
+        { name: "notpaused.com", path: "/my-ventures#notpaused", icon: Sparkles },
       ],
     },
-    { name: "Influencer", path: "/influencer" },
+    { name: "Press", path: "/press" },
+    { name: "Latest", path: "/latest" },
+    { name: "Contact", path: "/contact" },
   ];
 
   const currentPath = location.pathname.replace(/\/$/, "");
@@ -44,7 +47,9 @@ export function Navbar() {
 
   // Determine if current page has a dark banner at top
   const isHomePage = currentPath === "" || currentPath.endsWith("/portfolio");
-  const useWhiteTextAtTop = !isHomePage && !isScrolled;
+  const isLifeStory = currentPath.endsWith("/life-story");
+  const hasDarkHeader = isLifeStory; // Only Life Story has a dark banner now
+  const useWhiteTextAtTop = hasDarkHeader && !isScrolled;
 
   return (
     <nav
@@ -116,21 +121,23 @@ export function Navbar() {
                     />
                   </Link>
 
-                  {/* Dropdown Menu */}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 py-2 px-1.5 rounded-2xl shadow-xl border border-[#E8CDD3]/80 bg-white/95 backdrop-blur-md opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 transform scale-95 group-hover:scale-100 z-50">
-                    {item.subItems.map((sub) => {
-                      const Icon = sub.icon;
-                      return (
-                        <Link
-                          key={sub.name}
-                          to={sub.path}
-                          className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold normal-case text-[#2E2326] hover:bg-[#F4D9DE]/40 hover:text-[#B55E79] transition-colors"
-                        >
-                          <Icon className="w-4 h-4 text-[#B55E79]" />
-                          <span>{sub.name}</span>
-                        </Link>
-                      );
-                    })}
+                  {/* Dropdown Menu Wrapper (Invisible bridge) */}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-48 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                    <div className="py-2 px-1.5 rounded-2xl shadow-xl border border-[#E8CDD3]/80 bg-white/95 backdrop-blur-md transform scale-95 group-hover:scale-100 transition-transform duration-200">
+                      {item.subItems.map((sub) => {
+                        const Icon = sub.icon;
+                        return (
+                          <Link
+                            key={sub.name}
+                            to={sub.path}
+                            className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold normal-case text-[#2E2326] hover:bg-[#F4D9DE]/40 hover:text-[#B55E79] transition-colors"
+                          >
+                            <Icon className="w-4 h-4 text-[#B55E79]" />
+                            <span>{sub.name}</span>
+                          </Link>
+                        );
+                      })}
+                    </div>
                   </div>
                 </div>
               );

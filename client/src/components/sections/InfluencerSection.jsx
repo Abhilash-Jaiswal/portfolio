@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   Camera,
   Users,
@@ -183,7 +183,7 @@ export function InfluencerSection() {
             <br />
             <h2 className="font-serif text-3xl lg:text-4xl text-[#2E2326] font-bold">Digital Platforms & Active Communities</h2>
           </div>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {platforms.map((p, i) => {
               const Icon = p.icon;
               return (
@@ -192,18 +192,15 @@ export function InfluencerSection() {
                   target={p.link ? "_blank" : "_self"}
                   rel="noopener noreferrer"
                   key={i}
-                  className="reveal shimmer-card group bg-white/70 backdrop-blur-sm border p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4 flex flex-col items-start block w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(20%-1.2rem)] max-w-[340px]"
-                  style={{
-                  borderColor: '#E8CDD3',
-                    transitionDelay: `${i * 80}ms`
-                  }}
+                  className="reveal shimmer-card group bg-white border border-[#E8CDD3] p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 flex flex-col items-center text-center w-full"
+                  style={{ transitionDelay: `${i * 80}ms` }}
                 >
-                  <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${p.grad} flex shrink-0 items-center justify-center shadow-inner text-white group-hover:scale-110 transition-transform duration-500`}>
-                    <Icon className="w-6 h-6" strokeWidth={1.5} />
+                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${p.grad} flex shrink-0 items-center justify-center shadow-lg text-white group-hover:scale-110 transition-transform duration-500 mb-6`}>
+                    <Icon className="w-7 h-7" strokeWidth={1.5} />
                   </div>
-                  <div className="flex-1 w-full">
-                    <h4 className="font-serif font-bold text-lg text-[#2C3A37] leading-tight">{p.name}</h4>
-                    <span className="text-[#5A6F6A] text-xs font-semibold block mt-1">{p.handle}</span>
+                  <div className="flex-1 w-full mb-4">
+                    <h4 className="font-serif font-bold text-xl text-[#2C3A37] mb-2">{p.name}</h4>
+                    <span className="text-[#B55E79] text-xs font-bold tracking-wider uppercase block">{p.handle}</span>
                   </div>
                   <p className="text-[#5F5358] text-sm font-light leading-relaxed">{p.desc}</p>
                 </a>
