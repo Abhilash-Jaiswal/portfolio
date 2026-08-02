@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Search } from "lucide-react";
 
@@ -15,8 +15,7 @@ export function Navbar() {
 
   const navItems = [
     { name: "Introduction", path: "/" },
-    { name: "Life Story", path: "/life-story" },
-    { name: "Achievements", path: "/achievements" },
+    { name: "My Story", path: "/my-story" },
     { name: "KuK Clean Wellness", path: "/kuk-clean" },
     { name: "notpaused.com", path: "/notpaused" },
     { name: "Influencer", path: "/influencer" },
