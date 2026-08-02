@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Search } from "lucide-react";
+import { Search, ChevronDown, Leaf, Sparkles } from "lucide-react";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,8 +16,14 @@ export function Navbar() {
   const navItems = [
     { name: "Introduction", path: "/" },
     { name: "My Story", path: "/my-story" },
-    { name: "KuK Clean Wellness", path: "/kuk-clean" },
-    { name: "notpaused.com", path: "/notpaused" },
+    {
+      name: "My Ventures",
+      path: "/my-ventures",
+      subItems: [
+        { name: "KuK Clean", path: "/my-ventures?tab=kuk-clean", icon: Leaf },
+        { name: "notpaused.com", path: "/my-ventures?tab=notpaused", icon: Sparkles },
+      ],
+    },
     { name: "Influencer", path: "/influencer" },
   ];
 
@@ -26,6 +32,13 @@ export function Navbar() {
   const isActive = (path) => {
     const target = path.replace(/\/$/, "");
     if (target === "") return currentPath === "" || currentPath.endsWith("/portfolio");
+    if (target === "/my-ventures") {
+      return (
+        currentPath.endsWith("/my-ventures") ||
+        currentPath.endsWith("/kuk-clean") ||
+        currentPath.endsWith("/notpaused")
+      );
+    }
     return currentPath.endsWith(target);
   };
 
@@ -80,6 +93,48 @@ export function Navbar() {
             const active = isActive(item.path);
             const defaultTextColor = useWhiteTextAtTop ? "rgba(255, 255, 255, 0.95)" : "#2E2326";
             const activeTextColor = useWhiteTextAtTop ? "#E6BEC6" : "#B55E79";
+
+            if (item.subItems) {
+              return (
+                <div key={item.name} className="relative group py-2">
+                  <Link
+                    to={item.path}
+                    className="flex items-center gap-1 pb-1 transition-colors duration-200"
+                    style={{ color: active ? activeTextColor : defaultTextColor }}
+                  >
+                    <span className={active ? "font-bold" : "group-hover:opacity-100 transition-opacity"}>
+                      {item.name}
+                    </span>
+                    <ChevronDown className="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" />
+                    {/* Animated underline */}
+                    <span
+                      className="absolute bottom-1 left-0 h-[2px] rounded-full transition-all duration-300"
+                      style={{
+                        backgroundColor: useWhiteTextAtTop ? "#E6BEC6" : "#B55E79",
+                        width: active ? "100%" : "0%",
+                      }}
+                    />
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 mt-1 w-48 py-2 px-1.5 rounded-2xl shadow-xl border border-[#E8CDD3]/80 bg-white/95 backdrop-blur-md opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 transform scale-95 group-hover:scale-100 z-50">
+                    {item.subItems.map((sub) => {
+                      const Icon = sub.icon;
+                      return (
+                        <Link
+                          key={sub.name}
+                          to={sub.path}
+                          className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold normal-case text-[#2E2326] hover:bg-[#F4D9DE]/40 hover:text-[#B55E79] transition-colors"
+                        >
+                          <Icon className="w-4 h-4 text-[#B55E79]" />
+                          <span>{sub.name}</span>
+                        </Link>
+                      );
+                    })}
+                  </div>
+                </div>
+              );
+            }
 
             return (
               <Link

@@ -2,8 +2,7 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import App from "./App.jsx";
 import { HomePage } from "./pages/HomePage.jsx";
 import { MyStoryPage } from "./pages/MyStoryPage.jsx";
-import { KukCleanPage } from "./pages/KukCleanPage.jsx";
-import { NotPausedPage } from "./pages/NotPausedPage.jsx";
+import { MyVenturesPage } from "./pages/MyVenturesPage.jsx";
 import { InfluencerPage } from "./pages/InfluencerPage.jsx";
 
 const router = createBrowserRouter([
@@ -15,8 +14,9 @@ const router = createBrowserRouter([
       { path: "my-story", element: <MyStoryPage /> },
       { path: "life-story", element: <Navigate to="/my-story" replace /> },
       { path: "achievements", element: <Navigate to="/my-story" replace /> },
-      { path: "kuk-clean", element: <KukCleanPage /> },
-      { path: "notpaused", element: <NotPausedPage /> },
+      { path: "my-ventures", element: <MyVenturesPage /> },
+      { path: "kuk-clean", element: <Navigate to="/my-ventures?tab=kuk-clean" replace /> },
+      { path: "notpaused", element: <Navigate to="/my-ventures?tab=notpaused" replace /> },
       { path: "influencer", element: <InfluencerPage /> },
     ]
   },
