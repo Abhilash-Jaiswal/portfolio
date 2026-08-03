@@ -1,36 +1,30 @@
 import { Link } from "react-router-dom";
 import { Leaf, Sparkles } from "lucide-react";
-import heroImage from "../assets/Image.png";
+
 
 export function HomePage() {
   return (
     <div className="bg-[#FCF8F7] min-h-screen">
-      {/* Hero Section with Marie Forleo Style Background Text */}
+      {/* Hero Section */}
       <section className="relative w-full overflow-hidden flex flex-col items-center text-center pt-32 pb-20"
                style={{ background: "linear-gradient(180deg, #E6BEC6 0%, #FCF8F7 100%)" }}>
         
-        {/* Background Giant Text */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none z-0 mt-8 opacity-90 select-none">
-          <h1 className="font-serif text-[24vw] sm:text-[22vw] lg:text-[20vw] font-bold leading-[0.8] tracking-tight text-white uppercase">
-            KIRTI<br/>YADAV
-          </h1>
-        </div>
-
         {/* Foreground Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 flex flex-col items-center">
-          <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-6 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm">
+          
+          <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-8 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm">
             Founder &middot; Nutritionist &middot; Menopause Coach &middot; Mentor
           </p>
           
-          <div className="relative w-full max-w-3xl mx-auto mb-10">
-            <img src={heroImage} alt="Kirti Yadav" className="w-full h-auto object-contain max-h-[60vh] drop-shadow-2xl" />
-          </div>
-          
-          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2E2326] mb-4 drop-shadow-sm">
+          <h1 className="font-serif text-[24vw] sm:text-[22vw] lg:text-[20vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-16 opacity-90 drop-shadow-md">
+            KIRTI<br/>YADAV
+          </h1>
+
+          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2E2326] mb-12 drop-shadow-sm">
             A life in motion, made more nourishing.
           </h2>
-          <p className="text-xl sm:text-2xl font-script text-[#B55E79] mb-4">Hey! I'm Kirti</p>
-          <p className="text-lg text-[#5F5358] max-w-2xl mx-auto mb-10 leading-relaxed font-medium drop-shadow-sm">
+          <p className="text-xl sm:text-2xl font-script text-[#B55E79] mb-12">Hey! I'm Kirti</p>
+          <p className="text-lg text-[#5F5358] max-w-2xl mx-auto mb-16 leading-relaxed font-medium drop-shadow-sm">
             A founder, nutritionist, and builder of kinder systems for bodies, workplaces, and the lives we're still becoming.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -45,10 +39,11 @@ export function HomePage() {
       </section>
 
       {/* What I Believe Band */}
-      <section className="bg-[#B55E79] text-white py-12 px-6 text-center">
-        <p className="font-serif text-2xl sm:text-3xl max-w-4xl mx-auto leading-relaxed">
-          "We keep exploring, keep learning, keep becoming someone slightly different from who we were yesterday."
+      <section className="bg-[#B55E79] text-white py-16 px-6 text-center flex flex-col items-center">
+        <p className="font-serif text-2xl sm:text-3xl max-w-4xl mx-auto leading-relaxed mb-6">
+          "I've always believed that we keep exploring, keep learning, and keep becoming someone slightly different from who we were yesterday."
         </p>
+        <p className="font-script text-2xl sm:text-3xl opacity-90">— Kirti</p>
       </section>
 
       {/* A letter, before anything else */}

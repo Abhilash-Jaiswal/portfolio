@@ -83,12 +83,18 @@ export function Navbar() {
                 style={{ backgroundColor: "#E6BEC6" }}
               />
             </div>
-            <span
-              className="font-serif font-bold text-[1.35rem] tracking-tight transition-colors duration-200"
-              style={{ color: useWhiteTextAtTop ? "#FFFFFF" : "#2E2326" }}
-            >
-              Kirti<span style={{ color: "#B55E79" }}>.</span>
-            </span>
+            <div className="flex flex-col justify-center">
+              <span
+                className="font-serif font-bold text-[1.35rem] tracking-tight transition-colors duration-200 leading-none"
+                style={{ color: useWhiteTextAtTop ? "#FFFFFF" : "#2E2326" }}
+              >
+                Kirti<span style={{ color: "#B55E79" }}>.</span>
+              </span>
+              <span className="text-[8px] sm:text-[9px] font-sans font-bold uppercase tracking-[0.15em] mt-1.5 opacity-70"
+                    style={{ color: useWhiteTextAtTop ? "rgba(255,255,255,0.8)" : "#5F5358" }}>
+                Multi-Dimensional Entrepreneur
+              </span>
+            </div>
           </Link>
         </div>
 

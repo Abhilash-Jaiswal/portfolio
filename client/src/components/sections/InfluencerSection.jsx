@@ -91,7 +91,7 @@ const platforms = [
     desc: "Original vegan recipe sharing, live Q&As, and deep community discussions for Indian families."
   },
 
-  
+
 ];
 
 const brandPartners = [
@@ -138,15 +138,15 @@ export function InfluencerSection() {
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
               A Voice Built on <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">
-              Authenticity &amp; Expertise
-            </span>
+              <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">
+                Authenticity &amp; Expertise
+              </span>
             </h1>
             <p className="text-white/80 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
               A certified nutritionist and 2x founder who developed an audience — not a social media performer. Connecting clean brands with high-intent Indian families.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-16 pt-10 border-t border-white/20">
-              
+
             </div>
           </div>
 
@@ -165,7 +165,7 @@ export function InfluencerSection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-24 space-y-32">
 
         {/* Opening Quote */}
-          <div className="reveal max-w-4xl mx-auto bg-[#F4D9DE]/90 border-l-4 border-[#6B2D3E] rounded-r-3xl px-8 py-6 shadow-sm">
+        <div className="reveal max-w-4xl mx-auto bg-[#F4D9DE]/90 border-l-4 border-[#6B2D3E] rounded-r-3xl px-8 py-6 shadow-sm">
           <p className="font-serif text-lg italic text-[#2E2326] leading-relaxed">
             "There is a meaningful difference between an influencer who became interested in wellness and a wellness expert who developed an audience. Kirti Yadav is unambiguously the latter."
           </p>
@@ -261,18 +261,18 @@ export function InfluencerSection() {
             </p>
             <div className="pt-4 flex flex-wrap justify-center gap-4">
               <a
-                href="mailto:kirti.yadav29@gmail.com"
+                href="mailto:kirti@kukclean.com"
                 className="bg-[#E6BEC6] text-[#4A1E2B] font-bold text-xs px-6 py-3 rounded-full shadow-lg hover:bg-[#F4D9DE] transition-all flex items-center gap-2"
               >
                 <Mail className="w-4 h-4" />
-                Email: kirti.yadav29@gmail.com
+                Email: kirti@kukclean.com
               </a>
               <a
-                href="tel:9880650049"
+                href="tel:06360999672"
                 className="bg-white/10 border border-white/30 text-white font-bold text-xs px-6 py-3 rounded-full shadow-lg hover:bg-white/20 transition-all flex items-center gap-2"
               >
                 <Phone className="w-4 h-4" />
-                Call: +91 9880650049
+                Call: 06360999672
               </a>
             </div>
           </div>

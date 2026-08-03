@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { ArrowRight, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export function ContactSection() {
@@ -62,11 +62,11 @@ export function ContactSection() {
                 <div>
                   <span className="text-[10px] font-bold uppercase tracking-wider block" style={{ color: theme.muted }}>Partnership Email</span>
                   <a 
-                    href="mailto:hello@kukclean.com" 
+                    href="mailto:kirti@kukclean.com" 
                     className="text-sm font-semibold hover:opacity-70 transition-opacity"
                     style={{ color: theme.dark }}
                   >
-                    hello@kukclean.com
+                    kirti@kukclean.com
                   </a>
                 </div>
               </div>
