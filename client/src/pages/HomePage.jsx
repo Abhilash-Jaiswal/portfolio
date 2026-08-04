@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Leaf, Sparkles } from "lucide-react";
+import { Leaf, Sparkles, Award, Quote, Play, ShieldCheck, Heart, GraduationCap, Milestone, Star, CheckCircle2 } from "lucide-react";
 import kukuImage from "../assets/kuku-image.jpeg";
 import notPausedImage from "../assets/Not Paused.jpeg";
 
@@ -64,6 +64,73 @@ export function HomePage() {
         </Link>
       </section>
 
+      {/* NEW CONTENT SECTION: The Moments That Shaped Me (PDF Sec 3.1 & 3.2 Milestones) */}
+      <section className="py-20 px-6 sm:px-12 bg-white border-y border-[#E8CDD3]/60">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block mb-3">
+              Defining Turning Points
+            </span>
+            <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
+              The Moments That Shaped Me
+            </h3>
+            <p className="text-[#5F5358] max-w-2xl mx-auto text-base">
+              Key milestones where personal experience turned into systemic purpose and community action.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="p-8 bg-[#FCF8F7] rounded-3xl border border-[#E8CDD3] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Heart className="w-6 h-6" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] block mb-2">Milestone 01</span>
+                <h4 className="text-xl font-bold font-serif text-[#2E2326] mb-4">Personal Health Reset</h4>
+                <p className="text-[#5F5358] leading-relaxed text-sm">
+                  The moment health stopped being optional and started being personal — the real start of everything that came after.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-[#E8CDD3]/50 text-xs font-semibold text-[#B55E79]">
+                Relearning food, body & pace
+              </div>
+            </div>
+
+            <div className="p-8 bg-[#FCF8F7] rounded-3xl border border-[#E8CDD3] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Milestone className="w-6 h-6" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] block mb-2">Milestone 02</span>
+                <h4 className="text-xl font-bold font-serif text-[#2E2326] mb-4">Incubation & Growth</h4>
+                <p className="text-[#5F5358] leading-relaxed text-sm">
+                  Where I learned to think like an entrepreneur, not just a founder with a good idea.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-[#E8CDD3]/50 text-xs font-semibold text-[#B55E79]">
+                NSRCEL, IIM Bangalore & ICAR-IIMR
+              </div>
+            </div>
+
+            <div className="p-8 bg-[#FCF8F7] rounded-3xl border border-[#E8CDD3] hover:shadow-lg transition-all duration-300 flex flex-col justify-between group">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                  <Sparkles className="w-6 h-6" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] block mb-2">Milestone 03</span>
+                <h4 className="text-xl font-bold font-serif text-[#2E2326] mb-4">Unrecognized Menopause</h4>
+                <p className="text-[#5F5358] leading-relaxed text-sm">
+                  Even as a nutritionist, I didn't see it coming in myself. That gap became a mission.
+                </p>
+              </div>
+              <div className="mt-6 pt-4 border-t border-[#E8CDD3]/50 text-xs font-semibold text-[#B55E79]">
+                Founding NotPaused.com
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* More Things I've Built (Ventures teaser) */}
       <section className="py-24 px-6 sm:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -99,6 +166,47 @@ export function HomePage() {
         </div>
       </section>
 
+      {/* NEW CONTENT SECTION: Certifications & Qualifications Spotlight (PDF Sec 2.1, 3.3 & 3.5) */}
+      <section className="py-20 px-6 sm:px-12 bg-[#FCF8F7] border-y border-[#E8CDD3]">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-white px-4 py-1.5 rounded-full inline-block mb-3 border border-[#E8CDD3]">
+              Qualifications & Training
+            </span>
+            <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
+              Certifications & Specialized Expertise
+            </h3>
+            <p className="text-[#5F5358] max-w-2xl mx-auto text-base">
+              Evidence-based study and formal qualifications spanning holistic nutrition, plant-based performance, and women's health.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { title: "Certified Holistic Nutritionist", sub: "Holistic Health & Wellness Practice", icon: Award },
+              { title: "Plant-Based Athlete Coach", sub: "Sports Nutrition & Performance", icon: ShieldCheck },
+              { title: "Herbal & Natural Strategies for Menopause", sub: "Natural Midlife Symptom Support", icon: Leaf },
+              { title: "Certified Menopause Coach", sub: "Menopause Nutrition & Health Graduate", icon: GraduationCap },
+              { title: "Introduction to Food and Health", sub: "Stanford Online (Verified Course)", icon: GraduationCap },
+              { title: "Vegan Cooking Diploma", sub: "Centre of Excellence, UK (With Distinction)", icon: Award }
+            ].map((cert, idx) => {
+              const IconComp = cert.icon;
+              return (
+                <div key={idx} className="p-6 bg-white rounded-2xl border border-[#E8CDD3] shadow-sm hover:border-[#B55E79] hover:shadow-md transition-all flex items-start gap-4">
+                  <div className="p-3 bg-[#F4D9DE]/40 text-[#B55E79] rounded-xl shrink-0">
+                    <IconComp className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 className="font-bold text-[#2E2326] text-base mb-1">{cert.title}</h4>
+                    <p className="text-xs text-[#5F5358] leading-relaxed">{cert.sub}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* Ways We Can Work Together */}
       <section id="work-together" className="py-24 px-6 sm:px-12 bg-[#F4D9DE]/30">
         <div className="max-w-6xl mx-auto">
@@ -125,6 +233,38 @@ export function HomePage() {
                 </Link>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* NEW CONTENT SECTION: Featured Media / In-depth Conversation (PDF Sec 3.3) */}
+      <section className="py-20 px-6 sm:px-12 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#FCF8F7] to-[#F4D9DE]/40 border border-[#E8CDD3] shadow-md flex flex-col md:flex-row items-center gap-8">
+            <div className="w-full md:w-1/2 flex flex-col items-start">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] bg-white px-3.5 py-1 rounded-full border border-[#E8CDD3] mb-4">
+                Featured Conversation
+              </span>
+              <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#2E2326] mb-4 leading-tight">
+                A conversation on building with purpose — with Shraddha Sharma, YourStory
+              </h3>
+              <p className="text-[#5F5358] text-sm leading-relaxed mb-6">
+                A wide-ranging, extended discussion capturing Kirti's own philosophy in her own words — reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
+              </p>
+              <Link to="/press" className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
+                <Play className="w-4 h-4 fill-current" /> Watch / Read Press Story
+              </Link>
+            </div>
+            <div className="w-full md:w-1/2 bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
+              <div className="relative z-20 flex flex-col items-center text-center p-6">
+                <div className="w-16 h-16 rounded-full bg-[#B55E79] text-white flex items-center justify-center mb-3 shadow-lg group-hover:scale-110 transition-transform">
+                  <Play className="w-7 h-7 fill-current ml-1" />
+                </div>
+                <span className="text-white font-serif font-bold text-lg mb-1">YourStory Extended Interview</span>
+                <span className="text-white/80 text-xs font-medium">Building With Purpose & Systemic Health</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -186,6 +326,122 @@ export function HomePage() {
             </div>
           </div>
 
+        </div>
+      </section>
+
+      {/* NEW CONTENT SECTION: Founders' Manifesto & Core Mission (PDF Sec 2.2, 2.3, 5) */}
+      <section className="py-20 px-6 sm:px-12 bg-[#8C4356] text-white">
+        <div className="max-w-4xl mx-auto text-center">
+          <Quote className="w-12 h-12 text-[#E6BEC6]/60 mx-auto mb-6" />
+          <p className="font-serif text-2xl sm:text-4xl leading-snug mb-8 drop-shadow-sm font-medium">
+            My mission is simple: 1 million plate-level changes.
+          </p>
+          <div className="w-20 h-0.5 bg-[#E6BEC6]/40 mx-auto mb-8"></div>
+          <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed font-light mb-4">
+            I've educated individuals and built communities to inspire them. I do not perform a persona or sell standard products — I work with real people, real bodies, and real lives.
+          </p>
+          <p className="font-script text-2xl sm:text-3xl text-[#E6BEC6]">— Kirti Yadav</p>
+        </div>
+      </section>
+
+      {/* NEW CONTENT SECTION: Real Stories, Real Results - Approved Testimonials (PDF Sec 2.6 & Sec 5) */}
+      <section className="py-24 px-6 sm:px-12 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block mb-3 border border-[#E8CDD3]/60">
+              Real Client Stories
+            </span>
+            <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
+              Real Stories, Real Results
+            </h3>
+            <p className="text-[#5F5358] max-w-2xl mx-auto text-base">
+              Voices of women who rebuilt their health, energy, and relationship with food.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results. The journey wasn't always smooth, but her guidance, motivation, and constant support made it achievable.",
+                name: "Seema",
+                role: "Lifestyle Transformation Client",
+                highlight: "Reduced 12 kg & built sustainable habits",
+                initials: "S",
+                bgAccent: "from-[#F4D9DE]/40 to-[#FCF8F7]"
+              },
+              {
+                quote: "Thanks a ton, Kirti, for helping me achieve this. You have hand-held me throughout the journey and helped me manage my emotions too — in one of our calls, I could feel you sensed what I was feeling without me even explaining. You are so involved with your clients. My heartfelt gratitude for bringing about this lifestyle change in me. My skin tone has definitely improved too — I keep getting compliments on my complexion and glow.",
+                name: "Padma Uday",
+                role: "1:1 Coaching Client",
+                highlight: "Emotional support & skin glow transformation",
+                initials: "P",
+                bgAccent: "from-[#FCF8F7] to-[#F4D9DE]/40"
+              },
+              {
+                quote: "I really want to thank Kirti for her efforts in reducing my diabetes markers, managing my weight loss, and teaching me proper portion eating. From Day 1, the emphasis was on chewing and eating clean — that line kept me motivated to keep moving ahead on the path of reversing diabetes. Thank you, Kirti, for all the magical changes.",
+                name: "Garima Kapoor",
+                role: "Nutrition & Health Client",
+                highlight: "Reduced diabetes markers & portion mastery",
+                initials: "G",
+                bgAccent: "from-[#F4D9DE]/30 to-[#FCF8F7]"
+              },
+              {
+                quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant-based way of eating and helped me understand the crucial role of fiber. Now I feel more nourished and satisfied than ever.",
+                name: "Bharathi Mani",
+                role: "Plant-Based Nutrition Client",
+                highlight: "Enhanced recovery, protein & fiber optimization",
+                initials: "B",
+                bgAccent: "from-[#FCF8F7] to-[#F4D9DE]/30"
+              }
+            ].map((item, idx) => (
+              <div 
+                key={idx} 
+                className="group relative p-8 sm:p-10 rounded-3xl bg-[#FCF8F7] border border-[#E8CDD3] shadow-sm hover:shadow-xl hover:shadow-[#B55E79]/5 hover:border-[#B55E79]/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden"
+              >
+                {/* Top subtle gradient accent line */}
+                <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${item.bgAccent} group-hover:bg-[#B55E79] transition-colors duration-300`}></div>
+
+                <div>
+                  {/* Top Bar: Highlight Tag & Verified Badge */}
+                  <div className="flex items-center justify-between gap-3 mb-6">
+                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#B55E79] bg-white px-3 py-1.5 rounded-full border border-[#E8CDD3] shadow-2xs">
+                      {item.highlight}
+                    </span>
+                    <div className="flex items-center gap-1.5 text-[#B55E79] text-xs font-semibold bg-white px-3 py-1.5 rounded-full border border-[#E8CDD3] shadow-2xs shrink-0">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B55E79]" />
+                      <span>Verified Client</span>
+                    </div>
+                  </div>
+
+                  {/* Quote Icon & Body */}
+                  <div className="mb-8">
+                    {/* <div className="w-9 h-9 rounded-xl bg-[#F4D9DE]/60 text-[#B55E79] flex items-center justify-center mb-4 group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-300">
+                      <Quote className="w-4 h-4 fill-current" />
+                    </div> */}
+                    <p className="text-[#5F5358] text-sm sm:text-base leading-relaxed font-medium">
+                      {item.quote}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Author Footer */}
+                <div className="pt-6 border-t border-[#E8CDD3]/70 flex items-center gap-3.5">
+                  {/* Avatar Initials Badge */}
+                  <div className="w-11 h-11 rounded-full bg-[#B55E79] text-white flex items-center justify-center font-serif font-bold text-lg shadow-sm group-hover:scale-105 transition-transform shrink-0">
+                    {item.initials}
+                  </div>
+                  <div>
+                    <h5 className="font-serif font-bold text-[#2E2326] text-base leading-tight group-hover:text-[#B55E79] transition-colors">
+                      {item.name}
+                    </h5>
+                    <span className="text-xs text-[#5F5358] font-medium block mt-0.5">
+                      {item.role}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
