@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Search, ChevronDown, Leaf, Sparkles } from "lucide-react";
+import logoImage from "../../assets/woman_entrepreneur_logo.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,7 +17,6 @@ export function Navbar() {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Life Story", path: "/life-story" },
-    { name: "Work with Me", path: "/work-with-me" },
     {
       name: "My Ventures",
       path: "/my-ventures",
@@ -25,6 +25,7 @@ export function Navbar() {
         { name: "notpaused.com", path: "/my-ventures#notpaused", icon: Sparkles },
       ],
     },
+    { name: "Work with Me", path: "/work-with-me" },
     { name: "Press", path: "/press" },
     { name: "Latest", path: "/latest" },
     { name: "Contact", path: "/contact" },
@@ -74,13 +75,11 @@ export function Navbar() {
         {/* Logo */}
         <div className="flex-shrink-0">
           <Link to="/" className="flex items-center gap-2.5 group">
-            <div
-              className="w-9 h-9 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shadow-sm"
-              style={{ backgroundColor: "#B55E79" }}
-            >
-              <div
-                className="w-2.5 h-2.5 rounded-full"
-                style={{ backgroundColor: "#E6BEC6" }}
+            <div className="w-14 h-14 flex items-center justify-center mr-2.5 rounded-full bg-white shadow-md transition-transform duration-500 group-hover:scale-105 overflow-hidden border border-[#E8CDD3]/80">
+              <img 
+                src={logoImage} 
+                alt="Women Entrepreneur Logo" 
+                className="w-[120%] h-[120%] object-cover mix-blend-multiply" 
               />
             </div>
             <div className="flex flex-col justify-center">
@@ -92,7 +91,7 @@ export function Navbar() {
               </span>
               <span className="text-[8px] sm:text-[9px] font-sans font-bold uppercase tracking-[0.15em] mt-1.5 opacity-70"
                     style={{ color: useWhiteTextAtTop ? "rgba(255,255,255,0.8)" : "#5F5358" }}>
-                Multi-Dimensional Entrepreneur
+                Multi-Passionate Entrepreneur
               </span>
             </div>
           </Link>

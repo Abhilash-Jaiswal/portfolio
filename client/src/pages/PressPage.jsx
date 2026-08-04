@@ -30,19 +30,19 @@ const corporateRoster = [
 
 const linkedinRecs = [
   {
-    name: "Shyam Sekhar",
-    role: "Chief Analyst & Founder, iThought",
-    quote: "Very impressed by Kirti's commitment to clean eating. Her knowledge and conviction shine through. Her work with KuKClean is both timely and transformative."
+    name: "Neela Shashikumar",
+    role: "Strategy Execution & Transformation Leader",
+    quote: "Kirti is a passionate, engaging trainer with tremendous knowledge of nutrition. Her professionalism and commitment are exceptional, and her healthy products are fresh, eco-friendly, and made with love."
   },
   {
-    name: "Shruti Sharma",
-    role: "Program Manager, NSRCEL, IIM Bangalore",
-    quote: "Kirti was an outstanding participant in the Goldman Sachs 10k Women program. Her clarity on building a scalable, purpose-driven brand was evident from day one."
+    name: "Shilpa Jain",
+    role: "Professional Associate",
+    quote: "A brilliant businesswoman with a commendable attitude of perseverance. She is a hustler who loves change and speed. I wish more people would meet her to attain a paradigm shift in how they view food and life."
   },
   {
-    name: "Dr. Dayakar Rao",
-    role: "CEO, Nutrihub ICAR-IIMR",
-    quote: "KuKClean's work in millet innovation and clean-label food products represents exactly the kind of agritech entrepreneurship India needs right now."
+    name: "Shikha S Mazumdar",
+    role: "Long-time Associate",
+    quote: "Her diligence, self-discipline, and drive to master new skills stand out. She is articulate, hard-working, and focused, with an infectious enthusiasm and passion to continuously excel."
   }
 ];
 

@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Leaf, Sparkles } from "lucide-react";
+import kukuImage from "../assets/kuku-image.jpeg";
+import notPausedImage from "../assets/Not Paused.jpeg";
 
 
 export function HomePage() {
@@ -23,7 +25,7 @@ export function HomePage() {
           <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2E2326] mb-12 drop-shadow-sm">
             A life in motion, made more nourishing.
           </h2>
-          <p className="text-xl sm:text-2xl font-script text-[#B55E79] mb-12">Hey! I'm Kirti</p>
+          <p className="text-4xl sm:text-6xl font-script text-[#B55E79] mb-12">Hey! I'm Kirti</p>
           <p className="text-lg text-[#5F5358] max-w-2xl mx-auto mb-16 leading-relaxed font-medium drop-shadow-sm">
             A founder, nutritionist, and builder of kinder systems for bodies, workplaces, and the lives we're still becoming.
           </p>
@@ -72,7 +74,7 @@ export function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-10 rounded-3xl border border-[#E8CDD3] bg-[#FCF8F7] hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              <Leaf className="w-12 h-12 text-[#B55E79] mb-6" />
+              <img src={kukuImage} alt="KuKClean" className="h-28 w-auto object-contain mix-blend-multiply mb-6" />
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2">KuKClean</h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">Food, made kinder.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
@@ -83,7 +85,7 @@ export function HomePage() {
               </a>
             </div>
             <div className="p-10 rounded-3xl border border-[#E8CDD3] bg-[#FCF8F7] hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              <Sparkles className="w-12 h-12 text-[#B55E79] mb-6" />
+              <img src={notPausedImage} alt="NotPaused" className="h-28 w-auto object-contain mb-6" style={{ mixBlendMode: 'multiply', filter: 'brightness(1.05) contrast(1.05)' }} />
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2">NotPaused.com</h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">A conversation worth having.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
@@ -128,26 +130,62 @@ export function HomePage() {
       </section>
 
       {/* Credibility Band */}
-      <section className="py-20 px-6 bg-white border-y border-[#E8CDD3]">
-        <div className="max-w-6xl mx-auto space-y-12 text-center">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-4">Teams I've Worked With</p>
-            <p className="text-[#5F5358] font-medium leading-relaxed">
-              JP Morgan &middot; Siemens &middot; Applied Materials &middot; LAM Research &middot; Reliance Ajio &middot; Christ University &middot; Tumkur University
+      <section className="py-24 px-6 bg-[#FCF8F7] border-y border-[#E8CDD3] relative overflow-hidden">
+        {/* Subtle background decoration */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-[#B55E79]/20 to-transparent"></div>
+
+        <div className="max-w-5xl mx-auto space-y-16 relative z-10">
+          
+          <div className="text-center group">
+            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
+              Teams I've Worked With
+              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
             </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["JP Morgan", "Siemens", "Applied Materials", "LAM Research", "Reliance Ajio", "Christ University", "Tumkur University"].map(name => (
+                <span key={name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
+                  {name}
+                </span>
+              ))}
+            </div>
           </div>
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-4">Recognized By</p>
-            <p className="text-[#5F5358] font-medium leading-relaxed">
-              NSRCEL IIM Bangalore &middot; IIMR NutriHub &middot; Goldman Sachs 10,000 Women
+
+          <div className="text-center group">
+            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
+              Recognized By
+              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
             </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {["NSRCEL IIM Bangalore", "IIMR NutriHub", "Goldman Sachs 10,000 Women"].map(name => (
+                <span key={name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
+                  {name}
+                </span>
+              ))}
+            </div>
           </div>
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-4">You May Have Seen Me At</p>
-            <p className="text-[#5F5358] font-medium leading-relaxed">
-              <Link to="/press" className="hover:text-[#B55E79] underline underline-offset-4">YourStory</Link> &middot; <Link to="/press" className="hover:text-[#B55E79] underline underline-offset-4">India Today</Link> &middot; <Link to="/press" className="hover:text-[#B55E79] underline underline-offset-4">Deccan Herald</Link> &middot; <Link to="/press" className="hover:text-[#B55E79] underline underline-offset-4">The Better India</Link>
+
+          <div className="text-center group">
+            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
+              You May Have Seen Me At
+              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
             </p>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                { name: "YourStory", link: "/press" },
+                { name: "India Today", link: "/press" },
+                { name: "Deccan Herald", link: "/press" },
+                { name: "The Better India", link: "/press" }
+              ].map(pub => (
+                <Link key={pub.name} to={pub.link} className="px-6 py-2.5 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm">
+                  {pub.name}
+                </Link>
+              ))}
+            </div>
           </div>
+
         </div>
       </section>
 

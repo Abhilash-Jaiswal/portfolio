@@ -17,7 +17,7 @@ function useReveal() {
 const CHAPTERS = [
   {
     num: "01", emoji: "🏫",
-    title: "Kanpur",
+    title: "Early Education",
     sub: "Growing up in Kanpur",
     intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. Her mum insisted on an English-medium school anyway; her dad backed that without wavering, and her teachers kept pushing her onto every stage to speak.",
     pullQuote: {
@@ -80,11 +80,30 @@ export function MyStoryPage() {
         </div>
       </div>
 
+      {/* ── Chapter Navigation ───────────────────── */}
+      <div className="relative z-40 flex justify-center w-full -mt-8 mb-4 px-4 pointer-events-none">
+        <div className="bg-white/95 backdrop-blur-xl px-3 py-2 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-[#E8CDD3] flex items-center gap-2 md:gap-3 pointer-events-auto transition-transform duration-300">
+          {CHAPTERS.map((chap) => (
+            <button
+              key={chap.num}
+              title={chap.title}
+              onClick={() => document.getElementById(`chapter-${chap.num}`)?.scrollIntoView({ behavior: 'smooth' })}
+              className="flex items-center gap-2 px-4 py-2 rounded-full hover:bg-[#B55E79] hover:text-white group transition-all duration-300 shadow-sm bg-[#FCF8F7] border border-[#E8CDD3]/50 hover:-translate-y-1 text-[#5F5358]"
+            >
+              <span className="text-sm group-hover:scale-110 transition-transform duration-300">{chap.emoji}</span>
+              <span className="text-[11px] font-bold uppercase tracking-wider">
+                Ch-{parseInt(chap.num)}
+              </span>
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* ── 2. LIFE STORY CHAPTERS ──────────────────────── */}
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 py-16 space-y-20">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 py-16 space-y-12">
         <div className="space-y-28 max-w-4xl mx-auto">
           {CHAPTERS.map((chap, ci) => (
-            <div key={chap.num} className="scroll-mt-36">
+            <div key={chap.num} id={`chapter-${chap.num}`} className="scroll-mt-52">
               {/* Chapter Header */}
               <div className="reveal flex items-center gap-4 mb-6">
                 <div className="w-14 h-14 rounded-2xl bg-[#B55E79] flex items-center justify-center shadow-lg text-white font-serif font-bold text-2xl flex-shrink-0">
@@ -184,7 +203,6 @@ export function MyStoryPage() {
             Start a conversation <MessageCircle className="w-4 h-4" />
           </Link>
         </div>
-
       </div>
     </div>
   );
