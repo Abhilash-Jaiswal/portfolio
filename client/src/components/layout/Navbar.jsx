@@ -25,8 +25,9 @@ export function Navbar() {
         { name: "notpaused.com", path: "/my-ventures#notpaused", icon: Sparkles },
       ],
     },
+    
+    { name: "Achievement", path: "/achievements" },
     { name: "Work with Me", path: "/work-with-me" },
-    { name: "Press", path: "/press" },
     { name: "Latest", path: "/latest" },
     { name: "Contact", path: "/contact" },
   ];
