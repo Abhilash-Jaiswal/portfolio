@@ -1,5 +1,5 @@
 ﻿import { useEffect, useRef, useState } from "react";
-import { GraduationCap, Heart, Leaf, Mic, Flower2, Award, Sun } from "lucide-react";
+import { GraduationCap, Heart, Leaf, Mic, Flower2 } from "lucide-react";
 
 /* ─── Scroll-reveal hook ─────────────────────────── */
 function useReveal() {
@@ -15,7 +15,7 @@ function useReveal() {
 }
 
 const theme = {
-  primary:      "#B55E79",   // rose-mauve
+  primary:      "#B55E79",
   primaryLight: "#E6BEC6",
   primarySoft:  "#F4D9DE",
   dark:         "#2E2326",
@@ -28,115 +28,63 @@ const theme = {
 const CHAPTERS = [
   {
     num: "01", icon: GraduationCap,
-    title: "Computer Science & Corporate Mastery (2005–2014)",
-    sub: "HBTI Kanpur · IBM · Target · AIG",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "Before Kirti Yadav became a certified holistic nutritionist, founder, speaker, or mentor, she built a robust 9-year corporate career in data engineering and corporate training — laying the analytical foundation for everything she would build later.",
+    title: "Growing Up in Kanpur",
+    sub: "A girl, an education, and a family that believed differently",
+    intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. Her mum insisted on an English-medium school anyway; her dad backed that without wavering, and her teachers kept pushing her onto every stage to speak.",
     cards: [
-      { heading: "Education & Tech Roots (2001–2009)", body: "Kirti graduated with a BTech in Computer Science from HBTI Kanpur in 2005, followed by a C-PGDBA in IT from Symbiosis. She began her corporate journey at IBM Global Process Services (2005–2011) as a Data Warehousing Consultant, mastering data systems and complex analytical frameworks." },
-      { heading: "Global Project Leadership & Target (2011–2013)", body: "Joining Target India as Project Lead for Data Integration, Kirti spent 1.5 years onsite in the US working as a project coordinator for Chartis/AIG. During her corporate career, she conducted over 130 technical and leadership interviews, honing her keen understanding of people and performance." },
-      { heading: "Training Manager at AIG (2013–2014)", body: "Transitioning to AIG as Training Manager, Kirti built the entire Training Department from scratch, personally training over 1,000 corporate professionals. 'I am a people's person, and I love interacting with people,' she recalls. This role planted the seed for her future coaching and public speaking identity." },
+      { heading: "A Different Kind of Upbringing", body: "'Ladki hai, padhane se kya fayda, baad mein rotiyan hi banayegi.' — That's what people around us used to say — she's a girl, why bother educating her, she'll just end up making rotis anyway. But her parents saw something different. Her mother's insistence on English-medium education and her father's quiet support opened doors that many girls in their community never got to walk through." },
+      { heading: "Teachers Who Saw More", body: "Her teachers didn't just teach — they pushed her onto every stage, every competition, every chance to speak. They saw a girl who had something to say, and they made sure she had the platform to say it. Those early moments on stage planted a seed that would grow into a lifetime of public speaking and community leadership." },
+      { heading: "The Foundation of Everything", body: "Those early lessons — that her voice mattered, that education was non-negotiable, that she could be more than what others expected — became the foundation she would build everything else on. Years later, as she spoke on national stages and led corporate sessions, she carried that same belief with her." },
     ],
-    closing: "A decade across global technology giants gave Kirti analytical rigor, systems thinking, and leadership confidence — tools that would prove indispensable when building her own ventures.",
+    closing: "What began as a girl being told she'd just make rotis became a woman who would change plates across India — one meal, one family, one community at a time.",
   },
   {
     num: "02", icon: Heart,
-    title: "Motherhood, Health Crisis & Transformation (2014–2018)",
-    sub: "Preterm Birth · 28kg Weight Loss · Plattershare",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "In 2014, Kirti's life changed course completely. The birth of her daughter prematurely triggered postpartum complications — weight gain, high cholesterol, and elevated blood pressure — forcing a fundamental reset.",
+    title: "The Corporate Career",
+    sub: "Computer science, data systems, and a different kind of making",
+    intro: "Studying computer science and building data systems for companies like IBM, Target, and AIG — work she's genuinely proud of. Becoming the first girl in her family into an engineering college and the first to work at an MNC.",
     cards: [
-      { heading: "A Life-Changing Catalyst (2014)", body: "Faced with health complications after her daughter's premature birth, Kirti stepped away from her corporate career. Driven by a mother's refusal to compromise and a deep desire to heal, she turned to researching natural health solutions, whole foods, and plant-based nutrition." },
-      { heading: "The 28 kg Transformation (2018)", body: "By adopting a disciplined, whole-food plant-based lifestyle, Kirti lost 28 kg, reversed her health markers, and restored her vitality. The realization struck with power: 'If I can lose weight and become healthier following a plant-based lifestyle, it might help others as well.'" },
-      { heading: "Plattershare & Community Seed (2014–2018)", body: "During this transitional chapter, Kirti co-founded Plattershare, one of India's first food networking platforms, pioneering digital campaigns. In 2018, she left Plattershare to dive full-time into nutrition, launching a Facebook group that grew to 5,000 members — the seed of KuKClean." },
+      { heading: "Breaking the Engineering Ceiling", body: "She became the first girl in her family to enter an engineering college — a quiet revolution that her parents, especially her mother, had quietly been working toward for years. Computer science, data systems, and the world of technology opened up before her." },
+      { heading: "Building Systems for Global Giants", body: "At IBM, Target, and AIG, she built data systems that companies relied on. The analytical rigor, systems thinking, and leadership confidence she developed during those years would prove indispensable when building her own ventures. The skills were different, but the mindset was the same: build something that works." },
+      { heading: "A Different Kind of Making", body: "She also married her husband across caste lines — another quiet act of conviction. The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own. Both would matter." },
     ],
-    closing: "What began as a personal struggle for survival and recovery transformed into a profound calling: bringing plate-level change to Indian families.",
+    closing: "'It's a journey, not a goal — compounding beats sparks.' That philosophy, forged in corporate boardrooms and personal choices, would guide everything that came after.",
   },
   {
     num: "03", icon: Leaf,
-    title: "The Birth & Growth of KuKClean (2021–2023)",
-    sub: "Clean-Label Foods · IIM Bangalore · RKVY-RAFTAAR",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "In July 2021, amid the COVID-19 pandemic, Kirti incorporated KuKClean Foods and Consulting Pvt Ltd alongside her husband and co-founder Akar Misra, creating a clean-label food brand rooted in transparency.",
+    title: "Motherhood & Transformation",
+    sub: "A small birth, a big reset, and 28 kilos of rediscovery",
+    intro: "Her daughter's early, small birth rearranged everything she thought she'd figured out. The real start of paying attention to food, rest, and her own body.",
     cards: [
-      { heading: "The 'Kitchen You' Philosophy", body: "KuKClean stands for 'Kitchen' (KuK) + 'Clean', doubling as 'Kitchen, You' — teaching families how to cook clean in their own kitchens. Product standards were set by her daughter's honest reactions: 'When my daughter eats my snacks and says, Mummy, I'm so lucky to have you, that's why I make laddus.'" },
-      { heading: "IIM Bangalore & Institutional Grants", body: "KuKClean was selected and incubated at IIM Bangalore's Women Startup Programme (Cohort 3 - WSP3), named among the 'Top 50 Women-Led Ventures'. She graduated from the Goldman Sachs 10,000 Women (GS10K) program at NSRCEL IIMB and received the RKVY-RAFTAAR Grant-in-Aid from ICAR-IIMR." },
-      { heading: "Bootstrapped Traction & B2B Expansion", body: "Without VC funding, KuKClean generated ₹14 Lakhs in revenue in its first 7 bootstrapped months. The brand expanded into B2B supply — providing nut butters to cafes and positioning artisanal laddus into corporate Thalis for bulk canteen buyers, while employing women from disadvantaged backgrounds." },
+      { heading: "When Everything Changed", body: "Her daughter's premature birth was a wake-up call that no corporate training could have prepared her for. Suddenly, the systems she'd built for data no longer mattered. What mattered was survival, health, and figuring out how to show up for this tiny new life." },
+      { heading: "The 28 Kilo Reset", body: "She lost 28 kilos without ever calling it a diet. It was slower than that — learning to understand her own plate, her own body, her own pace. She didn't fix it with willpower or strict rules. She fixed it by slowly understanding what her body actually needed." },
+      { heading: "From Personal to Purpose", body: "What began as a personal struggle for survival transformed into a profound calling. 'If I can lose weight and become healthier following a plant-based lifestyle,' she realized, 'it might help others as well.' That thought became the seed of everything that followed." },
     ],
-    closing: "Incubated at top national institutes, KuKClean proved that clean-label, plant-based Indian gourmet treats could build a thriving business without sacrificing a single gram of flavour.",
+    closing: "Motherhood made her health personal. That personal journey would become her life's work: bringing plate-level change to Indian families.",
   },
   {
     num: "04", icon: Mic,
-    title: "COVID-19 Leadership & #EatLikeKirti (2020–2021)",
-    sub: "21 Days Live · Professional Certifications · National Media",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "When the 2020 lockdown forced families indoors, Kirti turned uncertainty into nationwide education, showing up every day to guide thousands of Indian households toward immune resilience.",
+    title: "Building KuKClean",
+    sub: "From sharing with friends to a certified nutrition practice",
+    intro: "Not setting out to build a company — just sharing what was working for her, first with friends, then a growing community, then a certified nutrition practice, then KuKClean itself.",
     cards: [
-      { heading: "21 Days Live & 10 Webinars", body: "Kirti launched the #EatLikeKirti initiative, conducting 21 consecutive days of live social media broadcasts and 10 interactive webinars during lockdown. She taught families practical whole-food cooking, label literacy, and plant-based nutrition." },
-      { heading: "Official Certifications (AFPA USA)", body: "To solidify her clinical expertise, Kirti earned formal credentials as a Certified Holistic Nutritionist (AFPA, USA), Plant-Based Athlete Coach (AFPA), and Specialist in Herbal & Natural Strategies for Menopause (AFPA)." },
-      { heading: "National Press Features", body: "Her lockdown initiative was featured nationally by India Today ('Cooking in a Crisis'), YourStory (video interview with Shradha Sharma), Deccan Herald, The Better India, and Bangalore Insider." },
+      { heading: "Sharing What Worked", body: "She didn't start with a business plan. She started by sharing what she'd learned — first with friends, then a growing Facebook community, then a certified nutrition practice. Each step was organic, driven by people who wanted what she'd found." },
+      { heading: "Incubation & Institutional Backing", body: "KuKClean was incubated at NSRCEL, IIM Bangalore — where she learned to think like an entrepreneur, not just a founder with a good idea. Goldman Sachs 10,000 Women and ICAR-IIMR's RKVY-RAFTAAR grant followed, validating what she'd built from the ground up." },
+      { heading: "Clean Food That Actually Tastes Good", body: "The standards were simple: everything her family would eat. 'You will not find any product on KuKClean that our family does not believe in or does not consume. You have our word.' Clean-label, plant-based Indian gourmet treats that didn't sacrifice a single gram of flavour." },
     ],
-    closing: "Leading with generosity during crisis established Kirti as a trusted, evidence-based authority in holistic wellness across India.",
+    closing: "From a Facebook group to a nationally incubated brand — KuKClean proved that clean food could be delicious, and that a personal mission could become a movement.",
   },
   {
     num: "05", icon: Flower2,
-    title: "Founding NotPaused.com (2025–Present)",
-    sub: "Women 35+ · Breaking Menopause Stigma · WhatsApp Movement",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "In 2025, Kirti confronted a startling personal blind spot: despite being a certified nutritionist, she experienced sleepless nights and unrecognized perimenopause symptoms because public awareness was practically non-existent.",
+    title: "Founding NotPaused.com",
+    sub: "The gap that became a mission",
+    intro: "Years into calling herself a nutritionist, she didn't recognize she was living through her own menopause — that gap is exactly why NotPaused exists, so no woman has to figure it out alone.",
     cards: [
-      { heading: "The Unrecognized Symptom Catalyst", body: "'Even a nutritionist like me was not aware that my menopause was hitting, because nobody really talks about it,' Kirti reflects. Realizing that 75% of India's 65 million midlife women receive no guidance, she took the plunge to build a dedicated movement." },
-      { heading: "A Rebuttal to 'Pausing'", body: "She named the platform NotPaused.com — a direct rebuttal to the idea that women pause after menopause. Built for women 35+, the platform offers a free, vetted WhatsApp community of 1,100+ members across 7 metros and a 5-month 1:1 Perimenopause Coaching Program." },
-      { heading: "Four-Pillar Solution Architecture", body: "NotPaused is expanding into corporate menopause awareness clinics and building a multidisciplinary bench (physiotherapists, doctors, journaling & meditation experts) to deliver Safe Community, Expert Support, Symptom Tracking, and Trusted Education." },
+      { heading: "The Unrecognized Symptom", body: "Even a certified nutritionist like her wasn't aware that her menopause was hitting — because nobody really talks about it. The cultural silence, the dismissal, the lack of trusted spaces to ask what's happening in your own body — she'd experienced it all herself." },
+      { heading: "A Refusal to Accept Silence", body: "NotPaused.com was born as her direct refusal to accept that silence. Menopause is not a pause — it is a comma, a transition, a beginning of a new chapter. The platform would be a community for women to navigate this season together." },
+      { heading: "What It Is, What It's Becoming", body: "Today, it's a free community for women navigating this season together. The vision is four pillars: Safe Community, Expert Support, Symptom Tracking, and Trusted Education. A place where no woman has to be the one at 3am with no answers." },
     ],
     closing: "'I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be.'",
-  },
-  {
-    num: "06", icon: Award,
-    title: "Awards, Corporate Impact & Mentorship",
-    sub: "Womenpreneur 2024 · 100+ Corporate Sessions · Walmart Vriddhi",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "From corporate boardrooms to national stages, Kirti's track record combines public leadership with practical mentoring for the next generation of founders.",
-    cards: [
-      { heading: "National Awards & Pitching Stages", body: "Honoured with the Womenpreneur Achievers Award 2024 and selected nationally for the Women Leadership Conclave 2024 (pitching before IIT Guwahati & Embassy of Israel). Speaker at ASSOCHAM Rajasthan Startup Summit ('Women Leading the Race')." },
-      { heading: "100+ Corporate Wellness Sessions", body: "Delivered wellness talks and menu consultations for over 100 corporate organizations and 10,000+ lives, including JP Morgan, Goldman Sachs, Microsoft, IBM, ISRO, Siemens, Applied Materials, Reliance, and HDFC." },
-      { heading: "Startup & Institutional Mentorship", body: "Active mentor under the Walmart Vriddhi Mentoring Program, guest speaker at ISBR Business School, jury member at CAIAS Startup Summit, and mentor for student programs at Ique Nation Venture and FKCCI." },
-    ],
-    closing: "From winning startup awards to serving as a jury judge and mentor, her journey represents the complete evolution of a purpose-driven leader.",
-  },
-  {
-    num: "07", icon: Sun,
-    title: "Personal Discipline & The Daily Routine",
-    sub: "Non-Negotiable Mornings · 'Keep Going' Mantra",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "Kirti is a firm believer in practicing exactly what she preaches. Her daily energy is anchored in a strict, non-negotiable 2 to 3 hour morning routine.",
-    cards: [
-      { heading: "The 6-Step Morning Ritual", body: "1. Meditation for mental clarity, 2. Reflective Journaling, 3. Reading nutrition and motivational literature, 4. Cooking a fresh, healthy meal for her family, 5. 45 minutes of strength training, 6. Getting ready for work. These hours are non-negotiable on most days." },
-      { heading: "Personal Mantra: 'Keep Going'", body: "Her personal mantra is 'Keep Going' — telling herself to keep moving in a direction, finding peace and purpose along the way. She pairs this with her signature philosophy: 'It's a journey, not a goal — compounding beats sparks.'" },
-      { heading: "Horizontal Success & Single Ikigai", body: "Rather than climbing a single corporate ladder, Kirti measures achievement by horizontal success — tackling multiple causes (nutrition, menopause, mentoring). All ventures express one core ikigai: bringing plate-level change to families." },
-    ],
-    closing: "This grounded daily discipline provides the strength and stamina behind everything she creates across KuKClean, NotPaused, and corporate coaching.",
-  },
-  {
-    num: "08", emoji: "🔮",
-    title: "Vision for 2030 & Future Aspirations",
-    sub: "1 Million Plates · Public Health Policy · Go With Slow",
-    color: `from-[${theme.primary}] to-[${theme.dark}]`,
-    accent: theme.primary,
-    intro: "Kirti Yadav builds with a long-term perspective, focusing on deep, lasting societal impact rather than quick viral moments.",
-    cards: [
-      { heading: "1 Million Plate-Level Change by 2030", body: "'By 2030, I want one million people to change their plate, even if it's a small change — because India is becoming the diabetic capital of the world. Good, clean food close to nature can heal you.'" },
-      { heading: "Near-Term Focus (Next 5 Years)", body: "For the next five years, her primary focus is building NotPaused.com into a nationwide movement, scaling WhatsApp city chapters, corporate clinics, and a multidisciplinary health coach bench." },
-      { heading: "Long-Term Ambition (Public Health Policy)", body: "As a 'go-with-slow' builder who tackles new systemic problems every 5–7 years, her 7-year vision is to work in the public health sector, contributing to national policy changes around nutrition and women's health." },
-    ],
-    closing: "'I do not believe in hierarchy. I am a community-led leader — if everyone comes together, it is a better venture than building a hierarchy.'",
   },
 ];
 
@@ -192,6 +140,76 @@ function StoryCard({ heading, body, delay = 0 }) {
   );
 }
 
+/* ─── Philosophy Section ────────────────────────── */
+function PhilosophySection() {
+  const ref = useRef(null);
+  useEffect(() => {
+    const io = new IntersectionObserver(([e]) => { if (e.isIntersecting) e.target.classList.add("visible"); }, { threshold: 0.1 });
+    if (ref.current) io.observe(ref.current);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className="reveal max-w-4xl mx-auto space-y-12 mt-16">
+      {/* Milestones Section */}
+      <div>
+        <h3 className="font-serif text-2xl font-bold text-center mb-8" style={{ color: theme.dark }}>
+          The Moments That Shaped Me
+        </h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white/80 border p-6 rounded-2xl" style={{ borderColor: `${theme.border}60` }}>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center mb-3 text-white text-sm font-bold" style={{ backgroundColor: theme.primary }}>1</div>
+            <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
+              "The moment health stopped being optional and started being personal — the real start of everything that came after."
+            </p>
+          </div>
+          <div className="bg-white/80 border p-6 rounded-2xl" style={{ borderColor: `${theme.border}60` }}>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center mb-3 text-white text-sm font-bold" style={{ backgroundColor: theme.primary }}>2</div>
+            <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
+              "Where I learned to think like an entrepreneur, not just a founder with a good idea."
+            </p>
+          </div>
+          <div className="bg-white/80 border p-6 rounded-2xl" style={{ borderColor: `${theme.border}60` }}>
+            <div className="w-10 h-10 rounded-full flex items-center justify-center mb-3 text-white text-sm font-bold" style={{ backgroundColor: theme.primary }}>3</div>
+            <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
+              "Even as a nutritionist, I didn't see it coming in myself. That gap became a mission."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* My Big Why Section */}
+      <div className="bg-white/80 border p-8 rounded-3xl" style={{ borderColor: `${theme.border}60` }}>
+        <h3 className="font-serif text-2xl font-bold mb-4" style={{ color: theme.dark }}>My Big Why</h3>
+        <div className="space-y-4 text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
+          <p>
+            "I continue to feed her healthy, no matter what — that's the why that keeps me going in this direction, every single day."
+          </p>
+          <p>
+            And why she has so much going at once — coaching, corporate work, two ventures, mentoring: "It's really one calling wearing several different coats. Once that's steady, everything else just finds its own place around it."
+          </p>
+        </div>
+      </div>
+
+      {/* Closing CTA */}
+      <div className="text-center space-y-4">
+        <p className="font-serif text-lg italic" style={{ color: theme.dark }}>
+          "Does this sound like the plot of my next Bollywood movie? Maybe I'll debut at 55."
+        </p>
+        <p className="text-sm" style={{ color: theme.muted }}>
+          If any of this feels like your own story too, let's talk.
+        </p>
+        <button 
+          className="px-8 py-3 rounded-full text-white font-bold text-sm transition-all hover:shadow-lg hover:scale-105"
+          style={{ backgroundColor: theme.primary }}
+        >
+          Start a conversation
+        </button>
+      </div>
+    </div>
+  );
+}
+
 /* ─── Main Component ─────────────────────────────── */
 export function LifeStorySection() {
   useReveal();
@@ -204,7 +222,6 @@ export function LifeStorySection() {
     chapRefs.current[num]?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  /* Track which chapter is in view */
   useEffect(() => {
     const ios = CHAPTERS.map((c) => {
       const el = chapRefs.current[c.num];
@@ -233,10 +250,8 @@ export function LifeStorySection() {
         className="relative overflow-hidden py-28 px-6 md:px-12 lg:px-20"
         style={{ background: `linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)` }}
       >
-        {/* Animated blobs */}
         <div className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-white/5 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-[-30%] right-[-5%] w-[400px] h-[400px] bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }} />
-        {/* Dotted grid */}
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
 
         <div className="relative z-10 max-w-5xl">
@@ -251,18 +266,8 @@ export function LifeStorySection() {
             <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Compounding &amp; Purpose</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            From Data Warehousing Consultant at IBM to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.
+            From computer science to clean food, from corporate data to community care — how one woman's journey became a movement.
           </p>
-
-          {/* Stats row */}
-          <div className="flex flex-wrap gap-8 mt-12 animate-fade-in-up" style={{ animationDelay: "0.45s" }}>
-            {[["8", "Detailed Chapters"], ["2005", "Career Journey Began"], ["28 kg", "Health Reset"], ["1M", "Plate Goal 2030"]].map(([n, l]) => (
-              <div key={l}>
-                <span className="font-serif text-3xl font-bold text-white block">{n}</span>
-                <span className="text-white/60 text-xs uppercase tracking-widest">{l}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
 
@@ -304,15 +309,13 @@ export function LifeStorySection() {
             ref={(el) => (chapRefs.current[chap.num] = el)}
             className="scroll-mt-36"
           >
-            {/* Chapter header row */}
             <div className="reveal flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
               <div className="flex items-center gap-4">
-                {/* Animated chapter number badge */}
                 <div 
                   className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0"
                   style={{ backgroundColor: theme.primary }}
                 >
-                  <span className="font-serif font-bold text-white text-xl">{chap.emoji}</span>
+                  {chap.icon && <chap.icon className="w-7 h-7 text-white" strokeWidth={1.5} />}
                 </div>
                 <div>
                   <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1" style={{ color: theme.primary }}>Chapter {chap.num}</span>
@@ -320,7 +323,6 @@ export function LifeStorySection() {
                   <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}>{chap.sub}</p>
                 </div>
               </div>
-              {/* Chapter progress indicator */}
               <div className="hidden md:flex items-center gap-1">
                 {CHAPTERS.map((_, i) => (
                   <div
@@ -335,7 +337,6 @@ export function LifeStorySection() {
               </div>
             </div>
 
-            {/* Intro paragraph with gradient left border */}
             <div
               className="reveal mb-10 pl-6 border-l-2 rounded-r-xl py-1"
               style={{ borderColor: theme.primary }}
@@ -343,14 +344,12 @@ export function LifeStorySection() {
               <p className="text-base lg:text-lg font-light leading-relaxed" style={{ color: theme.muted }}>{chap.intro}</p>
             </div>
 
-            {/* Story cards grid */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
               {chap.cards.map((card, i) => (
                 <StoryCard key={i} heading={card.heading} body={card.body} delay={i * 120} />
               ))}
             </div>
 
-            {/* Closing line */}
             <div className="reveal max-w-3xl">
               <div 
                 className="flex items-start gap-4 border rounded-2xl px-6 py-5 shadow-sm"
@@ -364,7 +363,6 @@ export function LifeStorySection() {
               </div>
             </div>
 
-            {/* Divider — not after last */}
             {ci < CHAPTERS.length - 1 && (
               <div className="mt-20 reveal flex items-center gap-4">
                 <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#E8CDD3] to-transparent" />
@@ -376,42 +374,9 @@ export function LifeStorySection() {
         ))}
       </div>
 
-      {/* ── PHILOSOPHY CARDS ── */}
+      {/* ── PHILOSOPHY SECTION ─────────────────────── */}
       <div className="container mx-auto px-6 md:px-12 lg:px-20 pb-20">
-        <div className="reveal text-center mb-12">
-          <div 
-            className="inline-block border-t-[3px] pt-2 mb-4"
-            style={{ borderColor: theme.primary }}
-          >
-            <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Leadership Philosophy & Core Convictions</span>
-          </div>
-          <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>A Practice Lived Out Loud</h3>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          {[
-            { n: "01", title: "Storyteller & Community Leadership", body: "'I am a community-led leader. I believe that if everyone comes together, it is a better venture than building a hierarchy. I do not believe in hierarchy, honestly.' Everything Kirti builds starts with storytelling and genuine connection." },
-            { n: "02", title: "Practice What You Preach", body: "Kirti's 2 to 3 hour daily morning ritual — meditation, journaling, reading, family meal prep, and 45 minutes of strength training — is non-negotiable. She preaches only what she embodies herself every single day." },
-            { n: "03", title: "Horizontal Success over Vertical Climbing", body: "Kirti measures achievement by horizontal success — the breadth of causes tackled and lives touched (KuKClean, NotPaused, mentorship) — rather than climbing a traditional corporate ladder. All express her single ikigai." },
-          ].map((p, i) => (
-            <div
-              key={i}
-              className="reveal shimmer-card bg-white/80 border p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
-              style={{ 
-                borderColor: `${theme.border}60`,
-                transitionDelay: `${i * 100}ms`
-              }}
-            >
-              <div 
-                className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-sm mb-4 shadow-md"
-                style={{ backgroundColor: theme.primary }}
-              >
-                {p.n}
-              </div>
-              <h4 className="font-serif font-bold text-lg mb-3" style={{ color: theme.dark }}>{p.title}</h4>
-              <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>{p.body}</p>
-            </div>
-          ))}
-        </div>
+        <PhilosophySection />
       </div>
 
       {/* ── CLOSING QUOTE BANNER ───────────────────── */}
@@ -420,7 +385,6 @@ export function LifeStorySection() {
           className="relative overflow-hidden rounded-3xl p-12 lg:p-16 text-center shadow-2xl"
           style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
-          {/* decorative blobs */}
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute -left-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
@@ -437,7 +401,7 @@ export function LifeStorySection() {
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav · Founder, KuK Clean Wellness & notpaused.com</span>
+              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav · Founder, KuKClean & NotPaused.com</span>
               <div className="w-8 h-px bg-white/40" />
             </div>
           </div>
