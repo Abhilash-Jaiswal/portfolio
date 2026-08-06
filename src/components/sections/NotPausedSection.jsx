@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   BookOpen,
   Shield,
@@ -13,7 +13,13 @@ import {
   Building,
   Lightbulb,
   Heart,
-  Award
+  Award,
+  UserPlus,
+  Quote,
+  HeartHandshake,
+  Mail,
+  Phone,
+  Send
 } from "lucide-react";
 
 function useReveal(ref) {
@@ -139,6 +145,22 @@ export function NotPausedSection() {
               <span className="font-light italic text-xl">75% navigate it without medical guidance or awareness.</span>
             </p>
             <p className="text-white/80 text-sm font-light">NotPaused.com was founded in 2025 by Kirti Yadav to bridge this precise gap.</p>
+          </div>
+        </div>
+
+        {/* NEW PDF ADDITION: First-Person Founder Credibility Card */}
+        <div className="reveal relative max-w-5xl mx-auto bg-gradient-to-br from-white to-[#FDF4F6] rounded-[2.5rem] p-8 md:p-12 shadow-md border border-[#E8CDD3]">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-lg bg-[#B55E79]">
+              <Sparkles size={28} />
+            </div>
+            <div className="space-y-2 text-center md:text-left">
+              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Corporate Credibility & Institutional Backing</span>
+              <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
+                "I've built this the same way I built my corporate career and my company — carefully, with real institutions backing the work, not just good intentions."
+              </p>
+              <span className="text-xs font-bold uppercase tracking-widest block pt-2 text-[#5F5358]">— Kirti Yadav, Founder · NotPaused.com</span>
+            </div>
           </div>
         </div>
 
@@ -283,8 +305,28 @@ export function NotPausedSection() {
           </div>
         </div>
 
+        {/* NEW PDF ADDITION: Supreetha Bhat Testimonial Card */}
+        <div className="reveal max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-[#E8CDD3] relative overflow-hidden">
+          <Quote className="absolute top-6 left-6 w-16 h-16 opacity-5 text-[#B55E79]" />
+          <div className="relative z-10 space-y-4">
+            <div className="inline-flex items-center gap-2 bg-[#F4D9DE] text-[#B55E79] text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">
+              <span>Community Story</span>
+            </div>
+            <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
+              "I'd been dealing with chronic inflammation, low weight, and was anaemic and borderline diabetic — and honestly, an irritable, stressed version of myself. I was a 'no salads' person until Kirti got strict with my diet, and I was sceptical it would work for me. Within two months: no more inflammation, my symptoms under control, my blood counts improving, and I'm handling stress so much better emotionally. All I did was follow her instructions. This is for Kirti, for the change she brought to my plate — and to me — that I hadn't expected at all."
+            </p>
+            <div className="pt-2 flex items-center justify-between border-t border-[#E8CDD3]/50">
+              <div>
+                <h5 className="font-serif font-bold text-base text-[#2E2326]">Supreetha Bhat</h5>
+                <span className="text-xs text-[#5F5358] uppercase tracking-wider">NotPaused Community Member</span>
+              </div>
+              <HeartHandshake className="w-6 h-6 text-[#B55E79]" />
+            </div>
+          </div>
+        </div>
+
         {/* Services & Community Offerings */}
-        <div>
+        <div className="pb-10">
           <div className="reveal text-center mb-10">
             <div 
               className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
@@ -322,20 +364,94 @@ export function NotPausedSection() {
           </div>
         </div>
 
-        {/* Closing Quote */}
-        <div 
+        {/* NEW PDF ADDITION: Interactive Community Join Request Form */}
+        <div className="reveal max-w-3xl mx-auto bg-gradient-to-br from-white to-[#FDF7F8] border border-[#E8CDD3] rounded-[2.5rem] p-8 md:p-12 shadow-xl space-y-8">
+          <div className="text-center space-y-3">
+            <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mx-auto shadow-sm">
+              <UserPlus size={28} />
+            </div>
+            <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Vetted Member Access</span>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Join the NotPaused Community</h3>
+            <p className="text-sm font-light text-[#5F5358] max-w-lg mx-auto">
+              Request access to our non-judgmental, vetted peer support network for women 35+ navigating midlife transitions.
+            </p>
+          </div>
+
+          <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#2E2326] mb-2">Full Name *</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="Your full name"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#E8CDD3] bg-white text-sm focus:outline-none focus:border-[#B55E79] transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#2E2326] mb-2">Email Address *</label>
+                <input
+                  type="email"
+                  required
+                  placeholder="you@example.com"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#E8CDD3] bg-white text-sm focus:outline-none focus:border-[#B55E79] transition-colors"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#2E2326] mb-2">Phone Number *</label>
+                <input
+                  type="tel"
+                  required
+                  placeholder="+91 Mobile number"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#E8CDD3] bg-white text-sm focus:outline-none focus:border-[#B55E79] transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#2E2326] mb-2">Instagram ID (Optional)</label>
+                <input
+                  type="text"
+                  placeholder="@yourhandle"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#E8CDD3] bg-white text-sm focus:outline-none focus:border-[#B55E79] transition-colors"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold uppercase tracking-wider text-[#2E2326] mb-2">LinkedIn ID (Optional)</label>
+                <input
+                  type="text"
+                  placeholder="in/profile"
+                  className="w-full px-4 py-3 rounded-2xl border border-[#E8CDD3] bg-white text-sm focus:outline-none focus:border-[#B55E79] transition-colors"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              className="w-full py-4 rounded-full bg-[#B55E79] text-white text-sm font-bold uppercase tracking-widest hover:opacity-95 transition-opacity shadow-lg flex items-center justify-center gap-2 mt-4"
+            >
+              <Send size={16} />
+              <span>Submit Join Request</span>
+            </button>
+          </form>
+        </div>
+
+        {/* NEW PDF ADDITION: Closing Quote Banner */}
+        <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
           style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
         >
           <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
           <div className="absolute inset-0 opacity-5" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.8) 1px, transparent 1px)", backgroundSize: "20px 20px" }} />
-          <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <p className="font-serif text-xl lg:text-2xl italic text-white leading-relaxed">
-              "We are building the platform we wished existed when we first needed answers. For every Indian woman who was told to just endure midlife in silence — this space is for you."
+          <div className="relative z-10 space-y-5 max-w-4xl mx-auto">
+            <span className="bg-white/15 border border-white/20 text-white text-[9px] font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full inline-block">The Vision for NotPaused</span>
+            <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
+              "I built NotPaused.com because I was that woman looking for answers..."
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder of NotPaused.com</span>
+              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused.com</span>
               <div className="w-8 h-px bg-white/40" />
             </div>
           </div>

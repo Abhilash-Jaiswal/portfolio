@@ -1,11 +1,11 @@
-﻿import { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
 import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
 import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
 import img4 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.11 (1).jpeg";
 import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
-import { Leaf, Sparkles, Heart, ChefHat, Star, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, BookOpen } from "lucide-react";
+import { Leaf, Sparkles, Heart, ChefHat, Star, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, BookOpen, FlaskConical, Target, Users, Mail, Phone, Globe } from "lucide-react";
 
 const wellnessImages = [img1, img2, img3, img4, img5, img6];
 
@@ -37,6 +37,13 @@ const products = [
   { icon: <Heart size={24} />, title: "Baked Mathri & Millet Chivda", desc: "Crunch without the guilt. Our Ajwain Whole Wheat Mathri is baked, not fried—crispy, aromatic, and low-sodium. The Roasted Jowar Chivda is a millet-based marvel, tossed with subtle spices for a savory snack that's light on salt but heavy on flavor. Traditional taste, modern health." },
   { icon: <ChefHat size={24} />, title: "Stone-Ground Nut Butters & Dips", desc: "Slow and steady wins the health race. Our nut butters are crafted the old-fashioned way—stone-ground at low temperatures to preserve every precious micronutrient, enzyme, and healthy oil that high-heat processing destroys. 100% clean label, pure nutty perfection." },
   { icon: <Star size={24} />, title: "Artisanal Gift Hampers", desc: "Give the gift of health, thoughtfully curated. Choose from our KuKClean Wholesome, Sweet n Savour, or Healthy Nibbles hampers—each hand-assembled with our best-selling products and customized packaging for corporate gifting, festive celebrations, or simply spreading joy. Made for sharing, crafted for caring" },
+];
+
+const coreCategories = [
+  { icon: <Heart size={22} />, title: "Healthy Indian Sweets", desc: "Clean-label artisanal laddus and wholesome Indian sweets crafted without refined sugar or artificial additives." },
+  { icon: <Leaf size={22} />, title: "Healthy Breakfast", desc: "Nutrient-dense morning fuel including organic millet blends, natural sweeteners, and wholesome breakfast options." },
+  { icon: <Sparkles size={22} />, title: "Healthy Snacks", desc: "Guilt-free crunchy snacks, baked mathris, and roasted millet chivda light on sodium and heavy on traditional flavor." },
+  { icon: <ChefHat size={22} />, title: "Nut Butters & Dips/Sauces", desc: "Slow stone-ground at low temperatures to preserve vital micronutrients, enzymes, and natural healthy oils." },
 ];
 
 const b2bFocus = [
@@ -137,6 +144,22 @@ export function KukCleanSection() {
           <span className="text-sm font-bold uppercase tracking-[0.2em] block mt-8 text-center" style={{ color: theme.primary }}>— Kirti Yadav, Founder</span>
         </div>
 
+        {/* NEW PDF ADDITION: Origin & Universal Energy Story Quote Card */}
+        <div className="reveal relative max-w-5xl mx-auto bg-gradient-to-br from-white to-[#FDF4F6] rounded-[2.5rem] p-8 md:p-12 shadow-md border border-[#E8CDD3]">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-lg" style={{ backgroundColor: theme.primary }}>
+              <Sparkles size={28} />
+            </div>
+            <div className="space-y-2 text-center md:text-left">
+              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block" style={{ color: theme.primary }}>Brand Origin & Philosophy</span>
+              <p className="font-serif text-lg md:text-xl italic leading-relaxed" style={{ color: theme.dark }}>
+                "KuKClean stands for 'Kitchen U' — tied to my own clean-eating journey. It started as an idea for a blog about my weight-loss story, one that never actually launched. But sometimes the universe has bigger plans than what we think — so I believe in that universal energy, and trust that things happen the way they're meant to. Instead of the blog, the brand happened."
+              </p>
+              <span className="text-xs font-bold uppercase tracking-widest block pt-2" style={{ color: theme.muted }}>— Kirti Yadav, Founder</span>
+            </div>
+          </div>
+        </div>
+
         {/* Ch 01 — Origin & The Kitchen Standard */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
@@ -184,6 +207,25 @@ export function KukCleanSection() {
               <h4 className="font-serif font-bold text-base mb-3" style={{ color: theme.dark }}>Employing Disadvantaged Women</h4>
               <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
                 Our mission goes far beyond the plate. Every batch of our clean-label sweets, savories, and stone-ground nut butters is handcrafted by women from economically disadvantaged backgrounds. We provide dignified employment, fair wages, and skill development—transforming lives, one recipe at a time. Because real nourishment isn't just about what's in the food; it's about who makes it and how they're valued.
+              </p>
+            </div>
+
+            {/* NEW PDF ADDITION: Dual Testing Standards Card */}
+            <div
+              className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 col-span-1 md:col-span-2"
+              style={{ borderColor: `${theme.border}60`, transitionDelay: "150ms" }}
+            >
+              <div className="flex items-center gap-3 mb-3">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white shrink-0" style={{ backgroundColor: theme.primary }}>
+                  <FlaskConical size={20} />
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold tracking-widest uppercase block" style={{ color: theme.primary }}>Quality Assurance</span>
+                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Dual Testing Standards: Real Lab Testing & The Human Benchmark</h4>
+                </div>
+              </div>
+              <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
+                Product quality at KuKClean is tested against two uncompromising standards: real laboratory testing for biological purity and nutritional excellence, and one deeply personal human standard — Kirti's daughter. Scientific legitimacy and genuine family trust are combined into every recipe crafted.
               </p>
             </div>
           </div>
@@ -285,7 +327,78 @@ export function KukCleanSection() {
           </div>
         </div>
 
+        {/* NEW PDF ADDITION: Confirmed 4 Core Categories Showcase */}
+        <div>
+          <div className="reveal text-center mb-10">
+            <div
+              className="inline-block border-t-[3px] pt-2 mb-4"
+              style={{ borderColor: theme.primary }}
+            >
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>4 Primary Product Categories</h3>
+            <p className="text-sm font-light mt-2 max-w-xl mx-auto" style={{ color: theme.muted }}>
+              The essential clean-label product lines crafted with zero refined sugars, zero artificial preservatives, and 100% natural ingredients.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {coreCategories.map((cat, i) => (
+              <div
+                key={i}
+                className="reveal group bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between"
+                style={{ borderColor: `${theme.border}80`, transitionDelay: `${i * 70}ms` }}
+              >
+                <div>
+                  <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-5 shadow-sm group-hover:scale-110 transition-transform" style={{ backgroundColor: theme.primary }}>
+                    {cat.icon}
+                  </div>
+                  <span className="text-[10px] font-bold uppercase tracking-widest block mb-1" style={{ color: theme.primary }}>Category 0{i + 1}</span>
+                  <h4 className="font-serif font-bold text-lg mb-2" style={{ color: theme.dark }}>{cat.title}</h4>
+                  <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>{cat.desc}</p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-xs font-semibold" style={{ color: theme.primary }}>
+                  <span>100% Clean Label</span>
+                  <CheckCircle size={14} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
 
+        {/* NEW PDF ADDITION: Mission & Community Impact Cards */}
+        <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="bg-gradient-to-br from-[#FAF0F2] to-white border p-8 md:p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between" style={{ borderColor: theme.border }}>
+            <div>
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-6 shadow-md" style={{ backgroundColor: theme.primary }}>
+                <Target size={24} />
+              </div>
+              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block mb-2" style={{ color: theme.primary }}>Core Purpose</span>
+              <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: theme.dark }}>The Plate-Level Mission</h3>
+              <p className="font-serif text-xl italic font-medium leading-relaxed mb-4" style={{ color: theme.primary }}>
+                "My mission is simple: 1 million plate-level changes."
+              </p>
+              <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
+                Transforming daily nutrition not through drastic restrictions, but through small, conscious, plate-level upgrades that nourish the body naturally.
+              </p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-br from-[#FAF0F2] to-white border p-8 md:p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between" style={{ borderColor: theme.border }}>
+            <div>
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-6 shadow-md" style={{ backgroundColor: theme.primary }}>
+                <Users size={24} />
+              </div>
+              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block mb-2" style={{ color: theme.primary }}>Community & Education</span>
+              <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: theme.dark }}>Empowering & Inspiring</h3>
+              <p className="font-serif text-xl italic font-medium leading-relaxed mb-4" style={{ color: theme.primary }}>
+                "I've educated individuals and built communities to inspire them."
+              </p>
+              <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
+                Fostering grassroots wellness awareness, clean eating habits, and supportive health communities across households, cafes, and workplaces.
+              </p>
+            </div>
+          </div>
+        </div>
         
         {/* Wellness & Analysis Assessment Images */}
         <div className="pt-10">
