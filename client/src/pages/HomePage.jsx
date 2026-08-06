@@ -1,10 +1,40 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Leaf, Sparkles, Award, Quote, Play, ShieldCheck, Heart, GraduationCap, Milestone, Star, CheckCircle2 } from "lucide-react";
+import { Leaf, Sparkles, Award, Quote, Play, ShieldCheck, Heart, GraduationCap, Milestone, Star, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
 import kukuImage from "../assets/kuku-image.jpeg";
 import notPausedImage from "../assets/Not Paused.jpeg";
 
 
 export function HomePage() {
+  const [activeHomeStoryIdx, setActiveHomeStoryIdx] = useState(0);
+  const [isHomeTransitioning, setIsHomeTransitioning] = useState(true);
+  const [isHomePaused, setIsHomePaused] = useState(false);
+  const totalHomeSlides = 2;
+
+  const nextHomeSlide = () => {
+    if (!isHomeTransitioning) setIsHomeTransitioning(true);
+    setActiveHomeStoryIdx((prev) => prev + 1);
+  };
+
+  const prevHomeSlide = () => {
+    if (!isHomeTransitioning) setIsHomeTransitioning(true);
+    setActiveHomeStoryIdx((prev) => (prev <= 0 ? totalHomeSlides - 1 : prev - 1));
+  };
+
+  useEffect(() => {
+    if (isHomePaused) return;
+    const timer = setInterval(() => {
+      nextHomeSlide();
+    }, 3500);
+    return () => clearInterval(timer);
+  }, [isHomePaused, activeHomeStoryIdx, isHomeTransitioning]);
+
+  const handleHomeTransitionEnd = () => {
+    if (activeHomeStoryIdx >= totalHomeSlides) {
+      setIsHomeTransitioning(false);
+      setActiveHomeStoryIdx(0);
+    }
+  };
   return (
     <div className="bg-[#FCF8F7] min-h-screen">
       {/* Hero Section */}
@@ -344,7 +374,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* NEW CONTENT SECTION: Real Stories, Real Results - Approved Testimonials (PDF Sec 2.6 & Sec 5) */}
+      {/* NEW CONTENT SECTION: Real Stories, Real Results - Approved Testimonials Slider */}
       <section className="py-24 px-6 sm:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -359,88 +389,163 @@ export function HomePage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results. The journey wasn't always smooth, but her guidance, motivation, and constant support made it achievable.",
-                name: "Seema",
-                role: "Lifestyle Transformation Client",
-                highlight: "Reduced 12 kg & built sustainable habits",
-                initials: "S",
-                bgAccent: "from-[#F4D9DE]/40 to-[#FCF8F7]"
-              },
-              {
-                quote: "Thanks a ton, Kirti, for helping me achieve this. You have hand-held me throughout the journey and helped me manage my emotions too — in one of our calls, I could feel you sensed what I was feeling without me even explaining. You are so involved with your clients. My heartfelt gratitude for bringing about this lifestyle change in me. My skin tone has definitely improved too — I keep getting compliments on my complexion and glow.",
-                name: "Padma Uday",
-                role: "1:1 Coaching Client",
-                highlight: "Emotional support & skin glow transformation",
-                initials: "P",
-                bgAccent: "from-[#FCF8F7] to-[#F4D9DE]/40"
-              },
-              {
-                quote: "I really want to thank Kirti for her efforts in reducing my diabetes markers, managing my weight loss, and teaching me proper portion eating. From Day 1, the emphasis was on chewing and eating clean — that line kept me motivated to keep moving ahead on the path of reversing diabetes. Thank you, Kirti, for all the magical changes.",
-                name: "Garima Kapoor",
-                role: "Nutrition & Health Client",
-                highlight: "Reduced diabetes markers & portion mastery",
-                initials: "G",
-                bgAccent: "from-[#F4D9DE]/30 to-[#FCF8F7]"
-              },
-              {
-                quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant-based way of eating and helped me understand the crucial role of fiber. Now I feel more nourished and satisfied than ever.",
-                name: "Bharathi Mani",
-                role: "Plant-Based Nutrition Client",
-                highlight: "Enhanced recovery, protein & fiber optimization",
-                initials: "B",
-                bgAccent: "from-[#FCF8F7] to-[#F4D9DE]/30"
-              }
-            ].map((item, idx) => (
-              <div 
-                key={idx} 
-                className="group relative p-8 sm:p-10 rounded-3xl bg-[#FCF8F7] border border-[#E8CDD3] shadow-sm hover:shadow-xl hover:shadow-[#B55E79]/5 hover:border-[#B55E79]/50 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden"
-              >
-                {/* Top subtle gradient accent line */}
-                <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${item.bgAccent} group-hover:bg-[#B55E79] transition-colors duration-300`}></div>
+          {/* Testimonial 3-Card Continuous Slider */}
+          <div 
+            className="relative max-w-6xl mx-auto px-4 sm:px-12"
+            onMouseEnter={() => setIsHomePaused(true)}
+            onMouseLeave={() => setIsHomePaused(false)}
+          >
+            {/* Previous Button */}
+            <button
+              onClick={prevHomeSlide}
+              aria-label="Previous Testimonial"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -ml-2 sm:-ml-6"
+            >
+              <ChevronLeft size={24} />
+            </button>
 
-                <div>
-                  {/* Top Bar: Highlight Tag & Verified Badge */}
-                  <div className="flex items-center justify-between gap-3 mb-6">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#B55E79] bg-white px-3 py-1.5 rounded-full border border-[#E8CDD3] shadow-2xs">
-                      {item.highlight}
-                    </span>
-                    <div className="flex items-center gap-1.5 text-[#B55E79] text-xs font-semibold bg-white px-3 py-1.5 rounded-full border border-[#E8CDD3] shadow-2xs shrink-0">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#B55E79]" />
-                      <span>Verified Client</span>
+            {/* Next Button */}
+            <button
+              onClick={nextHomeSlide}
+              aria-label="Next Testimonial"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -mr-2 sm:-mr-6"
+            >
+              <ChevronRight size={24} />
+            </button>
+
+            {/* Slider Track */}
+            <div className="overflow-hidden rounded-3xl p-1">
+              <div 
+                className={`flex ${isHomeTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
+                style={{ transform: `translateX(-${activeHomeStoryIdx * 100}%)` }}
+                onTransitionEnd={handleHomeTransitionEnd}
+              >
+                {[
+                  [
+                    {
+                      quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results.",
+                      name: "Seema",
+                      role: "Lifestyle Transformation Client",
+                      highlight: "Reduced 12 kg & built sustainable habits",
+                      initials: "S"
+                    },
+                    {
+                      quote: "Thanks a ton, Kirti, for helping me achieve this. You have hand-held me throughout the journey and helped me manage my emotions too — in one of our calls, I could feel you sensed what I was feeling without me even explaining. My skin tone has definitely improved too — I keep getting compliments on my complexion and glow.",
+                      name: "Padma Uday",
+                      role: "1:1 Coaching Client",
+                      highlight: "Emotional support & skin glow transformation",
+                      initials: "P"
+                    },
+                    {
+                      quote: "I really want to thank Kirti for her efforts in reducing my diabetes markers, managing my weight loss, and teaching me proper portion eating. From Day 1, the emphasis was on chewing and eating clean — that line kept me motivated to keep moving ahead on the path of reversing diabetes.",
+                      name: "Garima Kapoor",
+                      role: "Nutrition & Health Client",
+                      highlight: "Reduced diabetes markers & portion mastery",
+                      initials: "G"
+                    }
+                  ],
+                  [
+                    {
+                      quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant-based way of eating and helped me understand the crucial role of fiber.",
+                      name: "Bharathi Mani",
+                      role: "Plant-Based Nutrition Client",
+                      highlight: "Enhanced recovery, protein & fiber optimization",
+                      initials: "B"
+                    },
+                    {
+                      quote: "Kirti's guidance transformed my energy levels completely. No crazy diets—just real, actionable changes rooted in science. Down 12 kg and feeling sharper than ever.",
+                      name: "Anand Raj",
+                      role: "VP of Engineering",
+                      highlight: "Down 12 kg & peak executive sharpness",
+                      initials: "A"
+                    },
+                    {
+                      quote: "We brought Kirti in for a company-wide wellness masterclass. The feedback was unanimous—the most engaging, practical, and non-preachy health session our team has ever had.",
+                      name: "Priya Nair",
+                      role: "Senior HR Director",
+                      highlight: "Corporate wellness masterclass success",
+                      initials: "P"
+                    }
+                  ],
+                  [
+                    {
+                      quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results.",
+                      name: "Seema",
+                      role: "Lifestyle Transformation Client",
+                      highlight: "Reduced 12 kg & built sustainable habits",
+                      initials: "S"
+                    },
+                    {
+                      quote: "Thanks a ton, Kirti, for helping me achieve this. You have hand-held me throughout the journey and helped me manage my emotions too — in one of our calls, I could feel you sensed what I was feeling without me even explaining. My skin tone has definitely improved too — I keep getting compliments on my complexion and glow.",
+                      name: "Padma Uday",
+                      role: "1:1 Coaching Client",
+                      highlight: "Emotional support & skin glow transformation",
+                      initials: "P"
+                    },
+                    {
+                      quote: "I really want to thank Kirti for her efforts in reducing my diabetes markers, managing my weight loss, and teaching me proper portion eating. From Day 1, the emphasis was on chewing and eating clean — that line kept me motivated to keep moving ahead on the path of reversing diabetes.",
+                      name: "Garima Kapoor",
+                      role: "Nutrition & Health Client",
+                      highlight: "Reduced diabetes markers & portion mastery",
+                      initials: "G"
+                    }
+                  ]
+                ].map((slideCards, slideIdx) => (
+                  <div key={slideIdx} className="w-full flex-shrink-0 px-1">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {slideCards.map((item, idx) => (
+                        <div key={idx} className="group relative p-7 rounded-[2rem] bg-[#FCF8F7] border border-[#E8CDD3] shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between overflow-hidden">
+                          <div>
+                            <div className="flex items-center justify-between gap-2 mb-4">
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#B55E79] bg-white px-3 py-1 rounded-full border border-[#E8CDD3]">
+                                {item.highlight}
+                              </span>
+                              <div className="flex items-center gap-1 text-[#B55E79] text-[11px] font-semibold bg-white px-2.5 py-1 rounded-full border border-[#E8CDD3] shrink-0">
+                                <CheckCircle2 className="w-3 h-3 text-[#B55E79]" />
+                                <span>Verified</span>
+                              </div>
+                            </div>
+                            <p className="text-[#5F5358] text-xs sm:text-sm leading-relaxed font-medium italic mb-6">
+                              "{item.quote}"
+                            </p>
+                          </div>
+                          <div className="pt-4 border-t border-[#E8CDD3]/70 flex items-center gap-3">
+                            <div className="w-10 h-10 rounded-full bg-[#B55E79] text-white flex items-center justify-center font-serif font-bold text-sm shadow-sm shrink-0">
+                              {item.initials}
+                            </div>
+                            <div>
+                              <h5 className="font-serif font-bold text-[#2E2326] text-sm leading-tight">
+                                {item.name}
+                              </h5>
+                              <span className="text-[11px] text-[#5F5358] font-medium block mt-0.5">
+                                {item.role}
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
-
-                  {/* Quote Icon & Body */}
-                  <div className="mb-8">
-                    {/* <div className="w-9 h-9 rounded-xl bg-[#F4D9DE]/60 text-[#B55E79] flex items-center justify-center mb-4 group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-300">
-                      <Quote className="w-4 h-4 fill-current" />
-                    </div> */}
-                    <p className="text-[#5F5358] text-sm sm:text-base leading-relaxed font-medium">
-                      {item.quote}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Author Footer */}
-                <div className="pt-6 border-t border-[#E8CDD3]/70 flex items-center gap-3.5">
-                  {/* Avatar Initials Badge */}
-                  <div className="w-11 h-11 rounded-full bg-[#B55E79] text-white flex items-center justify-center font-serif font-bold text-lg shadow-sm group-hover:scale-105 transition-transform shrink-0">
-                    {item.initials}
-                  </div>
-                  <div>
-                    <h5 className="font-serif font-bold text-[#2E2326] text-base leading-tight group-hover:text-[#B55E79] transition-colors">
-                      {item.name}
-                    </h5>
-                    <span className="text-xs text-[#5F5358] font-medium block mt-0.5">
-                      {item.role}
-                    </span>
-                  </div>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Pagination Dots */}
+            <div className="flex items-center justify-center gap-2 mt-8">
+              {[0, 1].map((idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    if (!isHomeTransitioning) setIsHomeTransitioning(true);
+                    setActiveHomeStoryIdx(idx);
+                  }}
+                  aria-label={`Go to slide ${idx + 1}`}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    (activeHomeStoryIdx % totalHomeSlides) === idx ? "w-8 bg-[#B55E79]" : "w-2.5 bg-[#E8CDD3] hover:bg-[#B55E79]/50"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>

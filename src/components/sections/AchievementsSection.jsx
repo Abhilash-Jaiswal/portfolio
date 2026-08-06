@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import {
   Award,
   Users,
@@ -16,7 +16,11 @@ import {
   Laptop,
   FileText,
   Quote,
-  Building
+  Building,
+  Video,
+  ExternalLink,
+  ChevronLeft,
+  ChevronRight
 } from "lucide-react";
 
 function useReveal(ref) {
@@ -63,6 +67,10 @@ const credentials = [
   { title: "Goldman Sachs 10,000 Women Graduate", org: "NSRCEL, IIM Bangalore", detail: "Rigorous business strategy & growth framework for women entrepreneurs." },
   { title: "BTech Computer Science", org: "HBTI Kanpur (2001–2005)", detail: "Engineering foundation in algorithms and software systems." },
   { title: "C-PGDBA (IT)", org: "Symbiosis Centre (2007–2009)", detail: "Postgraduate diploma in Information Technology Management." },
+  // NEW PDF ADDITIONS: Verified Credentials
+  { title: "Introduction to Food and Health", org: "Stanford Online", detail: "Completed Stanford Online course, verified through Coursera." },
+  { title: "Vegan Cooking Diploma", org: "Centre of Excellence, UK", detail: "Completed with Distinction — plant-based culinary techniques & nutrition." },
+  { title: "Certified Menopause Coach", org: "Menopause Nutrition & Health", detail: "Tagged Nerdy Grad — specialized training in midlife hormonal wellness." },
 ];
 
 const corporateFlagship = ["JP Morgan", "Goldman Sachs", "Microsoft", "IBM", "ISRO", "Siemens"];
@@ -133,6 +141,30 @@ const linkedinRecs = [
 
 const clientQuotes = [
   {
+    name: "Seema",
+    role: "Coaching Client",
+    rel: "Lifestyle Transformation Program",
+    quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results. The journey wasn't always smooth, but her guidance, motivation, and constant support made it achievable.",
+  },
+  {
+    name: "Padma Uday",
+    role: "Coaching Client",
+    rel: "Lifestyle Transformation Program",
+    quote: "Thanks a ton, Kirti, for helping me achieve this. You have hand-held me throughout the journey and helped me manage my emotions too — in one of our calls, I could feel you sensed what I was feeling without me even explaining. You are so involved with your clients. My heartfelt gratitude for bringing about this lifestyle change in me. My skin tone has definitely improved too — I keep getting compliments on my complexion and glow.",
+  },
+  {
+    name: "Garima Kapoor",
+    role: "Coaching Client",
+    rel: "Lifestyle Transformation Program",
+    quote: "I really want to thank Kirti for her efforts in reducing my diabetes markers, managing my weight loss, and teaching me proper portion eating. From Day 1, the emphasis was on chewing and eating clean — that line kept me motivated to keep moving ahead on the path of reversing diabetes. Thank you, Kirti, for all the magical changes.",
+  },
+  {
+    name: "Bharathi Mani",
+    role: "Coaching Client",
+    rel: "Lifestyle Transformation Program",
+    quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant-based way of eating and helped me understand the crucial role of fiber. Now I feel more nourished and satisfied than ever.",
+  },
+  {
     name: "Anand Raj",
     role: "VP of Engineering",
     rel: "1:1 Executive Nutrition Coaching",
@@ -167,6 +199,36 @@ const clientQuotes = [
 export function AchievementsSection() {
   const ref = useRef(null);
   useReveal(ref);
+
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isPaused, setIsPaused] = useState(false);
+  const totalSlides = Math.ceil(clientQuotes.length / 3);
+
+  const nextSlide = () => {
+    if (!isTransitioning) setIsTransitioning(true);
+    setActiveSlide((prev) => prev + 1);
+  };
+
+  const prevSlide = () => {
+    if (!isTransitioning) setIsTransitioning(true);
+    setActiveSlide((prev) => (prev <= 0 ? totalSlides - 1 : prev - 1));
+  };
+
+  useEffect(() => {
+    if (isPaused) return;
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 3500);
+    return () => clearInterval(timer);
+  }, [isPaused, activeSlide, isTransitioning]);
+
+  const handleTransitionEnd = () => {
+    if (activeSlide >= totalSlides) {
+      setIsTransitioning(false);
+      setActiveSlide(0);
+    }
+  };
 
   return (
     <section 
@@ -331,6 +393,31 @@ export function AchievementsSection() {
           </div>
         </div>
 
+        {/* NEW PDF ADDITION: Featured Video Conversation Card */}
+        <div className="reveal max-w-4xl mx-auto bg-gradient-to-br from-white to-[#FDF4F6] border border-[#E8CDD3] p-8 md:p-12 rounded-[2.5rem] shadow-lg space-y-6">
+          <div className="flex flex-col md:flex-row items-center gap-6">
+            <div className="w-16 h-16 rounded-2xl bg-[#B55E79] text-white flex items-center justify-center shrink-0 shadow-md">
+              <Video size={28} />
+            </div>
+            <div className="space-y-2 text-center md:text-left">
+              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Featured Extended Media Conversation</span>
+              <h3 className="font-serif text-2xl font-bold text-[#2E2326]">A Conversation on Building with Purpose — with Shradha Sharma</h3>
+              <p className="text-sm font-light leading-relaxed text-[#5F5358]">
+                A wide-ranging video conversation with Shradha Sharma, Founder of YourStory — capturing Kirti's own philosophy in her own words on purpose-driven entrepreneurship, clean food systems, and women's midlife wellness.
+              </p>
+              <a
+                href="https://yourstory.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#B55E79] hover:underline pt-2"
+              >
+                <span>Watch Extended Video Feature</span>
+                <ExternalLink size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* LinkedIn Professional Recommendations */}
         <div>
           <div className="reveal text-center mb-10">
@@ -366,7 +453,7 @@ export function AchievementsSection() {
           </div>
         </div>
 
-        {/* Client Testimonials Grid */}
+        {/* Client Testimonials 3-Card Continuous Slider */}
         <div>
           <div className="reveal text-center mb-10">
             <div 
@@ -378,25 +465,89 @@ export function AchievementsSection() {
             </div>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Real Stories, Real Results</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {clientQuotes.map((q, i) => (
+
+          <div 
+            className="reveal relative max-w-6xl mx-auto px-4 md:px-12"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            {/* Previous Button */}
+            <button
+              onClick={prevSlide}
+              aria-label="Previous Slide"
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -ml-2 md:-ml-6"
+            >
+              <ChevronLeft size={24} />
+            </button>
+
+            {/* Next Button */}
+            <button
+              onClick={nextSlide}
+              aria-label="Next Slide"
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -mr-2 md:-mr-6"
+            >
+              <ChevronRight size={24} />
+            </button>
+
+            {/* Slider Container */}
+            <div className="overflow-hidden rounded-3xl p-1">
               <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 space-y-3"
+                className={`flex ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
+                style={{ transform: `translateX(-${activeSlide * 100}%)` }}
+                onTransitionEnd={handleTransitionEnd}
               >
-                <div className="flex items-center justify-between">
-                  <div className="w-8 h-8 rounded-full bg-[#F4D9DE] flex items-center justify-center text-[#B55E79]">
-                    <Quote className="w-4 h-4" strokeWidth={1.5} />
+                {[0, 1, 2, 0].map((slideIdx, index) => (
+                  <div key={index} className="w-full flex-shrink-0 px-1">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {clientQuotes.slice(slideIdx * 3, slideIdx * 3 + 3).map((q, i) => (
+                        <div 
+                          key={i} 
+                          className="bg-white/90 border border-[#E8CDD3] p-7 rounded-[2rem] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
+                        >
+                          <div className="space-y-4">
+                            <div className="flex items-center justify-between">
+                              <div className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] shadow-sm">
+                                <Quote className="w-5 h-5" strokeWidth={1.5} />
+                              </div>
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#B55E79] bg-[#F4D9DE]/60 px-3.5 py-1 rounded-full border border-[#E8CDD3]">
+                                {q.rel}
+                              </span>
+                            </div>
+                            <p className="text-xs sm:text-sm font-light leading-relaxed italic text-[#5F5358]">"{q.quote}"</p>
+                          </div>
+                          <div className="pt-4 border-t border-[#E8CDD3] flex items-center gap-3 mt-4">
+                            <div className="w-10 h-10 rounded-full bg-[#B55E79] text-white flex items-center justify-center font-serif font-bold text-sm shadow-sm shrink-0">
+                              {q.name.charAt(0)}
+                            </div>
+                            <div>
+                              <h4 className="font-serif font-bold text-sm text-[#2E2326]">{q.name}</h4>
+                              <span className="text-[11px] font-light text-[#5F5358] block">{q.role}</span>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                  <span className="text-[9px] font-bold uppercase tracking-wider text-[#B55E79]">{q.rel}</span>
-                </div>
-                <p className="text-xs font-light leading-relaxed italic text-[#5F5358]">"{q.quote}"</p>
-                <div className="pt-2 border-t border-[#E8CDD3]">
-                  <h4 className="font-serif font-bold text-xs text-[#2E2326]">{q.name}</h4>
-                  <span className="text-[10px] font-light text-[#5F5358] block">{q.role}</span>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
+
+            {/* Pagination Dots */}
+            <div className="flex items-center justify-center gap-2 mt-8">
+              {Array.from({ length: totalSlides }).map((_, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => {
+                    if (!isTransitioning) setIsTransitioning(true);
+                    setActiveSlide(idx);
+                  }}
+                  aria-label={`Go to slide ${idx + 1}`}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${
+                    (activeSlide % totalSlides) === idx ? "w-8 bg-[#B55E79]" : "w-2.5 bg-[#E8CDD3] hover:bg-[#B55E79]/50"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
