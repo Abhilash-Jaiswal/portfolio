@@ -19,6 +19,7 @@ import {
   BarChart3
 } from "lucide-react";
 import kirtiImage from "../../assets/kirti_profile.jpg";
+import { ContactSection } from "./ContactSection";
 
 // ✅ These are the ONLY icons that work in your version
 // Remove Linkedin, Instagram, Youtube, etc.
@@ -123,7 +124,7 @@ export function InfluencerSection() {
     <section
       id="influencer"
       ref={ref}
-      className="bg-[#FCF8F7] border-b border-[#E8CDD3] scroll-mt-20"
+      className="bg-[#FCF8F7] border-[#E8CDD3] scroll-mt-20"
     >
       {/* ── HERO BANNER ── */}
       <div className="relative overflow-hidden bg-gradient-to-br from-[#B55E79] via-[#9A4060] to-[#B55E79] py-28 px-6 md:px-12 lg:px-20">
@@ -279,6 +280,8 @@ export function InfluencerSection() {
         </div>
 
       </div>
+
+      <ContactSection />
     </section>
   );
 } 

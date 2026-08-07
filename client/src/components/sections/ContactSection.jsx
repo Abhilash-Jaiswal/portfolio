@@ -27,7 +27,7 @@ export function ContactSection() {
 
   return (
     <div 
-      className="w-full px-8 sm:px-12 lg:px-24 py-16 lg:py-20 border-t"
+      className="w-full px-8 sm:px-12 lg:px-24 py-4 lg:py-5"
       style={{ backgroundColor: theme.bg, borderColor: `${theme.border}60` }}
     >
       <div className="max-w-[1600px] mx-auto">

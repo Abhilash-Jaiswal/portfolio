@@ -29,7 +29,7 @@ export function Navbar() {
     { name: "Achievement", path: "/achievements" },
     { name: "Work with Me", path: "/work-with-me" },
     { name: "Latest", path: "/latest" },
-    { name: "Contact", path: "/contact" },
+    // { name: "Contact", path: "/contact" },
   ];
 
   const currentPath = location.pathname.replace(/\/$/, "");
