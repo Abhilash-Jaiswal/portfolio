@@ -61,9 +61,9 @@ const milestones = [
 ];
 
 const credentials = [
-  { title: "Certified Holistic Nutritionist", org: "AFPA, USA", detail: "Specialized in whole-food plant-based nutrition and lifestyle medicine." },
-  { title: "Plant-Based Athlete Coach", org: "AFPA, USA", detail: "Expertise in endurance fuel and high-performance plant nutrition." },
-  { title: "Herbal & Natural Strategies for Menopause", org: "AFPA, USA", detail: "Clinical knowledge in natural hormone management & midlife wellness." },
+  { title: "Certified Holistic Nutritionist", org: "USA", detail: "Specialized in whole-food plant-based nutrition and lifestyle medicine." },
+  { title: "Plant-Based Athlete Coach", org: "USA", detail: "Expertise in endurance fuel and high-performance plant nutrition." },
+  { title: "Herbal & Natural Strategies for Menopause", org: "USA", detail: "Clinical knowledge in natural hormone management & midlife wellness." },
   { title: "Goldman Sachs 10,000 Women Graduate", org: "NSRCEL, IIM Bangalore", detail: "Rigorous business strategy & growth framework for women entrepreneurs." },
   { title: "BTech Computer Science", org: "HBTI Kanpur (2001–2005)", detail: "Engineering foundation in algorithms and software systems." },
   { title: "C-PGDBA (IT)", org: "Symbiosis Centre (2007–2009)", detail: "Postgraduate diploma in Information Technology Management." },
