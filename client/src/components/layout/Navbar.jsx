@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Search, ChevronDown, Leaf, Sparkles } from "lucide-react";
+import { ChevronDown, Leaf, Sparkles, Menu, X } from "lucide-react";
 import logoImage from "../../assets/woman_entrepreneur_logo.png";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [searchVal, setSearchVal] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const location = useLocation();
 
   useEffect(() => {
@@ -172,42 +173,58 @@ export function Navbar() {
           })}
         </div>
 
-        {/* Search */}
-        <div className="flex items-center justify-end">
-          <div className="relative flex items-center">
-            <span
-              className="absolute left-3.5 pointer-events-none transition-colors"
-              style={{ color: useWhiteTextAtTop ? "#E6BEC6" : "#B55E79" }}
-            >
-              <Search className="w-3.5 h-3.5" />
-            </span>
-            <input
-              type="text"
-              value={searchVal}
-              onChange={e => setSearchVal(e.target.value)}
-              placeholder="SEARCH"
-              className="pl-9 pr-4 py-2.5 w-36 lg:w-44 rounded-full text-[11px] font-bold tracking-[0.15em] uppercase transition-all duration-200 focus:outline-none focus:w-48 lg:focus:w-52"
-              style={{
-                border: useWhiteTextAtTop ? "1.5px solid rgba(255, 255, 255, 0.5)" : "1.5px solid #E8CDD3",
-                backgroundColor: useWhiteTextAtTop ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.8)",
-                color: useWhiteTextAtTop ? "#FFFFFF" : "#2E2326",
-              }}
-              onFocus={e => {
-                e.target.style.borderColor = "#B55E79";
-                e.target.style.boxShadow = "0 0 0 3px rgba(181,94,121,0.15)";
-                e.target.style.backgroundColor = "rgba(255,255,255,0.95)";
-                e.target.style.color = "#2E2326";
-              }}
-              onBlur={e => {
-                e.target.style.borderColor = useWhiteTextAtTop ? "rgba(255, 255, 255, 0.5)" : "#E8CDD3";
-                e.target.style.boxShadow = "none";
-                e.target.style.backgroundColor = useWhiteTextAtTop ? "rgba(255, 255, 255, 0.15)" : "rgba(255, 255, 255, 0.8)";
-                e.target.style.color = useWhiteTextAtTop ? "#FFFFFF" : "#2E2326";
-              }}
-            />
-          </div>
+        {/* Mobile menu button */}
+        <div className="xl:hidden flex items-center">
+          <button 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="p-2 -mr-2 transition-colors duration-200"
+            style={{ color: useWhiteTextAtTop && !isMobileMenuOpen ? "#FFFFFF" : "#2E2326" }}
+          >
+            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
 
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <div 
+        className={`xl:hidden absolute top-full left-0 w-full bg-white/98 backdrop-blur-xl border-b border-[#E8CDD3]/50 shadow-2xl transition-all duration-300 ease-in-out overflow-hidden ${isMobileMenuOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"}`}
+      >
+        <div className="flex flex-col px-8 py-6 space-y-6 overflow-y-auto">
+          {navItems.map((item) => {
+            const active = isActive(item.path);
+            return (
+              <div key={item.name} className="flex flex-col">
+                <Link
+                  to={item.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`text-lg font-serif font-bold tracking-wide transition-colors ${active ? 'text-[#B55E79]' : 'text-[#2E2326]'}`}
+                >
+                  {item.name}
+                </Link>
+                {item.subItems && (
+                  <div className="flex flex-col pl-4 mt-3 space-y-4 border-l-2 border-[#F4D9DE]/50">
+                    {item.subItems.map((sub) => {
+                      const Icon = sub.icon;
+                      const subActive = isActive(sub.path);
+                      return (
+                        <Link
+                          key={sub.name}
+                          to={sub.path}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className={`flex items-center gap-3 text-sm font-medium transition-colors ${subActive ? 'text-[#B55E79]' : 'text-[#5F5358] hover:text-[#B55E79]'}`}
+                        >
+                          <Icon className="w-4 h-4 text-[#B55E79]" />
+                          {sub.name}
+                        </Link>
+                      );
+                    })}
+                  </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
       </div>
     </nav>
   );

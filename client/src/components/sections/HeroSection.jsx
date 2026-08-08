@@ -1,4 +1,4 @@
-﻿import { ArrowDown, MessageCircle } from "lucide-react";
+import { ArrowDown, MessageCircle } from "lucide-react";
 import heroImage from "../../assets/Image.png";
 
 export function HeroSection() {
@@ -31,7 +31,7 @@ export function HeroSection() {
           className="absolute inset-0 pt-8 flex flex-col items-center justify-center pointer-events-none select-none z-0 overflow-hidden"
           aria-hidden="true"
         >
-          <h1 className="font-serif text-[21vw] sm:text-[19vw] lg:text-[16vw] font-bold leading-[0.80] tracking-tight text-white uppercase text-center drop-shadow-lg opacity-100">
+          <h1 className="font-serif text-[20vw] sm:text-[18vw] lg:text-[15vw] font-bold leading-[0.80] tracking-tight text-white uppercase text-center drop-shadow-lg opacity-100">
             KIRTI
             <br />
             YADAV
@@ -74,12 +74,12 @@ export function HeroSection() {
           background: "linear-gradient(180deg, #EDD4D9 0%, #E6BEC6 100%)"
         }}
       >
-        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center lg:items-center gap-6 lg:gap-16 relative">
+        <div className="max-w-5xl mx-auto flex flex-col lg:flex-row items-center text-center lg:text-left gap-8 lg:gap-16 relative">
 
           {/* Left: Handwritten "Hey!" Script Font */}
           <div className="flex-shrink-0 -mt-24 sm:-mt-28 lg:-mt-36 text-center lg:text-left z-20 pointer-events-none">
             <span
-              className="font-script text-8xl sm:text-9xl lg:text-[11rem] font-normal text-white leading-none inline-block transform -rotate-6 select-none filter drop-shadow-md"
+              className="font-script text-7xl sm:text-8xl lg:text-9xl xl:text-[11rem] font-normal text-white leading-none inline-block transform -rotate-6 select-none filter drop-shadow-md"
             >
               Hey!
             </span>
@@ -87,7 +87,7 @@ export function HeroSection() {
 
           {/* Right / Centered: Minimal Marie Forleo Intro Copy */}
           <div className="flex-1 text-center lg:text-left pt-2">
-            <p className="text-xl sm:text-2xl lg:text-3xl font-light text-[#2E2326] leading-relaxed tracking-wide max-w-3xl">
+            <p className="text-lg sm:text-xl lg:text-3xl font-light text-[#2E2326] leading-relaxed tracking-wide max-w-3xl px-4 sm:px-0">
               I'm Kirti. An entrepreneur, speaker and certified nutritionist dedicated to helping you{" "}
               <strong className="font-bold text-[#2E2326]">
                 create a healthy body, business and life you love.

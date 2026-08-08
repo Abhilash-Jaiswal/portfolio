@@ -38,32 +38,32 @@ export function HomePage() {
   return (
     <div className="bg-[#FCF8F7] min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full overflow-hidden flex flex-col items-center text-center pt-32 pb-20"
-               style={{ background: "linear-gradient(180deg, #E6BEC6 0%, #FCF8F7 100%)" }}>
-        
+      <section className="relative w-full overflow-hidden flex flex-col items-center text-center pt-28 pb-16 sm:pt-32 sm:pb-20"
+        style={{ background: "linear-gradient(180deg, #E6BEC6 0%, #FCF8F7 100%)" }}>
+
         {/* Foreground Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 flex flex-col items-center">
-          
+
           <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-8 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm">
             Founder &middot; Nutritionist &middot; Menopause Coach &middot; Mentor
           </p>
-          
-          <h1 className="font-serif text-[24vw] sm:text-[22vw] lg:text-[20vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-16 opacity-90 drop-shadow-md">
-            KIRTI<br/>YADAV
+
+          <h1 className="font-serif text-[22vw] sm:text-[20vw] lg:text-[18vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-10 sm:mb-16 opacity-90 drop-shadow-md">
+            KIRTI<br />YADAV
           </h1>
 
-          <h2 className="text-3xl sm:text-5xl font-serif font-bold text-[#2E2326] mb-12 drop-shadow-sm">
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2E2326] mb-8 sm:mb-12 drop-shadow-sm px-4">
             A life in motion, made more nourishing.
           </h2>
-          <p className="text-4xl sm:text-6xl font-script text-[#B55E79] mb-12">Hey! I'm Kirti</p>
+          <p className="text-3xl sm:text-5xl lg:text-6xl font-script text-[#B55E79] mb-8 sm:mb-12">Hey! I'm Kirti</p>
           <p className="text-lg text-[#5F5358] max-w-2xl mx-auto mb-16 leading-relaxed font-medium drop-shadow-sm">
             A founder, nutritionist, and builder of kinder systems for bodies, workplaces, and the lives we're still becoming.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#work-together" className="px-8 py-3.5 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-lg">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full sm:w-auto px-4">
+            <a href="#work-together" className="w-full sm:w-auto px-8 py-3.5 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-lg">
               Explore my work
             </a>
-            <Link to="/life-story" className="px-8 py-3.5 bg-white text-[#B55E79] border border-[#B55E79] rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#B55E79] hover:text-white transition-colors shadow-lg">
+            <Link to="/life-story" className="w-full sm:w-auto px-8 py-3.5 bg-white text-[#B55E79] border border-[#B55E79] rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#B55E79] hover:text-white transition-colors shadow-lg">
               Read my story
             </Link>
           </div>
@@ -305,7 +305,7 @@ export function HomePage() {
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-[#B55E79]/20 to-transparent"></div>
 
         <div className="max-w-5xl mx-auto space-y-16 relative z-10">
-          
+
           <div className="text-center group">
             <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
               <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
@@ -390,7 +390,7 @@ export function HomePage() {
           </div>
 
           {/* Testimonial 3-Card Continuous Slider */}
-          <div 
+          <div
             className="relative max-w-6xl mx-auto px-4 sm:px-12"
             onMouseEnter={() => setIsHomePaused(true)}
             onMouseLeave={() => setIsHomePaused(false)}
@@ -415,7 +415,7 @@ export function HomePage() {
 
             {/* Slider Track */}
             <div className="overflow-hidden rounded-3xl p-1">
-              <div 
+              <div
                 className={`flex ${isHomeTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
                 style={{ transform: `translateX(-${activeHomeStoryIdx * 100}%)` }}
                 onTransitionEnd={handleHomeTransitionEnd}
@@ -540,9 +540,8 @@ export function HomePage() {
                     setActiveHomeStoryIdx(idx);
                   }}
                   aria-label={`Go to slide ${idx + 1}`}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
-                    (activeHomeStoryIdx % totalHomeSlides) === idx ? "w-8 bg-[#B55E79]" : "w-2.5 bg-[#E8CDD3] hover:bg-[#B55E79]/50"
-                  }`}
+                  className={`h-2.5 rounded-full transition-all duration-300 ${(activeHomeStoryIdx % totalHomeSlides) === idx ? "w-8 bg-[#B55E79]" : "w-2.5 bg-[#E8CDD3] hover:bg-[#B55E79]/50"
+                    }`}
                 />
               ))}
             </div>
