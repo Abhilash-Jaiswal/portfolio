@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ArrowRight, Mail, MapPin, MessageCircle } from "lucide-react";
+import { ArrowRight, Mail, MapPin } from "lucide-react";
 
 export function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -71,13 +71,6 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <div className="flex items-center gap-3" style={{ color: theme.muted }}>
-                <MessageCircle size={18} style={{ color: theme.primary }} />
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider block" style={{ color: theme.muted }}>WhatsApp Channels</span>
-                  <span className="text-sm font-semibold" style={{ color: theme.dark }}>Native B2B &amp; Menopause Communities</span>
-                </div>
-              </div>
 
               <div className="flex items-center gap-3" style={{ color: theme.muted }}>
                 <MapPin size={18} style={{ color: theme.primary }} />
