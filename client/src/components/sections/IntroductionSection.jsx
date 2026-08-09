@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Leaf,
   Heart,
@@ -80,18 +81,36 @@ export function IntroductionSection() {
                 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.15] mb-6"
                 style={{ color: theme.dark }}
               >
-                Bridging Corporate Precision with{" "}
+                A fellow explorer, making room for{" "}
                 <span className="relative inline-block text-[#B55E79]">
-                  Holistic Wellness
+                  what's next.
                   <span className="absolute bottom-1 left-0 w-full h-[3px] bg-[#CF99A6]/40 rounded-full" />
                 </span>
               </h2>
-              <p
-                className="text-base sm:text-lg font-light leading-relaxed max-w-3xl"
-                style={{ color: theme.muted }}
-              >
-                An entrepreneur, certified holistic nutritionist, new-age mother, and dedicated advocate for clean living. I build wellness ecosystems rooted in real, clean food, honest evidence-based knowledge, and deep, supportive communities.
-              </p>
+              <div className="space-y-4 max-w-3xl">
+                <p
+                  className="text-base sm:text-lg font-light leading-relaxed"
+                  style={{ color: theme.muted }}
+                >
+                  I didn't start out in wellness. I started in computer science, building systems for companies like IBM, Target, and AIG. Then life asked a different question — one that brought me closer to food, health, motherhood, and the quiet shifts that can change everything.
+                </p>
+                <p
+                  className="text-base sm:text-lg font-light leading-relaxed"
+                  style={{ color: theme.muted }}
+                >
+                  Today I build spaces where people feel more supported: on the plate, at work, through menopause and everything it brings, and in the businesses they're brave enough to start.
+                </p>
+                <div className="pt-2">
+                  <Link 
+                    to="/life-story"
+                    className="inline-flex items-center gap-2 font-medium hover:opacity-80 transition-opacity"
+                    style={{ color: theme.primary }}
+                  >
+                    <span>Read my full story</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              </div>
             </div>
 
             <div className="lg:col-span-4 bg-[#FFF9FA] border border-[#E8CDD3] p-6 lg:p-8 rounded-3xl shadow-sm relative overflow-hidden">
