@@ -93,8 +93,11 @@ export function HomePage() {
       </section>
 
       {/* A letter, before anything else */}
-      <section className="py-24 px-6 sm:px-12 max-w-4xl mx-auto text-center">
-        <h3 className="text-3xl font-serif font-bold text-[#2E2326] mb-8">
+      <section className="py-24 px-6 sm:px-12 max-w-5xl mx-auto text-center">
+        <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block mb-4 border border-[#E8CDD3]/60">
+          A letter, before anything else
+        </span>
+        <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-8">
           A fellow explorer, making room for what's next.
         </h3>
         <p className="text-lg text-[#5F5358] leading-relaxed mb-6">
