@@ -150,51 +150,15 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* NEW CONTENT SECTION: Certifications & Qualifications Spotlight (PDF Sec 2.1, 3.3 & 3.5) */}
-      <section className="py-20 px-6 sm:px-12 bg-[#FCF8F7] border-y border-[#E8CDD3]">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-white px-4 py-1.5 rounded-full inline-block mb-3 border border-[#E8CDD3]">
-              Qualifications & Training
-            </span>
-            <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
-              Certifications & Specialized Expertise
-            </h3>
-            <p className="text-[#5F5358] max-w-2xl mx-auto text-base">
-              Evidence-based study and formal qualifications spanning holistic nutrition, plant-based performance, and women's health.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { title: "Certified Holistic Nutritionist", sub: "Holistic Health & Wellness Practice", icon: Award },
-              { title: "Plant-Based Athlete Coach", sub: "Sports Nutrition & Performance", icon: ShieldCheck },
-              { title: "Herbal & Natural Strategies for Menopause", sub: "Natural Midlife Symptom Support", icon: Leaf },
-              { title: "Certified Menopause Coach", sub: "Menopause Nutrition & Health Graduate", icon: GraduationCap },
-              { title: "Introduction to Food and Health", sub: "Stanford Online (Verified Course)", icon: GraduationCap },
-              { title: "Vegan Cooking Diploma", sub: "Centre of Excellence, UK (With Distinction)", icon: Award }
-            ].map((cert, idx) => {
-              const IconComp = cert.icon;
-              return (
-                <div key={idx} className="p-6 bg-white rounded-2xl border border-[#E8CDD3] shadow-sm hover:border-[#B55E79] hover:shadow-md transition-all flex items-start gap-4">
-                  <div className="p-3 bg-[#F4D9DE]/40 text-[#B55E79] rounded-xl shrink-0">
-                    <IconComp className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-[#2E2326] text-base mb-1">{cert.title}</h4>
-                    <p className="text-xs text-[#5F5358] leading-relaxed">{cert.sub}</p>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
+  
 
       {/* Ways We Can Work Together */}
       <section id="work-together" className="py-24 px-6 sm:px-12 bg-[#F4D9DE]/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-white px-4 py-1.5 rounded-full inline-block mb-6 border border-[#E8CDD3]">
+              Ways we can work together
+            </span>
             <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
               One calling, several ways of showing up for you.
             </h3>
