@@ -73,11 +73,23 @@ export function HomePage() {
       </section>
 
       {/* What I Believe Band */}
-      <section className="bg-[#B55E79] text-white py-16 px-6 text-center flex flex-col items-center">
-        <p className="font-serif text-2xl sm:text-3xl max-w-4xl mx-auto leading-relaxed mb-6">
-          "I've always believed that we keep exploring, keep learning, and keep becoming someone slightly different from who we were yesterday."
-        </p>
-        <p className="font-script text-2xl sm:text-3xl opacity-90">— Kirti</p>
+      <section className="relative bg-[#B55E79] text-white py-20 px-6 sm:px-12 text-center flex flex-col items-center overflow-hidden">
+        {/* Decorative background ambient glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
+          {/* <span className="text-xs font-bold uppercase tracking-[0.25em] text-white/80 bg-white/10 px-4 py-1.5 rounded-full mb-6 border border-white/20">
+            Core Philosophy
+          </span> */}
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 tracking-tight leading-tight">
+            What I Believe
+          </h2>
+          <div className="w-16 h-0.5 bg-white/40 mb-6"></div>
+          <p className="font-serif text-lg sm:text-xl text-white/95 max-w-2xl leading-relaxed italic mb-6 font-normal">
+            "We keep exploring, keep learning, and keep becoming someone slightly different from who we were yesterday."
+          </p>
+          <p className="font-script text-2xl sm:text-3xl text-white/90">— Kirti</p>
+        </div>
       </section>
 
       {/* A letter, before anything else */}
