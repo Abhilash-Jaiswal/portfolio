@@ -45,6 +45,12 @@ export function Navbar() {
         currentPath.endsWith("/notpaused")
       );
     }
+    if (target === "/achievements" || target === "/press") {
+      return (
+        currentPath.endsWith("/achievements") ||
+        currentPath.endsWith("/press")
+      );
+    }
     return currentPath.endsWith(target);
   };
 
