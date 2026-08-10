@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Leaf, Sparkles, Award, Quote, Play, ShieldCheck, Heart, GraduationCap, Milestone, Star, CheckCircle2, ChevronLeft, ChevronRight } from "lucide-react";
+import { Leaf, Sparkles, Award, Quote, Play, ShieldCheck, Heart, GraduationCap, Milestone, Star, CheckCircle2, ChevronLeft, ChevronRight, Image as ImageIcon } from "lucide-react";
 import kukuImage from "../assets/kuku-image.jpeg";
 import notPausedImage from "../assets/Not Paused.jpeg";
 
@@ -44,13 +44,11 @@ export function HomePage() {
         {/* Foreground Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 flex flex-col items-center">
 
-         
-
-          <h1 className="font-serif text-[22vw] sm:text-[20vw] lg:text-[18vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-4 sm:mb-7 opacity-90 drop-shadow-md">
+          <h1 className="font-serif text-[22vw] sm:text-[20vw] lg:text-[18vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-4 sm:mb-7 opacity-90 drop-shadow-md text-center">
             KIRTI<br />YADAV
           </h1>
 
-           <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-8 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm">
+          <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-12 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm text-center">
             Founder &middot; Nutritionist &middot; Menopause Coach &middot; Mentor
           </p>
 
@@ -93,22 +91,45 @@ export function HomePage() {
       </section>
 
       {/* A letter, before anything else */}
-      <section className="py-24 px-6 sm:px-12 max-w-5xl mx-auto text-center">
-        <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block mb-4 border border-[#E8CDD3]/60">
-          A letter, before anything else
-        </span>
-        <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-8">
-          A fellow explorer, making room for what's next.
-        </h3>
-        <p className="text-lg text-[#5F5358] leading-relaxed mb-6">
-          I didn't start out in wellness. I started in computer science, building systems for companies like IBM, Target, and AIG. Then life asked a different question — one that brought me closer to food, health, motherhood, and the quiet shifts that can change everything.
-        </p>
-        <p className="text-lg text-[#5F5358] leading-relaxed mb-10">
-          Today I build spaces where people feel more supported: on the plate, at work, through menopause and everything it brings, and in the businesses they're brave enough to start.
-        </p>
-        <Link to="/life-story" className="text-[#B55E79] font-bold text-sm uppercase tracking-widest hover:underline underline-offset-4">
-          Read my full story
-        </Link>
+      <section className="py-24 px-6 sm:px-12 max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block mb-4 border border-[#E8CDD3]/60">
+            A letter, before anything else
+          </span>
+          <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326]">
+            A fellow explorer, making room for what's next.
+          </h3>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+          {/* Owner Image Box 2: Letter / Story Portrait */}
+          <div className="md:col-span-5 flex justify-center">
+            <div className="w-full max-w-xs sm:max-w-sm !h-80 sm:h-56 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-4 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
+              <div className="w-12 h-12 rounded-xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-sm">
+                <ImageIcon className="w-6 h-6" />
+              </div>
+              <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] mb-1">
+                Image Box
+              </span>
+              <p className="text-xs text-[#5F5358] font-medium">
+                Add Personal Story Photo here
+              </p>
+            </div>
+          </div>
+
+          {/* Letter Text Content */}
+          <div className="md:col-span-7 text-center md:text-left">
+            <p className="text-lg text-[#5F5358] leading-relaxed mb-6">
+              I didn't start out in wellness. I started in computer science, building systems for companies like IBM, Target, and AIG. Then life asked a different question — one that brought me closer to food, health, motherhood, and the quiet shifts that can change everything.
+            </p>
+            <p className="text-lg text-[#5F5358] leading-relaxed mb-10">
+              Today I build spaces where people feel more supported: on the plate, at work, through menopause and everything it brings, and in the businesses they're brave enough to start.
+            </p>
+            <Link to="/life-story" className="text-[#B55E79] font-bold text-sm uppercase tracking-widest hover:underline underline-offset-4 inline-block">
+              Read my full story
+            </Link>
+          </div>
+        </div>
       </section>
 
 
