@@ -44,13 +44,15 @@ export function HomePage() {
         {/* Foreground Content */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-12 flex flex-col items-center">
 
-          <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-8 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm">
-            Founder &middot; Nutritionist &middot; Menopause Coach &middot; Mentor
-          </p>
+         
 
-          <h1 className="font-serif text-[22vw] sm:text-[20vw] lg:text-[18vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-10 sm:mb-16 opacity-90 drop-shadow-md">
+          <h1 className="font-serif text-[22vw] sm:text-[20vw] lg:text-[18vw] font-bold leading-[0.85] tracking-tight text-white uppercase select-none mb-4 sm:mb-7 opacity-90 drop-shadow-md">
             KIRTI<br />YADAV
           </h1>
+
+           <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-8 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm">
+            Founder &middot; Nutritionist &middot; Menopause Coach &middot; Mentor
+          </p>
 
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2E2326] mb-8 sm:mb-12 drop-shadow-sm px-4">
             A life in motion, made more nourishing.
