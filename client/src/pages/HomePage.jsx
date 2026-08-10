@@ -116,6 +116,9 @@ export function HomePage() {
       <section className="py-24 px-6 sm:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block !mb-6 border border-[#E8CDD3]/60">
+              More things I have built
+            </span>
             <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
               Two ventures, one belief: life gets better when we make room for what matters.
             </h3>
