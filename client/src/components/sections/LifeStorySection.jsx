@@ -1,5 +1,6 @@
 ﻿import { useEffect, useRef, useState } from "react";
 import { GraduationCap, Heart, Leaf, Mic, Flower2 } from "lucide-react";
+import storyImage from "../../assets/file.png";
 
 /* ─── Scroll-reveal hook ─────────────────────────── */
 function useReveal() {
@@ -107,6 +108,41 @@ function ChapterPill({ chap, active, onClick }) {
       {Icon && <Icon className="w-3.5 h-3.5" strokeWidth={1.5} />}
       <span>Ch {chap.num}</span>
     </button>
+  );
+}
+
+/* ─── Chapter image placeholder ───────────────── */
+function ChapterImageBox({ chap }) {
+  const Icon = chap.icon;
+
+  return (
+    <aside className="reveal">
+      <div
+        className="h-full rounded-[2rem] border border-[#E8CDD3]/70 bg-white/80 p-4 shadow-sm"
+        style={{ borderColor: `${theme.border}90` }}
+      >
+        <div className="relative aspect-[4/3] overflow-hidden rounded-[1.4rem] border-2 border-dashed border-[#B55E79]/55 bg-gradient-to-br from-[#F8E9EC] to-white">
+          <img
+            src={storyImage}
+            alt={`${chap.title} chapter`}
+            className="absolute inset-0 h-full w-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#2E2326]/65 to-transparent" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+            <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 text-white shadow-md" style={{ backgroundColor: theme.primary }}>
+              {Icon && <Icon className="w-7 h-7" strokeWidth={1.5} />}
+            </div>
+            <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-white">Chapter {chap.num}</span>
+            <span className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-white/90">Image Story</span>
+          </div>
+        </div>
+
+        <div className="mt-4 border-t border-[#E8CDD3]/70 pt-4">
+          <div className="text-[10px] font-bold tracking-[0.28em] uppercase" style={{ color: theme.primary }}>Story Archive</div>
+          <div className="mt-2 font-serif text-sm font-bold leading-snug" style={{ color: theme.dark }}>{chap.title}</div>
+        </div>
+      </div>
+    </aside>
   );
 }
 
@@ -337,17 +373,23 @@ export function LifeStorySection() {
               </div>
             </div>
 
-            <div
-              className="reveal mb-10 pl-6 border-l-2 rounded-r-xl py-1"
-              style={{ borderColor: theme.primary }}
-            >
-              <p className="text-base lg:text-lg font-light leading-relaxed" style={{ color: theme.muted }}>{chap.intro}</p>
-            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-[minmax(260px,0.88fr)_minmax(640px,1.12fr)] gap-10 lg:gap-12 mb-10">
+              <ChapterImageBox chap={chap} />
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
-              {chap.cards.map((card, i) => (
-                <StoryCard key={i} heading={card.heading} body={card.body} delay={i * 120} />
-              ))}
+              <div className="reveal min-w-0">
+                <div
+                  className="mb-8 pl-6 border-l-2 rounded-r-xl py-1"
+                  style={{ borderColor: theme.primary }}
+                >
+                  <p className="text-base lg:text-lg font-light leading-relaxed" style={{ color: theme.muted }}>{chap.intro}</p>
+                </div>
+
+                <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+                  {chap.cards.map((card, i) => (
+                    <StoryCard key={i} heading={card.heading} body={card.body} delay={i * 120} />
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="reveal max-w-3xl">

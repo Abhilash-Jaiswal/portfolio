@@ -86,7 +86,7 @@ export function HomePage() {
           <p className="font-serif text-lg sm:text-xl text-white/95 max-w-2xl leading-relaxed italic mb-6 font-normal">
             "We keep exploring, keep learning, and keep becoming someone slightly different from who we were yesterday."
           </p>
-          <p className="font-script text-2xl sm:text-3xl text-white/90">— Kirti</p>
+          
         </div>
       </section>
 
@@ -147,10 +147,10 @@ export function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-10 rounded-3xl border border-[#E8CDD3] bg-[#FCF8F7] hover:shadow-xl transition-shadow flex flex-col items-center text-center">
               <img src={kukuImage} alt="KuKClean" className="h-28 w-auto object-contain mix-blend-multiply mb-6" />
-              <h4 className="text-2xl font-bold text-[#2E2326] mb-2">KuKClean</h4>
+              <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">Food, made kinder.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                Clean-label, plant-based foods for cafes, workplaces, and your own kitchen.
+                Clean-label, plant-based seeds & snacks for cafes, workplaces, and your own kitchen.
               </p>
               <a href="https://kukclean.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit KuKClean
@@ -158,7 +158,7 @@ export function HomePage() {
             </div>
             <div className="p-10 rounded-3xl border border-[#E8CDD3] bg-[#FCF8F7] hover:shadow-xl transition-shadow flex flex-col items-center text-center">
               <img src={notPausedImage} alt="NotPaused" className="h-28 w-auto object-contain mb-6" style={{ mixBlendMode: 'multiply', filter: 'brightness(1.05) contrast(1.05)' }} />
-              <h4 className="text-2xl font-bold text-[#2E2326] mb-2">NotPaused.com</h4>
+              <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">A conversation worth having.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
                 A community-led tech platform for women 35+, breaking the silence one honest conversation at a time.
@@ -215,7 +215,7 @@ export function HomePage() {
                 Featured Conversation
               </span>
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#2E2326] mb-4 leading-tight">
-                A conversation on building with purpose — with Shraddha Sharma, YourStory
+                A conversation on building with purpose — with Shraddha Sharma the founder of kukclean, YourStory
               </h3>
               <p className="text-[#5F5358] text-sm leading-relaxed mb-6">
                 A wide-ranging, extended discussion capturing Kirti's own philosophy in her own words — reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
