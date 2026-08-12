@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { ChevronDown, Leaf, Sparkles, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import logoImage from "../../assets/woman_entrepreneur_logo.png";
 
 export function Navbar() {
@@ -22,8 +22,8 @@ export function Navbar() {
       name: "My Ventures",
       path: "/my-ventures",
       subItems: [
-        { name: "KuKClean", path: "/my-ventures#kuk-clean", icon: Leaf },
-        { name: "NotPausednpm run dev", path: "/my-ventures#notpaused", icon: Sparkles },
+        { name: "KuKClean", path: "/my-ventures#kuk-clean" },
+        { name: "NotPaused", path: "/my-ventures#notpaused" },
       ],
     },
     
@@ -138,14 +138,12 @@ export function Navbar() {
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-48 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
                     <div className="py-2 px-1.5 rounded-2xl shadow-xl border border-[#E8CDD3]/80 bg-white/95 backdrop-blur-md transform scale-95 group-hover:scale-100 transition-transform duration-200">
                       {item.subItems.map((sub) => {
-                        const Icon = sub.icon;
                         return (
                           <Link
                             key={sub.name}
                             to={sub.path}
                             className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold normal-case text-[#2E2326] hover:bg-[#F4D9DE]/40 hover:text-[#B55E79] transition-colors"
                           >
-                            <Icon className="w-4 h-4 text-[#B55E79]" />
                             <span>{sub.name}</span>
                           </Link>
                         );
@@ -211,7 +209,6 @@ export function Navbar() {
                 {item.subItems && (
                   <div className="flex flex-col pl-4 mt-3 space-y-4 border-l-2 border-[#F4D9DE]/50">
                     {item.subItems.map((sub) => {
-                      const Icon = sub.icon;
                       const subActive = isActive(sub.path);
                       return (
                         <Link
@@ -220,7 +217,6 @@ export function Navbar() {
                           onClick={() => setIsMobileMenuOpen(false)}
                           className={`flex items-center gap-3 text-sm font-medium transition-colors ${subActive ? 'text-[#B55E79]' : 'text-[#5F5358] hover:text-[#B55E79]'}`}
                         >
-                          <Icon className="w-4 h-4 text-[#B55E79]" />
                           {sub.name}
                         </Link>
                       );

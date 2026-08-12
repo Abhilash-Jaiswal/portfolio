@@ -252,9 +252,18 @@ export function HomePage() {
               <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {["JP Morgan", "Siemens", "Applied Materials", "LAM Research", "Reliance Ajio", "Christ University", "Tumkur University"].map(name => (
-                <span key={name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
-                  {name}
+              {[
+                { name: "JP Morgan", logo: "https://www.google.com/s2/favicons?domain=jpmorgan.com&sz=64" },
+                { name: "Siemens", logo: "https://www.google.com/s2/favicons?domain=siemens.com&sz=64" },
+                { name: "Applied Materials", logo: "https://www.google.com/s2/favicons?domain=appliedmaterials.com&sz=64" },
+                { name: "LAM Research", logo: "https://www.google.com/s2/favicons?domain=lamresearch.com&sz=64" },
+                { name: "Reliance Ajio", logo: "https://www.google.com/s2/favicons?domain=ajio.com&sz=64" },
+                { name: "Christ University", logo: "https://www.google.com/s2/favicons?domain=christuniversity.in&sz=64" },
+                { name: "Tumkur University", logo: "https://www.google.com/s2/favicons?domain=tumkuruniversity.ac.in&sz=64" }
+              ].map(team => (
+                <span key={team.name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
+                  <img src={team.logo} alt={`${team.name} logo`} className="w-5 h-5 object-contain rounded-sm" />
+                  {team.name}
                 </span>
               ))}
             </div>
@@ -267,9 +276,14 @@ export function HomePage() {
               <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              {["NSRCEL IIM Bangalore", "IIMR NutriHub", "Goldman Sachs 10,000 Women"].map(name => (
-                <span key={name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
-                  {name}
+              {[
+                { name: "NSRCEL IIM Bangalore", logo: "https://www.google.com/s2/favicons?domain=nsrcel.org&sz=64" },
+                { name: "IIMR NutriHub", logo: "https://www.google.com/s2/favicons?domain=nutrihub-tbi-iimr.org&sz=64" },
+                { name: "Goldman Sachs 10,000 Women", logo: "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=64" }
+              ].map(org => (
+                <span key={org.name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
+                  <img src={org.logo} alt={`${org.name} logo`} className="w-5 h-5 object-contain rounded-sm" />
+                  {org.name}
                 </span>
               ))}
             </div>
@@ -283,12 +297,13 @@ export function HomePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { name: "YourStory", link: "/press" },
-                { name: "India Today", link: "/press" },
-                { name: "Deccan Herald", link: "/press" },
-                { name: "The Better India", link: "/press" }
+                { name: "YourStory", link: "/press", logo: "https://www.google.com/s2/favicons?domain=yourstory.com&sz=64" },
+                { name: "India Today", link: "/press", logo: "https://www.google.com/s2/favicons?domain=indiatoday.in&sz=64" },
+                { name: "Deccan Herald", link: "/press", logo: "https://www.google.com/s2/favicons?domain=deccanherald.com&sz=64" },
+                { name: "The Better India", link: "/press", logo: "https://www.google.com/s2/favicons?domain=thebetterindia.com&sz=64" }
               ].map(pub => (
-                <Link key={pub.name} to={pub.link} className="px-6 py-2.5 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm">
+                <Link key={pub.name} to={pub.link} className="px-6 py-2.5 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 flex items-center gap-2 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm group/link">
+                  <img src={pub.logo} alt={`${pub.name} logo`} className="w-5 h-5 object-contain rounded-sm" />
                   {pub.name}
                 </Link>
               ))}

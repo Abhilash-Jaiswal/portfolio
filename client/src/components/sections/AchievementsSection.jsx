@@ -263,18 +263,7 @@ export function AchievementsSection() {
             From IIM Bangalore incubation and Government of India grants to 100+ corporate sessions and national media features — a record built strictly on conviction.
           </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-12 border-t border-white/15 mt-12">
-            {[
-              ["12+", "Key Milestones"],
-              ["100+", "Corporate Sessions"],
-              ["6+", "National Media Features"]
-            ].map(([n, l], i) => (
-              <div key={i}>
-                <span className="font-serif text-3xl font-bold text-white block">{n}</span>
-                <span className="text-white/60 text-xs uppercase tracking-widest">{l}</span>
-              </div>
-            ))}
-          </div>
+          {/* Grid removed as per user request */}
         </div>
       </div>
 
