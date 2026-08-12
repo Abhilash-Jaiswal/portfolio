@@ -104,7 +104,7 @@ export function NotPausedSection() {
         <div className="relative z-10 max-w-5xl">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
-            NotPaused.com
+            NotPaused
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             India's Dedicated <br />

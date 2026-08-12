@@ -55,6 +55,7 @@ const CHAPTERS = [
     num: "03", icon: Leaf,
     title: "Motherhood & Transformation",
     sub: "A small birth, a big reset, and 28 kilos of rediscovery",
+    imageCaption: "my daughter",
     intro: "Her daughter's early, small birth rearranged everything she thought she'd figured out. The real start of paying attention to food, rest, and her own body.",
     cards: [
       { heading: "When Everything Changed", body: "Her daughter's premature birth was a wake-up call that no corporate training could have prepared her for. Suddenly, the systems she'd built for data no longer mattered. What mattered was survival, health, and figuring out how to show up for this tiny new life." },
@@ -133,13 +134,13 @@ function ChapterImageBox({ chap }) {
               {Icon && <Icon className="w-7 h-7" strokeWidth={1.5} />}
             </div>
             <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-white">Chapter {chap.num}</span>
-            <span className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-white/90">Image Story</span>
+            <span className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-white/90">{chap.imageCaption || "Image Story"}</span>
           </div>
         </div>
 
         <div className="mt-4 border-t border-[#E8CDD3]/70 pt-4">
           <div className="text-[10px] font-bold tracking-[0.28em] uppercase" style={{ color: theme.primary }}>Story Archive</div>
-          <div className="mt-2 font-serif text-sm font-bold leading-snug" style={{ color: theme.dark }}>{chap.title}</div>
+          <div className="mt-2 font-serif text-sm font-bold leading-snug" style={{ color: theme.dark }}>{chap.imageCaption || chap.title}</div>
         </div>
       </div>
     </aside>

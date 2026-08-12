@@ -101,8 +101,8 @@ export function KukCleanSection() {
             KuKClean Foods & Consulting
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
-            Kitchen You. <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Consciously Nourishing.</span>
+            KukClean, <br />
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">consciously nourishinng</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Born in Kirti's kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant-based food and extraordinary Indian taste belong together.
@@ -132,7 +132,7 @@ export function KukCleanSection() {
         >
           <Quote className="absolute top-8 left-8 w-16 h-16 opacity-5" style={{ color: theme.primary }} />
           <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-center relative z-10" style={{ color: theme.dark }}>
-            "KuKClean stands for 'Kitchen' (KuK) + 'Clean', doubling as 'Kitchen, You'. In my kitchen, I teach you how to cook clean. Food should give you pleasure, not guilt."
+            "KuKClean stands for 'Kitchen' you & KItti 'Clean', doubling as 'Kitchen, You'. In my kitchen, I teach you how to cook clean. Food should give you pleasure, not guilt."
           </p>
           <span className="text-sm font-bold uppercase tracking-[0.2em] block mt-8 text-center" style={{ color: theme.primary }}>— Kirti Yadav, Founder</span>
         </div>
@@ -444,4 +444,4 @@ export function KukCleanSection() {
       </div>
     </section>
   );
-}
+}

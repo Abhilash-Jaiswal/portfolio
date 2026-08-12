@@ -22,8 +22,8 @@ export function Navbar() {
       name: "My Ventures",
       path: "/my-ventures",
       subItems: [
-        { name: "KuK Clean", path: "/my-ventures#kuk-clean", icon: Leaf },
-        { name: "notpaused.com", path: "/my-ventures#notpaused", icon: Sparkles },
+        { name: "KuKClean", path: "/my-ventures#kuk-clean", icon: Leaf },
+        { name: "NotPausednpm run dev", path: "/my-ventures#notpaused", icon: Sparkles },
       ],
     },
     
