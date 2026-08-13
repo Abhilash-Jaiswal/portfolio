@@ -221,11 +221,11 @@ export function HomePage() {
                 A wide-ranging, extended discussion capturing Kirti's own philosophy in her own words — reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
               </p>
               <Link to="https://www.youtube.com/watch?v=QesR-jmlJeY"  target="_blank"
-   className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
+  b  className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
                 <Play className="w-4 h-4 fill-current" /> Watch / Read Press Story
               </Link>
             </div>
-            <div className="w-full md:w-1/2 bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
+            {/* <div className="w-full md:w-1/2 bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
               <div className="relative z-20 flex flex-col items-center text-center p-6">
                 <div className="w-16 h-16 rounded-full bg-[#B55E79] text-white flex items-center justify-center mb-3 shadow-lg group-hover:scale-110 transition-transform">
@@ -234,7 +234,35 @@ export function HomePage() {
                 <span className="text-white font-serif font-bold text-lg mb-1">YourStory Extended Interview</span>
                 <span className="text-white/80 text-xs font-medium">Building With Purpose & Systemic Health</span>
               </div>
-            </div>
+            </div> */}
+
+            <a
+  href="https://www.youtube.com/watch?v=QesR-jmlJeY"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-full md:w-1/2 block"
+>
+  <div className="w-full bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
+    
+    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
+
+    <div className="relative z-20 flex flex-col items-center text-center p-6">
+      
+      <div className="w-16 h-16 rounded-full bg-[#B55E79] text-white flex items-center justify-center mb-3 shadow-lg group-hover:scale-110 transition-transform">
+        <Play className="w-7 h-7 fill-current ml-1" />
+      </div>
+
+      <span className="text-white font-serif font-bold text-lg mb-1">
+        YourStory Extended Interview
+      </span>
+
+      <span className="text-white/80 text-xs font-medium">
+        Building With Purpose & Systemic Health
+      </span>
+
+    </div>
+  </div>
+</a>
           </div>
         </div>
       </section>
