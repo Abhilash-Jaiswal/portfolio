@@ -220,7 +220,8 @@ export function HomePage() {
               <p className="text-[#5F5358] text-sm leading-relaxed mb-6">
                 A wide-ranging, extended discussion capturing Kirti's own philosophy in her own words — reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
               </p>
-              <Link to="https://www.youtube.com/watch?v=QesR-jmlJeY" className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
+              <Link to="https://www.youtube.com/watch?v=QesR-jmlJeY"  target="_blank"
+   className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
                 <Play className="w-4 h-4 fill-current" /> Watch / Read Press Story
               </Link>
             </div>
