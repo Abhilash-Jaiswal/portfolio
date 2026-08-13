@@ -19,7 +19,7 @@ const CHAPTERS = [
     num: "01", emoji: "🏫",
     title: "Early Education",
     sub: "Growing up in Kanpur",
-    intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. Her mum insisted on an English-medium school anyway; her dad backed that without wavering, and her teachers kept pushing her onto every stage to speak.",
+    intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. Her mum insisted on an English-medium school; her dad backed that without wavering, and her teachers kept pushing her onto every stage to speak.",
     pullQuote: {
       hindi: "Ladki hai, padhane se kya fayda, baad mein rotiyan hi banayegi.",
       english: "That's what people around us used to say — she's a girl, why bother educating her, she'll just end up making rotis anyway."
@@ -29,7 +29,7 @@ const CHAPTERS = [
     num: "02", emoji: "💻",
     title: "The Career",
     sub: "Data systems & Corporate",
-    intro: "Studying computer science and building data systems for companies like IBM, Target, and AIG — work I'm genuinely proud of. Becoming the first girl in her family into an engineering college and the first to work at an MNC, and marrying her husband across caste lines.",
+    intro: "Studying computer science and building data systems for companies like IBM, Target, and AIG work I'm genuinely proud of. Becoming the first girl in her family into an engineering college and the first to work at an MNC, and marrying her husband across caste lines.",
     pullQuote: {
       english: "It's a journey, not a goal — compounding beats sparks."
     }
@@ -48,9 +48,9 @@ const CHAPTERS = [
   },
   {
     num: "05", emoji: "🌸",
-    title: "Founding NotPaused.com",
+    title: "Founding NotPaused",
     sub: "The gap in menopause care",
-    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own menopause — that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
+    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause — that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
   }
 ];
 
@@ -75,7 +75,7 @@ export function MyStoryPage() {
             <span className="font-serif italic font-bold text-[#F4D9DE] drop-shadow-sm">Compounding &amp; Impact</span>
           </h1>
           <p className="text-white/85 text-base md:text-lg font-light leading-relaxed max-w-3xl mb-10">
-            From corporate career to founder of KuKClean and NotPaused.com — how personal health trials, motherly devotion, and community conviction created a movement.
+            From corporate career to founder of KuKClean and NotPaused — how personal health trials, motherly instinct, and community conviction created a movement.
           </p>
         </div>
       </div>
