@@ -49,7 +49,7 @@ export function HomePage() {
           </h1>
 
           <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-12 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm text-center">
-            Founder &middot; Nutritionist &middot; Menopause Coach &middot; Mentor
+            Founder &middot; Nutritionist &middot; Menopause Coach &middot; Startup Mentor
           </p>
 
           <h2 className="text-2xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#2E2326] mb-8 sm:mb-12 drop-shadow-sm px-4">
