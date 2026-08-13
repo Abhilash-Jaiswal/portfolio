@@ -253,8 +253,9 @@ export function HomePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { name: "JP Morgan", logo: "https://www.google.com/s2/favicons?domain=jpmorgan.com&sz=64" },
-                { name: "Siemens", logo: "https://www.google.com/s2/favicons?domain=siemens.com&sz=64" },
+                // { name: "JP Morgan", logo: "https://www.google.com/s2/favicons?domain=jpmorgan.com&sz=64" }, 
+                // { name: "Siemens", logo: "https://www.google.com/s2/favicons?domain=siemens.com&sz=64" },
+                { name: "The Better India", logo: "https://img-cdn.publive.online/fit-in/360x160/filters:format(webp)/english-betterindia/media/agency_attachments/2025/06/24/2025-06-24t114615552z-img_3553-meghna-bhati-2025-06-24-17-16-15.png" },
                 { name: "Applied Materials", logo: "https://www.google.com/s2/favicons?domain=appliedmaterials.com&sz=64" },
                 { name: "LAM Research", logo: "https://www.google.com/s2/favicons?domain=lamresearch.com&sz=64" },
                 { name: "Reliance Ajio", logo: "https://www.google.com/s2/favicons?domain=ajio.com&sz=64" },
@@ -324,7 +325,7 @@ export function HomePage() {
           <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed font-light mb-4">
             I've educated individuals and built communities to inspire them. I do not perform a persona or sell standard products — I work with real people, real bodies, and real lives.
           </p>
-          <p className="font-script text-2xl sm:text-3xl text-[#E6BEC6]">— Kirti Yadav</p>
+          {/* <p className="font-script text-2xl sm:text-3xl text-[#E6BEC6]">— Kirti Yadav</p> */}
         </div>
       </section>
 
