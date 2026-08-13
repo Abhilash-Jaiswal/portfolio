@@ -220,7 +220,7 @@ export function HomePage() {
               <p className="text-[#5F5358] text-sm leading-relaxed mb-6">
                 A wide-ranging, extended discussion capturing Kirti's own philosophy in her own words — reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
               </p>
-              <Link to="/press" className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
+              <Link to="https://www.youtube.com/watch?v=QesR-jmlJeY" className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
                 <Play className="w-4 h-4 fill-current" /> Watch / Read Press Story
               </Link>
             </div>
@@ -239,80 +239,132 @@ export function HomePage() {
       </section>
 
       {/* Credibility Band */}
-      <section className="py-24 px-6 bg-[#FCF8F7] border-y border-[#E8CDD3] relative overflow-hidden">
-        {/* Subtle background decoration */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-[#B55E79]/20 to-transparent"></div>
+   <section className="py-24 px-6 w-full bg-[#FCF8F7] border-y border-[#E8CDD3] relative overflow-hidden">
+  {/* Subtle background decoration */}
+  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-[#B55E79]/20 to-transparent"></div>
 
-        <div className="max-w-5xl mx-auto space-y-16 relative z-10">
+  <div className=" mx-auto relative z-10">
 
-          <div className="text-center group">
-            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
-              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
-              Teams I've Worked With
-              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                // { name: "JP Morgan", logo: "https://www.google.com/s2/favicons?domain=jpmorgan.com&sz=64" }, 
-                // { name: "Siemens", logo: "https://www.google.com/s2/favicons?domain=siemens.com&sz=64" },
-                { name: "The Better India", logo: "https://img-cdn.publive.online/fit-in/360x160/filters:format(webp)/english-betterindia/media/agency_attachments/2025/06/24/2025-06-24t114615552z-img_3553-meghna-bhati-2025-06-24-17-16-15.png" },
-                { name: "Applied Materials", logo: "https://www.google.com/s2/favicons?domain=appliedmaterials.com&sz=64" },
-                { name: "LAM Research", logo: "https://www.google.com/s2/favicons?domain=lamresearch.com&sz=64" },
-                { name: "Reliance Ajio", logo: "https://www.google.com/s2/favicons?domain=ajio.com&sz=64" },
-                { name: "Christ University", logo: "https://www.google.com/s2/favicons?domain=christuniversity.in&sz=64" },
-                { name: "Tumkur University", logo: "https://www.google.com/s2/favicons?domain=tumkuruniversity.ac.in&sz=64" }
-              ].map(team => (
-                <span key={team.name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
-                  <img src={team.logo} alt={`${team.name} logo`} className="w-5 h-5 object-contain rounded-sm" />
-                  {team.name}
-                </span>
-              ))}
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
+
+      {/* LEFT - IMAGE BOX */}
+      <div className="md:col-span-2 flex justify-center">
+        <div className="w-full max-w-sm h-[350px] sm:h-[450px] rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+          <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-4 shadow-sm">
+            <ImageIcon className="w-7 h-7" />
           </div>
 
-          <div className="text-center group">
-            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
-              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
-              Recognized By
-              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { name: "NSRCEL IIM Bangalore", logo: "https://www.google.com/s2/favicons?domain=nsrcel.org&sz=64" },
-                { name: "IIMR NutriHub", logo: "https://www.google.com/s2/favicons?domain=nutrihub-tbi-iimr.org&sz=64" },
-                { name: "Goldman Sachs 10,000 Women", logo: "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=64" }
-              ].map(org => (
-                <span key={org.name} className="px-5 py-2.5 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm cursor-default">
-                  <img src={org.logo} alt={`${org.name} logo`} className="w-5 h-5 object-contain rounded-sm" />
-                  {org.name}
-                </span>
-              ))}
-            </div>
-          </div>
+          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-2">
+            Image Box
+          </span>
 
-          <div className="text-center group">
-            <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
-              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
-              You May Have Seen Me At
-              <span className="w-12 sm:w-20 h-px bg-[#E8CDD3] group-hover:w-16 sm:group-hover:w-24 transition-all duration-500"></span>
-            </p>
-            <div className="flex flex-wrap justify-center gap-3">
-              {[
-                { name: "YourStory", link: "/press", logo: "https://www.google.com/s2/favicons?domain=yourstory.com&sz=64" },
-                { name: "India Today", link: "/press", logo: "https://www.google.com/s2/favicons?domain=indiatoday.in&sz=64" },
-                { name: "Deccan Herald", link: "/press", logo: "https://www.google.com/s2/favicons?domain=deccanherald.com&sz=64" },
-                { name: "The Better India", link: "/press", logo: "https://www.google.com/s2/favicons?domain=thebetterindia.com&sz=64" }
-              ].map(pub => (
-                <Link key={pub.name} to={pub.link} className="px-6 py-2.5 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 flex items-center gap-2 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm group/link">
-                  <img src={pub.logo} alt={`${pub.name} logo`} className="w-5 h-5 object-contain rounded-sm" />
-                  {pub.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-
+          <p className="text-xs text-[#5F5358] font-medium">
+            Add Photo Here
+          </p>
         </div>
-      </section>
+      </div>
+
+      {/* RIGHT - THREE SECTIONS */}
+      <div className="md:col-span-3 space-y-16">
+
+        {/* TEAMS */}
+        <div className="text-center">
+          <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+            Teams I've Worked With
+            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "The Better India", logo: "https://img-cdn.publive.online/fit-in/360x160/filters:format(webp)/english-betterindia/media/agency_attachments/2025/06/24/2025-06-24t114615552z-img_3553-meghna-bhati-2025-06-24-17-16-15.png" },
+              { name: "Applied Materials", logo: "https://www.google.com/s2/favicons?domain=appliedmaterials.com&sz=64" },
+              { name: "LAM Research", logo: "https://www.google.com/s2/favicons?domain=lamresearch.com&sz=64" },
+              { name: "Reliance Ajio", logo: "https://www.google.com/s2/favicons?domain=ajio.com&sz=64" },
+              { name: "Christ University", logo: "https://www.google.com/s2/favicons?domain=christuniversity.in&sz=64" },
+              { name: "Tumkur University", logo: "https://www.google.com/s2/favicons?domain=tumkuruniversity.ac.in&sz=64" }
+            ].map(team => (
+              <span
+                key={team.name}
+                className="px-5 py-3 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm"
+              >
+                <img
+                  src={team.logo}
+                  alt={`${team.name} logo`}
+                  className="w-5 h-5 object-contain rounded-sm"
+                />
+                {team.name}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* RECOGNIZED BY */}
+        <div className="text-center">
+          <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+            Recognized By
+            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "NSRCEL IIM Bangalore", logo: "https://www.google.com/s2/favicons?domain=nsrcel.org&sz=64" },
+              { name: "IIMR NutriHub", logo: "https://www.google.com/s2/favicons?domain=nutrihub-tbi-iimr.org&sz=64" },
+              { name: "Goldman Sachs 10,000 Women", logo: "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=64" }
+            ].map(org => (
+              <span
+                key={org.name}
+                className="px-5 py-3 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm"
+              >
+                <img
+                  src={org.logo}
+                  alt={`${org.name} logo`}
+                  className="w-5 h-5 object-contain rounded-sm"
+                />
+                {org.name}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* YOU MAY HAVE SEEN ME AT */}
+        <div className="text-center">
+          <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+            You May Have Seen Me At
+            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { name: "YourStory", link: "https://yourstory.com/smbstory/woman-entrepreneur-bengaluru-healthy-snacks-vegan-food-kukclean", logo: "https://www.google.com/s2/favicons?domain=yourstory.com&sz=64" },
+              { name: "India Today", link: "https://yourstory.com/smbstory/woman-entrepreneur-bengaluru-healthy-snacks-vegan-food-kukclean", logo: "https://www.google.com/s2/favicons?domain=indiatoday.in&sz=64" },
+              { name: "Deccan Herald", link: "https://www.deccanherald.com/india/karnataka/bengaluru/virus-outbreak-nudges-many-towards-veganism-909373.html", logo: "https://www.google.com/s2/favicons?domain=deccanherald.com&sz=64" },
+              { name: "The Better India", link: "https://thebetterindia.com/306747/kirti-yadav-kukclean-bengaluru-offers-plant-based-vegan-sugar-free-healthy-snacks-for-diabetes-patients/", logo: "https://www.google.com/s2/favicons?domain=thebetterindia.com&sz=64" }
+            ].map(pub => (
+              <a
+                key={pub.name}
+                href={pub.link}
+                 target="_blank"
+  rel="noopener noreferrer"
+                className="px-6 py-3 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 flex items-center gap-2 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm"
+              >
+                <img
+                  src={pub.logo}
+                  alt={`${pub.name} logo`}
+                  className="w-5 h-5 object-contain rounded-sm"
+                />
+                {pub.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* NEW CONTENT SECTION: Founders' Manifesto & Core Mission (PDF Sec 2.2, 2.3, 5) */}
       <section className="py-20 px-6 sm:px-12 bg-[#8C4356] text-white">
