@@ -22,6 +22,7 @@ import {
   ChevronLeft,
   ChevronRight
 } from "lucide-react";
+import kirtiProfile from "../../assets/kirti_profile.jpg";
 
 function useReveal(ref) {
   useEffect(() => {
@@ -53,24 +54,23 @@ const milestones = [
   { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture." },
   { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." },
   { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India." },
-  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led 2-hour plant-based nutrition masterclass for 180 employees." },
-  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3) for 1.5 years." },
+  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led a plant-based nutrition masterclass for corporate employees." },
+  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3)." },
   { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." },
   { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com)." },
   { year: "2005", category: "Tech Degree", icon: Laptop, title: "BTech Computer Science — HBTI Kanpur", short: "Graduated with CS engineering degree before entering 9-year corporate career." },
 ];
 
 const credentials = [
-  { title: "Certified Holistic Nutritionist", org: "USA", detail: "Specialized in whole-food plant-based nutrition and lifestyle medicine." },
-  { title: "Plant-Based Athlete Coach", org: "USA", detail: "Expertise in endurance fuel and high-performance plant nutrition." },
-  { title: "Herbal & Natural Strategies for Menopause", org: "USA", detail: "Clinical knowledge in natural hormone management & midlife wellness." },
-  { title: "Goldman Sachs 10,000 Women Graduate", org: "NSRCEL, IIM Bangalore", detail: "Rigorous business strategy & growth framework for women entrepreneurs." },
-  { title: "BTech Computer Science", org: "HBTI Kanpur (2001–2005)", detail: "Engineering foundation in algorithms and software systems." },
-  { title: "C-PGDBA (IT)", org: "Symbiosis Centre (2007–2009)", detail: "Postgraduate diploma in Information Technology Management." },
+  { title: "Certified Holistic Nutritionist", org: "", detail: "Specialized in whole-food plant-based nutrition and lifestyle medicine." },
+  { title: "Plant-Based Athlete Coach", org: "", detail: "Expertise in endurance fuel and high-performance plant nutrition." },
+  { title: "Herbal & Natural Strategies for Menopause", org: "", detail: "Clinical knowledge in natural hormone management & midlife wellness." },
+  { title: "Certified Menopause Coach", org: "Nerdy Grad", detail: "Specialized training in midlife hormonal wellness." },
+  { title: "BTech Computer Science", org: "HBTI Kanpur", detail: "Engineering foundation in algorithms and software systems." },
+  { title: "C-PGDBA (IT)", org: "Symbiosis Centre", detail: "Postgraduate diploma in Information Technology Management." },
   // NEW PDF ADDITIONS: Verified Credentials
   { title: "Introduction to Food and Health", org: "Stanford Online", detail: "Completed Stanford Online course, verified through Coursera." },
   { title: "Vegan Cooking Diploma", org: "Centre of Excellence, UK", detail: "Completed with Distinction — plant-based culinary techniques & nutrition." },
-  { title: "Certified Menopause Coach", org: "Menopause Nutrition & Health", detail: "Tagged Nerdy Grad — specialized training in midlife hormonal wellness." },
 ];
 
 const corporateFlagship = ["JP Morgan", "Goldman Sachs", "Microsoft", "IBM", "ISRO", "Siemens"];
@@ -83,7 +83,7 @@ const b2bClients = ["Cisco", "Biocon", "Loyalytics.ai"];
 
 const pressCoverage = [
   { source: "YourStory", title: "Video Interview with Founder Shradha Sharma", desc: "Invited to share KuKClean's origin, plant-based philosophy, and breaking industry stereotypes." },
-  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of the #EatLikeKirti 21-day live lockdown nutrition initiative." },
+  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of the #EatLikeKirti live lockdown nutrition initiative." },
   { source: "Deccan Herald", title: "'Some Women Doing Wow Things' & Community Dining", desc: "Profiled for leading plant-based food innovation and community wellness." },
   { source: "The Better India", title: "Plant-Based Vegan Sugar-Free Delights", desc: "Featured for creating clean-label Indian sweets suitable for health-conscious families & diabetes management." },
   { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Keynote presentation to HR leaders on why corporates must prioritize employee nutrition." },
@@ -144,13 +144,7 @@ const clientQuotes = [
     name: "Seema",
     role: "Coaching Client",
     rel: "Lifestyle Transformation Program",
-    quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results. The journey wasn't always smooth, but her guidance, motivation, and constant support made it achievable.",
-  },
-  {
-    name: "Padma Uday",
-    role: "Coaching Client",
-    rel: "Lifestyle Transformation Program",
-    quote: "Thanks a ton, Kirti, for helping me achieve this. You have hand-held me throughout the journey and helped me manage my emotions too — in one of our calls, I could feel you sensed what I was feeling without me even explaining. You are so involved with your clients. My heartfelt gratitude for bringing about this lifestyle change in me. My skin tone has definitely improved too — I keep getting compliments on my complexion and glow.",
+    quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results. The journey wasn't always smooth, but her guidance, motivation, and constant support made it achievable. I truly appreciate her knowledge, her personalised attention, and her patience in helping me stay on track throughout.",
   },
   {
     name: "Garima Kapoor",
@@ -165,34 +159,10 @@ const clientQuotes = [
     quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant-based way of eating and helped me understand the crucial role of fiber. Now I feel more nourished and satisfied than ever.",
   },
   {
-    name: "Anand Raj",
-    role: "VP of Engineering",
-    rel: "1:1 Executive Nutrition Coaching",
-    quote: "Kirti's guidance transformed my energy levels completely. No crazy diets—just real, actionable changes rooted in science. Down 12 kg and feeling sharper than ever.",
-  },
-  {
-    name: "Priya Nair",
-    role: "Senior HR Director",
-    rel: "Corporate Wellness Client",
-    quote: "We brought Kirti in for a company-wide wellness masterclass. The feedback was unanimous—the most engaging, practical, and non-preachy health session our team has ever had.",
-  },
-  {
-    name: "Ritu Vardhan",
-    role: "Entrepreneur & Mother",
-    rel: "KuKClean Customer & Coaching Client",
-    quote: "As a mother, finding food products I can trust blindly is rare. KuKClean is a staple in our home, and Kirti's personal guidance for my family's nutrition has been priceless.",
-  },
-  {
-    name: "Vikram Sethi",
-    role: "Corporate Director",
-    rel: "Corporate & Individual Client",
-    quote: "Kirti is a passionate and enthusiastic woman who has tremendous knowledge of nutrition and healthy eating. She is an engaging trainer and selfless consultant. She herself stands as a testament to good eating and a healthy lifestyle.",
-  },
-  {
-    name: "Manish Kumar",
-    role: "Data & AI Executive Talent Leader",
-    rel: "1:1 Coaching Client",
-    quote: "Kirti Yadav has helped keep better track of my food intake and my fitness goals. I have really come a long way in achieving what I wanted. Thanks to Kirti for making me a healthier person.",
+    name: "Pooja",
+    role: "Coaching Client",
+    rel: "Lifestyle Transformation Program",
+    quote: "What Kirti teaches is her experiential knowledge not just some bookish knowledge. Despite doing a beginner's course in Ayurveda, I found it difficult to make all the required changes in my diet. What KuKClean gave was a guide in Kirti to inspire me, and a community for motivation and support when it felt like I couldn't do it. I have lost weight but most importantly have much more energy and am better able to recuperate from any health issues!",
   },
 ];
 
@@ -260,7 +230,7 @@ export function AchievementsSection() {
             <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Real-World Impact</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-            From IIM Bangalore incubation and Government of India grants to 100+ corporate sessions and national media features — a record built strictly on conviction.
+            From IIM Bangalore incubation and Government of India grants to corporate wellness sessions and national media features — a record built strictly on conviction.
           </p>
 
           {/* Grid removed as per user request */}
@@ -316,7 +286,7 @@ export function AchievementsSection() {
         >
           <div className="text-center max-w-3xl mx-auto space-y-2">
             <span className="font-bold text-xs tracking-widest uppercase block text-[#B55E79]">Corporate Track Record</span>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Delivered 100+ Corporate Wellness Sessions</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Delivering Corporate Wellness Across India</h3>
             <p className="text-sm font-light text-[#5F5358]">Trusted by global Fortune 500 firms, Indian conglomerates, and government institutions across India.</p>
           </div>
 
@@ -329,7 +299,6 @@ export function AchievementsSection() {
                   key={name} 
                   className="text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-sm flex items-center gap-2 bg-[#B55E79]"
                 >
-                  <Building className="w-3.5 h-3.5 text-white" strokeWidth={1.5} />
                   {name}
                 </span>
               ))}
@@ -383,13 +352,18 @@ export function AchievementsSection() {
 
         {/* NEW PDF ADDITION: Featured Video Conversation Card */}
         <div className="reveal max-w-4xl mx-auto bg-gradient-to-br from-white to-[#FDF4F6] border border-[#E8CDD3] p-8 md:p-12 rounded-[2.5rem] shadow-lg space-y-6">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="w-16 h-16 rounded-2xl bg-[#B55E79] text-white flex items-center justify-center shrink-0 shadow-md">
-              <Video size={28} />
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="relative w-full md:w-64 aspect-video rounded-2xl overflow-hidden shadow-md flex-shrink-0">
+              <img src={kirtiProfile} alt="Video Thumbnail" className="w-full h-full object-cover" />
+              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                <div className="w-12 h-12 rounded-full bg-white/90 text-[#B55E79] flex items-center justify-center shadow-lg backdrop-blur-sm transition-transform hover:scale-110 cursor-pointer">
+                  <Video size={20} fill="currentColor" className="ml-1" />
+                </div>
+              </div>
             </div>
-            <div className="space-y-2 text-center md:text-left">
+            <div className="space-y-2 text-center md:text-left flex-1">
               <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Featured Extended Media Conversation</span>
-              <h3 className="font-serif text-2xl font-bold text-[#2E2326]">A Conversation on Building with Purpose — with Shradha Sharma</h3>
+              <h3 className="font-serif text-2xl font-bold text-[#2E2326]">A conversation on building with purpose — with Shraddha Sharma, YourStory.</h3>
               <p className="text-sm font-light leading-relaxed text-[#5F5358]">
                 A wide-ranging video conversation with Shradha Sharma, Founder of YourStory — capturing Kirti's own philosophy in her own words on purpose-driven entrepreneurship, clean food systems, and women's midlife wellness.
               </p>
@@ -588,7 +562,6 @@ export function AchievementsSection() {
                       >
                         <Icon className="w-5 h-5" strokeWidth={1.5} />
                       </div>
-                      <span className="font-serif text-xl font-bold text-[#B55E79]">{item.year}</span>
                     </div>
                     <span 
                       className="text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-[#F4D9DE] text-[#B55E79]"

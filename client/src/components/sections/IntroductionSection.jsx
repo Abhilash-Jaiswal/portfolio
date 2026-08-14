@@ -352,7 +352,7 @@ export function IntroductionSection() {
                     Corporate Credibility Meets Government Validation
                   </h4>
                   <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                    The convergence of Fortune 500 corporate strategy with government-validated agritech, incubated under IIM Bangalore and ICAR-IIMR, brings unprecedented rigor to community wellness.
+                    My background combining Fortune 500 corporate strategy with government-validated agritech, incubated under IIM Bangalore and ICAR-IIMR, allows me to bring unprecedented rigor to our community's wellness.
                   </p>
                 </div>
 
@@ -372,7 +372,7 @@ export function IntroductionSection() {
                 Key Differentiator
               </span>
               <p className="text-sm font-serif italic text-[#2E2326] leading-relaxed">
-                “Integration of personal experience and professional identity is the greatest value in a crowded wellness market.”
+                “My greatest value to you in a crowded wellness market is the true integration of my personal experience and professional identity.”
               </p>
             </div>
           </div>

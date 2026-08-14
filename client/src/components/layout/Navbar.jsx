@@ -27,7 +27,7 @@ export function Navbar() {
       ],
     },
     
-    { name: "Achievement", path: "/achievements" },
+    { name: "Press", path: "/achievements" },
     { name: "Work with Me", path: "/work-with-me" },
     { name: "Latest", path: "/latest" },
     // { name: "Contact", path: "/contact" },
