@@ -101,7 +101,7 @@ export function MyStoryPage() {
             >
               <span className="text-sm group-hover:scale-110 transition-transform duration-300">{chap.emoji}</span>
               <span className="text-[11px] font-bold uppercase tracking-wider">
-                Ch-{parseInt(chap.num)}
+                Ch {parseInt(chap.num)}
               </span>
             </button>
           ))}
