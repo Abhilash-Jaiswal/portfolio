@@ -102,7 +102,7 @@ export function KukCleanSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             KukClean, <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">consciously nourishinng</span>
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated"></span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Born in Kirti's kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant-based food and extraordinary Indian taste belong together.

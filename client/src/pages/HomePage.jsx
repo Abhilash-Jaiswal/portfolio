@@ -120,7 +120,7 @@ export function HomePage() {
           {/* Letter Text Content */}
           <div className="md:col-span-7 text-center md:text-left">
             <p className="text-lg text-[#5F5358] leading-relaxed mb-6">
-              I didn't start out in wellness. I started in computer science, building systems for companies like IBM, Target, and AIG. Then life asked a different question — one that brought me closer to food, health, motherhood, and the quiet shifts that can change everything.
+              I didn't start out in wellness. I started in computer science, building systems for companies like IBM, Target, and AIG. Then motherhood asked a different question  one that brought me closer to food, health, and entrepreneurship, and to how life keeps shifting every few years and I've learned to build, not just adjust, every time it does."
             </p>
             <p className="text-lg text-[#5F5358] leading-relaxed mb-10">
               Today I build spaces where people feel more supported: on the plate, at work, through menopause and everything it brings, and in the businesses they're brave enough to start.
@@ -146,18 +146,22 @@ export function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-10 rounded-3xl border border-[#E8CDD3] bg-[#FCF8F7] hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              <img src={kukuImage} alt="KuKClean" className="h-28 w-auto object-contain mix-blend-multiply mb-6" />
+              <div className="h-28 flex items-center justify-center mb-6">
+                <img src={kukuImage} alt="KuKClean" className="max-h-20 w-auto object-contain mix-blend-multiply" />
+              </div>
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">Food, made kinder.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                Clean-label, plant-based seeds & snacks for cafes, workplaces, and your own kitchen.
+                Clean-label, plant Sweets brand & snacks for cafes, workplaces, and your own kitchen.
               </p>
               <a href="https://kukclean.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit KuKClean
               </a>
             </div>
             <div className="p-10 rounded-3xl border border-[#E8CDD3] bg-[#FCF8F7] hover:shadow-xl transition-shadow flex flex-col items-center text-center">
-              <img src={notPausedImage} alt="NotPaused" className="h-28 w-auto object-contain mb-6" style={{ mixBlendMode: 'multiply', filter: 'brightness(1.05) contrast(1.05)' }} />
+              <div className="h-28 flex items-center justify-center mb-6">
+                <img src={notPausedImage} alt="NotPaused" className="max-h-28 w-auto object-contain scale-125" style={{ mixBlendMode: 'multiply', filter: 'brightness(1.05) contrast(1.05)' }} />
+              </div>
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">A conversation worth having.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
@@ -186,12 +190,12 @@ export function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { num: "01", title: "Menopause Program", desc: "Navigating menopause supported." },
-              { num: "02", title: "Corporate Wellness", desc: "Building a healthier team." },
-              { num: "03", title: "Startup Mentoring", desc: "Getting mentored early-stage." },
-              { num: "04", title: "Lifestyle Transformation", desc: "Resetting your plate one on one." },
-              { num: "05", title: "Brand Collaborations", desc: "Collaborating on a brand." },
-              { num: "06", title: "School Programs", desc: "Bringing clean eating to schools." }
+              { num: "01", title: "Menopause Program", desc: "Real support through menopause, without having to figure it out alone." },
+              { num: "02", title: "Corporate Wellness", desc: "Bringing real wellness, not just perks, into how a team works." },
+              { num: "03", title: "Startup Mentoring", desc: "Empathy first, then the business side, for women building something of their own." },
+              { num: "04", title: "Lifestyle Transformation", desc: "A real, guided reset for your plate, at your pace, one-on-one." },
+              { num: "05", title: "Brand Collaborations", desc: "Partnering with brands built on real values, not hype." },
+              { num: "06", title: "School Programs", desc: "Teaching kids that healthy habits start early." }
             ].map((item, idx) => (
               <div key={idx} className="p-8 bg-white rounded-2xl border border-[#E8CDD3] shadow-sm hover:shadow-md transition-shadow">
                 <span className="text-[#B55E79] font-bold text-sm mb-4 block">{item.num}</span>
