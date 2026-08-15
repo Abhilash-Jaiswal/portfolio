@@ -125,8 +125,8 @@ export function HomePage() {
             <p className="text-lg text-[#5F5358] leading-relaxed mb-10">
               Today I build spaces where people feel more supported: on the plate, at work, through menopause and everything it brings, and in the businesses they're brave enough to start.
             </p>
-            <Link to="/life-story" className="text-[#B55E79] font-bold text-sm uppercase tracking-widest hover:underline underline-offset-4 inline-block">
-              Read my full story
+            <Link to="/life-story" className="inline-block px-8 py-3 border border-[#B55E79] rounded-full text-[#B55E79] font-bold text-sm uppercase tracking-widest hover:bg-[#B55E79] hover:text-white transition-all">
+              READ MY FULL STORY
             </Link>
           </div>
         </div>
