@@ -27,7 +27,7 @@ export function IntroductionSection() {
     { label: "Founder & CEO", value: "KuK Clean Wellness", detail: "wellness.kukclean.com", icon: Leaf },
     { label: "Founder", value: "NotPaused.com", detail: "Holistic Menopause Platform", icon: Heart },
     { label: "Credentials", value: "Holistic Nutritionist", detail: "Certified (USA)", icon: GraduationCap },
-    { label: "Corporate Alumni", value: "Ex-IBM · AIG · Target", detail: "10+ Yrs Corporate Strategy", icon: Briefcase },
+    { label: "Corporate Alumni", value: "Ex IBM · AIG · Target", detail: "10+ Yrs Corporate Strategy", icon: Briefcase },
     { label: "Incubations", value: "IIM Bangalore & ICAR", detail: "NSRCEL · NutriHub Hyderabad", icon: Building2 },
     { label: "Media Features", value: "India Today & YourStory", detail: "Bangalore Insider Coverage", icon: Newspaper }
   ];
@@ -70,7 +70,7 @@ export function IntroductionSection() {
 
         {/* ── SECTION HEADER ── */}
         <div className="mb-20">
-          <div className="inline-flex items-center gap-2 bg-[#F4D9DE] border border-[#E8CDD3] text-[#B55E79] text-[11px] font-bold tracking-[0.2em] uppercase px-4 py-2 rounded-full mb-6 shadow-sm">
+          <div className="inline-flex items-center gap-2 text-[#B55E79] text-[11px] font-bold tracking-[0.2em] uppercase mb-6">
             <Sprout className="w-3.5 h-3.5" strokeWidth={2} />
             <span>Who Is Kirti Yadav?</span>
           </div>
@@ -212,9 +212,9 @@ export function IntroductionSection() {
                     <div className="w-10 h-10 rounded-xl bg-[#F4D9DE] text-[#B55E79] font-serif font-bold text-base flex items-center justify-center shadow-sm">
                       02
                     </div>
-                    <h4 className="font-serif font-bold text-lg text-[#2E2326]">Clean-Label Standards</h4>
+                    <h4 className="font-serif font-bold text-lg text-[#2E2326]">Clean Label Standards</h4>
                     <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                      We advocate for clean-label, plant-based nutrition at KuK Clean and apply a deeply inclusive, evidence-based, non-prescriptive approach at NotPaused.com.
+                      We advocate for clean label, plant based nutrition at KuK Clean and apply a deeply inclusive, evidence based, non prescriptive approach at NotPaused.com.
                     </p>
                   </div>
 
@@ -236,7 +236,7 @@ export function IntroductionSection() {
                     </div>
                     <h4 className="font-serif font-bold text-lg text-[#2E2326]">Democratizing Clean Food</h4>
                     <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                      Through KuK Clean Wellness, we democratize plant-based food systems, proving that nutrient-dense, clean food can be exceptionally delicious.
+                      Through KuK Clean Wellness, we democratize plant based food systems, proving that nutrient dense, clean food can be exceptionally delicious.
                     </p>
                   </div>
 
@@ -276,7 +276,7 @@ export function IntroductionSection() {
           <div className="absolute bottom-[-20%] left-[-5%] w-[300px] h-[300px] bg-white/5 rounded-full blur-xl pointer-events-none" />
 
           <div className="relative z-10 max-w-4xl space-y-6">
-            <span className="text-white text-[10px] font-bold tracking-[0.22em] uppercase px-4 py-2 rounded-full inline-flex items-center gap-2 bg-white/15 backdrop-blur-md border border-white/25">
+            <span className="text-white text-[10px] font-bold tracking-[0.22em] uppercase inline-flex items-center gap-2">
               <Award className="w-4 h-4 text-white" strokeWidth={1.5} />
               Founders' Manifesto
             </span>
@@ -352,7 +352,7 @@ export function IntroductionSection() {
                     Corporate Credibility Meets Government Validation
                   </h4>
                   <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                    My background combining Fortune 500 corporate strategy with government-validated agritech, incubated under IIM Bangalore and ICAR-IIMR, allows me to bring unprecedented rigor to our community's wellness.
+                    My background combining Fortune 500 corporate strategy with government validated agritech, incubated under IIM Bangalore and ICAR-IIMR, allows me to bring unprecedented rigor to our community's wellness.
                   </p>
                 </div>
 
@@ -361,7 +361,7 @@ export function IntroductionSection() {
                     Uncompromising Personal Authenticity
                   </h4>
                   <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                    I do not perform a persona or sell standard products. I live my values publicly, with my family's nourishment and community well-being as the single standard for everything I launch.
+                    I do not perform a persona or sell standard products. I live my values publicly, with my family's nourishment and community well being as the single standard for everything I launch.
                   </p>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export function IntroductionSection() {
         {/* ── VISION FOR THE NEXT CHAPTER (ROADMAP) ── */}
         <div className="border-t border-[#E8CDD3] pt-20">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="inline-flex items-center gap-2 bg-[#F4D9DE] text-[#B55E79] px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest mb-3">
+            <div className="inline-flex items-center gap-2 text-[#B55E79] text-[10px] font-bold uppercase tracking-widest mb-3">
               <Users className="w-3.5 h-3.5" strokeWidth={1.5} />
               <span>Future Roadmap</span>
             </div>
@@ -404,7 +404,7 @@ export function IntroductionSection() {
                 KuK Clean Wellness
               </h4>
               <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                Expanding our plant-based, clean-label product ranges, and establishing deep, customized corporate B2B wellness systems.
+                Expanding our plant based, clean label product ranges, and establishing deep, customized corporate B2B wellness systems.
               </p>
             </div>
 

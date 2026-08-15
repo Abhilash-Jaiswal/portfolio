@@ -99,7 +99,7 @@ export function Navbar() {
               </span>
               <span className="text-[8px] sm:text-[9px] font-sans font-bold uppercase tracking-[0.15em] mt-1.5 opacity-70"
                     style={{ color: useWhiteTextAtTop ? "rgba(255,255,255,0.8)" : "#5F5358" }}>
-                Multi-Passionate Entrepreneur
+                Multi Passionate Entrepreneur
               </span>
             </div>
           </Link>

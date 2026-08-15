@@ -50,11 +50,11 @@ const milestones = [
   { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship." },
   { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur." },
   { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel." },
-  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women-Led Startup." },
+  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women Led Startup." },
   { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture." },
   { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." },
-  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India." },
-  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led a plant-based nutrition masterclass for corporate employees." },
+  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early stage women entrepreneurs across India." },
+  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led a plant based nutrition masterclass for corporate employees." },
   { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3)." },
   { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." },
   { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com)." },
@@ -62,15 +62,15 @@ const milestones = [
 ];
 
 const credentials = [
-  { title: "Certified Holistic Nutritionist", org: "", detail: "Specialized in whole-food plant-based nutrition and lifestyle medicine." },
-  { title: "Plant-Based Athlete Coach", org: "", detail: "Expertise in endurance fuel and high-performance plant nutrition." },
+  { title: "Certified Holistic Nutritionist", org: "", detail: "Specialized in whole food plant based nutrition and lifestyle medicine." },
+  { title: "Plant Based Athlete Coach", org: "", detail: "Expertise in endurance fuel and high performance plant nutrition." },
   { title: "Herbal & Natural Strategies for Menopause", org: "", detail: "Clinical knowledge in natural hormone management & midlife wellness." },
   { title: "Certified Menopause Coach", org: "Nerdy Grad", detail: "Specialized training in midlife hormonal wellness." },
   { title: "BTech Computer Science", org: "HBTI Kanpur", detail: "Engineering foundation in algorithms and software systems." },
   { title: "C-PGDBA (IT)", org: "Symbiosis Centre", detail: "Postgraduate diploma in Information Technology Management." },
   // NEW PDF ADDITIONS: Verified Credentials
   { title: "Introduction to Food and Health", org: "Stanford Online", detail: "Completed Stanford Online course, verified through Coursera." },
-  { title: "Vegan Cooking Diploma", org: "Centre of Excellence, UK", detail: "Completed with Distinction — plant-based culinary techniques & nutrition." },
+  { title: "Vegan Cooking Diploma", org: "Centre of Excellence, UK", detail: "Completed with Distinction — plant based culinary techniques & nutrition." },
 ];
 
 const corporateFlagship = ["JP Morgan", "Goldman Sachs", "Microsoft", "IBM", "ISRO", "Siemens"];
@@ -82,10 +82,10 @@ const corporateRoster = [
 const b2bClients = ["Cisco", "Biocon", "Loyalytics.ai"];
 
 const pressCoverage = [
-  { source: "YourStory", title: "Video Interview with Founder Shradha Sharma", desc: "Invited to share KuKClean's origin, plant-based philosophy, and breaking industry stereotypes." },
+  { source: "YourStory", title: "Video Interview with Founder Shradha Sharma", desc: "Invited to share KuKClean's origin, plant based philosophy, and breaking industry stereotypes." },
   { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of the #EatLikeKirti live lockdown nutrition initiative." },
-  { source: "Deccan Herald", title: "'Some Women Doing Wow Things' & Community Dining", desc: "Profiled for leading plant-based food innovation and community wellness." },
-  { source: "The Better India", title: "Plant-Based Vegan Sugar-Free Delights", desc: "Featured for creating clean-label Indian sweets suitable for health-conscious families & diabetes management." },
+  { source: "Deccan Herald", title: "'Some Women Doing Wow Things' & Community Dining", desc: "Profiled for leading plant based food innovation and community wellness." },
+  { source: "The Better India", title: "Plant Based Vegan Sugar Free Delights", desc: "Featured for creating clean label Indian sweets suitable for health conscious families & diabetes management." },
   { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Keynote presentation to HR leaders on why corporates must prioritize employee nutrition." },
   { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by Rajasthan State Government to inspire young women founders." },
 ];
@@ -110,7 +110,7 @@ const speakingEngagements = [
     icon: Star,
     role: "Jury Member & Judge",
     location: "CAIAS Bangalore",
-    detail: "Evaluated early-stage startups following KuKClean's Best Startup Award."
+    detail: "Evaluated early stage startups following KuKClean's Best Startup Award."
   },
   {
     event: "HR Association of India",
@@ -130,12 +130,12 @@ const linkedinRecs = [
   {
     name: "Shruti Sharma",
     role: "Program Manager, NSRCEL, IIM Bangalore",
-    quote: "Kirti was an outstanding participant in the Goldman Sachs 10k Women program. Her clarity on building a scalable, purpose-driven brand was evident from day one."
+    quote: "Kirti was an outstanding participant in the Goldman Sachs 10k Women program. Her clarity on building a scalable, purpose driven brand was evident from day one."
   },
   {
     name: "Dr. Dayakar Rao",
     role: "CEO, Nutrihub ICAR-IIMR",
-    quote: "KuKClean's work in millet innovation and clean-label food products represents exactly the kind of agritech entrepreneurship India needs right now."
+    quote: "KuKClean's work in millet innovation and clean label food products represents exactly the kind of agritech entrepreneurship India needs right now."
   }
 ];
 
@@ -156,7 +156,7 @@ const clientQuotes = [
     name: "Bharathi Mani",
     role: "Coaching Client",
     rel: "Lifestyle Transformation Program",
-    quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant-based way of eating and helped me understand the crucial role of fiber. Now I feel more nourished and satisfied than ever.",
+    quote: "Consulting with Kirti was a game changer for me. I've always led an active lifestyle, but after turning fifty, I started struggling with recovery. Kirti taught me easy, practical ways to boost my protein intake within a plant based way of eating and helped me understand the crucial role of fiber. Now I feel more nourished and satisfied than ever.",
   },
   {
     name: "Pooja",
@@ -227,7 +227,7 @@ export function AchievementsSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             Institutional Credibility &amp; <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Real-World Impact</span>
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Real World Impact</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             From IIM Bangalore incubation and Government of India grants to corporate wellness sessions and national media features — a record built strictly on conviction.
@@ -365,7 +365,7 @@ export function AchievementsSection() {
               <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Featured Extended Media Conversation</span>
               <h3 className="font-serif text-2xl font-bold text-[#2E2326]">A conversation on building with purpose — with Shraddha Sharma, YourStory.</h3>
               <p className="text-sm font-light leading-relaxed text-[#5F5358]">
-                A wide-ranging video conversation with Shradha Sharma, Founder of YourStory — capturing Kirti's own philosophy in her own words on purpose-driven entrepreneurship, clean food systems, and women's midlife wellness.
+                A wide-ranging video conversation with Shradha Sharma, Founder of YourStory — capturing Kirti's own philosophy in her own words on purpose driven entrepreneurship, clean food systems, and women's midlife wellness.
               </p>
               <a
                 href="https://yourstory.com"
@@ -471,7 +471,7 @@ export function AchievementsSection() {
                               <div className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] shadow-sm">
                                 <Quote className="w-5 h-5" strokeWidth={1.5} />
                               </div>
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#B55E79] bg-[#F4D9DE]/60 px-3.5 py-1 rounded-full border border-[#E8CDD3]">
+                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#B55E79] ">
                                 {q.rel}
                               </span>
                             </div>
@@ -564,7 +564,7 @@ export function AchievementsSection() {
                       </div>
                     </div>
                     <span 
-                      className="text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-[#F4D9DE] text-[#B55E79]"
+                      className="text-[9px] font-bold tracking-widest uppercase text-[#B55E79]"
                     >
                       {item.category}
                     </span>

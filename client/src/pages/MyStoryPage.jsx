@@ -22,7 +22,7 @@ const CHAPTERS = [
     intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. Her mum insisted on an English-medium school; her dad backed that without wavering, and her teachers kept pushing her onto every stage to speak.",
     pullQuote: {
       hindi: "Ladki hai, padhane se kya fayda, baad mein rotiyan hi banayegi.",
-      english: "That's what people around us used to say — she's a girl, why bother educating her, she'll just end up making rotis anyway."
+      english: "That's what people around us used to say   she's a girl, why bother educating her, she'll just end up making rotis anyway."
     }
   },
   {
@@ -31,26 +31,26 @@ const CHAPTERS = [
     sub: "Data systems & Corporate",
     intro: "Studying computer science and building data systems for companies like IBM, Target, and AIG work I'm genuinely proud of. Becoming the first girl in her family into an engineering college and the first to work at an MNC, and marrying her husband across caste lines.",
     pullQuote: {
-      english: "It's a journey, not a goal — compounding beats sparks."
+      english: "It's a journey, not a goal   compounding beats sparks."
     }
   },
   {
     num: "03", emoji: "❤️",
     title: "Motherhood",
     sub: "Health & Transformation",
-    intro: "Her daughter's early, small birth, and how it rearranged everything she thought she'd figured out — the real start of paying attention to food, rest, and her own body, eventually losing 28 kilos without ever calling it a diet."
+    intro: "Her daughter's early, small birth, and how it rearranged everything she thought she'd figured out   the real start of paying attention to food, rest, and her own body, eventually losing 28 kilos without ever calling it a diet."
   },
   {
     num: "04", emoji: "🌱",
     title: "Building KuKClean",
     sub: "Not setting out to build a company",
-    intro: "Not setting out to build a company — just sharing what was working for her, first with friends, then a growing Facebook group, then a certified nutrition practice, then KuKClean itself, incubated at NSRCEL, IIM Bangalore."
+    intro: "Not setting out to build a company   just sharing what was working for her, first with friends, then a growing Facebook group, then a certified nutrition practice, then KuKClean itself, incubated at NSRCEL, IIM Bangalore."
   },
   {
     num: "05", emoji: "🌸",
     title: "Founding NotPaused",
     sub: "The gap in menopause care",
-    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause — that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
+    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause   that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
   }
 ];
 
@@ -66,7 +66,7 @@ export function MyStoryPage() {
       >
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px)", backgroundSize: "30px 30px" }} />
         <div className="relative z-10 max-w-5xl mx-auto text-center md:text-left">
-          <div className="inline-flex items-center gap-2 bg-white/15 border border-white/25 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-6 backdrop-blur-md">
+          <div className="inline-flex items-center gap-2 text-[#B55E79] text-[10px] font-bold tracking-[0.25em] uppercase mb-6">
             <Sparkles className="w-3.5 h-3.5 text-[#E6BEC6]" />
             <span>My Story</span>
           </div>
@@ -75,7 +75,7 @@ export function MyStoryPage() {
             <span className="font-serif italic font-bold text-[#F4D9DE] drop-shadow-sm">Compounding &amp; Impact</span>
           </h1>
           <p className="text-white/85 text-base md:text-lg font-light leading-relaxed max-w-3xl mb-10">
-            From corporate career to founder of KuKClean and NotPaused — how personal health trials, motherly instinct, and community conviction created a movement.
+            From corporate career to founder of KuKClean and NotPaused   how personal health trials, motherly instinct, and community conviction created a movement.
           </p>
         </div>
       </div>
@@ -163,7 +163,7 @@ export function MyStoryPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="reveal bg-white border border-[#E8CDD3] p-8 rounded-3xl shadow-sm text-center flex flex-col justify-center hover:shadow-md transition-shadow">
               <h4 className="font-serif font-bold text-lg text-[#B55E79] mb-4">Her daughter's birth</h4>
-              <p className="text-sm font-light leading-relaxed text-[#5F5358]">The moment health stopped being optional and started being personal — the real start of everything that came after.</p>
+              <p className="text-sm font-light leading-relaxed text-[#5F5358]">The moment health stopped being optional and started being personal   the real start of everything that came after.</p>
             </div>
             <div className="reveal bg-white border border-[#E8CDD3] p-8 rounded-3xl shadow-sm text-center flex flex-col justify-center hover:shadow-md transition-shadow">
               <h4 className="font-serif font-bold text-lg text-[#B55E79] mb-4">Incubated at NSRCEL</h4>

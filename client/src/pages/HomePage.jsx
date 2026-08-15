@@ -48,7 +48,7 @@ export function HomePage() {
             KIRTI<br />YADAV
           </h1>
 
-          <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-12 drop-shadow-sm bg-white/30 px-4 py-1 rounded-full backdrop-blur-sm text-center">
+          <p className="text-xs sm:text-sm font-bold tracking-[0.2em] uppercase text-[#B55E79] mb-12 drop-shadow-sm text-center">
             Founder &middot; Nutritionist &middot; Menopause Coach &middot; Startup Mentor
           </p>
 
@@ -76,7 +76,7 @@ export function HomePage() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div className="relative z-10 max-w-3xl mx-auto flex flex-col items-center">
-          {/* <span className="text-xs font-bold uppercase tracking-[0.25em] text-white/80 bg-white/10 px-4 py-1.5 rounded-full mb-6 border border-white/20">
+          {/* <span className="text-xs font-bold uppercase tracking-[0.25em] text-white/80 mb-6">
             Core Philosophy
           </span> */}
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-white mb-6 tracking-tight leading-tight">
@@ -93,7 +93,7 @@ export function HomePage() {
       {/* A letter, before anything else */}
       <section className="py-24 px-6 sm:px-12 max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block mb-4 border border-[#E8CDD3]/60">
+          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] inline-block mb-4">
             A letter, before anything else
           </span>
           <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326]">
@@ -137,7 +137,7 @@ export function HomePage() {
       <section className="py-24 px-6 sm:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-[#F4D9DE]/40 px-4 py-1.5 rounded-full inline-block !mb-6 border border-[#E8CDD3]/60">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] inline-block !mb-6">
               More things I have built
             </span>
             <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
@@ -152,7 +152,7 @@ export function HomePage() {
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">Food, made kinder.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                Clean-label, plant Sweets brand & snacks for cafes, workplaces, and your own kitchen.
+                Clean label, plant Sweets brand & snacks for cafes, workplaces, and your own kitchen.
               </p>
               <a href="https://kukclean.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit KuKClean
@@ -181,7 +181,7 @@ export function HomePage() {
       <section id="work-together" className="py-24 px-6 sm:px-12 bg-[#F4D9DE]/30">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] bg-white px-4 py-1.5 rounded-full inline-block mb-6 border border-[#E8CDD3]">
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] inline-block mb-6">
               Ways we can work together
             </span>
             <h3 className="text-3xl sm:text-4xl font-serif font-bold text-[#2E2326] mb-4">
@@ -210,12 +210,12 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* NEW CONTENT SECTION: Featured Media / In-depth Conversation (PDF Sec 3.3) */}
+      {/* NEW CONTENT SECTION: Featured Media / In depth Conversation (PDF Sec 3.3) */}
       <section className="py-20 px-6 sm:px-12 bg-white">
         <div className="max-w-5xl mx-auto">
           <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-[#FCF8F7] to-[#F4D9DE]/40 border border-[#E8CDD3] shadow-md flex flex-col md:flex-row items-center gap-8">
             <div className="w-full md:w-1/2 flex flex-col items-start">
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] bg-white px-3.5 py-1 rounded-full border border-[#E8CDD3] mb-4">
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-4">
                 Featured Conversation
               </span>
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#2E2326] mb-4 leading-tight">

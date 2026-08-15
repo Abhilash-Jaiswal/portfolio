@@ -81,7 +81,7 @@ const platforms = [
     name: "Instagram",
     handle: "@nutritionist.kirti",
     link: "https://www.instagram.com/nutritionist.kirti/",
-    desc: "Daily touchpoint — real-time plant nutrition tips, Q&A, and authentic unfiltered midlife health content."
+    desc: "Daily touchpoint — real time plant nutrition tips, Q&A, and authentic unfiltered midlife health content."
   },
   {
     icon: FacebookIcon,
@@ -105,14 +105,14 @@ const brandPartners = [
   {
     name: "Saptham India",
     icon: Droplet,
-    category: "Cold-Pressed Oils Partner",
-    desc: "Advocating traditional stone-ground cold-pressed oils for clean Indian cooking."
+    category: "Cold Pressed Oils Partner",
+    desc: "Advocating traditional stone ground cold pressed oils for clean Indian cooking."
   },
   {
     name: "The Organic World",
     icon: Store,
     category: "Organic Retail Partner",
-    desc: "In-store and digital wellness campaigns promoting clean-label Indian snack alternatives."
+    desc: "In store and digital wellness campaigns promoting clean label Indian snack alternatives."
   },
 ];
 
@@ -144,7 +144,7 @@ export function InfluencerSection() {
               </span>
             </h1>
             <p className="text-white/80 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-              A certified nutritionist and 2x founder who developed an audience — not a social media performer. Connecting clean brands with high-intent Indian families.
+              A certified nutritionist and 2x founder who developed an audience — not a social media performer. Connecting clean brands with high intent Indian families.
             </p>
             <div className="grid grid-cols-2 gap-6 mt-16 pt-10 border-t border-white/20">
 

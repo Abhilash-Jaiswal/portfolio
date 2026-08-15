@@ -50,10 +50,10 @@ export function ContactSection() {
           {/* Left Column: Direct Info */}
           <div className="lg:col-span-5 space-y-6">
             <h3 className="font-serif text-2xl font-bold leading-tight" style={{ color: theme.dark }}>
-              Let's co-create healthy ecosystems.
+              Let's co create healthy ecosystems.
             </h3>
             <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
-              Whether you are looking to book B2B Corporate Wellness sessions, consult on school menu design, explore clean-label cafe supplies, or discuss a long-term brand ambassadorship, let's connect.
+              Whether you are looking to book B2B Corporate Wellness sessions, consult on school menu design, explore clean label cafe supplies, or discuss a long term brand ambassadorship, let's connect.
             </p>
 
             <div className="space-y-4 pt-4 border-t" style={{ borderColor: theme.border }}>
