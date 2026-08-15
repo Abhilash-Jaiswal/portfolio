@@ -60,7 +60,7 @@ const CHAPTERS = [
       { heading: "The 28 Kilo Reset", body: "She lost 28 kilos without ever calling it a diet. It was slower than that   learning to understand her own plate, her own body, her own pace. She didn't fix it with willpower or strict rules. She fixed it by slowly understanding what her body actually needed." },
       { heading: "From Personal to Purpose", body: "What began as a personal struggle for survival transformed into a profound calling. 'If I can lose weight and become healthier following a plant based lifestyle,' she realized, 'it might help others as well.' That thought became the seed of everything that followed." },
     ],
-    closing: "Motherhood made her health personal. That personal journey would become her life's work: bringing plate-level change to Indian families.",
+    closing: "Motherhood made her health personal. That personal journey would become her life's work: bringing plate level change to Indian families.",
   },
   {
     num: "04", icon: Mic,

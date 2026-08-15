@@ -152,7 +152,7 @@ export function HomePage() {
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">Food, made kinder.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                "It started with wanting to feed my own daughter better — and became clean-label, plant-based sweets and snacks that cafes, workplaces, and families now trust for their own kitchens."
+                "It started with wanting to feed my own daughter better, and became clean label, plant based sweets and snacks that cafes, workplaces, and families now trust for their own kitchens."
               </p>
               <a href="https://kukclean.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit KuKClean
@@ -165,7 +165,7 @@ export function HomePage() {
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">A conversation worth having.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                "I didn't recognize my own perimenopause, even after years spent helping other women understand their bodies — and that gap became NotPaused: a community-led platform where women 35+ can finally talk about menopause openly, without the silence or the stigma."
+                "I didn't recognize my own perimenopause, even after years spent helping other women understand their bodies, and that gap became NotPaused: a community led platform where women 35+ can finally talk about menopause openly, without the silence or the stigma."
               </p>
               <a href="https://notpaused.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit NotPaused
