@@ -86,7 +86,7 @@ export function HomePage() {
           <p className="font-serif text-lg sm:text-xl text-white/95 max-w-2xl leading-relaxed italic mb-6 font-normal">
             "We keep exploring, keep learning, and keep becoming someone slightly different from who we were yesterday."
           </p>
-          
+
         </div>
       </section>
 
@@ -152,7 +152,7 @@ export function HomePage() {
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">Food, made kinder.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                Clean label, plant Sweets brand & snacks for cafes, workplaces, and your own kitchen.
+                "It started with wanting to feed my own daughter better — and became clean-label, plant-based sweets and snacks that cafes, workplaces, and families now trust for their own kitchens."
               </p>
               <a href="https://kukclean.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit KuKClean
@@ -165,7 +165,7 @@ export function HomePage() {
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">A conversation worth having.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                A community led tech platform for women 35+, breaking the silence one honest conversation at a time.
+                "I didn't recognize my own perimenopause, even after years spent helping other women understand their bodies — and that gap became NotPaused: a community-led platform where women 35+ can finally talk about menopause openly, without the silence or the stigma."
               </p>
               <a href="https://notpaused.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit NotPaused
@@ -175,7 +175,7 @@ export function HomePage() {
         </div>
       </section>
 
-  
+
 
       {/* Ways We Can Work Together */}
       <section id="work-together" className="py-24 px-6 sm:px-12 bg-[#F4D9DE]/30">
@@ -219,13 +219,13 @@ export function HomePage() {
                 Featured Conversation
               </span>
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#2E2326] mb-4 leading-tight">
-                A conversation on building with purpose with Shraddha Sharma the founder of kukclean, YourStory
+                A conversation on building  purpose with Shraddha Sharma and Kriti the founder of kukclean, YourStory
               </h3>
               <p className="text-[#5F5358] text-sm leading-relaxed mb-6">
                 A wide ranging, extended discussion capturing Kirti's own philosophy in her own words reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
               </p>
-              <Link to="https://www.youtube.com/watch?v=VxG3KLZJ5j0"  target="_blank"
-  b  className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
+              <Link to="https://www.youtube.com/watch?v=VxG3KLZJ5j0" target="_blank"
+                b className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
                 <Play className="w-4 h-4 fill-current" /> Watch / Read Press Story
               </Link>
             </div>
@@ -241,163 +241,163 @@ export function HomePage() {
             </div> */}
 
             <a
-  href="https://www.youtube.com/watch?v=VxG3KLZJ5j0"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="w-full md:w-1/2 block"
->
-  <div className="w-full bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
-    
-    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
+              href="https://www.youtube.com/watch?v=VxG3KLZJ5j0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full md:w-1/2 block"
+            >
+              <div className="w-full bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
 
-    <div className="relative z-20 flex flex-col items-center text-center p-6">
-      
-      <div className="w-16 h-16 rounded-full bg-[#B55E79] text-white flex items-center justify-center mb-3 shadow-lg group-hover:scale-110 transition-transform">
-        <Play className="w-7 h-7 fill-current ml-1" />
-      </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
 
-      <span className="text-white font-serif font-bold text-lg mb-1">
-        YourStory Extended Interview
-      </span>
+                <div className="relative z-20 flex flex-col items-center text-center p-6">
 
-      <span className="text-white/80 text-xs font-medium">
-        Building With Purpose & Systemic Health
-      </span>
+                  <div className="w-16 h-16 rounded-full bg-[#B55E79] text-white flex items-center justify-center mb-3 shadow-lg group-hover:scale-110 transition-transform">
+                    <Play className="w-7 h-7 fill-current ml-1" />
+                  </div>
 
-    </div>
-  </div>
-</a>
+                  <span className="text-white font-serif font-bold text-lg mb-1">
+                    YourStory Extended Interview
+                  </span>
+
+                  <span className="text-white/80 text-xs font-medium">
+                    Building With Purpose & Systemic Health
+                  </span>
+
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
 
       {/* Credibility Band */}
-   <section className="py-24 px-6 w-full bg-[#FCF8F7] border-y border-[#E8CDD3] relative overflow-hidden">
-  {/* Subtle background decoration */}
-  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-[#B55E79]/20 to-transparent"></div>
+      <section className="py-24 px-6 w-full bg-[#FCF8F7] border-y border-[#E8CDD3] relative overflow-hidden">
+        {/* Subtle background decoration */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[2px] bg-gradient-to-r from-transparent via-[#B55E79]/20 to-transparent"></div>
 
-  <div className=" mx-auto relative z-10">
+        <div className=" mx-auto relative z-10">
 
-    <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-10 items-start">
 
-      {/* LEFT - IMAGE BOX */}
-      <div className="md:col-span-2 flex justify-center">
-        <div className="w-full max-w-sm h-[350px] sm:h-[450px] rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-6 text-center overflow-hidden">
-          <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-4 shadow-sm">
-            <ImageIcon className="w-7 h-7" />
+            {/* LEFT - IMAGE BOX */}
+            <div className="md:col-span-2 flex justify-center">
+              <div className="w-full max-w-sm h-[350px] sm:h-[450px] rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-6 text-center overflow-hidden">
+                <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-4 shadow-sm">
+                  <ImageIcon className="w-7 h-7" />
+                </div>
+
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-2">
+                  Image Box
+                </span>
+
+                <p className="text-xs text-[#5F5358] font-medium">
+                  Add Photo Here
+                </p>
+              </div>
+            </div>
+
+            {/* RIGHT - THREE SECTIONS */}
+            <div className="md:col-span-3 space-y-16">
+
+              {/* TEAMS */}
+              <div className="text-center">
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+                  <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+                  Teams I've Worked With
+                  <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+                </p>
+
+                <div className="flex flex-wrap justify-center gap-3">
+                  {[
+                    { name: "The Better India", logo: "https://img-cdn.publive.online/fit-in/360x160/filters:format(webp)/english-betterindia/media/agency_attachments/2025/06/24/2025-06-24t114615552z-img_3553-meghna-bhati-2025-06-24-17-16-15.png" },
+                    { name: "Applied Materials", logo: "https://www.google.com/s2/favicons?domain=appliedmaterials.com&sz=64" },
+                    { name: "LAM Research", logo: "https://www.google.com/s2/favicons?domain=lamresearch.com&sz=64" },
+                    { name: "Reliance Ajio", logo: "https://www.google.com/s2/favicons?domain=ajio.com&sz=64" },
+                    { name: "Christ University", logo: "https://www.google.com/s2/favicons?domain=christuniversity.in&sz=64" },
+                    { name: "Tumkur University", logo: "https://www.google.com/s2/favicons?domain=tumkuruniversity.ac.in&sz=64" }
+                  ].map(team => (
+                    <span
+                      key={team.name}
+                      className="px-5 py-3 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                    >
+                      <img
+                        src={team.logo}
+                        alt={`${team.name} logo`}
+                        className="w-5 h-5 object-contain rounded-sm"
+                      />
+                      {team.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* RECOGNIZED BY */}
+              <div className="text-center">
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+                  <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+                  Recognized By
+                  <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+                </p>
+
+                <div className="flex flex-wrap justify-center gap-3">
+                  {[
+                    { name: "NSRCEL IIM Bangalore", logo: "https://www.google.com/s2/favicons?domain=nsrcel.org&sz=64" },
+                    { name: "IIMR NutriHub", logo: "https://www.google.com/s2/favicons?domain=nutrihub-tbi-iimr.org&sz=64" },
+                    { name: "Goldman Sachs 10,000 Women", logo: "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=64" }
+                  ].map(org => (
+                    <span
+                      key={org.name}
+                      className="px-5 py-3 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                    >
+                      <img
+                        src={org.logo}
+                        alt={`${org.name} logo`}
+                        className="w-5 h-5 object-contain rounded-sm"
+                      />
+                      {org.name}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* YOU MAY HAVE SEEN ME AT */}
+              <div className="text-center">
+                <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
+                  <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+                  You May Have Seen Me At
+                  <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
+                </p>
+
+                <div className="flex flex-wrap justify-center gap-3">
+                  {[
+                    { name: "YourStory", link: "https://yourstory.com/smbstory/woman-entrepreneur-bengaluru-healthy-snacks-vegan-food-kukclean", logo: "https://www.google.com/s2/favicons?domain=yourstory.com&sz=64" },
+                    { name: "India Today", link: "https://yourstory.com/smbstory/woman-entrepreneur-bengaluru-healthy-snacks-vegan-food-kukclean", logo: "https://www.google.com/s2/favicons?domain=indiatoday.in&sz=64" },
+                    { name: "Deccan Herald", link: "https://www.deccanherald.com/india/karnataka/bengaluru/virus-outbreak-nudges-many-towards-veganism-909373.html", logo: "https://www.google.com/s2/favicons?domain=deccanherald.com&sz=64" },
+                    { name: "The Better India", link: "https://thebetterindia.com/306747/kirti-yadav-kukclean-bengaluru-offers-plant-based-vegan-sugar-free-healthy-snacks-for-diabetes-patients/", logo: "https://www.google.com/s2/favicons?domain=thebetterindia.com&sz=64" }
+                  ].map(pub => (
+                    <a
+                      key={pub.name}
+                      href={pub.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-6 py-3 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 flex items-center gap-2 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm"
+                    >
+                      <img
+                        src={pub.logo}
+                        alt={`${pub.name} logo`}
+                        className="w-5 h-5 object-contain rounded-sm"
+                      />
+                      {pub.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+
+            </div>
           </div>
-
-          <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-2">
-            Image Box
-          </span>
-
-          <p className="text-xs text-[#5F5358] font-medium">
-            Add Photo Here
-          </p>
         </div>
-      </div>
-
-      {/* RIGHT - THREE SECTIONS */}
-      <div className="md:col-span-3 space-y-16">
-
-        {/* TEAMS */}
-        <div className="text-center">
-          <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
-            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
-            Teams I've Worked With
-            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: "The Better India", logo: "https://img-cdn.publive.online/fit-in/360x160/filters:format(webp)/english-betterindia/media/agency_attachments/2025/06/24/2025-06-24t114615552z-img_3553-meghna-bhati-2025-06-24-17-16-15.png" },
-              { name: "Applied Materials", logo: "https://www.google.com/s2/favicons?domain=appliedmaterials.com&sz=64" },
-              { name: "LAM Research", logo: "https://www.google.com/s2/favicons?domain=lamresearch.com&sz=64" },
-              { name: "Reliance Ajio", logo: "https://www.google.com/s2/favicons?domain=ajio.com&sz=64" },
-              { name: "Christ University", logo: "https://www.google.com/s2/favicons?domain=christuniversity.in&sz=64" },
-              { name: "Tumkur University", logo: "https://www.google.com/s2/favicons?domain=tumkuruniversity.ac.in&sz=64" }
-            ].map(team => (
-              <span
-                key={team.name}
-                className="px-5 py-3 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm"
-              >
-                <img
-                  src={team.logo}
-                  alt={`${team.name} logo`}
-                  className="w-5 h-5 object-contain rounded-sm"
-                />
-                {team.name}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* RECOGNIZED BY */}
-        <div className="text-center">
-          <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
-            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
-            Recognized By
-            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: "NSRCEL IIM Bangalore", logo: "https://www.google.com/s2/favicons?domain=nsrcel.org&sz=64" },
-              { name: "IIMR NutriHub", logo: "https://www.google.com/s2/favicons?domain=nutrihub-tbi-iimr.org&sz=64" },
-              { name: "Goldman Sachs 10,000 Women", logo: "https://www.google.com/s2/favicons?domain=goldmansachs.com&sz=64" }
-            ].map(org => (
-              <span
-                key={org.name}
-                className="px-5 py-3 rounded-full border border-[#E8CDD3]/80 bg-white flex items-center gap-2 text-sm font-medium text-[#5F5358] hover:border-[#B55E79] hover:text-[#B55E79] hover:-translate-y-1 transition-all duration-300 shadow-sm"
-              >
-                <img
-                  src={org.logo}
-                  alt={`${org.name} logo`}
-                  className="w-5 h-5 object-contain rounded-sm"
-                />
-                {org.name}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        {/* YOU MAY HAVE SEEN ME AT */}
-        <div className="text-center">
-          <p className="text-[10px] sm:text-xs font-bold uppercase tracking-[0.25em] text-[#B55E79] mb-8 flex items-center justify-center gap-4">
-            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
-            You May Have Seen Me At
-            <span className="w-12 sm:w-20 h-px bg-[#E8CDD3]"></span>
-          </p>
-
-          <div className="flex flex-wrap justify-center gap-3">
-            {[
-              { name: "YourStory", link: "https://yourstory.com/smbstory/woman-entrepreneur-bengaluru-healthy-snacks-vegan-food-kukclean", logo: "https://www.google.com/s2/favicons?domain=yourstory.com&sz=64" },
-              { name: "India Today", link: "https://yourstory.com/smbstory/woman-entrepreneur-bengaluru-healthy-snacks-vegan-food-kukclean", logo: "https://www.google.com/s2/favicons?domain=indiatoday.in&sz=64" },
-              { name: "Deccan Herald", link: "https://www.deccanherald.com/india/karnataka/bengaluru/virus-outbreak-nudges-many-towards-veganism-909373.html", logo: "https://www.google.com/s2/favicons?domain=deccanherald.com&sz=64" },
-              { name: "The Better India", link: "https://thebetterindia.com/306747/kirti-yadav-kukclean-bengaluru-offers-plant-based-vegan-sugar-free-healthy-snacks-for-diabetes-patients/", logo: "https://www.google.com/s2/favicons?domain=thebetterindia.com&sz=64" }
-            ].map(pub => (
-              <a
-                key={pub.name}
-                href={pub.link}
-                 target="_blank"
-  rel="noopener noreferrer"
-                className="px-6 py-3 rounded-full border border-[#B55E79]/30 bg-[#F4D9DE]/30 flex items-center gap-2 text-sm font-bold text-[#B55E79] hover:bg-[#B55E79] hover:border-[#B55E79] hover:text-white hover:-translate-y-1 transition-all duration-300 shadow-sm"
-              >
-                <img
-                  src={pub.logo}
-                  alt={`${pub.name} logo`}
-                  className="w-5 h-5 object-contain rounded-sm"
-                />
-                {pub.name}
-              </a>
-            ))}
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* NEW CONTENT SECTION: Founders' Manifesto & Core Mission (PDF Sec 2.2, 2.3, 5) */}
       <section className="py-20 px-6 sm:px-12 bg-[#8C4356] text-white">
