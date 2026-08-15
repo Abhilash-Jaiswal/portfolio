@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { GraduationCap, Heart, Leaf, Mic, Flower2, HeartHandshake } from "lucide-react";
-import storyImage from "../../assets/file.png";
+import { GraduationCap, Heart, Leaf, Mic, Flower2, HeartHandshake, Image as ImageIcon } from "lucide-react";
 
 /* ─── Scroll-reveal hook ─────────────────────────── */
 function useReveal() {
@@ -55,7 +54,6 @@ const CHAPTERS = [
     num: "03", icon: Leaf,
     title: "Motherhood & Transformation",
     sub: "A small birth, a big reset, and 28 kilos of rediscovery",
-    imageCaption: "my daughter",
     intro: "Her daughter's early, small birth rearranged everything she thought she'd figured out. The real start of paying attention to food, rest, and her own body.",
     cards: [
       { heading: "When Everything Changed", body: "Her daughter's premature birth was a wake up call that no corporate training could have prepared her for. Suddenly, the systems she'd built for data no longer mattered. What mattered was survival, health, and figuring out how to show up for this tiny new life." },
@@ -126,34 +124,18 @@ function ChapterPill({ chap, active, onClick }) {
 
 /* ─── Chapter image placeholder ───────────────── */
 function ChapterImageBox({ chap }) {
-  const Icon = chap.icon;
-
   return (
-    <aside className="reveal">
-      <div
-        className="h-full rounded-[2rem] border border-[#E8CDD3]/70 bg-white/80 p-4 shadow-sm"
-        style={{ borderColor: `${theme.border}90` }}
-      >
-        <div className="relative aspect-[4/3] overflow-hidden rounded-[1.4rem] border-2 border-dashed border-[#B55E79]/55 bg-gradient-to-br from-[#F8E9EC] to-white">
-          <img
-            src={storyImage}
-            alt={`${chap.title} chapter`}
-            className="absolute inset-0 h-full w-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#2E2326]/65 to-transparent" />
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-            <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-4 text-white shadow-md" style={{ backgroundColor: theme.primary }}>
-              {Icon && <Icon className="w-7 h-7" strokeWidth={1.5} />}
-            </div>
-            <span className="text-[10px] font-bold tracking-[0.25em] uppercase text-white">Chapter {chap.num}</span>
-            <span className="mt-2 text-xs font-medium uppercase tracking-[0.2em] text-white/90">{chap.imageCaption || "Image Story"}</span>
-          </div>
+    <aside className="reveal flex justify-center">
+      <div className="w-full max-w-sm h-64 sm:h-72 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-6 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
+        <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
+          <ImageIcon className="w-7 h-7" />
         </div>
-
-        <div className="mt-4 border-t border-[#E8CDD3]/70 pt-4">
-          <div className="text-[10px] font-bold tracking-[0.28em] uppercase" style={{ color: theme.primary }}>Story Archive</div>
-          <div className="mt-2 font-serif text-sm font-bold leading-snug" style={{ color: theme.dark }}>{chap.imageCaption || chap.title}</div>
-        </div>
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#B55E79] mb-2">
+          Image Box
+        </span>
+        <p className="text-xs text-[#5F5358] font-medium">
+          Add Photo Here
+        </p>
       </div>
     </aside>
   );
@@ -386,8 +368,8 @@ export function LifeStorySection() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-[minmax(260px,0.88fr)_minmax(640px,1.12fr)] gap-10 lg:gap-12 mb-10">
-              <ChapterImageBox chap={chap} />
+            <div className={`grid grid-cols-1 ${["01", "03", "05"].includes(chap.num) ? "lg:grid-cols-[minmax(260px,0.88fr)_minmax(640px,1.12fr)]" : ""} gap-10 lg:gap-12 mb-10`}>
+              {["01", "03", "05"].includes(chap.num) && <ChapterImageBox chap={chap} />}
 
               <div className="reveal min-w-0">
                 <div

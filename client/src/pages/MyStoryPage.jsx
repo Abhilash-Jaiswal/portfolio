@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Sparkles, MessageCircle } from "lucide-react";
+import { Sparkles, MessageCircle, Image as ImageIcon } from "lucide-react";
 
 function useReveal() {
   useEffect(() => {
@@ -131,24 +131,45 @@ export function MyStoryPage() {
                 </div>
               </div>
 
-              {/* Intro Paragraph */}
-              <div className="reveal mb-6 pl-6 border-l-2 border-[#B55E79] py-1">
-                <p className="text-lg font-light leading-relaxed text-[#5F5358]">
-                  {chap.intro}
-                </p>
-              </div>
+              <div className={["01", "03", "05"].includes(chap.num) ? "grid grid-cols-1 md:grid-cols-12 gap-8 items-center" : ""}>
+                {/* Image Box placeholder on left side for Ch 1, 3, and 5 */}
+                {["01", "03", "05"].includes(chap.num) && (
+                  <div className="md:col-span-5 flex justify-center">
+                    <div className="w-full max-w-xs sm:max-w-sm h-64 sm:h-56 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-4 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
+                      <div className="w-12 h-12 rounded-xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-sm">
+                        <ImageIcon className="w-6 h-6" />
+                      </div>
+                      <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] mb-1">
+                        Image Box
+                      </span>
+                      <p className="text-xs text-[#5F5358] font-medium">
+                        Add Photo Here
+                      </p>
+                    </div>
+                  </div>
+                )}
 
-              {/* Pull Quotes */}
-              {chap.pullQuote && (
-                <div className="reveal mt-6 bg-[#FDF5F6] border border-[#E8CDD3] p-6 rounded-2xl shadow-sm">
-                  {chap.pullQuote.hindi && (
-                    <p className="font-serif text-[#B55E79] italic font-bold text-lg mb-2">"{chap.pullQuote.hindi}"</p>
-                  )}
-                  {chap.pullQuote.english && (
-                    <p className="font-serif text-[#2E2326] italic text-base">"{chap.pullQuote.english}"</p>
+                <div className={["01", "03", "05"].includes(chap.num) ? "md:col-span-7" : ""}>
+                  {/* Intro Paragraph */}
+                  <div className="reveal mb-6 pl-6 border-l-2 border-[#B55E79] py-1">
+                    <p className="text-lg font-light leading-relaxed text-[#5F5358]">
+                      {chap.intro}
+                    </p>
+                  </div>
+
+                  {/* Pull Quotes */}
+                  {chap.pullQuote && (
+                    <div className="reveal mt-6 bg-[#FDF5F6] border border-[#E8CDD3] p-6 rounded-2xl shadow-sm">
+                      {chap.pullQuote.hindi && (
+                        <p className="font-serif text-[#B55E79] italic font-bold text-lg mb-2">"{chap.pullQuote.hindi}"</p>
+                      )}
+                      {chap.pullQuote.english && (
+                        <p className="font-serif text-[#2E2326] italic text-base">"{chap.pullQuote.english}"</p>
+                      )}
+                    </div>
                   )}
                 </div>
-              )}
+              </div>
 
               {/* Divider */}
               {ci < CHAPTERS.length - 1 && (
