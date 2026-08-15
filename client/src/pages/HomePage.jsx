@@ -165,7 +165,7 @@ export function HomePage() {
               <h4 className="text-2xl font-bold text-[#2E2326] mb-2"></h4>
               <p className="font-serif italic text-lg text-[#B55E79] mb-4">A conversation worth having.</p>
               <p className="text-[#5F5358] mb-8 flex-1">
-                A community-led tech platform for women 35+, breaking the silence one honest conversation at a time.
+                A community led tech platform for women 35+, breaking the silence one honest conversation at a time.
               </p>
               <a href="https://notpaused.com" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-white border border-[#E8CDD3] rounded-full text-xs font-bold text-[#2E2326] hover:border-[#B55E79] hover:text-[#B55E79] transition-all">
                 Visit NotPaused
@@ -193,7 +193,7 @@ export function HomePage() {
               { num: "01", title: "Menopause Program", desc: "Real support through menopause, without having to figure it out alone." },
               { num: "02", title: "Corporate Wellness", desc: "Bringing real wellness, not just perks, into how a team works." },
               { num: "03", title: "Startup Mentoring", desc: "Empathy first, then the business side, for women building something of their own." },
-              { num: "04", title: "Lifestyle Transformation", desc: "A real, guided reset for your plate, at your pace, one-on-one." },
+              { num: "04", title: "Lifestyle Transformation", desc: "A real, guided reset for your plate, at your pace, one on one." },
               { num: "05", title: "Brand Collaborations", desc: "Partnering with brands built on real values, not hype." },
               { num: "06", title: "School Programs", desc: "Teaching kids that healthy habits start early." }
             ].map((item, idx) => (
@@ -219,10 +219,10 @@ export function HomePage() {
                 Featured Conversation
               </span>
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-[#2E2326] mb-4 leading-tight">
-                A conversation on building with purpose — with Shraddha Sharma the founder of kukclean, YourStory
+                A conversation on building with purpose with Shraddha Sharma the founder of kukclean, YourStory
               </h3>
               <p className="text-[#5F5358] text-sm leading-relaxed mb-6">
-                A wide-ranging, extended discussion capturing Kirti's own philosophy in her own words — reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
+                A wide ranging, extended discussion capturing Kirti's own philosophy in her own words reflecting on her journey from computer science to clean eating, entrepreneurship, and supporting women's midlife health.
               </p>
               <Link to="https://www.youtube.com/watch?v=VxG3KLZJ5j0"  target="_blank"
   b  className="inline-flex items-center gap-2 px-6 py-3 bg-[#B55E79] text-white rounded-full font-bold text-xs uppercase tracking-widest hover:bg-[#8e455c] transition-colors shadow-sm">
@@ -404,11 +404,11 @@ export function HomePage() {
         <div className="max-w-4xl mx-auto text-center">
           <Quote className="w-12 h-12 text-[#E6BEC6]/60 mx-auto mb-6" />
           <p className="font-serif text-2xl sm:text-4xl leading-snug mb-8 drop-shadow-sm font-medium">
-            My mission is simple: 1 million plate-level changes.
+            My mission is simple: 1 million plate level changes.
           </p>
           <div className="w-20 h-0.5 bg-[#E6BEC6]/40 mx-auto mb-8"></div>
           <p className="text-base sm:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed font-light mb-4">
-            I've educated individuals and built communities to inspire them. I do not perform a persona or sell standard products — I work with real people, real bodies, and real lives.
+            I've educated individuals and built communities to inspire them. I do not perform a persona or sell standard products I work with real people, real bodies, and real lives.
           </p>
           {/* <p className="font-script text-2xl sm:text-3xl text-[#E6BEC6]">— Kirti Yadav</p> */}
         </div>
