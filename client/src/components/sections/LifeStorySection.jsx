@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { GraduationCap, Heart, Leaf, Mic, Flower2 } from "lucide-react";
+import { GraduationCap, Heart, Leaf, Mic, Flower2, HeartHandshake } from "lucide-react";
 import storyImage from "../../assets/file.png";
 
 /* ─── Scroll-reveal hook ─────────────────────────── */
@@ -87,6 +87,18 @@ const CHAPTERS = [
       { heading: "What It Is, What It's Becoming", body: "Today, it's a free community for women navigating this season together. The vision is four pillars: Safe Community, Expert Support, Symptom Tracking, and Trusted Education. A place where no woman has to be the one at 3am with no answers." },
     ],
     closing: "'I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be.'",
+  },
+  {
+    num: "06", icon: HeartHandshake,
+    title: "Marriage",
+    sub: "A quiet act of conviction across caste lines",
+    intro: "Marrying her husband Akar Misra across caste lines — another quiet act of conviction. The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own.",
+    cards: [
+      { heading: "A Quiet Act of Conviction", body: "She married her husband across caste lines — another quiet act of conviction. The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own. Both would matter." },
+      { heading: "Partnership in Life & Work", body: "Marriage became a foundation of mutual trust and strength. Together with her husband, Akar Misra — who later joined as co-founder running operations full-time — they built a partnership anchored in shared values and conviction." },
+      { heading: "Compounding Beats Sparks", body: "'It's a journey, not a goal — compounding beats sparks.' Marriage taught her that real relationships and lasting work are built through steady, daily commitment rather than sudden flashes." },
+    ],
+    closing: "Marriage taught her how to build a life that was truly her own — a partnership rooted in conviction, shared values, and quiet strength.",
   },
 ];
 

@@ -51,6 +51,15 @@ const CHAPTERS = [
     title: "Founding NotPaused",
     sub: "The gap in menopause care",
     intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause   that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
+  },
+  {
+    num: "06", emoji: "💍",
+    title: "Marriage",
+    sub: "A quiet act of conviction",
+    intro: "Marrying her husband Akar Misra across caste lines another quiet act of conviction. The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own.",
+    pullQuote: {
+      english: "The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own. Both would matter."
+    }
   }
 ];
 
