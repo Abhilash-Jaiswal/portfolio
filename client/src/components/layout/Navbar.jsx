@@ -28,7 +28,18 @@ export function Navbar() {
     },
     
     { name: "Press", path: "/achievements" },
-    { name: "Work with Me", path: "/work-with-me" },
+    {
+      name: "Work with Me",
+      path: "/work-with-me",
+      subItems: [
+        { name: "Lifestyle Transformation Program", path: "/work-with-me#lifestyle-transformation" },
+        { name: "Corporate Wellness", path: "/work-with-me#corporate-wellness" },
+        { name: "Menopause Program", path: "/work-with-me#menopause-program" },
+        { name: "Startup Mentoring", path: "/work-with-me#startup-mentoring" },
+        { name: "Brand Collaborations", path: "/work-with-me#brand-collaborations" },
+        { name: "School Programs", path: "/work-with-me#school-programs" },
+      ],
+    },
     { name: "Latest", path: "/latest" },
     // { name: "Contact", path: "/contact" },
   ];
@@ -135,14 +146,14 @@ export function Navbar() {
                   </Link>
 
                   {/* Dropdown Menu Wrapper (Invisible bridge) */}
-                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-48 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-max min-w-[240px] opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-200 z-50">
                     <div className="py-2 px-1.5 rounded-2xl shadow-xl border border-[#E8CDD3]/80 bg-white/95 backdrop-blur-md transform scale-95 group-hover:scale-100 transition-transform duration-200">
                       {item.subItems.map((sub) => {
                         return (
                           <Link
                             key={sub.name}
                             to={sub.path}
-                            className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold normal-case text-[#2E2326] hover:bg-[#F4D9DE]/40 hover:text-[#B55E79] transition-colors"
+                            className="flex items-center gap-2.5 px-3 py-2.5 rounded-xl text-xs font-semibold normal-case text-[#2E2326] hover:bg-[#F4D9DE]/40 hover:text-[#B55E79] transition-colors whitespace-nowrap"
                           >
                             <span>{sub.name}</span>
                           </Link>
