@@ -34,33 +34,34 @@ const CHAPTERS = [
       english: "It's a journey, not a goal   compounding beats sparks."
     }
   },
-  {
-    num: "03", emoji: "❤️",
-    title: "Motherhood",
-    sub: "Health & Transformation",
-    intro: "Her daughter's early, small birth, and how it rearranged everything she thought she'd figured out   the real start of paying attention to food, rest, and her own body, eventually losing 28 kilos without ever calling it a diet."
-  },
-  {
-    num: "04", emoji: "🌱",
-    title: "Building KuKClean",
-    sub: "Not setting out to build a company",
-    intro: "Not setting out to build a company   just sharing what was working for her, first with friends, then a growing Facebook group, then a certified nutrition practice, then KuKClean itself, incubated at NSRCEL, IIM Bangalore."
-  },
-  {
-    num: "05", emoji: "🌸",
-    title: "Founding NotPaused",
-    sub: "The gap in menopause care",
-    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause   that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
-  },
-  {
-    num: "06", emoji: "💍",
+   {
+    num: "03", emoji: "💍",
     title: "Marriage",
     sub: "A quiet act of conviction",
     intro: "Marrying her husband Akar Misra across caste lines another quiet act of conviction. The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own.",
     pullQuote: {
       english: "The corporate career taught her how to build systems; marriage taught her how to build a life that was truly her own. Both would matter."
     }
-  }
+  },
+  {
+    num: "04", emoji: "❤️",
+    title: "Motherhood",
+    sub: "Health & Transformation",
+    intro: "Her daughter's early, small birth, and how it rearranged everything she thought she'd figured out   the real start of paying attention to food, rest, and her own body, eventually losing 28 kilos without ever calling it a diet."
+  },
+  {
+    num: "05", emoji: "🌱",
+    title: "Building KuKClean",
+    sub: "Not setting out to build a company",
+    intro: "Not setting out to build a company   just sharing what was working for her, first with friends, then a growing Facebook group, then a certified nutrition practice, then KuKClean itself, incubated at NSRCEL, IIM Bangalore."
+  },
+  {
+    num: "06", emoji: "🌸",
+    title: "Founding NotPaused",
+    sub: "The gap in menopause care",
+    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause   that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
+  },
+ 
 ];
 
 export function MyStoryPage() {
@@ -75,8 +76,8 @@ export function MyStoryPage() {
       >
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.7) 1px, transparent 1px)", backgroundSize: "30px 30px" }} />
         <div className="relative z-10 max-w-5xl mx-auto text-center md:text-left">
-          <div className="inline-flex items-center gap-2 text-[#B55E79] text-[10px] font-bold tracking-[0.25em] uppercase mb-6">
-            <Sparkles className="w-3.5 h-3.5 text-[#E6BEC6]" />
+          <div className="inline-flex items-center gap-2 text-white text-[13px] font-bold tracking-[0.25em] uppercase mb-6">
+            <Sparkles className="w-3.5 h-3.5 text-[#f3dbe0]" />
             <span>My Story</span>
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.15] mb-6">
@@ -84,7 +85,7 @@ export function MyStoryPage() {
             <span className="font-serif italic font-bold text-[#F4D9DE] drop-shadow-sm">Compounding &amp; Impact</span>
           </h1>
           <p className="text-white/85 text-base md:text-lg font-light leading-relaxed max-w-3xl mb-10">
-            From corporate career to founder of KuKClean and NotPaused   how personal health trials, motherly instinct, and community conviction created a movement.
+            From corporate career to the founder of KuKClean and NotPaused   how personal health trials, motherly instinct, and community conviction created a movement.
           </p>
         </div>
       </div>
@@ -131,9 +132,9 @@ export function MyStoryPage() {
                 </div>
               </div>
 
-              <div className={["01", "03", "05"].includes(chap.num) ? "grid grid-cols-1 md:grid-cols-12 gap-8 items-center" : ""}>
+              <div className={["01", "04", "06"].includes(chap.num) ? "grid grid-cols-1 md:grid-cols-12 gap-8 items-center" : ""}>
                 {/* Image Box placeholder on left side for Ch 1, 3, and 5 */}
-                {["01", "03", "05"].includes(chap.num) && (
+                {["01", "04", "06"].includes(chap.num) && (
                   <div className="md:col-span-5 flex justify-center">
                     <div className="w-full max-w-xs sm:max-w-sm h-64 sm:h-56 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-4 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
                       <div className="w-12 h-12 rounded-xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-sm">
@@ -149,7 +150,7 @@ export function MyStoryPage() {
                   </div>
                 )}
 
-                <div className={["01", "03", "05"].includes(chap.num) ? "md:col-span-7" : ""}>
+                <div className={["01", "04", "06"].includes(chap.num) ? "md:col-span-7" : ""}>
                   {/* Intro Paragraph */}
                   <div className="reveal mb-6 pl-6 border-l-2 border-[#B55E79] py-1">
                     <p className="text-lg font-light leading-relaxed text-[#5F5358]">
