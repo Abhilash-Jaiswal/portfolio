@@ -241,6 +241,11 @@ export function HomePage() {
               className="w-full md:w-1/2 block"
             >
               <div className="w-full bg-[#2E2326] rounded-2xl overflow-hidden shadow-xl aspect-video relative flex items-center justify-center group cursor-pointer border border-[#E8CDD3]">
+                <img
+                  src="https://img.youtube.com/vi/VxG3KLZJ5j0/maxresdefault.jpg"
+                  alt="Featured Conversation Thumbnail"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent z-10"></div>
 
                 <div className="relative z-20 flex flex-col items-center text-center p-6">
