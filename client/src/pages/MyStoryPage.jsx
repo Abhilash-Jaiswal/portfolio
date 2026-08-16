@@ -132,25 +132,23 @@ export function MyStoryPage() {
                 </div>
               </div>
 
-              <div className={["01", "04", "06"].includes(chap.num) ? "grid grid-cols-1 md:grid-cols-12 gap-8 items-center" : ""}>
-                {/* Image Box placeholder on left side for Ch 1, 3, and 5 */}
-                {["01", "04", "06"].includes(chap.num) && (
-                  <div className="md:col-span-5 flex justify-center">
-                    <div className="w-full max-w-xs sm:max-w-sm h-64 sm:h-56 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-4 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
-                      <div className="w-12 h-12 rounded-xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-sm">
-                        <ImageIcon className="w-6 h-6" />
-                      </div>
-                      <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] mb-1">
-                        Image Box
-                      </span>
-                      <p className="text-xs text-[#5F5358] font-medium">
-                        Add Photo Here
-                      </p>
+              <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+                {/* Image Box placeholder (alternating Left / Right) */}
+                <div className={`md:col-span-5 flex justify-center ${ci % 2 === 0 ? "md:order-1" : "md:order-2"}`}>
+                  <div className="w-full max-w-xs sm:max-w-sm h-64 sm:h-56 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-4 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
+                    <div className="w-12 h-12 rounded-xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-3 group-hover:scale-110 transition-transform shadow-sm">
+                      <ImageIcon className="w-6 h-6" />
                     </div>
+                    <span className="text-xs font-bold uppercase tracking-widest text-[#B55E79] mb-1">
+                      Image Box
+                    </span>
+                    <p className="text-xs text-[#5F5358] font-medium">
+                      Add Photo Here
+                    </p>
                   </div>
-                )}
+                </div>
 
-                <div className={["01", "04", "06"].includes(chap.num) ? "md:col-span-7" : ""}>
+                <div className={`md:col-span-7 ${ci % 2 === 0 ? "md:order-2" : "md:order-1"}`}>
                   {/* Intro Paragraph */}
                   <div className="reveal mb-6 pl-6 border-l-2 border-[#B55E79] py-1">
                     <p className="text-lg font-light leading-relaxed text-[#5F5358]">

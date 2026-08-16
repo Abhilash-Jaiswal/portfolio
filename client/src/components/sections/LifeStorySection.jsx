@@ -368,10 +368,12 @@ export function LifeStorySection() {
               </div>
             </div>
 
-            <div className={`grid grid-cols-1 ${["01", "03", "05"].includes(chap.num) ? "lg:grid-cols-[minmax(260px,0.88fr)_minmax(640px,1.12fr)]" : ""} gap-10 lg:gap-12 mb-10`}>
-              {["01", "03", "05"].includes(chap.num) && <ChapterImageBox chap={chap} />}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 mb-10 items-start">
+              <div className={`lg:col-span-4 ${ci % 2 === 0 ? "lg:order-1" : "lg:order-2"}`}>
+                <ChapterImageBox chap={chap} />
+              </div>
 
-              <div className="reveal min-w-0">
+              <div className={`reveal min-w-0 lg:col-span-8 ${ci % 2 === 0 ? "lg:order-2" : "lg:order-1"}`}>
                 <div
                   className="mb-8 pl-6 border-l-2 rounded-r-xl py-1"
                   style={{ borderColor: theme.primary }}
