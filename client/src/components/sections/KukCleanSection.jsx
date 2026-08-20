@@ -49,8 +49,8 @@ const coreCategories = [
 const b2bFocus = [
   { num: "01", icon: <CheckCircle size={24} />, title: "Corporate Thalis & Canteen Supply", desc: "Supplying artisanal clean label laddus directly to corporate canteens and caterers as part of daily corporate Thalis (meal trays)." },
   { num: "02", icon: <TrendingUp size={24} />, title: "Cafe Menu Consulting & Supply", desc: "Partnering directly with cafes to supply stone ground nut butters and consult on clean label, plant based menu redesigns." },
-  { num: "03", icon: <Award size={24} />, title: "Direct to Consumer & Bulk Gifting", desc: <>Direct sales via <a href="https://www.kukclean.com/" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:opacity-80">kukclean.com</a> plus bespoke onboarding and festival hampers for corporate clients (Cisco, Biocon, Loyalytics.ai).</> },
-  { num: "04", icon: <ShieldCheck size={24} />, title: "Empowering Women Artisans", desc: "Every batch is handcrafted by a dedicated production team that employs women from economically disadvantaged backgrounds." },
+  { num: "03", icon: <Award size={24} />, title: "Direct to Consumer & Bulk Gifting", desc: <>Online sales via kukclean.com, including individual orders and bulk or festival gifting for corporate clients <a href="https://www.kukclean.com/" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:opacity-80">kukclean.com</a> plus bespoke onboarding and festival hampers for corporate clients (Cisco, Biocon, Loyalytics.ai).</> },
+  { num: "04", icon: <ShieldCheck size={24} />, title: "Private Label", desc: "Making our laddus for other brands to sell under their own name" },
 ];
 
 const saladFormulaBlocks = [
@@ -105,7 +105,7 @@ export function KukCleanSection() {
             <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated"></span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-            Born in Kirti's kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant based food and extraordinary Indian taste belong together.
+            Born in my kitchen. Incubated at IIM Bangalore and ICAR-IIMR NutriHub. KuKClean is proof that clean, plant based food and extraordinary Indian taste belong together.
           </p>
 
           <div className="mt-8">
@@ -132,7 +132,7 @@ export function KukCleanSection() {
         >
           <Quote className="absolute top-8 left-8 w-16 h-16 opacity-5" style={{ color: theme.primary }} />
           <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-center relative z-10" style={{ color: theme.dark }}>
-            "KuKClean stands for 'Kitchen' you & KItti 'Clean', doubling as 'Kitchen, You'. In my kitchen, I teach you how to cook clean. Food should give you pleasure, not guilt."
+            "KukClean stands for Kitchen, You, and Kirti's Clean eating journey. The idea started with a blog where I wanted to share my own clean eating journey, but the universe had other plans, and it became a national brand solving the 4 o'clock snacking problem for health conscious families"
           </p>
           <span className="text-sm font-bold uppercase tracking-[0.2em] block mt-8 text-center" style={{ color: theme.primary }}>  Kirti Yadav, Founder</span>
         </div>
@@ -153,77 +153,7 @@ export function KukCleanSection() {
           </div>
         </div>
 
-        {/* Ch 01   Origin & The Kitchen Standard */}
-        <div className="space-y-8">
-          <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
-            <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
-              style={{ backgroundColor: theme.primary }}
-            >
-              <ChefHat size={28} />
-            </div>
-            <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-2" style={{ color: theme.primary }}>Chapter 01</span>
-              <h2 className="font-serif text-3xl lg:text-4xl font-bold" style={{ color: theme.dark }}>The Kitchen Standard & Husband Co Founder</h2>
-              <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}>From a Facebook recipe group to incorporated venture with Akar Misra</p>
-            </div>
-          </div>
-          <div
-            className="reveal pl-6 border-l-2 rounded-r-xl"
-            style={{ borderColor: theme.primary }}
-          >
-            <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
-              Incorporated as KuKClean Foods and Consulting Pvt Ltd, the venture is co founded with Kirti's husband, Akar Misra, who runs operations full time alongside a dedicated production team. Product quality is tested against one human standard   Kirti's daughter. 'When my daughter eats my snacks and says, Mummy, I'm so lucky to have you, that's why I make laddus.'
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div
-              className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              style={{ borderColor: `${theme.border}60` }}
-            >
-              <h4
-                className="font-serif font-bold text-base mb-3 transition-colors"
-                style={{ color: theme.dark }}
-                onMouseEnter={(e) => e.currentTarget.style.color = theme.primary}
-                onMouseLeave={(e) => e.currentTarget.style.color = theme.dark}
-              >
-                ₹14 Lakhs Bootstrapped Growth
-              </h4>
-              <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
-                n just 7 months, KuKClean achieved ₹14 Lakhs in revenue entirely bootstrapped and built on trust, not advertising. No heavy ad spends, no paid influencer endorsements. Just the power of 1,000+ original vegan recipes, a growing community of health conscious food lovers, and the relentless word of mouth that comes from making food that truly nourishes. Proof that authentic quality speaks for itself.
-              </p>
-            </div>
-            <div
-              className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
-              style={{ borderColor: `${theme.border}60`, transitionDelay: "100ms" }}
-            >
-              <h4 className="font-serif font-bold text-base mb-3" style={{ color: theme.dark }}>Employing Disadvantaged Women</h4>
-              <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
-                Our mission goes far beyond the plate. Every batch of our clean label sweets, savories, and stone ground nut butters is handcrafted by women from economically disadvantaged backgrounds. We provide dignified employment, fair wages, and skill development transforming lives, one recipe at a time. Because real nourishment isn't just about what's in the food; it's about who makes it and how they're valued.
-              </p>
-            </div>
-
-            {/* NEW PDF ADDITION: Dual Testing Standards Card */}
-            <div
-              className="reveal shimmer-card bg-white/80 border p-7 rounded-3xl shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 col-span-1 md:col-span-2"
-              style={{ borderColor: `${theme.border}60`, transitionDelay: "150ms" }}
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-white shrink-0" style={{ backgroundColor: theme.primary }}>
-                  <FlaskConical size={20} />
-                </div>
-                <div>
-                  <span className="text-[10px] font-bold tracking-widest uppercase block" style={{ color: theme.primary }}>Quality Assurance</span>
-                  <h4 className="font-serif font-bold text-base" style={{ color: theme.dark }}>Dual Testing Standards: Real Lab Testing & The Human Benchmark</h4>
-                </div>
-              </div>
-              <p className="text-sm font-light leading-relaxed text-justify" style={{ color: theme.muted }}>
-                Product quality at KuKClean is tested against two uncompromising standards: real laboratory testing for biological purity and nutritional excellence, and one deeply personal human standard   Kirti's daughter. Scientific legitimacy and genuine family trust are combined into every recipe crafted.
-              </p>
-            </div>
-          </div>
-        </div>
-
+      
         {/* Ch 02   Agritech & IIM Incubation */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
@@ -256,7 +186,7 @@ export function KukCleanSection() {
               className="inline-block border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>B2B Business Model</span>
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Business Model</span>
             </div>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Primary Focus: Cafes & Corporate Thalis</h3>
           </div>
