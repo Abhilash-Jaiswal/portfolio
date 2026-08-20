@@ -92,7 +92,7 @@ export function MyStoryPage() {
 
       {/* ── Chapter Navigation ───────────────────── */}
       <div className="relative z-40 flex justify-center w-full -mt-8 mb-4 px-4 pointer-events-none">
-        <div className="bg-white/95 backdrop-blur-xl px-3 py-2 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-[#E8CDD3] flex items-center gap-2 md:gap-3 pointer-events-auto transition-transform duration-300">
+        <div className="bg-white/95 backdrop-blur-xl px-3 py-2 rounded-3xl lg:rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] border border-[#E8CDD3] flex flex-wrap justify-center items-center gap-2 md:gap-3 pointer-events-auto transition-transform duration-300 max-w-full">
           {CHAPTERS.map((chap) => (
             <button
               key={chap.num}

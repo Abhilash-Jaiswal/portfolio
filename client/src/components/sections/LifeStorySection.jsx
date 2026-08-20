@@ -310,8 +310,8 @@ export function LifeStorySection() {
           borderColor: `${theme.border}60`
         }}
       >
-        <div className="container mx-auto px-6 md:px-12 lg:px-20 py-3">
-          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-none">
+        <div className="container mx-auto px-4 md:px-12 lg:px-20 py-3">
+          <div className="flex flex-wrap justify-center md:justify-start gap-2 pb-1">
             {CHAPTERS.map((c) => (
               <ChapterPill key={c.num} chap={c} active={activeChap === c.num} onClick={scrollToChap} />
             ))}
