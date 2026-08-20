@@ -5,7 +5,7 @@ import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
 import img4 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.11 (1).jpeg";
 import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
-import { Leaf, Sparkles, Heart, ChefHat, Star, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, BookOpen, FlaskConical, Target, Users, Mail, Phone, Globe } from "lucide-react";
+import { Leaf, Sparkles, Heart, ChefHat, Star, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, BookOpen, FlaskConical, Mail, Phone, Globe } from "lucide-react";
 
 const wellnessImages = [img1, img2, img3, img4, img5, img6];
 
@@ -257,9 +257,9 @@ export function KukCleanSection() {
               className="inline-block border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Handcrafted</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>4 Primary Product Categories</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Clean Label Products</h3>
             <p className="text-sm font-light mt-2 max-w-xl mx-auto" style={{ color: theme.muted }}>
               The essential clean label product lines crafted with zero refined sugars, zero artificial preservatives, and 100% natural ingredients.
             </p>
@@ -279,47 +279,8 @@ export function KukCleanSection() {
                   <h4 className="font-serif font-bold text-lg mb-2" style={{ color: theme.dark }}>{cat.title}</h4>
                   <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>{cat.desc}</p>
                 </div>
-                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-xs font-semibold" style={{ color: theme.primary }}>
-                  <span>100% Clean Label</span>
-                  <CheckCircle size={14} />
-                </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* NEW PDF ADDITION: Mission & Community Impact Cards */}
-        <div className="reveal grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="bg-gradient-to-br from-[#FAF0F2] to-white border p-8 md:p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between" style={{ borderColor: theme.border }}>
-            <div>
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-6 shadow-md" style={{ backgroundColor: theme.primary }}>
-                <Target size={24} />
-              </div>
-              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block mb-2" style={{ color: theme.primary }}>Core Purpose</span>
-              <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: theme.dark }}>The Plate-Level Mission</h3>
-              <p className="font-serif text-xl italic font-medium leading-relaxed mb-4" style={{ color: theme.primary }}>
-                "My mission is simple: 1 million plate-level changes."
-              </p>
-              <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
-                Transforming daily nutrition not through drastic restrictions, but through small, conscious, plate-level upgrades that nourish the body naturally.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-[#FAF0F2] to-white border p-8 md:p-10 rounded-[2.5rem] shadow-sm flex flex-col justify-between" style={{ borderColor: theme.border }}>
-            <div>
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-6 shadow-md" style={{ backgroundColor: theme.primary }}>
-                <Users size={24} />
-              </div>
-              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block mb-2" style={{ color: theme.primary }}>Community & Education</span>
-              <h3 className="font-serif text-2xl font-bold mb-3" style={{ color: theme.dark }}>Empowering & Inspiring</h3>
-              <p className="font-serif text-xl italic font-medium leading-relaxed mb-4" style={{ color: theme.primary }}>
-                "I've educated individuals and built communities to inspire them."
-              </p>
-              <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>
-                Fostering grassroots wellness awareness, clean eating habits, and supportive health communities across households, cafes, and workplaces.
-              </p>
-            </div>
           </div>
         </div>
 
