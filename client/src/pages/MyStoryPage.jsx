@@ -27,11 +27,12 @@ const CHAPTERS = [
   },
   {
     num: "02", emoji: "💻",
-    title: "The Career",
+    title: "Corporate Career",
     sub: "Data systems & Corporate",
-    intro: "Studying computer science and building data systems for companies like IBM, Target, and AIG work I'm genuinely proud of. Becoming the first girl in her family into an engineering college and the first to work at an MNC, and marrying her husband across caste lines.",
+    intro: "Studying computer science and building data systems for companies like IBM, Target, and AIG, work that I'm genuinely proud of. I became the first girl in my family to go to an engineering college, and the first to work at an MNC. Working across India and the US taught me to really understand people.",
+    closing: "I also broke the status quo and married a man from another caste. Inter-caste marriages in India are still taboo, and for many women, a reason they don't have the freedom to make that choice safely. I kept fighting silently, but I challenged the old mindset. Now, happily married, I can say: if I am fire, my husband is the hawan kund (the sacred fire pit at the center of a Hindu wedding, believed to hold and witness the flame through the ceremony) that holds me, takes on all the heat, and still stands strong behind me at every stage of life.",
     pullQuote: {
-      english: "It's a journey, not a goal   compounding beats sparks."
+      english: "It's a journey, not a goal. Compounding beats sparks."
     }
   },
    {
@@ -47,13 +48,13 @@ const CHAPTERS = [
     num: "04", emoji: "❤️",
     title: "Motherhood",
     sub: "Health & Transformation",
-    intro: "Her daughter's early, small birth, and how it rearranged everything she thought she'd figured out   the real start of paying attention to food, rest, and her own body, eventually losing 28 kilos without ever calling it a diet."
+    intro: "My daughter's preterm birth, and a complicated pregnancy before it, rearranged everything in my life that I thought I'd figured out. I decided to take a break from my corporate career to take care of her. I started making healthy snacks for my daughter, and along the way, began focusing on my own health too. Following a plant-based lifestyle, I lost 28 kilos, without ever calling it a diet. That whole process is what inspired me to become a nutritionist, and eventually, to start KukClean"
   },
   {
     num: "05", emoji: "🌱",
     title: "Building KuKClean",
     sub: "Not setting out to build a company",
-    intro: "Not setting out to build a company   just sharing what was working for her, first with friends, then a growing Facebook group, then a certified nutrition practice, then KuKClean itself, incubated at NSRCEL, IIM Bangalore."
+    intro: "I wasn't setting out to build a company. I just wanted to share what was working for me, so I started the KukClean Facebook group to connect with others going through the same thing. The group grew fast, and it struck a chord: the Times of India covered our story, writing about how it was inspiring people to eat healthier. That response is what turned KukClean from a group into a brand, and NSRCEL, IIM Bangalore incubated the venture and helped give it the shape it deserved"
   },
   {
     num: "06", emoji: "🌸",
@@ -155,6 +156,12 @@ export function MyStoryPage() {
                       {chap.intro}
                     </p>
                   </div>
+
+                  {chap.closing && (
+                    <p className="reveal mb-6 text-lg font-light leading-relaxed text-[#5F5358]">
+                      {chap.closing}
+                    </p>
+                  )}
 
                   {/* Pull Quotes */}
                   {chap.pullQuote && (
