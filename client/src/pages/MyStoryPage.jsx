@@ -19,10 +19,10 @@ const CHAPTERS = [
     num: "01", emoji: "🏫",
     title: "Early Education",
     sub: "Growing up in Kanpur",
-    intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. Her mum insisted on an English-medium school; her dad backed that without wavering, and her teachers kept pushing her onto every stage to speak.",
+    intro: "Growing up in Kanpur, at a time many families believed educating a girl wasn't worth the money. My mum insisted on an English-medium school anyway; my dad backed that without wavering, and my teachers kept pushing me onto every stage to speak.”",
     pullQuote: {
       hindi: "Ladki hai, padhane se kya fayda, baad mein rotiyan hi banayegi.",
-      english: "That's what people around us used to say   she's a girl, why bother educating her, she'll just end up making rotis anyway."
+      english: "That's what people around me used to say. She's a girl, why bother educating her, she'll just end up making rotis anyway"
     }
   },
   {
@@ -60,7 +60,7 @@ const CHAPTERS = [
     num: "06", emoji: "🌸",
     title: "Founding NotPaused",
     sub: "The gap in menopause care",
-    intro: "Years into calling herself a nutritionist, not recognizing she was living through her own peri menopause   that gap is exactly why NotPaused exists, so no woman has to figure it out alone."
+    intro: "Until 40, I was fit and healthy, enjoying my own lifestyle shift and helping others do the same. Then, while working hard on my venture, I started waking up at midnight. Some nights I panicked, some nights I cried, some nights I just started eating, not realizing that at 42, my hormones were fluctuating. Like most of us, I turned to the internet for answers and found a mix of everything, some right, a lot of it not. No woman around me, not even in my own family, had ever really talked about this. It was a wake up call: something was shifting, and I needed to act. That's what led me to start NotPaused, to finally have an honest conversation about menopause"
   },
  
 ];
