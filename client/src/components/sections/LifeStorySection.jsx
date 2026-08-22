@@ -438,11 +438,6 @@ export function LifeStorySection() {
             <p className="font-serif text-2xl lg:text-3xl text-white italic leading-relaxed">
               "Keep Going. I tell myself that you have to just keep going in a direction, and you have to keep finding your peace and your purpose, because it's all about moving forward in your journey."
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav · Founder, KuKClean & NotPaused.com</span>
-              <div className="w-8 h-px bg-white/40" />
-            </div>
           </div>
         </div>
       </div>

@@ -145,7 +145,6 @@ export function NotPausedSection() {
               <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
                 "I've built this the same way I built my corporate career and my company   carefully, with real institutions backing the work, not just good intentions."
               </p>
-              <span className="text-xs font-bold uppercase tracking-widest block pt-2 text-[#5F5358]">  Kirti Yadav, Founder · NotPaused.com</span>
             </div>
           </div>
         </div>
@@ -393,11 +392,6 @@ export function NotPausedSection() {
             <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
               "I built NotPaused.com because I was that woman looking for answers..."
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused.com</span>
-              <div className="w-8 h-px bg-white/40" />
-            </div>
           </div>
         </div>
 

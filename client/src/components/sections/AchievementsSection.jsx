@@ -524,11 +524,6 @@ export function AchievementsSection() {
             <p className="font-serif text-xl lg:text-2xl italic text-white leading-relaxed">
               "Credentialing matters because systemic health requires institutional trust. But real transformation happens when rigorous knowledge meets empathy."
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder</span>
-              <div className="w-8 h-px bg-white/40" />
-            </div>
           </div>
         </div>
 
