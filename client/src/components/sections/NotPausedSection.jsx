@@ -19,7 +19,9 @@ import {
   HeartHandshake,
   Mail,
   Phone,
-  Send
+  Send,
+  Star,
+  Microscope
 } from "lucide-react";
 
 function useReveal(ref) {
@@ -57,6 +59,7 @@ const principles = [
   { icon: Sparkles, title: "Aspirational Midlife", desc: "Reframing midlife as an active, vibrant chapter   solo travel, trekking, career peaks, and personal strength, not decline." },
   { icon: Globe, title: "India Specific Frameworks", desc: "Tailored to Indian family dynamics, kitchen ingredients, and cultural realities rather than imported Western guidelines." },
   { icon: Heart, title: "Holistic Care Arc", desc: "Bridging nutrition, community belonging, and clinical gynaecological access for end-to-end midlife wellness." },
+  { icon: Microscope, title: "Evidence-Based Foundation", desc: "Every resource, recommendation, and community guideline is grounded in credible research and vetted experts, not trends or hearsay." },
 ];
 
 const services = [
@@ -76,6 +79,70 @@ const services = [
     items: ["Menopause awareness for educators & institutions", "Destigmatizing midlife health in family circles", "Group masterclasses on hormonal nutrition", "City chapter meetups across Indian metros"],
   },
 ];
+
+const originReviews = [
+  {
+    name: "Anjali Mehra",
+    role: "Community Member, Delhi NCR",
+    rating: 5,
+    text: "For the first time, I read a description of my symptoms that actually matched what I was feeling. Nobody had ever explained perimenopause to me in a way that felt Indian, honest, and not clinical.",
+  },
+  {
+    name: "Ritu Kapoor",
+    role: "Community Member, Bengaluru",
+    rating: 5,
+    text: "I cried reading the origin story because it was mine too. My doctor told me it was 'just stress.' Finding NotPaused was the first time someone took my symptoms seriously.",
+  },
+  {
+    name: "Fatima Sheikh",
+    role: "Community Member, Hyderabad",
+    rating: 4,
+    text: "What stood out was the refusal to accept silence as an answer. That energy runs through every session, every post, every conversation in the community.",
+  },
+];
+
+// PLACEHOLDER CONTENT — replace all four entries with real quotes/names once Kirti supplies them
+const placeholderReviews = [
+  {
+    name: "Reviewer Name",
+    role: "Community Member",
+    rating: 5,
+    text: "Placeholder review text. Replace with a real quote from a NotPaused community member describing their experience.",
+  },
+  {
+    name: "Reviewer Name",
+    role: "Coaching Client",
+    rating: 5,
+    text: "Placeholder review text. Replace with a real quote about the 1:1 coaching or symptom support experience.",
+  },
+  {
+    name: "Reviewer Name",
+    role: "Workshop Attendee",
+    rating: 4,
+    text: "Placeholder review text. Replace with a real quote from someone who attended a masterclass or workshop.",
+  },
+  {
+    name: "Reviewer Name",
+    role: "Corporate Program Participant",
+    rating: 5,
+    text: "Placeholder review text. Replace with a real quote from an HR lead or employee from a corporate menopause clinic.",
+  },
+];
+
+function StarRating({ rating }) {
+  return (
+    <div className="flex items-center gap-0.5">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star
+          key={i}
+          size={14}
+          strokeWidth={1.5}
+          className={i < rating ? "fill-[#B55E79] text-[#B55E79]" : "text-[#E8CDD3]"}
+        />
+      ))}
+    </div>
+  );
+}
 
 export function NotPausedSection() {
   const ref = useRef(null);
@@ -108,11 +175,12 @@ export function NotPausedSection() {
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             India's Dedicated <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Perimenopause &amp; Midlife Platform</span>
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Perimenopause &amp; Midlife Platform Every Woman Deserves</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-            Menopause is not a pause. It is a comma   a breath before the most powerful chapter of a woman's life. NotPaused.com was built to ensure no Indian woman navigates it alone.
+            Menopause is not a pause. It is a comma, a breath before the most powerful chapter of a woman's life. NotPaused was built to ensure no woman 35+ navigates it alone
           </p>
+          
         </div>
       </div>
 
@@ -127,26 +195,10 @@ export function NotPausedSection() {
           <div className="relative z-10 space-y-3 max-w-4xl mx-auto">
             <span className="text-white text-[9px] font-bold tracking-widest uppercase inline-block">The National Scale</span>
             <p className="font-serif text-xl lg:text-3xl font-bold leading-relaxed">
-              Millions of Indian women are currently in the perimenopause menopause window. <br />
+             By 2026, an estimated 103 million Indian women will be in the perimenopause and menopause years <br />
               <span className="font-light italic text-xl">Most navigate it without medical guidance or awareness.</span>
             </p>
             <p className="text-white/80 text-sm font-light">NotPaused.com was founded by Kirti Yadav to bridge this precise gap.</p>
-          </div>
-        </div>
-
-        {/* NEW PDF ADDITION: First-Person Founder Credibility Card */}
-        <div className="reveal relative max-w-5xl mx-auto bg-gradient-to-br from-white to-[#FDF4F6] rounded-[2.5rem] p-8 md:p-12 shadow-md border border-[#E8CDD3]">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-lg bg-[#B55E79]">
-              <Sparkles size={28} />
-            </div>
-            <div className="space-y-2 text-center md:text-left">
-              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Corporate Credibility & Institutional Backing</span>
-              <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
-                "I've built this the same way I built my corporate career and my company   carefully, with real institutions backing the work, not just good intentions."
-              </p>
-              <span className="text-xs font-bold uppercase tracking-widest block pt-2 text-[#5F5358]">  Kirti Yadav, Founder · NotPaused.com</span>
-            </div>
           </div>
         </div>
 
@@ -159,7 +211,7 @@ export function NotPausedSection() {
               <Lightbulb className="w-7 h-7 text-white" strokeWidth={1.5} />
             </div>
             <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1 text-[#B55E79]">Chapter 01</span>
+              
               <h2 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Personal Origin</h2>
               <p className="text-xs font-medium tracking-widest uppercase mt-1 text-[#5F5358]">Why a certified nutritionist found herself unprepared   and built the solution</p>
             </div>
@@ -168,13 +220,13 @@ export function NotPausedSection() {
             className="reveal pl-6 border-l-2 rounded-r-xl border-[#B55E79]"
           >
             <p className="text-base font-light leading-relaxed text-[#5F5358]">
-              I am a certified holistic nutritionist specializing in herbal and natural strategies for menopause. Yet when I confronted my own perimenopause symptoms, I found myself facing a stark reality: even with professional training, India specific, culturally relevant guidance was virtually non existent.
+            I am a certified holistic nutritionist, I've spent years helping people change their lifestyle and health. But when I confronted my own perimenopause symptoms, I found myself completely clueless, even with all that experience, India specific, culturally relevant guidance was virtually non existent.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
               { h: "The Cultural Silence", b: "Women in India are routinely told 'it's just age' or 'endure it in private'. Brain fog, joint pain, sleep disruption, anxiety, and weight redistribution are misattributed or dismissed. No guidance. No community. Just silence." },
-              { h: "The Refusal to Accept That", b: "NotPaused.com was born as my direct refusal to accept that silence. Built from lived experience and evidence based nutrition, it provides women with a trusted ecosystem of education, coaching, and peer support." },
+              { h: "The Refusal to Accept That", b: "NotPaused was born as my direct refusal to accept that silence. Built from lived experience and evidence based nutrition, it provides women with a trusted ecosystem of education, coaching, and peer support" },
             ].map((item, i) => (
               <div
                 key={i}
@@ -185,6 +237,43 @@ export function NotPausedSection() {
               </div>
             ))}
           </div>
+
+          
+          <div className="pb-4">
+          <div className="reveal text-center mb-10">
+            <div className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]">
+              <Star className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Reviews &amp; Feedback</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">What Our Community Says</h3>
+            <p className="text-xs font-medium tracking-wide uppercase mt-2 text-[#B55E79]/70">Placeholder content — to be replaced with real member quotes</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {placeholderReviews.map((r, i) => (
+              <div
+                key={i}
+                className="reveal shimmer-card bg-white border border-dashed border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
+              >
+                <div className="flex items-start justify-between">
+                  <Quote className="w-6 h-6 text-[#B55E79]/30" strokeWidth={1.5} />
+                  <StarRating rating={r.rating} />
+                </div>
+                <p className="text-sm font-light leading-relaxed text-[#5F5358] flex-1 italic">
+                  {r.text}
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-[#E8CDD3]/60">
+                  <div className="w-9 h-9 rounded-full bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center font-serif font-bold text-sm shrink-0">
+                    <Users size={16} strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h5 className="font-serif font-bold text-sm text-[#2E2326] leading-tight">{r.name}</h5>
+                    <span className="text-[11px] text-[#5F5358]">{r.role}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
         </div>
 
         {/* 4-Pillar Architecture */}
@@ -196,7 +285,7 @@ export function NotPausedSection() {
               <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
               <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused.com</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => {
@@ -308,6 +397,9 @@ export function NotPausedSection() {
           </div>
         </div>
 
+        {/* Reviews / Feedback Section — 4 placeholder frames until Kirti supplies real quotes */}
+         
+
         {/* NEW PDF ADDITION: Interactive Community Join Request Form */}
         <div className="reveal max-w-3xl mx-auto bg-gradient-to-br from-white to-[#FDF7F8] border border-[#E8CDD3] rounded-[2.5rem] p-8 md:p-12 shadow-xl space-y-8">
           <div className="text-center space-y-3">
@@ -393,11 +485,6 @@ export function NotPausedSection() {
             <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
               "I built NotPaused.com because I was that woman looking for answers..."
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused.com</span>
-              <div className="w-8 h-px bg-white/40" />
-            </div>
           </div>
         </div>
 

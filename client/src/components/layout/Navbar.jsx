@@ -27,7 +27,7 @@ export function Navbar() {
       ],
     },
     
-    { name: "Press", path: "/achievements" },
+    { name: "Press Room", path: "/achievements" },
     {
       name: "Work with Me",
       path: "/work-with-me",

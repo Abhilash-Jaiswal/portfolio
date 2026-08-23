@@ -32,7 +32,7 @@ export function MyVenturesPage() {
       >
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 text-[#B55E79] text-[10px] font-bold tracking-[0.25em] uppercase mb-6">
+          <div className="inline-flex items-center gap-2 text-white text-[10px] font-bold tracking-[0.25em] uppercase mb-6">
             <Sparkles className="w-3.5 h-3.5" />
             <span>My Ventures</span>
           </div>
@@ -42,7 +42,7 @@ export function MyVenturesPage() {
             <span className="font-serif italic text-[#B55E79]">Life gets better when we make room for what matters.</span>
           </h1>
           <p className="text-[#5F5358] text-base md:text-lg font-light leading-relaxed max-w-2xl mx-auto">
-            From cleaning up the plate to breaking the silence around menopause   these are the spaces I've built to support the lives we're still becoming.
+            From reimagining the plate to reclaiming the conversation around menopause, these are the spaces I've built to support the lives we're still becoming.
           </p>
         </div>
       </div>

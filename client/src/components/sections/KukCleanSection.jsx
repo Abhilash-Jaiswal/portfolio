@@ -5,7 +5,7 @@ import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
 import img4 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.11 (1).jpeg";
 import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
-import { Leaf, Sparkles, Heart, ChefHat, Star, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, BookOpen, FlaskConical, Mail, Phone, Globe } from "lucide-react";
+import { Leaf, Sparkles, Heart, ChefHat, CheckCircle, TrendingUp, Award, ShieldCheck, Star } from "lucide-react";
 
 const wellnessImages = [img1, img2, img3, img4, img5, img6];
 
@@ -31,26 +31,18 @@ const theme = {
   bg: "#FCF8F7"
 };
 
-const products = [
-  { icon: <Leaf size={24} />, title: "Organic Ragi & Almond Laddus", desc: "Wholesome, gluten free, and naturally sweetened our Ragi Laddus are a calcium rich powerhouse made with organic finger millet. The Kashmiri Almond Protein Laddus combine roasted Bengal gram and jaggery powder for a protein packed bite. Zero refined sugar, zero dairy, 100% pure goodness." },
-  { icon: <Sparkles size={24} />, title: "Date Bites & Sugar Free Treats", desc: "Nature's candy, elevated. Premium Arabic dates are hand pitted and blended with crunchy cashews, almonds, pumpkin seeds, dried figs, and a warm whisper of cardamom & cloves. A guilt free indulgence that satisfies your sweet tooth and nourishes your body no added sugar, ever." },
-  { icon: <Heart size={24} />, title: "Baked Mathri & Millet Chivda", desc: "Crunch without the guilt. Our Ajwain Whole Wheat Mathri is baked, not fried crispy, aromatic, and low sodium. The Roasted Jowar Chivda is a millet based marvel, tossed with subtle spices for a savory snack that's light on salt but heavy on flavor. Traditional taste, modern health." },
-  { icon: <ChefHat size={24} />, title: "Stone Ground Nut Butters & Dips", desc: "Slow and steady wins the health race. Our nut butters are crafted the old fashioned way stone ground at low temperatures to preserve every precious micronutrient, enzyme, and healthy oil that high heat processing destroys. 100% clean label, pure nutty perfection." },
-  { icon: <Star size={24} />, title: "Artisanal Gift Hampers", desc: "Give the gift of health, thoughtfully curated. Choose from our KuKClean Wholesome, Sweet n Savour, or Healthy Nibbles hampers each hand assembled with our best-selling products and customized packaging for corporate gifting, festive celebrations, or simply spreading joy. Made for sharing, crafted for caring" },
-];
-
 const coreCategories = [
   { icon: <Heart size={22} />, title: "Healthy Indian Sweets", desc: "Clean label artisanal laddus and wholesome Indian sweets crafted without refined sugar or artificial additives." },
-  { icon: <Leaf size={22} />, title: "Healthy Breakfast", desc: "Nutrient dense morning fuel including organic millet blends, natural sweeteners, and wholesome breakfast options." },
-  { icon: <Sparkles size={22} />, title: "Healthy Snacks", desc: "Guilt free crunchy snacks, baked mathris, and roasted millet chivda light on sodium and heavy on traditional flavor." },
+  { icon: <Leaf size={22} />, title: "Healthy Breakfast", desc: "Nutrient dense morning fuel, wholesome breakfast options like granola, made with natural sweeteners." },
+  { icon: <Sparkles size={22} />, title: "Healthy Snacks", desc: "Guilt free crunchy snacks, light on sodium and heavy on traditional flavor." },
   { icon: <ChefHat size={22} />, title: "Nut Butters & Dips/Sauces", desc: "Slow stone ground at low temperatures to preserve vital micronutrients, enzymes, and natural healthy oils." },
 ];
 
 const b2bFocus = [
-  { num: "01", icon: <CheckCircle size={24} />, title: "Corporate Thalis & Canteen Supply", desc: "Supplying artisanal clean label laddus directly to corporate canteens and caterers as part of daily corporate Thalis (meal trays)." },
-  { num: "02", icon: <TrendingUp size={24} />, title: "Cafe Menu Consulting & Supply", desc: "Partnering directly with cafes to supply stone ground nut butters and consult on clean label, plant based menu redesigns." },
-  { num: "03", icon: <Award size={24} />, title: "Direct to Consumer & Bulk Gifting", desc: <>Online sales via kukclean.com, including individual orders and bulk or festival gifting for corporate clients <a href="https://www.kukclean.com/" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:opacity-80">kukclean.com</a> plus bespoke onboarding and festival hampers for corporate clients (Cisco, Biocon, Loyalytics.ai).</> },
-  { num: "04", icon: <ShieldCheck size={24} />, title: "Private Label", desc: "Making our laddus for other brands to sell under their own name" },
+  { num: "01", icon: <CheckCircle size={24} />, title: "Corporate Thalis & Canteen Supply", desc: "Our laddus, nut butters, and snacks show up in canteens and catering trays every day, giving employees an easy, better-for-you choice to reach for through the workday, so healthier eating becomes part of how a workplace runs, not an extra effort." },
+  { num: "02", icon: <TrendingUp size={24} />, title: "Cafe Menu Consulting & Supply", desc: "We help cafes offer their customers something genuinely healthier without slowing their kitchen down, supplying stone ground nut butters and consulting on clean label, plant based menu redesigns that turn into a reason customers keep coming back." },
+  { num: "03", icon: <Award size={24} />, title: "Direct to Consumer", desc: <>Individuals shop <a href="https://www.kukclean.com/" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:opacity-80">kukclean.com</a> for clean label treats they can actually trust the ingredients on, and businesses come to us for bulk and festival gifting that feels thoughtful, not generic.</> },
+  { num: "04", icon: <ShieldCheck size={24} />, title: "Private Label", desc: "Other brands trust us to make their laddus, so they can put a clean label product in front of their own customers without having to build a kitchen or supply chain from scratch." },
 ];
 
 const saladFormulaBlocks = [
@@ -97,11 +89,10 @@ export function KukCleanSection() {
         <div className="absolute inset-0 z-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
         <div className="relative z-10 max-w-5xl animate-fade-in-up">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
-            KuKClean Foods & Consulting
+            KUKCLEAN FOODS & CONSULTING
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
-            KukClean, <br />
+            KuKClean <br />
             <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated"></span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
@@ -126,34 +117,6 @@ export function KukCleanSection() {
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-24 space-y-32">
 
-        {/* Opening Pull Quote */}
-        <div
-          className="reveal relative max-w-5xl mx-auto bg-white/80 backdrop-blur-md rounded-[2.5rem] p-10 md:p-14 shadow-xl border border-white"
-        >
-          <Quote className="absolute top-8 left-8 w-16 h-16 opacity-5" style={{ color: theme.primary }} />
-          <p className="font-serif text-2xl md:text-3xl italic leading-relaxed text-center relative z-10" style={{ color: theme.dark }}>
-            "KukClean stands for Kitchen, You, and Kirti's Clean eating journey. The idea started with a blog where I wanted to share my own clean eating journey, but the universe had other plans, and it became a national brand solving the 4 o'clock snacking problem for health conscious families"
-          </p>
-          <span className="text-sm font-bold uppercase tracking-[0.2em] block mt-8 text-center" style={{ color: theme.primary }}>  Kirti Yadav, Founder</span>
-        </div>
-
-        {/* NEW PDF ADDITION: Origin & Universal Energy Story Quote Card */}
-        <div className="reveal relative max-w-5xl mx-auto bg-gradient-to-br from-white to-[#FDF4F6] rounded-[2.5rem] p-8 md:p-12 shadow-md border border-[#E8CDD3]">
-          <div className="flex flex-col md:flex-row items-center gap-6">
-            <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-white shrink-0 shadow-lg" style={{ backgroundColor: theme.primary }}>
-              <Sparkles size={28} />
-            </div>
-            <div className="space-y-2 text-center md:text-left">
-              <span className="text-[10px] font-bold tracking-[0.25em] uppercase block" style={{ color: theme.primary }}>Brand Origin & Philosophy</span>
-              <p className="font-serif text-lg md:text-xl italic leading-relaxed" style={{ color: theme.dark }}>
-                "KuKClean stands for 'Kitchen U'   tied to my own clean eating journey. It started as an idea for a blog about my weight-loss story, one that never actually launched. But sometimes the universe has bigger plans than what we think   so I believe in that universal energy, and trust that things happen the way they're meant to. Instead of the blog, the brand happened."
-              </p>
-              <span className="text-xs font-bold uppercase tracking-widest block pt-2" style={{ color: theme.muted }}>  Kirti Yadav, Founder</span>
-            </div>
-          </div>
-        </div>
-
-      
         {/* Ch 02   Agritech & IIM Incubation */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
@@ -164,7 +127,6 @@ export function KukCleanSection() {
               <Leaf size={28} />
             </div>
             <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-2" style={{ color: theme.primary }}>Chapter 02</span>
               <h2 className="font-serif text-3xl lg:text-4xl font-bold" style={{ color: theme.dark }}>IIM Bangalore, ICAR-IIMR & Certifications</h2>
               <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}>Government grants, agritech incubation, and FSSAI / APEDA / DPIIT approvals</p>
             </div>
@@ -174,7 +136,7 @@ export function KukCleanSection() {
             style={{ borderColor: theme.primary }}
           >
             <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
-              KuKClean was incubated for 1.5 years at IIM Bangalore's Women Startup Programme (Cohort 3 WSP3), named among the Top 50 Women Led Ventures. The brand also graduated from the Goldman Sachs 10,000 Women (GS10K) program at NSRCEL IIMB and was incubated at NutriHub ICAR-IIMR Hyderabad, receiving the RKVY-RAFTAAR Grant-in-Aid from the Ministry of Agriculture & Farmers' Welfare (second highest grant awarded). Fully certified under FSSAI, APEDA, and DPIIT.
+              KuKClean was incubated for 1.5 years at IIM Bangalore's Women Startup Programme (WSP Cohort 3), named among the Top 50 Women Led Ventures. The brand also graduated from the Goldman Sachs 10,000 Women (GS10K) program at NSRCEL IIMB and was incubated at NutriHub ICAR-IIMR Hyderabad, receiving the RKVY-RAFTAAR Grant-in-Aid from the Ministry of Agriculture & Farmers' Welfare. Fully certified under FSSAI, APEDA, and DPIIT.
             </p>
           </div>
         </div>
@@ -216,40 +178,6 @@ export function KukCleanSection() {
           </div>
         </div>
 
-        {/* Product Catalog */}
-        <div>
-          <div className="reveal text-center mb-10">
-            <div
-              className="inline-block border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
-            >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Artisanal Product Portfolio</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Handcrafted, Clean Label Products</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {products.map((p, i) => (
-              <div
-                key={i}
-                className="reveal group bg-white/70 backdrop-blur-sm border p-8 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 flex flex-col items-start gap-4"
-                style={{
-                  borderColor: `${theme.border}80`,
-                  transitionDelay: `${i * 60}ms`
-                }}
-              >
-                <div
-                  className="w-12 h-12 rounded-2xl flex flex-shrink-0 items-center justify-center text-white group-hover:scale-110 transition-transform duration-500 shadow-inner"
-                  style={{ backgroundColor: theme.primary }}
-                >
-                  {p.icon}
-                </div>
-                <h4 className="font-serif font-bold text-base leading-tight" style={{ color: theme.dark }}>{p.title}</h4>
-                <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>{p.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* NEW PDF ADDITION: Confirmed 4 Core Categories Showcase */}
         <div>
           <div className="reveal text-center mb-10">
@@ -257,11 +185,11 @@ export function KukCleanSection() {
               className="inline-block border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Handcrafted</span>
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Clean Label Products</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>4 Primary Product Categories</h3>
             <p className="text-sm font-light mt-2 max-w-xl mx-auto" style={{ color: theme.muted }}>
-              The essential clean label product lines crafted with zero refined sugars, zero artificial preservatives, and 100% natural ingredients.
+              The essential clean label product lines crafted with zero refined sugars, zero artificial preservatives, and whole grains and pulses.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -291,9 +219,9 @@ export function KukCleanSection() {
               className="inline-block border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Wellness Assessment</span>
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Our Products</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Kuk Clean Wellness & Analysis</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>A Taste of KuKClean</h3>
           </div>
           <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {wellnessImages.map((imageSrc, idx) => (
@@ -312,6 +240,35 @@ export function KukCleanSection() {
           </div>
         </div>
 
+        {/* Google Reviews */}
+        <div className="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          <div className="bg-white/80 border rounded-3xl p-8 md:p-10" style={{ borderColor: theme.border }}>
+            <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Google Reviews</span>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold mt-3" style={{ color: theme.dark }}>What people are saying about KuKClean</h3>
+            <p className="text-sm font-light leading-relaxed mt-4" style={{ color: theme.muted }}>
+              See KuKClean's live Google rating, review count, and latest customer feedback on the listing.
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=KuKClean+Foods+and+Consulting+Bengaluru"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center mt-6 rounded-full bg-[#B55E79] text-white px-6 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#6B2D3E] transition-colors"
+            >
+              <Star size={16} fill="currentColor" className="mr-2" />
+              Read all reviews on Google
+            </a>
+          </div>
+          <div className="overflow-hidden rounded-3xl border min-h-72" style={{ borderColor: theme.border }}>
+            <iframe
+              title="KuKClean on Google Maps"
+              src="https://www.google.com/maps?q=KuKClean+Foods+and+Consulting+Bengaluru&output=embed"
+              className="w-full h-full min-h-72 border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        </div>
+
         {/* Closing Quote Banner */}
         <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
@@ -324,11 +281,6 @@ export function KukCleanSection() {
             <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
               "You will not find any product on KuKClean that our family does not believe in or does not consume. You have our word."
             </p>
-            <div className="flex items-center justify-center gap-3">
-              <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav & Akar Misra, Co Founders · KuKClean Foods</span>
-              <div className="w-8 h-px bg-white/40" />
-            </div>
           </div>
         </div>
 
