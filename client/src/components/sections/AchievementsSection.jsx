@@ -37,13 +37,13 @@ function useReveal(ref) {
 }
 
 const theme = {
-  primary:      "#B55E79",   // rose-mauve
+  primary: "#B55E79",   // rose-mauve
   primaryLight: "#E6BEC6",
-  primarySoft:  "#F4D9DE",
-  dark:         "#2E2326",
-  muted:        "#5F5358",
-  border:       "#E8CDD3",
-  bg:           "#FCF8F7"
+  primarySoft: "#F4D9DE",
+  dark: "#2E2326",
+  muted: "#5F5358",
+  border: "#E8CDD3",
+  bg: "#FCF8F7"
 };
 
 const milestones = [
@@ -65,7 +65,7 @@ const credentials = [
   { title: "Certified Holistic Nutritionist", org: "", detail: "Specialized in whole food plant based nutrition and lifestyle medicine." },
   { title: "Plant Based Athlete Coach", org: "", detail: "Expertise in endurance fuel and high performance plant nutrition." },
   { title: "Herbal & Natural Strategies for Menopause", org: "", detail: "Clinical knowledge in natural hormone management & midlife wellness." },
-  { title: "Certified Menopause Coach", org: "Nerdy Grad", detail: "Specialized training in midlife hormonal wellness." },
+  { title: "Certified Menopause Coach", detail: "Specialized training in midlife hormonal wellness." },
   { title: "BTech Computer Science", org: "HBTI Kanpur", detail: "Engineering foundation in algorithms and software systems." },
   { title: "C-PGDBA (IT)", org: "Symbiosis Centre", detail: "Postgraduate diploma in Information Technology Management." },
   // NEW PDF ADDITIONS: Verified Credentials
@@ -75,19 +75,19 @@ const credentials = [
 
 const corporateFlagship = ["JP Morgan", "Goldman Sachs", "Microsoft", "IBM", "ISRO", "Siemens"];
 const corporateRoster = [
-  "Applied Materials", "LAM Research", "Reliance Ajio", "HDFC", "WeWork", "PhonePe", 
+  "Applied Materials", "LAM Research", "Reliance Ajio", "HDFC", "WeWork", "PhonePe",
   "Infoservices", "Dixcy", "The Design Cafe", "BigBasket", "Clear Route", "Ecopeak Solutions", "[24/7].ai"
 ];
 
 const b2bClients = ["Cisco", "Biocon", "Loyalytics.ai"];
 
 const pressCoverage = [
-  { source: "YourStory", title: "Video Interview with Founder Shradha Sharma", desc: "Invited to share KuKClean's origin, plant based philosophy, and breaking industry stereotypes." },
-  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of the #EatLikeKirti live lockdown nutrition initiative." },
-  { source: "Deccan Herald", title: "'Some Women Doing Wow Things' & Community Dining", desc: "Profiled for leading plant based food innovation and community wellness." },
-  { source: "The Better India", title: "Plant Based Vegan Sugar Free Delights", desc: "Featured for creating clean label Indian sweets suitable for health conscious families & diabetes management." },
-  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Keynote presentation to HR leaders on why corporates must prioritize employee nutrition." },
-  { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by Rajasthan State Government to inspire young women founders." },
+  { source: "YourStory", title: "In Conversation with YourStory’s Shradha Sharma", desc: "A video interview where I shared KuKClean’s origin story, our plant based philosophy, and what it took to break industry stereotypes." },
+  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of #EatLikeKirti, the live nutrition initiative I ran through the lockdown to help families eat well when it mattered most." },
+  { source: "Deccan Herald", title: "Some Women Doing Wow Things", desc: "Profiled for leading plant based food innovation and building community around wellness through shared dining." },
+  { source: "The Better India", title: "Plant Based, Sugar Free Delights", desc: "Featured for creating clean label Indian sweets made for health conscious families, including those managing diabetes." },
+  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Invited to speak to HR leaders on why employee nutrition deserves a real seat at the corporate wellness table." },
+  { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by the Rajasthan State Government to share my journey and inspire the next generation of women founders." },
 ];
 
 const speakingEngagements = [
@@ -143,7 +143,7 @@ const clientQuotes = [
   {
     name: "Seema",
     role: "Coaching Client",
-    rel: "Lifestyle Transformation Program",
+    rel: "Lifestyle Transformation Prosgram",
     quote: "I enrolled with Kirti to help me reduce my weight, and it has been one of the best decisions I've made. She built me a complete meal plan and guided me on how to maintain a balanced meal each day, alongside overall lifestyle changes that support both mind and body wellness. I was able to reduce 12 kgs, and I am extremely happy with the results. The journey wasn't always smooth, but her guidance, motivation, and constant support made it achievable. I truly appreciate her knowledge, her personalised attention, and her patience in helping me stay on track throughout.",
   },
   {
@@ -201,11 +201,11 @@ export function AchievementsSection() {
   };
 
   return (
-    <section 
-      id="achievements" 
-      ref={ref} 
+    <section
+      id="achievements"
+      ref={ref}
       className="border-b scroll-mt-20"
-      style={{ 
+      style={{
         backgroundColor: theme.bg,
         borderColor: `${theme.border}60`
       }}
@@ -219,7 +219,7 @@ export function AchievementsSection() {
         <div className="absolute -top-24 -left-16 w-96 h-96 bg-white/5 rounded-full blur-3xl animate-float" />
         <div className="absolute -bottom-20 -right-10 w-80 h-80 bg-white/8 rounded-full blur-2xl animate-float" style={{ animationDelay: "2s" }} />
         <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
-        
+
         <div className="relative z-10 max-w-5xl">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
             <Award className="w-3.5 h-3.5 text-[#E6BEC6]" strokeWidth={1.5} />
@@ -240,7 +240,7 @@ export function AchievementsSection() {
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-20 space-y-20">
 
         {/* Opening Quote */}
-        <div 
+        <div
           className="reveal max-w-4xl mx-auto bg-white/80 border-l-4 rounded-r-3xl px-8 py-6 shadow-sm border border-[#E8CDD3]"
           style={{ borderLeftColor: theme.primary }}
         >
@@ -252,7 +252,7 @@ export function AchievementsSection() {
         {/* Credentials & Certifications */}
         <div>
           <div className="reveal text-center mb-10">
-            <div 
+            <div
               className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
@@ -263,11 +263,11 @@ export function AchievementsSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {credentials.map((c, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
               >
-                <div 
+                <div
                   className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm"
                 >
                   <Award className="w-6 h-6" strokeWidth={1.5} />
@@ -281,7 +281,7 @@ export function AchievementsSection() {
         </div>
 
         {/* Corporate Client Roster */}
-        <div 
+        <div
           className="reveal bg-white/80 border border-[#E8CDD3] p-10 rounded-3xl shadow-sm space-y-8"
         >
           <div className="text-center max-w-3xl mx-auto space-y-2">
@@ -295,8 +295,8 @@ export function AchievementsSection() {
             <span className="text-xs font-bold uppercase tracking-widest block text-center text-[#5F5358]">Flagship Organizations Delivered At:</span>
             <div className="flex flex-wrap justify-center gap-3">
               {corporateFlagship.map((name) => (
-                <span 
-                  key={name} 
+                <span
+                  key={name}
                   className="text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-sm flex items-center gap-2 bg-[#B55E79]"
                 >
                   {name}
@@ -310,8 +310,8 @@ export function AchievementsSection() {
             <span className="text-xs font-bold uppercase tracking-widest block text-center text-[#5F5358]">Additional Corporate &amp; B2B Client Organizations:</span>
             <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
               {corporateRoster.concat(b2bClients).map((name) => (
-                <span 
-                  key={name} 
+                <span
+                  key={name}
                   className="text-xs font-medium px-3.5 py-1.5 rounded-full border border-[#E8CDD3] bg-[#F4D9DE] text-[#5F5358]"
                 >
                   {name}
@@ -324,7 +324,7 @@ export function AchievementsSection() {
         {/* Media & Press Highlights */}
         <div>
           <div className="reveal text-center mb-10">
-            <div 
+            <div
               className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
@@ -335,17 +335,22 @@ export function AchievementsSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {pressCoverage.map((p, i) => (
-              <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
+              <a
+                key={i}
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block cursor-pointer no-underline hover:opacity-80 transition-opacity"
               >
-                <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
-                  <Newspaper className="w-6 h-6" strokeWidth={1.5} />
+                <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+                  <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
+                    <Newspaper className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <span className="text-[10px] font-bold uppercase tracking-widest block text-[#B55E79]">{p.source}</span>
+                  <h4 className="font-serif font-bold text-base text-[#2E2326]">{p.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
                 </div>
-                <span className="text-[10px] font-bold uppercase tracking-widest block text-[#B55E79]">{p.source}</span>
-                <h4 className="font-serif font-bold text-base text-[#2E2326]">{p.title}</h4>
-                <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -381,9 +386,9 @@ export function AchievementsSection() {
         </div>
 
         {/* LinkedIn Professional Recommendations */}
-        <div>
+        {/* <div>
           <div className="reveal text-center mb-10">
-            <div 
+            <div
               className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
               style={{ borderColor: theme.primary }}
             >
@@ -392,14 +397,14 @@ export function AchievementsSection() {
             </div>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>LinkedIn Recommendations</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {linkedinRecs.map((r, i) => (
-              <div 
-                key={i} 
+              <div
+                key={i}
                 className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 space-y-4"
               >
                 <div className="flex items-center gap-3">
-                  <div 
+                  <div
                     className="w-10 h-10 rounded-2xl text-white flex items-center justify-center font-bold text-sm bg-[#B55E79]"
                   >
                     {r.name.charAt(0)}
@@ -412,169 +417,68 @@ export function AchievementsSection() {
                 <p className="text-xs font-light leading-relaxed italic text-[#5F5358]">"{r.quote}"</p>
               </div>
             ))}
-          </div>
-        </div>
+          </div> 
+        </div> */}
 
         {/* Client Testimonials 3-Card Continuous Slider */}
-        <div>
-          <div className="reveal text-center mb-10">
-            <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
-            >
-              <Quote className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Client Transformations</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Real Stories, Real Results</h3>
-          </div>
-
-          <div 
-            className="reveal relative max-w-6xl mx-auto px-4 md:px-12"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            {/* Previous Button */}
-            <button
-              onClick={prevSlide}
-              aria-label="Previous Slide"
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -ml-2 md:-ml-6"
-            >
-              <ChevronLeft size={24} />
-            </button>
-
-            {/* Next Button */}
-            <button
-              onClick={nextSlide}
-              aria-label="Next Slide"
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -mr-2 md:-mr-6"
-            >
-              <ChevronRight size={24} />
-            </button>
-
-            {/* Slider Container */}
-            <div className="overflow-hidden rounded-3xl p-1">
-              <div 
-                className={`flex ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
-                style={{ transform: `translateX(-${activeSlide * 100}%)` }}
-                onTransitionEnd={handleTransitionEnd}
-              >
-                {[0, 1, 2, 0].map((slideIdx, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-1">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                      {clientQuotes.slice(slideIdx * 3, slideIdx * 3 + 3).map((q, i) => (
-                        <div 
-                          key={i} 
-                          className="bg-white/90 border border-[#E8CDD3] p-7 rounded-[2rem] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-                        >
-                          <div className="space-y-4">
-                            <div className="flex items-center justify-between">
-                              <div className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] shadow-sm">
-                                <Quote className="w-5 h-5" strokeWidth={1.5} />
-                              </div>
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#B55E79] ">
-                                {q.rel}
-                              </span>
-                            </div>
-                            <p className="text-xs sm:text-sm font-light leading-relaxed italic text-[#5F5358]">"{q.quote}"</p>
-                          </div>
-                          <div className="pt-4 border-t border-[#E8CDD3] flex items-center gap-3 mt-4">
-                            <div className="w-10 h-10 rounded-full bg-[#B55E79] text-white flex items-center justify-center font-serif font-bold text-sm shadow-sm shrink-0">
-                              {q.name.charAt(0)}
-                            </div>
-                            <div>
-                              <h4 className="font-serif font-bold text-sm text-[#2E2326]">{q.name}</h4>
-                              <span className="text-[11px] font-light text-[#5F5358] block">{q.role}</span>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Pagination Dots */}
-            <div className="flex items-center justify-center gap-2 mt-8">
-              {Array.from({ length: totalSlides }).map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    if (!isTransitioning) setIsTransitioning(true);
-                    setActiveSlide(idx);
-                  }}
-                  aria-label={`Go to slide ${idx + 1}`}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
-                    (activeSlide % totalSlides) === idx ? "w-8 bg-[#B55E79]" : "w-2.5 bg-[#E8CDD3] hover:bg-[#B55E79]/50"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+         
 
         {/* Quote Banner */}
-        <div 
-          className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"
-          style={{ background: "linear-gradient(135deg, #CF99A6 0%, #B55E79 100%)" }}
-        >
-          <div className="absolute -right-16 -top-16 w-64 h-64 bg-white/8 rounded-full blur-2xl" />
-          <div className="absolute -left-10 -bottom-10 w-48 h-48 bg-white/5 rounded-full blur-xl" />
-          <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-            <p className="font-serif text-xl lg:text-2xl italic text-white leading-relaxed">
-              "Credentialing matters because systemic health requires institutional trust. But real transformation happens when rigorous knowledge meets empathy."
-            </p>
-          </div>
-        </div>
+         
 
         {/* Complete Timeline Cards Grid */}
-        <div className="border-t pt-16" style={{ borderColor: `${theme.border}60` }}>
-          <div className="reveal text-center mb-12">
-            <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
-            >
-              <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Complete Recognition Timeline</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Every Milestone, in Sequence</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {milestones.map((item, idx) => {
-              const Icon = item.icon;
-              return (
+         <div className="border-t pt-16" style={{ borderColor: `${theme.border}60` }}>
+  <div className="reveal text-center mb-12">
+    <div
+      className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
+      style={{ borderColor: theme.primary }}
+    >
+      <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+      <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Complete Recognition Timeline</span>
+    </div>
+    <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Every Milestone, in Sequence</h3>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+    {milestones.map((item, idx) => {
+      const Icon = item.icon;
+      return (
+        <a
+          key={idx}
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block cursor-pointer no-underline"
+          style={{
+            transitionDelay: `${(idx % 3) * 80}ms`
+          }}
+        >
+          <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full">
+            <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8CDD3]">
+              <div className="flex items-center gap-3">
                 <div
-                  key={idx}
-                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-                  style={{ 
-                    transitionDelay: `${(idx % 3) * 80}ms`
-                  }}
+                  className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center shadow-sm text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500"
                 >
-                  <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8CDD3]">
-                    <div className="flex items-center gap-3">
-                      <div 
-                        className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center shadow-sm text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500"
-                      >
-                        <Icon className="w-5 h-5" strokeWidth={1.5} />
-                      </div>
-                    </div>
-                    <span 
-                      className="text-[9px] font-bold tracking-widest uppercase text-[#B55E79]"
-                    >
-                      {item.category}
-                    </span>
-                  </div>
-                  <h4 
-                    className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]"
-                  >
-                    {item.title}
-                  </h4>
-                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
+                  <Icon className="w-5 h-5" strokeWidth={1.5} />
                 </div>
-              );
-            })}
+              </div>
+              <span
+                className="text-[9px] font-bold tracking-widest uppercase text-[#B55E79]"
+              >
+                {item.category}
+              </span>
+            </div>
+            <h4
+              className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]"
+            >
+              {item.title}
+            </h4>
+            <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
           </div>
-        </div>
+        </a>
+      );
+    })}
+  </div>
+</div>
 
       </div>
     </section>
