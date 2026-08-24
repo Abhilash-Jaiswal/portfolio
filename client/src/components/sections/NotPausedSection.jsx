@@ -66,7 +66,7 @@ const services = [
   {
     icon: UserCheck,
     title: "1:1 Perimenopause Coaching",
-    items: ["Personalised midlife nutrition & symptom management", "Strength & mobility routines for bone density", "Sleep, stress & metabolic health optimization", "Vetted community access"],
+    items: ["Personalised midlife nutrition & symptom management", "Strength & mobility routines for bone density", "Sleep, stress & metabolic health optimization", "community access"],
   },
   {
     icon: Building2,
@@ -174,8 +174,8 @@ export function NotPausedSection() {
             NotPaused
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
-            India's Dedicated <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Perimenopause &amp; Midlife Platform Every Woman Deserves</span>
+            The Perimenopause  <br />
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated"> &amp; Midlife Platform Every Woman Deserves.”</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
             Menopause is not a pause. It is a comma, a breath before the most powerful chapter of a woman's life. NotPaused was built to ensure no woman 35+ navigates it alone
@@ -198,11 +198,114 @@ export function NotPausedSection() {
              By 2026, an estimated 103 million Indian women will be in the perimenopause and menopause years <br />
               <span className="font-light italic text-xl">Most navigate it without medical guidance or awareness.</span>
             </p>
-            <p className="text-white/80 text-sm font-light">NotPaused.com was founded by Kirti Yadav to bridge this precise gap.</p>
+            <p className="text-white/80 text-sm font-light">Third Consensus Meeting of the Indian Menopause Society (2008): A Summary</p>
           </div>
         </div>
 
-        {/* Ch 01   Personal Origin */}
+        
+
+        {/* 4-Pillar Architecture */}
+        <div>
+          <div className="reveal text-center mb-10">
+            <div
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
+            >
+              <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The  Pillars of NotPaused</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {pillars.map((p, i) => {
+              const Icon = p.icon;
+              return (
+                <div
+                  key={i}
+                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
+                >
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#F4D9DE] text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm"
+                  >
+                    <Icon className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <h4 className="font-serif font-bold text-sm text-[#2E2326]">{p.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Core Operating Principles */}
+        <div>
+          <div className="reveal text-center mb-10">
+            <div
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
+            >
+              <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Brand Ethos</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Core Operating Principles</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {principles.map((pr, i) => {
+              const Icon = pr.icon;
+              return (
+                <div
+                  key={i}
+                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
+                >
+                  <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
+                    <Icon className="w-6 h-6" strokeWidth={1.5} />
+                  </div>
+                  <h4 className="font-serif font-bold text-base text-[#2E2326]">{pr.title}</h4>
+                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{pr.desc}</p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+         {/* Services & Community Offerings */}
+        <div className="pb-10">
+          <div className="reveal text-center mb-10">
+            <div
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
+            >
+              <Users className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Ecosystem Programs</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Services &amp; Community Offerings</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {services.map((s, i) => {
+              const Icon = s.icon;
+              return (
+                <div
+                  key={i}
+                  className="reveal bg-white border border-[#E8CDD3] p-8 rounded-3xl shadow-sm group hover:-translate-y-1 transition-transform duration-300"
+                >
+                  <div className="flex items-center gap-4 border-b border-[#E8CDD3] pb-4 mb-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#FDF5F6] flex items-center justify-center text-[#B55E79] shrink-0">
+                      <Icon size={20} strokeWidth={1.5} />
+                    </div>
+                    <h4 className="font-serif font-bold text-lg text-[#2E2326] leading-snug">{s.title}</h4>
+                  </div>
+                  <ul className="space-y-3">
+                    {s.items.map((item, idx) => (
+                      <li key={idx} className="text-sm font-light text-[#5F5358] flex items-start gap-2.5 leading-relaxed">
+                        <span className="w-1.5 h-1.5 rounded-full bg-[#B55E79]/50 shrink-0 mt-2" />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+{/* Ch 01   Personal Origin */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
             <div
@@ -275,141 +378,17 @@ export function NotPausedSection() {
           </div>
         </div>
         </div>
-
-        {/* 4-Pillar Architecture */}
-        <div>
-          <div className="reveal text-center mb-10">
-            <div
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
-            >
-              <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {pillars.map((p, i) => {
-              const Icon = p.icon;
-              return (
-                <div
-                  key={i}
-                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
-                >
-                  <div
-                    className="w-12 h-12 rounded-2xl flex items-center justify-center bg-[#F4D9DE] text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm"
-                  >
-                    <Icon className="w-6 h-6" strokeWidth={1.5} />
-                  </div>
-                  <h4 className="font-serif font-bold text-sm text-[#2E2326]">{p.title}</h4>
-                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Core Operating Principles */}
-        <div>
-          <div className="reveal text-center mb-10">
-            <div
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
-            >
-              <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Brand Ethos</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Core Operating Principles</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {principles.map((pr, i) => {
-              const Icon = pr.icon;
-              return (
-                <div
-                  key={i}
-                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
-                >
-                  <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
-                    <Icon className="w-6 h-6" strokeWidth={1.5} />
-                  </div>
-                  <h4 className="font-serif font-bold text-base text-[#2E2326]">{pr.title}</h4>
-                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{pr.desc}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* NEW PDF ADDITION: Supreetha Bhat Testimonial Card */}
-        <div className="reveal max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-[#E8CDD3] relative overflow-hidden">
-          <Quote className="absolute top-6 left-6 w-16 h-16 opacity-5 text-[#B55E79]" />
-          <div className="relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-2 bg-[#F4D9DE] text-[#B55E79] text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">
-              <span>Community Story</span>
-            </div>
-            <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
-              "I'd been dealing with chronic inflammation, low weight, and was anaemic and borderline diabetic   and honestly, an irritable, stressed version of myself. I was a 'no salads' person until Kirti got strict with my diet, and I was sceptical it would work for me. Within two months: no more inflammation, my symptoms under control, my blood counts improving, and I'm handling stress so much better emotionally. All I did was follow her instructions. This is for Kirti, for the change she brought to my plate   and to me   that I hadn't expected at all."
-            </p>
-            <div className="pt-2 flex items-center justify-between border-t border-[#E8CDD3]/50">
-              <div>
-                <h5 className="font-serif font-bold text-base text-[#2E2326]">Supreetha Bhat</h5>
-                <span className="text-xs text-[#5F5358] uppercase tracking-wider">NotPaused Community Member</span>
-              </div>
-              <HeartHandshake className="w-6 h-6 text-[#B55E79]" />
-            </div>
-          </div>
-        </div>
-
-        {/* Services & Community Offerings */}
-        <div className="pb-10">
-          <div className="reveal text-center mb-10">
-            <div
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]"
-            >
-              <Users className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Ecosystem Programs</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Services &amp; Community Offerings</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {services.map((s, i) => {
-              const Icon = s.icon;
-              return (
-                <div
-                  key={i}
-                  className="reveal bg-white border border-[#E8CDD3] p-8 rounded-3xl shadow-sm group hover:-translate-y-1 transition-transform duration-300"
-                >
-                  <div className="flex items-center gap-4 border-b border-[#E8CDD3] pb-4 mb-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FDF5F6] flex items-center justify-center text-[#B55E79] shrink-0">
-                      <Icon size={20} strokeWidth={1.5} />
-                    </div>
-                    <h4 className="font-serif font-bold text-lg text-[#2E2326] leading-snug">{s.title}</h4>
-                  </div>
-                  <ul className="space-y-3">
-                    {s.items.map((item, idx) => (
-                      <li key={idx} className="text-sm font-light text-[#5F5358] flex items-start gap-2.5 leading-relaxed">
-                        <span className="w-1.5 h-1.5 rounded-full bg-[#B55E79]/50 shrink-0 mt-2" />
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Reviews / Feedback Section — 4 placeholder frames until Kirti supplies real quotes */}
-         
-
+        
         {/* NEW PDF ADDITION: Interactive Community Join Request Form */}
         <div className="reveal max-w-3xl mx-auto bg-gradient-to-br from-white to-[#FDF7F8] border border-[#E8CDD3] rounded-[2.5rem] p-8 md:p-12 shadow-xl space-y-8">
           <div className="text-center space-y-3">
             <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mx-auto shadow-sm">
               <UserPlus size={28} />
             </div>
-            <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]">Vetted Member Access</span>
+            <span className="text-[10px] font-bold tracking-[0.25em] uppercase block text-[#B55E79]"> Member Access</span>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Join the NotPaused Community</h3>
             <p className="text-sm font-light text-[#5F5358] max-w-lg mx-auto">
-              Request access to our non judgmental, vetted peer support network for women 35+ navigating midlife transitions.
+              Request access to our non judgmental,  peer support network for women 35+ navigating midlife transitions.
             </p>
           </div>
 
@@ -483,7 +462,7 @@ export function NotPausedSection() {
           <div className="relative z-10 space-y-5 max-w-4xl mx-auto">
             <span className="text-white text-[9px] font-bold tracking-widest uppercase inline-block">The Vision for NotPaused</span>
             <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
-              "I built NotPaused.com because I was that woman looking for answers..."
+              "I built NotPaused because I was that woman looking for answers..."
             </p>
           </div>
         </div>

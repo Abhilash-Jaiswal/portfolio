@@ -117,6 +117,30 @@ export function KukCleanSection() {
 
       <div className="container mx-auto px-6 md:px-12 lg:px-20 py-24 space-y-32">
 
+        {/* Ch 02   Brand Origin & Philosophy */}
+        <div className="space-y-8">
+          <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
+            <div
+              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
+              style={{ backgroundColor: theme.primary }}
+            >
+              <Leaf size={28} />
+            </div>
+            <div>
+              <h2 className="font-serif text-3xl lg:text-4xl font-bold" style={{ color: theme.dark }}>Brand Origin & Philosophy</h2>
+              <p className="text-xs font-medium tracking-widest uppercase mt-1" style={{ color: theme.muted }}></p>
+            </div>
+          </div>
+          <div
+            className="reveal pl-6 border-l-2 rounded-r-xl"
+            style={{ borderColor: theme.primary }}
+          >
+            <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
+             KuKClean stands for Kitchen, You, and Kirti's Clean eating journey. It started as an idea for a blog about my own weight-loss story, one that never actually launched. But I believe in that universal energy, and trust that things happen the way they're meant to, so instead of the blog, the brand happened: a national brand solving the 4 o'clock snacking problem for health conscious families
+            </p>
+          </div>
+        </div>
+
         {/* Ch 02   Agritech & IIM Incubation */}
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
@@ -149,9 +173,7 @@ export function KukCleanSection() {
               style={{ borderColor: theme.primary }}
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Business Model</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Primary Focus: Cafes & Corporate Thalis</h3>
-          </div>
+            
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {b2bFocus.map((b, i) => (
               <div
@@ -186,12 +208,7 @@ export function KukCleanSection() {
               style={{ borderColor: theme.primary }}
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>4 Primary Product Categories</h3>
-            <p className="text-sm font-light mt-2 max-w-xl mx-auto" style={{ color: theme.muted }}>
-              The essential clean label product lines crafted with zero refined sugars, zero artificial preservatives, and whole grains and pulses.
-            </p>
-          </div>
+            
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreCategories.map((cat, i) => (
               <div
