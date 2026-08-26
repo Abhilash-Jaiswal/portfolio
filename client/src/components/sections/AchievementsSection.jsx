@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+ import { useState, useEffect, useRef } from "react";
 import {
   Award,
   Users,
@@ -46,19 +46,17 @@ const theme = {
   bg: "#FCF8F7"
 };
 
+// MODIFIED ARRAY: Removed last 3 items, added images/placeholders to the 9 remaining
 const milestones = [
-  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship." },
-  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur." },
-  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel." },
-  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women Led Startup." },
-  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture." },
-  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." },
-  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early stage women entrepreneurs across India." },
-  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led a plant based nutrition masterclass for corporate employees." },
-  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3)." },
-  { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." },
-  { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com)." },
-  { year: "2005", category: "Tech Degree", icon: Laptop, title: "BTech Computer Science — HBTI Kanpur", short: "Graduated with CS engineering degree before entering 9-year corporate career." },
+  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image: "/images/milestone-1.jpg" },
+  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur.", image: "/images/milestone-2.jpg" },
+  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: "/images/milestone-3.jpg" },
+  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women Led Startup.", image: "/images/milestone-4.jpg" },
+  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: "/images/milestone-5.jpg" },
+  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: "/images/milestone-6.jpg" },
+  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early stage women entrepreneurs across India.", image: "/images/milestone-7.jpg" },
+  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led a plant based nutrition masterclass for corporate employees.", image: null },
+  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3).", image: null },
 ];
 
 const credentials = [
@@ -442,39 +440,44 @@ export function AchievementsSection() {
     {milestones.map((item, idx) => {
       const Icon = item.icon;
       return (
-        <a
+        <div
           key={idx}
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block cursor-pointer no-underline"
-          style={{
-            transitionDelay: `${(idx % 3) * 80}ms`
-          }}
+          className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full overflow-hidden"
+          style={{ transitionDelay: `${(idx % 3) * 80}ms` }}
         >
-          <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full">
-            <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8CDD3]">
-              <div className="flex items-center gap-3">
-                <div
-                  className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center shadow-sm text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500"
-                >
-                  <Icon className="w-5 h-5" strokeWidth={1.5} />
-                </div>
+          <div className="relative w-full h-52 overflow-hidden">
+            {item.image ? (
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            ) : (
+              <div className="w-full h-full bg-gradient-to-br from-[#F4D9DE] to-[#E6BEC6] flex items-center justify-center">
+                <Icon className="w-12 h-12 text-[#B55E79]/50" strokeWidth={1.5} />
               </div>
-              <span
-                className="text-[9px] font-bold tracking-widest uppercase text-[#B55E79]"
-              >
+            )}
+
+            {/* Category Badge */}
+            <div className="absolute top-3 right-3 z-10">
+              <span className="bg-white/90 backdrop-blur-sm text-[#B55E79] text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm">
                 {item.category}
               </span>
             </div>
-            <h4
-              className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]"
-            >
-              {item.title}
-            </h4>
-            <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
+
+            {/* Hover Overlay with Details */}
+            <div className="absolute inset-0 bg-[#2E2326]/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+              <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                <h4 className="font-serif font-bold text-base mb-2 leading-snug">
+                  {item.title}
+                </h4>
+                <p className="text-xs font-light leading-relaxed text-white/80">
+                  {item.short}
+                </p>
+              </div>
+            </div>
           </div>
-        </a>
+        </div>
       );
     })}
   </div>

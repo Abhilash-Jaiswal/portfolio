@@ -46,18 +46,18 @@ const theme = {
 };
 
 const milestones = [
-  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship." },
-  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur." },
-  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel." },
-  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women-Led Startup." },
-  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture." },
-  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." },
-  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India." },
-  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led 2-hour plant-based nutrition masterclass for 180 employees." },
-  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3) for 1.5 years." },
-  { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." },
-  { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com)." },
-  { year: "2005", category: "Tech Degree", icon: Laptop, title: "BTech Computer Science — HBTI Kanpur", short: "Graduated with CS engineering degree before entering 9-year corporate career." },
+  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship." ,link: "#"},
+  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur." ,link: "#"},
+  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.",link: "#" },
+  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women-Led Startup." ,link: "#"},
+  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.",link: "#" },
+  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." ,link: "#"},
+  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India.",link: "#"},
+  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led 2-hour plant-based nutrition masterclass for 180 employees." ,link: "#"},
+  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3) for 1.5 years." ,link: "#"},
+  { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." ,link: "#"},
+  { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com).",link: "#"},
+  { year: "2005", category: "Tech Degree", icon: Laptop, title: "BTech Computer Science — HBTI Kanpur", short: "Graduated with CS engineering degree before entering 9-year corporate career." ,link: "#"},
 ];
 
 const credentials = [
@@ -82,12 +82,12 @@ const corporateRoster = [
 const b2bClients = ["Cisco", "Biocon", "Loyalytics.ai"];
 
 const pressCoverage = [
-  { source: "YourStory", title: "Video Interview with Founder Shradha Sharma", desc: "Invited to share KuKClean's origin, plant-based philosophy, and breaking industry stereotypes." },
-  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of the #EatLikeKirti 21-day live lockdown nutrition initiative." },
-  { source: "Deccan Herald", title: "'Some Women Doing Wow Things' & Community Dining", desc: "Profiled for leading plant-based food innovation and community wellness." },
-  { source: "The Better India", title: "Plant-Based Vegan Sugar-Free Delights", desc: "Featured for creating clean-label Indian sweets suitable for health-conscious families & diabetes management." },
-  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Keynote presentation to HR leaders on why corporates must prioritize employee nutrition." },
-  { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by Rajasthan State Government to inspire young women founders." },
+  { source: "YourStory", title: "Video Interview with Founder Shradha Sharma", desc: "Invited to share KuKClean's origin, plant-based philosophy, and breaking industry stereotypes.",link: "#" },
+  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of the #EatLikeKirti 21-day live lockdown nutrition initiative." ,link: "#"},
+  { source: "Deccan Herald", title: "'Some Women Doing Wow Things' & Community Dining", desc: "Profiled for leading plant-based food innovation and community wellness.",link: "#" },
+  { source: "The Better India", title: "Plant-Based Vegan Sugar-Free Delights", desc: "Featured for creating clean-label Indian sweets suitable for health-conscious families & diabetes management." ,link: "#"},
+  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Keynote presentation to HR leaders on why corporates must prioritize employee nutrition." ,link: "#"},
+  { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by Rajasthan State Government to inspire young women founders." ,link: "#"},
 ];
 
 const speakingEngagements = [
@@ -378,18 +378,24 @@ export function AchievementsSection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {pressCoverage.map((p, i) => (
-              <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group"
-              >
-                <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
-                  <Newspaper className="w-6 h-6" strokeWidth={1.5} />
-                </div>
-                <span className="text-[10px] font-bold uppercase tracking-widest block text-[#B55E79]">{p.source}</span>
-                <h4 className="font-serif font-bold text-base text-[#2E2326]">{p.title}</h4>
-                <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
-              </div>
-            ))}
+  <a
+    key={i}
+    href={p.link || "#"}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="block cursor-pointer no-underline"
+  >
+    <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group h-full">
+      <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
+        <Newspaper className="w-6 h-6" strokeWidth={1.5} />
+      </div>
+      <span className="text-[10px] font-bold uppercase tracking-widest block text-[#B55E79]">{p.source}</span>
+      <h4 className="font-serif font-bold text-base text-[#2E2326]">{p.title}</h4>
+      <p className="text-xs font-light leading-relaxed text-[#5F5358]">{p.desc}</p>
+    </div>
+  </a>
+))}
+            
           </div>
         </div>
 
@@ -419,137 +425,10 @@ export function AchievementsSection() {
         </div>
 
         {/* LinkedIn Professional Recommendations */}
-        <div>
-          <div className="reveal text-center mb-10">
-            <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
-            >
-              <Users className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Professional Endorsements</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>LinkedIn Recommendations</h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {linkedinRecs.map((r, i) => (
-              <div 
-                key={i} 
-                className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-8 rounded-3xl shadow-sm hover:shadow-xl transition-all duration-300 space-y-4"
-              >
-                <div className="flex items-center gap-3">
-                  <div 
-                    className="w-10 h-10 rounded-2xl text-white flex items-center justify-center font-bold text-sm bg-[#B55E79]"
-                  >
-                    {r.name.charAt(0)}
-                  </div>
-                  <div>
-                    <h4 className="font-serif font-bold text-sm text-[#2E2326]">{r.name}</h4>
-                    <p className="text-[10px] font-semibold text-[#B55E79]">{r.role}</p>
-                  </div>
-                </div>
-                <p className="text-xs font-light leading-relaxed italic text-[#5F5358]">"{r.quote}"</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        
 
         {/* Client Testimonials 3-Card Continuous Slider */}
-        <div>
-          <div className="reveal text-center mb-10">
-            <div 
-              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
-              style={{ borderColor: theme.primary }}
-            >
-              <Quote className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Client Transformations</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Real Stories, Real Results</h3>
-          </div>
-
-          <div 
-            className="reveal relative max-w-6xl mx-auto px-4 md:px-12"
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
-            {/* Previous Button */}
-            <button
-              onClick={prevSlide}
-              aria-label="Previous Slide"
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -ml-2 md:-ml-6"
-            >
-              <ChevronLeft size={24} />
-            </button>
-
-            {/* Next Button */}
-            <button
-              onClick={nextSlide}
-              aria-label="Next Slide"
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-white border border-[#E8CDD3] text-[#B55E79] shadow-lg hover:bg-[#B55E79] hover:text-white transition-all duration-300 flex items-center justify-center -mr-2 md:-mr-6"
-            >
-              <ChevronRight size={24} />
-            </button>
-
-            {/* Slider Container */}
-            <div className="overflow-hidden rounded-3xl p-1">
-              <div 
-                className={`flex ${isTransitioning ? 'transition-transform duration-700 ease-in-out' : ''}`}
-                style={{ transform: `translateX(-${activeSlide * 100}%)` }}
-                onTransitionEnd={handleTransitionEnd}
-              >
-                {[0, 1, 2, 0].map((slideIdx, index) => (
-                  <div key={index} className="w-full flex-shrink-0 px-1">
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                      {clientQuotes.slice(slideIdx * 3, slideIdx * 3 + 3).map((q, i) => (
-                        <div 
-                          key={i} 
-                          className="bg-white/90 border border-[#E8CDD3] p-7 rounded-[2rem] shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between"
-                        >
-                          <div className="space-y-4">
-                            <div className="flex items-center justify-between">
-                              <div className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] shadow-sm">
-                                <Quote className="w-5 h-5" strokeWidth={1.5} />
-                              </div>
-                              <span className="text-[10px] font-bold uppercase tracking-wider text-[#B55E79] bg-[#F4D9DE]/60 px-3.5 py-1 rounded-full border border-[#E8CDD3]">
-                                {q.rel}
-                              </span>
-                            </div>
-                            <p className="text-xs sm:text-sm font-light leading-relaxed italic text-[#5F5358]">"{q.quote}"</p>
-                          </div>
-                          <div className="pt-4 border-t border-[#E8CDD3] flex items-center gap-3 mt-4">
-                            <div className="w-10 h-10 rounded-full bg-[#B55E79] text-white flex items-center justify-center font-serif font-bold text-sm shadow-sm shrink-0">
-                              {q.name.charAt(0)}
-                            </div>
-                            <div>
-                              <h4 className="font-serif font-bold text-sm text-[#2E2326]">{q.name}</h4>
-                              <span className="text-[11px] font-light text-[#5F5358] block">{q.role}</span>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Pagination Dots */}
-            <div className="flex items-center justify-center gap-2 mt-8">
-              {Array.from({ length: totalSlides }).map((_, idx) => (
-                <button
-                  key={idx}
-                  onClick={() => {
-                    if (!isTransitioning) setIsTransitioning(true);
-                    setActiveSlide(idx);
-                  }}
-                  aria-label={`Go to slide ${idx + 1}`}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${
-                    (activeSlide % totalSlides) === idx ? "w-8 bg-[#B55E79]" : "w-2.5 bg-[#E8CDD3] hover:bg-[#B55E79]/50"
-                  }`}
-                />
-              ))}
-            </div>
-          </div>
-        </div>
+      
 
         {/* Quote Banner */}
         <div 
@@ -583,41 +462,46 @@ export function AchievementsSection() {
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Every Milestone, in Sequence</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {milestones.map((item, idx) => {
-              const Icon = item.icon;
-              return (
-                <div
-                  key={idx}
-                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-                  style={{ 
-                    transitionDelay: `${(idx % 3) * 80}ms`
-                  }}
-                >
-                  <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8CDD3]">
-                    <div className="flex items-center gap-3">
-                      <div 
-                        className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center shadow-sm text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500"
-                      >
-                        <Icon className="w-5 h-5" strokeWidth={1.5} />
-                      </div>
-                      <span className="font-serif text-xl font-bold text-[#B55E79]">{item.year}</span>
-                    </div>
-                    <span 
-                      className="text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-[#F4D9DE] text-[#B55E79]"
-                    >
-                      {item.category}
-                    </span>
-                  </div>
-                  <h4 
-                    className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]"
-                  >
-                    {item.title}
-                  </h4>
-                  <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
-                </div>
-              );
-            })}
+  {milestones.map((item, idx) => {
+    const Icon = item.icon;
+    return (
+      <a
+        key={idx}
+        href={item.link || "#"}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block cursor-pointer no-underline"
+        style={{ 
+          transitionDelay: `${(idx % 3) * 80}ms`
+        }}
+      >
+        <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full">
+          <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8CDD3]">
+            <div className="flex items-center gap-3">
+              <div 
+                className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center shadow-sm text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500"
+              >
+                <Icon className="w-5 h-5" strokeWidth={1.5} />
+              </div>
+              <span className="font-serif text-xl font-bold text-[#B55E79]">{item.year}</span>
+            </div>
+            <span 
+              className="text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-[#F4D9DE] text-[#B55E79]"
+            >
+              {item.category}
+            </span>
           </div>
+          <h4 
+            className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]"
+          >
+            {item.title}
+          </h4>
+          <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
+        </div>
+      </a>
+    );
+  })}
+</div>
         </div>
 
       </div>
