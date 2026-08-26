@@ -76,12 +76,12 @@ const CHAPTERS = [
   },
   {
     num: "05", icon: Flower2,
-    title: "Founding NotPaused.com",
+    title: "Founding NotPaused",
     sub: "The gap that became a mission",
     intro: "Years into calling herself a nutritionist, she didn't recognize she was living through her own menopause   that gap is exactly why NotPaused exists, so no woman has to figure it out alone.",
     cards: [
       { heading: "The Unrecognized Symptom", body: "Even a certified nutritionist like her wasn't aware that her menopause was hitting   because nobody really talks about it. The cultural silence, the dismissal, the lack of trusted spaces to ask what's happening in your own body   she'd experienced it all herself." },
-      { heading: "A Refusal to Accept Silence", body: "NotPaused.com was born as her direct refusal to accept that silence. Menopause is not a pause   it is a comma, a transition, a beginning of a new chapter. The platform would be a community for women to navigate this season together." },
+      { heading: "A Refusal to Accept Silence", body: "NotPaused was born as her direct refusal to accept that silence. Menopause is not a pause   it is a comma, a transition, a beginning of a new chapter. The platform would be a community for women to navigate this season together." },
       { heading: "What It Is, What It's Becoming", body: "Today, it's a free community for women navigating this season together. The vision is four pillars: Safe Community, Expert Support, Symptom Tracking, and Trusted Education. A place where no woman has to be the one at 3am with no answers." },
     ],
     closing: "'I built this because I was that woman at 3am with no answers. Now I make sure no Indian woman has to be.'",

@@ -21,7 +21,8 @@ import {
   Phone,
   Send,
   Star,
-  Microscope
+  Microscope,
+  ArrowUpRight
 } from "lucide-react";
 
 function useReveal(ref) {
@@ -174,13 +175,20 @@ export function NotPausedSection() {
             NotPaused
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
-            The Perimenopause  <br />
-            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated"> &amp; Midlife Platform Every Woman Deserves.”</span>
+            The Perimenopause &amp; Midlife <br />
+            <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Platform Every Woman Deserves.</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-            Menopause is not a pause. It is a comma, a breath before the most powerful chapter of a woman's life. NotPaused was built to ensure no woman 35+ navigates it alone
+            Menopause is not a pause. It is a comma, a breath before the most powerful chapter of a woman's life. NotPaused was built to ensure no woman 35+ navigates it alone.
           </p>
-          
+          <a
+            href="https://notpaused.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-full bg-white text-[#B55E79] text-sm font-bold hover:bg-[#FDF5F6] transition-colors shadow-lg"
+          >
+            Visit NotPaused <ArrowUpRight size={16} />
+          </a>
         </div>
       </div>
 
@@ -198,7 +206,9 @@ export function NotPausedSection() {
              By 2026, an estimated 103 million Indian women will be in the perimenopause and menopause years <br />
               <span className="font-light italic text-xl">Most navigate it without medical guidance or awareness.</span>
             </p>
-            <p className="text-white/80 text-sm font-light">Third Consensus Meeting of the Indian Menopause Society (2008): A Summary</p>
+            <p className="text-white/80 text-xs font-light max-w-3xl mx-auto">
+              Source: Unni J., "Third Consensus Meeting of the Indian Menopause Society (2008): A Summary," Journal of Mid-Life Health, 2010.
+            </p>
           </div>
         </div>
 
@@ -213,7 +223,7 @@ export function NotPausedSection() {
               <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
               <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The  Pillars of NotPaused</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => {
@@ -266,6 +276,44 @@ export function NotPausedSection() {
           </div>
         </div>
 
+        {/* Reviews & Feedback */}
+
+<div className="pb-4">
+          <div className="reveal text-center mb-10">
+            <div className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]">
+              <Star className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Reviews &amp; Feedback</span>
+            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">What Our Community Says</h3>
+            <p className="text-xs font-medium tracking-wide uppercase mt-2 text-[#B55E79]/70">Placeholder content — to be replaced with real member quotes</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            {placeholderReviews.map((r, i) => (
+              <div
+                key={i}
+                className="reveal shimmer-card bg-white border border-dashed border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
+              >
+                <div className="flex items-start justify-between">
+                  <Quote className="w-6 h-6 text-[#B55E79]/30" strokeWidth={1.5} />
+                  <StarRating rating={r.rating} />
+                </div>
+                <p className="text-sm font-light leading-relaxed text-[#5F5358] flex-1 italic">
+                  {r.text}
+                </p>
+                <div className="flex items-center gap-3 pt-4 border-t border-[#E8CDD3]/60">
+                  <div className="w-9 h-9 rounded-full bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center font-serif font-bold text-sm shrink-0">
+                    <Users size={16} strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <h5 className="font-serif font-bold text-sm text-[#2E2326] leading-tight">{r.name}</h5>
+                    <span className="text-[11px] text-[#5F5358]">{r.role}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+        </div>
          {/* Services & Community Offerings */}
         <div className="pb-10">
           <div className="reveal text-center mb-10">
@@ -329,7 +377,7 @@ export function NotPausedSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
               { h: "The Cultural Silence", b: "Women in India are routinely told 'it's just age' or 'endure it in private'. Brain fog, joint pain, sleep disruption, anxiety, and weight redistribution are misattributed or dismissed. No guidance. No community. Just silence." },
-              { h: "The Refusal to Accept That", b: "NotPaused was born as my direct refusal to accept that silence. Built from lived experience and evidence based nutrition, it provides women with a trusted ecosystem of education, coaching, and peer support" },
+              { h: "The Refusal to Accept That", b: "NotPaused was born as my direct refusal to accept that silence. Built from lived experience and evidence based nutrition, it provides women with a trusted ecosystem of education, coaching, and peer support." },
             ].map((item, i) => (
               <div
                 key={i}
@@ -342,42 +390,7 @@ export function NotPausedSection() {
           </div>
 
           
-          <div className="pb-4">
-          <div className="reveal text-center mb-10">
-            <div className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]">
-              <Star className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-              <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Reviews &amp; Feedback</span>
-            </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">What Our Community Says</h3>
-            <p className="text-xs font-medium tracking-wide uppercase mt-2 text-[#B55E79]/70">Placeholder content — to be replaced with real member quotes</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-            {placeholderReviews.map((r, i) => (
-              <div
-                key={i}
-                className="reveal shimmer-card bg-white border border-dashed border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
-              >
-                <div className="flex items-start justify-between">
-                  <Quote className="w-6 h-6 text-[#B55E79]/30" strokeWidth={1.5} />
-                  <StarRating rating={r.rating} />
-                </div>
-                <p className="text-sm font-light leading-relaxed text-[#5F5358] flex-1 italic">
-                  {r.text}
-                </p>
-                <div className="flex items-center gap-3 pt-4 border-t border-[#E8CDD3]/60">
-                  <div className="w-9 h-9 rounded-full bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center font-serif font-bold text-sm shrink-0">
-                    <Users size={16} strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h5 className="font-serif font-bold text-sm text-[#2E2326] leading-tight">{r.name}</h5>
-                    <span className="text-[11px] text-[#5F5358]">{r.role}</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-        </div>
+          
         
         {/* NEW PDF ADDITION: Interactive Community Join Request Form */}
         <div className="reveal max-w-3xl mx-auto bg-gradient-to-br from-white to-[#FDF7F8] border border-[#E8CDD3] rounded-[2.5rem] p-8 md:p-12 shadow-xl space-y-8">

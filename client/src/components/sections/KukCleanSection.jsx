@@ -5,7 +5,7 @@ import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
 import img4 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.11 (1).jpeg";
 import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
-import { Leaf, Sparkles, Heart, ChefHat, CheckCircle, TrendingUp, Award, ShieldCheck, Star } from "lucide-react";
+import { Leaf, Sparkles, Heart, ChefHat, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, HeartHandshake } from "lucide-react";
 
 const wellnessImages = [img1, img2, img3, img4, img5, img6];
 
@@ -107,7 +107,7 @@ export function KukCleanSection() {
               className="inline-flex items-center justify-center rounded-full bg-white text-[#6B2D3E] px-8 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#FCF8F7] transition-colors shadow-lg"
             >
               Visit KuKClean
-              <span className="ml-2">→</span>
+              
             </a>
           </div>
 
@@ -173,6 +173,8 @@ export function KukCleanSection() {
               style={{ borderColor: theme.primary }}
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Business Model</span>
+            </div>
+          </div>
             
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {b2bFocus.map((b, i) => (
@@ -208,6 +210,8 @@ export function KukCleanSection() {
               style={{ borderColor: theme.primary }}
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
+            </div>
+          </div>
             
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {coreCategories.map((cat, i) => (
@@ -257,35 +261,7 @@ export function KukCleanSection() {
           </div>
         </div>
 
-        {/* Google Reviews */}
-        <div className="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
-          <div className="bg-white/80 border rounded-3xl p-8 md:p-10" style={{ borderColor: theme.border }}>
-            <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Google Reviews</span>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold mt-3" style={{ color: theme.dark }}>What people are saying about KuKClean</h3>
-            <p className="text-sm font-light leading-relaxed mt-4" style={{ color: theme.muted }}>
-              See KuKClean's live Google rating, review count, and latest customer feedback on the listing.
-            </p>
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=KuKClean+Foods+and+Consulting+Bengaluru"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center mt-6 rounded-full bg-[#B55E79] text-white px-6 py-3 text-sm font-bold uppercase tracking-widest hover:bg-[#6B2D3E] transition-colors"
-            >
-              <Star size={16} fill="currentColor" className="mr-2" />
-              Read all reviews on Google
-            </a>
-          </div>
-          <div className="overflow-hidden rounded-3xl border min-h-72" style={{ borderColor: theme.border }}>
-            <iframe
-              title="KuKClean on Google Maps"
-              src="https://www.google.com/maps?q=KuKClean+Foods+and+Consulting+Bengaluru&output=embed"
-              className="w-full h-full min-h-72 border-0"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
-          </div>
-        </div>
-
+        
         {/* Closing Quote Banner */}
         <div
           className="reveal relative overflow-hidden rounded-3xl p-10 lg:p-14 text-center shadow-2xl"

@@ -25,7 +25,7 @@ export function IntroductionSection() {
 
   const coreIdentity = [
     { label: "Founder & CEO", value: "KuK Clean Wellness", detail: "wellness.kukclean.com", icon: Leaf },
-    { label: "Founder", value: "NotPaused.com", detail: "Holistic Menopause Platform", icon: Heart },
+    { label: "Founder", value: "NotPaused", detail: "Holistic Menopause Platform", icon: Heart },
     { label: "Credentials", value: "Holistic Nutritionist", detail: "Certified (USA)", icon: GraduationCap },
     { label: "Corporate Alumni", value: "Ex IBM · AIG · Target", detail: "10+ Yrs Corporate Strategy", icon: Briefcase },
     { label: "Incubations", value: "IIM Bangalore & ICAR", detail: "NSRCEL · NutriHub Hyderabad", icon: Building2 },
@@ -41,7 +41,7 @@ export function IntroductionSection() {
     "Keynote Speaker — ASSOCHAM Startup Summit & Women Leadership Conclave 2024",
     "Featured Leader — India Today · Bangalore Insider · YourStory (Interviewed by Shradha Sharma)",
     "Former Corporate Professional — Financial Strategy (AIG), Consumer Insights (Target), Systems (IBM)",
-    "Founder & Architect — KuK Clean Wellness & NotPaused.com Platforms"
+    "Founder & Architect — KuK Clean Wellness & NotPaused Platforms"
   ];
 
   const theme = {
@@ -214,7 +214,7 @@ export function IntroductionSection() {
                     </div>
                     <h4 className="font-serif font-bold text-lg text-[#2E2326]">Clean Label Standards</h4>
                     <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                      We advocate for clean label, plant based nutrition at KuK Clean and apply a deeply inclusive, evidence based, non prescriptive approach at NotPaused.com.
+                      We advocate for clean label, plant based nutrition at KuK Clean and apply a deeply inclusive, evidence based, non prescriptive approach at NotPaused.
                     </p>
                   </div>
 
@@ -246,7 +246,7 @@ export function IntroductionSection() {
                     </div>
                     <h4 className="font-serif font-bold text-lg text-[#2E2326]">Dismantling Taboos</h4>
                     <p className="text-sm leading-relaxed text-[#5F5358] font-light">
-                      Through NotPaused.com, we dismantle the last great taboo in Indian women's health—menopause—providing clinical-level guidance and community support.
+                      Through NotPaused, we dismantle the last great taboo in Indian women's health—menopause—providing clinical-level guidance and community support.
                     </p>
                   </div>
 
@@ -294,7 +294,7 @@ export function IntroductionSection() {
                   Kirti Yadav
                 </span>
                 <span className="text-white/80 text-xs font-light">
-                  Founder — KuK Clean Wellness &amp; NotPaused.com
+                  Founder — KuK Clean Wellness &amp; NotPaused
                 </span>
               </div>
             </div>
@@ -413,7 +413,7 @@ export function IntroductionSection() {
                 II
               </div>
               <h4 className="font-serif font-bold text-lg uppercase tracking-tight text-[#B55E79]">
-                NotPaused.com
+                NotPaused
               </h4>
               <p className="text-sm leading-relaxed text-[#5F5358] font-light">
                 Building toward a 100,000-strong WhatsApp-native women's community and integrating a clinical, national doctor empanelment network.
