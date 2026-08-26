@@ -32,8 +32,8 @@ export function MyVenturesPage() {
       >
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 text-white text-[10px] font-bold tracking-[0.25em] uppercase mb-6">
-            <Sparkles className="w-3.5 h-3.5" />
+          <div className="inline-flex items-center gap-2 text-white! text-[10px] font-bold tracking-[0.25em] uppercase mb-6">
+            <Sparkles className="w-3.5 h-3.5 text-white!" />
             <span>My Ventures</span>
           </div>
 
