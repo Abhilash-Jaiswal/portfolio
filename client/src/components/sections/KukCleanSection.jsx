@@ -268,10 +268,7 @@ export function KukCleanSection() {
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>4 Primary Product Categories</h3>
-            <p className="text-sm font-light mt-2 max-w-xl mx-auto" style={{ color: theme.muted }}>
-              The essential clean label product lines crafted with zero refined sugars, zero artificial preservatives, and whole grains and pulses.
-            </p>
+           
           </div>
             
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

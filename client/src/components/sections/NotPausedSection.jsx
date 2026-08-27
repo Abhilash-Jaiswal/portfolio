@@ -171,7 +171,6 @@ export function NotPausedSection() {
 
         <div className="relative z-10 max-w-5xl">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
-            <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
             NotPaused
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
@@ -187,7 +186,7 @@ export function NotPausedSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-full bg-white text-[#B55E79] text-sm font-bold hover:bg-[#FDF5F6] transition-colors shadow-lg"
           >
-            Visit NotPaused <ArrowUpRight size={16} />
+            Visit NotPaused  />
           </a>
         </div>
       </div>
