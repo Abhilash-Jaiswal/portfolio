@@ -1,11 +1,11 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
 import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
 import img3 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09.jpeg";
 import img4 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.11 (1).jpeg";
 import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
-import { Leaf, Sparkles, Heart, ChefHat, CheckCircle, TrendingUp, Award, ShieldCheck, Quote, HeartHandshake } from "lucide-react";
+import { Leaf, Sparkles, Heart, ChefHat, CheckCircle, TrendingUp, Award, ShieldCheck, Star } from "lucide-react";
 
 const wellnessImages = [img1, img2, img3, img4, img5, img6];
 
@@ -19,6 +19,63 @@ function useReveal(ref) {
     els?.forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, []);
+}
+
+function GoogleReviews() {
+  const [place, setPlace] = useState(null);
+  const listingUrl = place?.url || "https://www.google.com/maps/search/?api=1&query=KuKClean%20Bengaluru";
+
+  useEffect(() => {
+    const apiKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY;
+    const placeId = import.meta.env.VITE_GOOGLE_PLACE_ID;
+    if (!apiKey || !placeId) return;
+
+    fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,user_ratings_total,reviews,url&key=${apiKey}`)
+      .then((response) => response.json())
+      .then((data) => setPlace(data.result || null))
+      .catch(() => setPlace(null));
+  }, []);
+
+  return (
+    <div className="reveal max-w-5xl mx-auto w-full">
+      <div className="text-center mb-10">
+        <div className="inline-block border-t-[3px] pt-2 mb-4" style={{ borderColor: theme.primary }}>
+          <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Google Reviews</span>
+        </div>
+        <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Loved by the KuKClean community</h3>
+      </div>
+      <div className="bg-white/80 border p-8 md:p-10 rounded-3xl shadow-sm text-center" style={{ borderColor: `${theme.border}80` }}>
+        {place ? (
+          <>
+            <div className="flex items-center justify-center gap-3 mb-5">
+              <span className="font-serif text-4xl font-bold" style={{ color: theme.dark }}>{place.rating.toFixed(1)}</span>
+              <div className="text-left">
+                <div className="flex gap-1" aria-label={`${place.rating} out of 5 stars`}>
+                  {Array.from({ length: 5 }, (_, index) => <Star key={index} size={18} fill={index < Math.round(place.rating) ? "currentColor" : "none"} style={{ color: theme.primary }} />)}
+                </div>
+                <span className="text-xs font-medium" style={{ color: theme.muted }}>{place.user_ratings_total.toLocaleString()} Google reviews</span>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 text-left">
+              {(place.reviews || []).slice(0, 3).map((review) => (
+                <blockquote key={`${review.author_name}-${review.time}`} className="border-l-2 pl-4" style={{ borderColor: theme.primary }}>
+                  <p className="text-sm font-light leading-relaxed" style={{ color: theme.muted }}>&quot;{review.text}&quot;</p>
+                  <cite className="not-italic text-xs font-bold uppercase tracking-widest mt-4 block" style={{ color: theme.primary }}>{review.author_name}</cite>
+                </blockquote>
+              ))}
+            </div>
+          </>
+        ) : (
+          <p className="text-sm font-light leading-relaxed max-w-2xl mx-auto" style={{ color: theme.muted }}>
+            Google keeps the current star rating, review count, and latest customer experiences up to date on the KuKClean listing.
+          </p>
+        )}
+        <a href={listingUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center rounded-full bg-white border px-6 py-3 mt-8 text-xs font-bold uppercase tracking-widest transition-colors hover:bg-[#F4D9DE]" style={{ borderColor: theme.border, color: theme.primary }}>
+          Read all reviews on Google
+        </a>
+      </div>
+    </div>
+  );
 }
 
 const theme = {
@@ -121,7 +178,7 @@ export function KukCleanSection() {
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
             <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
+              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot shrink-0 text-white"
               style={{ backgroundColor: theme.primary }}
             >
               <Leaf size={28} />
@@ -136,7 +193,7 @@ export function KukCleanSection() {
             style={{ borderColor: theme.primary }}
           >
             <p className="text-base font-light leading-relaxed" style={{ color: theme.muted }}>
-             KuKClean stands for Kitchen, You, and Kirti's Clean eating journey. It started as an idea for a blog about my own weight-loss story, one that never actually launched. But I believe in that universal energy, and trust that things happen the way they're meant to, so instead of the blog, the brand happened: a national brand solving the 4 o'clock snacking problem for health conscious families
+             KuKClean stands for Kitchen, You, and Kirti's Clean eating journey. It started as an idea for a blog about my own weight-loss story, one that never actually launched. But I believe in that universal energy, and trust that things happen the way they're meant to, so instead of the blog, the brand happened: a national brand solving the 4 o'clock snacking problem for health conscious families.
             </p>
           </div>
         </div>
@@ -145,7 +202,7 @@ export function KukCleanSection() {
         <div className="space-y-8">
           <div className="reveal flex flex-col md:flex-row md:items-center gap-4">
             <div
-              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot flex-shrink-0 text-white"
+              className="w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg timeline-dot shrink-0 text-white"
               style={{ backgroundColor: theme.primary }}
             >
               <Leaf size={28} />
@@ -180,7 +237,7 @@ export function KukCleanSection() {
             {b2bFocus.map((b, i) => (
               <div
                 key={i}
-                className="reveal group bg-white/70 backdrop-blur-sm border p-8 rounded-[2rem] shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4"
+                className="reveal group bg-white/70 backdrop-blur-sm border p-8 rounded-4xl shadow-sm hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 space-y-4"
                 style={{
                   borderColor: `${theme.border}80`,
                   transitionDelay: `${i * 80}ms`
@@ -211,6 +268,10 @@ export function KukCleanSection() {
             >
               <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Core Offerings</span>
             </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>4 Primary Product Categories</h3>
+            <p className="text-sm font-light mt-2 max-w-xl mx-auto" style={{ color: theme.muted }}>
+              The essential clean label product lines crafted with zero refined sugars, zero artificial preservatives, and whole grains and pulses.
+            </p>
           </div>
             
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -233,7 +294,7 @@ export function KukCleanSection() {
           </div>
         </div>
 
-        {/* Wellness & Analysis Assessment Images */}
+        {/* Product images */}
         <div className="pt-10">
           <div className="reveal text-center mb-10">
             <div
@@ -253,13 +314,16 @@ export function KukCleanSection() {
               >
                 <img
                   src={imageSrc}
-                  alt={`Wellness Analysis Assessment ${idx + 1}`}
+                  alt={`KuKClean product ${idx + 1}`}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 max-h-96"
                 />
               </div>
             ))}
           </div>
         </div>
+
+        {/* Google Reviews */}
+        <GoogleReviews />
 
         
         {/* Closing Quote Banner */}
