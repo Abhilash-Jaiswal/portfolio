@@ -186,7 +186,7 @@ export function NotPausedSection() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 mt-8 px-6 py-3 rounded-full bg-white text-[#B55E79] text-sm font-bold hover:bg-[#FDF5F6] transition-colors shadow-lg"
           >
-            Visit NotPaused  />
+            Visit NotPaused
           </a>
         </div>
       </div>

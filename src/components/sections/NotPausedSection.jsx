@@ -110,14 +110,14 @@ export function NotPausedSection() {
         <div className="relative z-10 max-w-5xl">
           <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-[10px] font-bold tracking-[0.25em] uppercase px-4 py-2 rounded-full mb-8">
             <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse inline-block" />
-            NotPaused.com · Founded 2025
+            NotPaused · Founded 2025
           </div>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white font-bold tracking-tight leading-[1.1] mb-6">
             India's Dedicated <br />
             <span className="font-serif font-bold italic drop-shadow-sm gradient-text-animated">Perimenopause &amp; Midlife Platform</span>
           </h1>
           <p className="text-white/75 text-base lg:text-lg font-light leading-relaxed max-w-2xl">
-            Menopause is not a pause. It is a comma — a breath before the most powerful chapter of a woman's life. NotPaused.com was built to ensure no Indian woman navigates it alone.
+            Menopause is not a pause. It is a comma — a breath before the most powerful chapter of a woman's life. NotPaused was built to ensure no Indian woman navigates it alone.
           </p>
           <div className="flex flex-wrap gap-8 mt-12">
             {[["65M+", "Women in India Window"], ["75%", "Lack Guidance"], ["1,100+", "WhatsApp Members"], ["7 Metros", "City Chapters"]].map(([n, l]) => (
@@ -144,7 +144,7 @@ export function NotPausedSection() {
               65 MILLION Indian women are currently in the perimenopause–menopause window. <br />
               <span className="font-light italic text-xl">75% navigate it without medical guidance or awareness.</span>
             </p>
-            <p className="text-white/80 text-sm font-light">NotPaused.com was founded in 2025 by Kirti Yadav to bridge this precise gap.</p>
+            <p className="text-white/80 text-sm font-light">Third Consensus Meeting of the Indian Menopause Society (2008): A Summary</p>
           </div>
         </div>
 
@@ -159,7 +159,7 @@ export function NotPausedSection() {
               <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
                 "I've built this the same way I built my corporate career and my company — carefully, with real institutions backing the work, not just good intentions."
               </p>
-              <span className="text-xs font-bold uppercase tracking-widest block pt-2 text-[#5F5358]">— Kirti Yadav, Founder · NotPaused.com</span>
+              <span className="text-xs font-bold uppercase tracking-widest block pt-2 text-[#5F5358]">— Kirti Yadav, Founder · NotPaused</span>
             </div>
           </div>
         </div>
@@ -173,7 +173,7 @@ export function NotPausedSection() {
               <Lightbulb className="w-7 h-7 text-white" strokeWidth={1.5} />
             </div>
             <div>
-              <span className="block text-[10px] font-bold tracking-[0.3em] uppercase mb-1 text-[#B55E79]">Chapter 01</span>
+             
               <h2 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Personal Origin (2025)</h2>
               <p className="text-xs font-medium tracking-widest uppercase mt-1 text-[#5F5358]">Why a certified nutritionist found herself unprepared — and built the solution</p>
             </div>
@@ -188,7 +188,7 @@ export function NotPausedSection() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {[
               { h: "The Cultural Silence", b: "Women in India are routinely told 'it's just age' or 'endure it in private'. Brain fog, joint pain, sleep disruption, anxiety, and weight redistribution are misattributed or dismissed. No guidance. No community. Just silence." },
-              { h: "The Refusal to Accept That", b: "NotPaused.com was born in 2025 as Kirti's direct refusal to accept that silence. Built from lived experience and evidence-based nutrition, it provides women 35+ with a trusted ecosystem of education, coaching, and peer support." },
+              { h: "The Refusal to Accept That", b: "NotPaused was born in 2025 as Kirti's direct refusal to accept that silence. Built from lived experience and evidence-based nutrition, it provides women 35+ with a trusted ecosystem of education, coaching, and peer support." },
             ].map((item, i) => (
               <div 
                 key={i} 
@@ -210,7 +210,7 @@ export function NotPausedSection() {
               <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
               <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused.com</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]"> Pillars of NotPaused</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => {
@@ -305,25 +305,7 @@ export function NotPausedSection() {
           </div>
         </div>
 
-        {/* NEW PDF ADDITION: Supreetha Bhat Testimonial Card */}
-        <div className="reveal max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-[2.5rem] p-8 md:p-12 shadow-xl border border-[#E8CDD3] relative overflow-hidden">
-          <Quote className="absolute top-6 left-6 w-16 h-16 opacity-5 text-[#B55E79]" />
-          <div className="relative z-10 space-y-4">
-            <div className="inline-flex items-center gap-2 bg-[#F4D9DE] text-[#B55E79] text-[10px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full">
-              <span>Community Story</span>
-            </div>
-            <p className="font-serif text-lg md:text-xl italic leading-relaxed text-[#2E2326]">
-              "I'd been dealing with chronic inflammation, low weight, and was anaemic and borderline diabetic — and honestly, an irritable, stressed version of myself. I was a 'no salads' person until Kirti got strict with my diet, and I was sceptical it would work for me. Within two months: no more inflammation, my symptoms under control, my blood counts improving, and I'm handling stress so much better emotionally. All I did was follow her instructions. This is for Kirti, for the change she brought to my plate — and to me — that I hadn't expected at all."
-            </p>
-            <div className="pt-2 flex items-center justify-between border-t border-[#E8CDD3]/50">
-              <div>
-                <h5 className="font-serif font-bold text-base text-[#2E2326]">Supreetha Bhat</h5>
-                <span className="text-xs text-[#5F5358] uppercase tracking-wider">NotPaused Community Member</span>
-              </div>
-              <HeartHandshake className="w-6 h-6 text-[#B55E79]" />
-            </div>
-          </div>
-        </div>
+       
 
         {/* Services & Community Offerings */}
         <div className="pb-10">
@@ -447,11 +429,11 @@ export function NotPausedSection() {
           <div className="relative z-10 space-y-5 max-w-4xl mx-auto">
             <span className="bg-white/15 border border-white/20 text-white text-[9px] font-bold tracking-[0.3em] uppercase px-4 py-2 rounded-full inline-block">The Vision for NotPaused</span>
             <p className="font-serif text-2xl lg:text-3xl italic text-white leading-relaxed">
-              "I built NotPaused.com because I was that woman looking for answers..."
+              "I built NotPaused because I was that woman looking for answers..."
             </p>
             <div className="flex items-center justify-center gap-3">
               <div className="w-8 h-px bg-white/40" />
-              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused.com</span>
+              <span className="text-white/80 text-xs font-bold uppercase tracking-widest">Kirti Yadav, Founder · NotPaused</span>
               <div className="w-8 h-px bg-white/40" />
             </div>
           </div>

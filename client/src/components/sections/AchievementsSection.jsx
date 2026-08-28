@@ -23,6 +23,12 @@ import {
   ChevronRight
 } from "lucide-react";
 import kirtiProfile from "../../assets/kirti_profile.jpg";
+import womenpreneurAward from "../../assets/Womenpreneur .jpeg";
+import womenpreneurSpeaking from "../../assets/Womenpreneur 2.jpeg";
+import womenpreneurPitching from "../../assets/Womenpreneur 3.jpeg";
+import womenpreneurJury from "../../assets/Womenpreneur 4.jpeg";
+import womenpreneurGrant from "../../assets/Womenpreneur 5.jpeg";
+import womenpreneurIncubation from "../../assets/Womenpreneur 6.jpeg";
 
 function useReveal(ref) {
   useEffect(() => {
@@ -48,15 +54,13 @@ const theme = {
 
 // MODIFIED ARRAY: Removed last 3 items, added images/placeholders to the 9 remaining
 const milestones = [
-  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image: "/images/milestone-1.jpg" },
-  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur.", image: "/images/milestone-2.jpg" },
-  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: "/images/milestone-3.jpg" },
-  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women Led Startup.", image: "/images/milestone-4.jpg" },
-  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: "/images/milestone-5.jpg" },
-  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: "/images/milestone-6.jpg" },
-  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early stage women entrepreneurs across India.", image: "/images/milestone-7.jpg" },
-  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led a plant based nutrition masterclass for corporate employees.", image: null },
-  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3).", image: null },
+  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image: womenpreneurAward },
+  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur.", image: womenpreneurSpeaking },
+  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: womenpreneurPitching },
+  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women Led Startup.", image: womenpreneurJury },
+  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: womenpreneurGrant },
+  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: womenpreneurIncubation },
+ 
 ];
 
 const credentials = [
@@ -66,9 +70,7 @@ const credentials = [
   { title: "Certified Menopause Coach", detail: "Specialized training in midlife hormonal wellness." },
   { title: "BTech Computer Science", org: "HBTI Kanpur", detail: "Engineering foundation in algorithms and software systems." },
   { title: "C-PGDBA (IT)", org: "Symbiosis Centre", detail: "Postgraduate diploma in Information Technology Management." },
-  // NEW PDF ADDITIONS: Verified Credentials
-  { title: "Introduction to Food and Health", org: "Stanford Online", detail: "Completed Stanford Online course, verified through Coursera." },
-  { title: "Vegan Cooking Diploma", org: "Centre of Excellence, UK", detail: "Completed with Distinction — plant based culinary techniques & nutrition." },
+ 
 ];
 
 const corporateFlagship = ["JP Morgan", "Goldman Sachs", "Microsoft", "IBM", "ISRO", "Siemens"];
@@ -80,12 +82,12 @@ const corporateRoster = [
 const b2bClients = ["Cisco", "Biocon", "Loyalytics.ai"];
 
 const pressCoverage = [
-  { source: "YourStory", title: "In Conversation with YourStory’s Shradha Sharma", desc: "A video interview where I shared KuKClean’s origin story, our plant based philosophy, and what it took to break industry stereotypes." },
-  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of #EatLikeKirti, the live nutrition initiative I ran through the lockdown to help families eat well when it mattered most." },
-  { source: "Deccan Herald", title: "Some Women Doing Wow Things", desc: "Profiled for leading plant based food innovation and building community around wellness through shared dining." },
-  { source: "The Better India", title: "Plant Based, Sugar Free Delights", desc: "Featured for creating clean label Indian sweets made for health conscious families, including those managing diabetes." },
-  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Invited to speak to HR leaders on why employee nutrition deserves a real seat at the corporate wellness table." },
-  { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by the Rajasthan State Government to share my journey and inspire the next generation of women founders." },
+  { source: "YourStory", title: "In Conversation with YourStory’s Shradha Sharma", desc: "A video interview where I shared KuKClean’s origin story, our plant based philosophy, and what it took to break industry stereotypes.", link: "https://www.youtube.com/watch?v=VxG3KLZJ5j0" },
+  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of #EatLikeKirti, the live nutrition initiative I ran through the lockdown to help families eat well when it mattered most.", link: "https://www.indiatoday.in/mail-today/story/cooking-in-a-crisis-1668631-2020-04-19" },
+  { source: "Deccan Herald", title: "Some Women Doing Wow Things", desc: "Profiled for leading plant based food innovation and building community around wellness through shared dining.", link: "https://www.deccanherald.com/india/karnataka/bengaluru/some-women-doing-wow-things-722045.html" },
+  { source: "The Better India", title: "Plant Based, Sugar Free Delights", desc: "Featured for creating clean label Indian sweets made for health conscious families, including those managing diabetes.", link: "https://thebetterindia.com/306747/kirti-yadav-kukclean-bengaluru-offers-plant-based-vegan-sugar-free-healthy-snacks-for-diabetes-patients/" },
+  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Invited to speak to HR leaders on why employee nutrition deserves a real seat at the corporate wellness table.", link: "https://www.hrai.in/" },
+  { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by the Rajasthan State Government to share my journey and inspire the next generation of women founders.", link: "https://www.youtube.com/shorts/d-f7dCJ-NMg" },
 ];
 
 const speakingEngagements = [
@@ -278,46 +280,6 @@ export function AchievementsSection() {
           </div>
         </div>
 
-        {/* Corporate Client Roster */}
-        <div
-          className="reveal bg-white/80 border border-[#E8CDD3] p-10 rounded-3xl shadow-sm space-y-8"
-        >
-          <div className="text-center max-w-3xl mx-auto space-y-2">
-            <span className="font-bold text-xs tracking-widest uppercase block text-[#B55E79]">Corporate Track Record</span>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">Delivering Corporate Wellness Across India</h3>
-            <p className="text-sm font-light text-[#5F5358]">Trusted by global Fortune 500 firms, Indian conglomerates, and government institutions across India.</p>
-          </div>
-
-          {/* Flagship shortlist */}
-          <div className="space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest block text-center text-[#5F5358]">Flagship Organizations Delivered At:</span>
-            <div className="flex flex-wrap justify-center gap-3">
-              {corporateFlagship.map((name) => (
-                <span
-                  key={name}
-                  className="text-white text-xs font-bold px-5 py-2.5 rounded-full shadow-sm flex items-center gap-2 bg-[#B55E79]"
-                >
-                  {name}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Extended Roster */}
-          <div className="space-y-3 pt-4 border-t border-[#E8CDD3]">
-            <span className="text-xs font-bold uppercase tracking-widest block text-center text-[#5F5358]">Additional Corporate &amp; B2B Client Organizations:</span>
-            <div className="flex flex-wrap justify-center gap-2 max-w-4xl mx-auto">
-              {corporateRoster.concat(b2bClients).map((name) => (
-                <span
-                  key={name}
-                  className="text-xs font-medium px-3.5 py-1.5 rounded-full border border-[#E8CDD3] bg-[#F4D9DE] text-[#5F5358]"
-                >
-                  {name}
-                </span>
-              ))}
-            </div>
-          </div>
-        </div>
 
         {/* Media & Press Highlights */}
         <div>
@@ -331,16 +293,16 @@ export function AchievementsSection() {
             </div>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>National Features</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-stretch gap-6">
             {pressCoverage.map((p, i) => (
               <a
                 key={i}
-                href="#"
+                href={p.link || "#"}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block cursor-pointer no-underline hover:opacity-80 transition-opacity"
+                className="block h-full cursor-pointer no-underline hover:opacity-80 transition-opacity"
               >
-                <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group">
+                <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-7 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-3 group flex h-full flex-col">
                   <div className="w-12 h-12 rounded-2xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500 shadow-sm">
                     <Newspaper className="w-6 h-6" strokeWidth={1.5} />
                   </div>
