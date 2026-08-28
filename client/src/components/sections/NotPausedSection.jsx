@@ -222,7 +222,7 @@ export function NotPausedSection() {
               <Shield className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
               <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Solution Architecture</span>
             </div>
-            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Four Pillars of NotPaused</h3>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">The Pillars of NotPaused</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {pillars.map((p, i) => {
@@ -311,7 +311,6 @@ export function NotPausedSection() {
               </div>
             ))}
           </div>
-        </div>
         </div>
          {/* Services & Community Offerings */}
         <div className="pb-10">
@@ -479,6 +478,7 @@ export function NotPausedSection() {
           </div>
         </div>
 
+      </div>
       </div>
     </section>
   );
