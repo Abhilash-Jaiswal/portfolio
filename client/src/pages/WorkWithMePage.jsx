@@ -1,9 +1,5 @@
-import { InfluencerSection } from "../components/sections/InfluencerSection";
+import { WorkWithMePage as WorkWithMeContent } from "../components/sections/WorkWithMePage.jsx";
 
 export function WorkWithMePage() {
-  return (
-    <div className="min-h-screen bg-[#FCF8F7] pb-20">
-      <InfluencerSection />
-    </div>
-  );
+  return <WorkWithMeContent />;
 }

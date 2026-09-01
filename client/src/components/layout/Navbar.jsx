@@ -28,18 +28,8 @@ export function Navbar() {
     },
     
     { name: "Press Room", path: "/achievements" },
-    {
-      name: "Work with Me",
-      path: "/work-with-me",
-      subItems: [
-        { name: "Lifestyle Transformation Program", path: "/work-with-me#lifestyle-transformation" },
-        { name: "Corporate Wellness", path: "/work-with-me#corporate-wellness" },
-        { name: "Menopause Program", path: "/work-with-me#menopause-program" },
-        { name: "Startup Mentoring", path: "/work-with-me#startup-mentoring" },
-        { name: "Brand Collaborations", path: "/work-with-me#brand-collaborations" },
-        { name: "School Programs", path: "/work-with-me#school-programs" },
-      ],
-    },
+    // Yahan se subItems hata diya gaya hai
+    { name: "Work with Me", path: "/work-with-me" },
     { name: "Latest", path: "/latest" },
     // { name: "Contact", path: "/contact" },
   ];
@@ -217,6 +207,7 @@ export function Navbar() {
                 >
                   {item.name}
                 </Link>
+                {/* "Work with Me" aur "Press Room" ke liye yeh condition ab false ho jayegi kyunki unme subItems nahi hai */}
                 {item.subItems && (
                   <div className="flex flex-col pl-4 mt-3 space-y-4 border-l-2 border-[#F4D9DE]/50">
                     {item.subItems.map((sub) => {
