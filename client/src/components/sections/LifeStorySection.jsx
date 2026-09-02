@@ -123,10 +123,12 @@ function ChapterPill({ chap, active, onClick }) {
 }
 
 /* ─── Chapter image placeholder ───────────────── */
+ /* ─── Chapter image placeholder ───────────────── */
 function ChapterImageBox({ chap }) {
   return (
     <aside className="reveal flex justify-center">
-      <div className="w-full max-w-sm h-64 sm:h-72 rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-6 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
+      {/* Fixed height hata kar responsive aspect-ratio lagaya hai */}
+      <div className="w-full max-w-sm aspect-[4/3] rounded-3xl border-2 border-dashed border-[#B55E79]/40 bg-white shadow-xl flex flex-col items-center justify-center p-6 text-center group hover:border-[#B55E79] transition-all relative overflow-hidden">
         <div className="w-14 h-14 rounded-2xl bg-[#F4D9DE] text-[#B55E79] flex items-center justify-center mb-4 shadow-sm group-hover:scale-110 transition-transform">
           <ImageIcon className="w-7 h-7" />
         </div>

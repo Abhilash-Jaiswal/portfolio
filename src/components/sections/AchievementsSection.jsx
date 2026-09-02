@@ -45,19 +45,20 @@ const theme = {
   bg:           "#FCF8F7"
 };
 
+/* ─── EDIT: Images add ki gayi hain (Placeholders jab tak Kirti na de) ─── */
 const milestones = [
-  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship." ,link: "#"},
-  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur." ,link: "#"},
-  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.",link: "#" },
-  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women-Led Startup." ,link: "#"},
-  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.",link: "#" },
-  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." ,link: "#"},
-  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India.",link: "#"},
-  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led 2-hour plant-based nutrition masterclass for 180 employees." ,link: "#"},
-  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3) for 1.5 years." ,link: "#"},
-  { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." ,link: "#"},
-  { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com).",link: "#"},
-  { year: "2005", category: "Tech Degree", icon: Laptop, title: "BTech Computer Science — HBTI Kanpur", short: "Graduated with CS engineering degree before entering 9-year corporate career." ,link: "#"},
+  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship." ,link: "#", image: "/images/milestone-1.jpg"},
+  { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur." ,link: "#", image: "/images/milestone-2.jpg"},
+  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.",link: "#", image: "/images/milestone-3.jpg" },
+  { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women-Led Startup." ,link: "#", image: "/images/milestone-4.jpg"},
+  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.",link: "#", image: "/images/milestone-5.jpg" },
+  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB." ,link: "#", image: "/images/milestone-6.jpg"},
+  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India.",link: "#", image: "/images/milestone-7.jpg"},
+  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led 2-hour plant-based nutrition masterclass for 180 employees." ,link: "#", image: null},
+  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3) for 1.5 years." ,link: "#", image: null},
+  { year: "2020", category: "Media", icon: Newspaper, title: "India Today & YourStory Features", short: "#EatLikeKirti 21-day initiative covered by India Today; interviewed by Shradha Sharma." ,link: "#", image: null},
+  { year: "2020", category: "Podcast", icon: Radio, title: "International Podcast Feature", short: "Featured speaker on Gigi Carter's global health podcast (mytrueself.com).",link: "#", image: null},
+  { year: "2005", category: "Tech Degree", icon: Laptop, title: "BTech Computer Science — HBTI Kanpur", short: "Graduated with CS engineering degree before entering 9-year corporate career." ,link: "#", image: null},
 ];
 
 const credentials = [
@@ -449,7 +450,7 @@ export function AchievementsSection() {
           </div>
         </div>
 
-        {/* Complete Timeline Cards Grid */}
+        {/* Complete Timeline Cards Grid - EDITED HERE */}
         <div className="border-t pt-16" style={{ borderColor: `${theme.border}60` }}>
           <div className="reveal text-center mb-12">
             <div 
@@ -462,46 +463,59 @@ export function AchievementsSection() {
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Every Milestone, in Sequence</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-  {milestones.map((item, idx) => {
-    const Icon = item.icon;
-    return (
-      <a
-        key={idx}
-        href={item.link || "#"}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block cursor-pointer no-underline"
-        style={{ 
-          transitionDelay: `${(idx % 3) * 80}ms`
-        }}
-      >
-        <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full">
-          <div className="flex items-center justify-between mb-4 pb-3 border-b border-[#E8CDD3]">
-            <div className="flex items-center gap-3">
-              <div 
-                className="w-10 h-10 rounded-2xl bg-[#F4D9DE] flex items-center justify-center shadow-sm text-[#B55E79] group-hover:bg-[#B55E79] group-hover:text-white transition-colors duration-500"
-              >
-                <Icon className="w-5 h-5" strokeWidth={1.5} />
-              </div>
-              <span className="font-serif text-xl font-bold text-[#B55E79]">{item.year}</span>
-            </div>
-            <span 
-              className="text-[9px] font-bold tracking-widest uppercase px-2.5 py-1 rounded-full bg-[#F4D9DE] text-[#B55E79]"
-            >
-              {item.category}
-            </span>
+            {milestones.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={idx}
+                  href={item.link || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block cursor-pointer no-underline"
+                  style={{ transitionDelay: `${(idx % 3) * 80}ms` }}
+                >
+                  {/* Card Container: Padding hata kar overflow-hidden kiya taaki image corners follow kare */}
+                  <div className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full overflow-hidden">
+                    
+                    {/* Image Section (Fixed with aspect ratio) */}
+                    <div className="relative w-full aspect-[4/3] overflow-hidden">
+                      {item.image ? (
+                         <img src={item.image} alt={item.title} className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105" />
+                      ) : (
+                        /* Placeholder agar image nahi hai */
+                        <div className="w-full h-full bg-gradient-to-br from-[#F4D9DE] to-[#E6BEC6] flex items-center justify-center">
+                          <Icon className="w-12 h-12 text-[#B55E79]/50" strokeWidth={1.5} />
+                        </div>
+                      )}
+                      {/* Category Badge on Image */}
+                      <div className="absolute top-3 right-3 z-10">
+                        <span className="bg-white/90 backdrop-blur-sm text-[#B55E79] text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm">
+                          {item.category}
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Text Section */}
+                    <div className="p-6">
+                      <div className="flex items-center justify-between mb-3">
+                        <div className="flex items-center gap-2">
+                          <span className="font-serif text-xl font-bold text-[#B55E79]">{item.year}</span>
+                        </div>
+                        <div className="w-8 h-8 rounded-xl bg-[#F4D9DE] flex items-center justify-center text-[#B55E79]">
+                          <Icon className="w-4 h-4" strokeWidth={1.5} />
+                        </div>
+                      </div>
+                      <h4 className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]">
+                        {item.title}
+                      </h4>
+                      <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
+                    </div>
+
+                  </div>
+                </a>
+              );
+            })}
           </div>
-          <h4 
-            className="font-serif font-bold text-sm mb-2 leading-snug transition-colors text-[#2E2326] group-hover:text-[#B55E79]"
-          >
-            {item.title}
-          </h4>
-          <p className="text-xs font-light leading-relaxed text-[#5F5358]">{item.short}</p>
-        </div>
-      </a>
-    );
-  })}
-</div>
         </div>
 
       </div>
