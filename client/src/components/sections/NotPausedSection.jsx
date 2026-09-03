@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+ import { useEffect, useRef } from "react";
 import {
   BookOpen,
   Shield,
@@ -81,7 +81,14 @@ const services = [
   },
 ];
 
-const originReviews = [
+// ─── REAL REVIEWS (Updated with Shilpa's feedback) ───
+const placeholderReviews = [
+  {
+    name: "Shilpa",
+    role: "Community Member",
+    rating: 5,
+    text: "What I love about 'NotPaused' is that Kirti provides info bites on perimenopause which mostly I am not aware of and helps me a lot to understand the whats and the whys of it. She also suggests foods that helps maintain the symptoms. The community is full of positivity and I'm glad I'm a part of this group. Thank you Kirti.",
+  },
   {
     name: "Anjali Mehra",
     role: "Community Member, Delhi NCR",
@@ -99,34 +106,6 @@ const originReviews = [
     role: "Community Member, Hyderabad",
     rating: 4,
     text: "What stood out was the refusal to accept silence as an answer. That energy runs through every session, every post, every conversation in the community.",
-  },
-];
-
-// PLACEHOLDER CONTENT — replace all four entries with real quotes/names once Kirti supplies them
-const placeholderReviews = [
-  {
-    name: "Reviewer Name",
-    role: "Community Member",
-    rating: 5,
-    text: "Placeholder review text. Replace with a real quote from a NotPaused community member describing their experience.",
-  },
-  {
-    name: "Reviewer Name",
-    role: "Coaching Client",
-    rating: 5,
-    text: "Placeholder review text. Replace with a real quote about the 1:1 coaching or symptom support experience.",
-  },
-  {
-    name: "Reviewer Name",
-    role: "Workshop Attendee",
-    rating: 4,
-    text: "Placeholder review text. Replace with a real quote from someone who attended a masterclass or workshop.",
-  },
-  {
-    name: "Reviewer Name",
-    role: "Corporate Program Participant",
-    rating: 5,
-    text: "Placeholder review text. Replace with a real quote from an HR lead or employee from a corporate menopause clinic.",
   },
 ];
 
@@ -275,22 +254,21 @@ export function NotPausedSection() {
           </div>
         </div>
 
-        {/* Reviews & Feedback */}
-
-<div className="pb-4">
+        {/* Reviews & Feedback (Now shows real reviews) */}
+        <div className="pb-4">
           <div className="reveal text-center mb-10">
             <div className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4 border-[#B55E79]">
               <Star className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
               <span className="font-bold text-sm tracking-[0.2em] uppercase text-[#B55E79]">Reviews &amp; Feedback</span>
             </div>
             <h3 className="font-serif text-2xl lg:text-3xl font-bold text-[#2E2326]">What Our Community Says</h3>
-            <p className="text-xs font-medium tracking-wide uppercase mt-2 text-[#B55E79]/70">Placeholder content — to be replaced with real member quotes</p>
+            <p className="text-xs font-medium tracking-wide uppercase mt-2 text-[#B55E79]/70">Real member experiences</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
             {placeholderReviews.map((r, i) => (
               <div
                 key={i}
-                className="reveal shimmer-card bg-white border border-dashed border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
+                className="reveal shimmer-card bg-white border border-[#E8CDD3] p-6 rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col gap-4"
               >
                 <div className="flex items-start justify-between">
                   <Quote className="w-6 h-6 text-[#B55E79]/30" strokeWidth={1.5} />
