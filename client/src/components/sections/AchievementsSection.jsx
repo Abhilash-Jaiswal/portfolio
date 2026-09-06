@@ -52,7 +52,7 @@ const theme = {
   bg: "#FCF8F7"
 };
 
-// MODIFIED ARRAY: Removed last 3 items, added images/placeholders to the 9 remaining
+// MODIFIED ARRAY: Added back the missing 3 milestones, total 9 (with placeholders for 2)
 const milestones = [
   { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image: womenpreneurAward },
   { year: "2024", category: "Speaking", icon: Mic, title: "ASSOCHAM Rajasthan Startup Summit", short: "Keynote speaker on 'Women Leading the Race' at RIC, Jaipur.", image: womenpreneurSpeaking },
@@ -60,7 +60,10 @@ const milestones = [
   { year: "2024", category: "Jury", icon: Scale, title: "CAIAS Startup Summit — Jury Member", short: "Invited as Judge after KuKClean won Best Women Led Startup.", image: womenpreneurJury },
   { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: womenpreneurGrant },
   { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: womenpreneurIncubation },
- 
+  // Remaining 3 (2 pending photos, 1 placeholder)
+  { year: "2022", category: "Mentorship", icon: Users, title: "Walmart Vriddhi Mentoring Program", short: "Active mentor empowering early-stage women entrepreneurs across India.", image: null },
+  { year: "2022", category: "Corporate B2B", icon: Utensils, title: "Applied Materials India Wellness Session", short: "Led 2-hour plant-based nutrition masterclass for 180 employees.", image: null },
+  { year: "2021", category: "Incubation", icon: Building2, title: "IIM Bangalore WSP3 — Top 50 Ventures", short: "Incubated at IIMB Women Startup Programme (Cohort 3) for 1.5 years.", image: null },
 ];
 
 const credentials = [
@@ -70,7 +73,6 @@ const credentials = [
   { title: "Certified Menopause Coach", detail: "Specialized training in midlife hormonal wellness." },
   { title: "BTech Computer Science", org: "HBTI Kanpur", detail: "Engineering foundation in algorithms and software systems." },
   { title: "C-PGDBA (IT)", org: "Symbiosis Centre", detail: "Postgraduate diploma in Information Technology Management." },
- 
 ];
 
 const corporateFlagship = ["JP Morgan", "Goldman Sachs", "Microsoft", "IBM", "ISRO", "Siemens"];
@@ -83,10 +85,10 @@ const b2bClients = ["Cisco", "Biocon", "Loyalytics.ai"];
 
 const pressCoverage = [
   { source: "YourStory", title: "In Conversation with YourStory’s Shradha Sharma", desc: "A video interview where I shared KuKClean’s origin story, our plant based philosophy, and what it took to break industry stereotypes.", link: "https://www.youtube.com/watch?v=VxG3KLZJ5j0" },
-  { source: "India Today", title: "'Cooking in a Crisis' Feature", desc: "National coverage of #EatLikeKirti, the live nutrition initiative I ran through the lockdown to help families eat well when it mattered most.", link: "https://www.indiatoday.in/mail-today/story/cooking-in-a-crisis-1668631-2020-04-19" },
+  { source: "India Today", title: "Cooking in a Crisis", desc: "National coverage of #EatLikeKirti, the live nutrition initiative I ran through the lockdown to help families eat well when it mattered most.", link: "https://www.indiatoday.in/mail-today/story/cooking-in-a-crisis-1668631-2020-04-19" },
   { source: "Deccan Herald", title: "Some Women Doing Wow Things", desc: "Profiled for leading plant based food innovation and building community around wellness through shared dining.", link: "https://www.deccanherald.com/india/karnataka/bengaluru/some-women-doing-wow-things-722045.html" },
-  { source: "The Better India", title: "Plant Based, Sugar Free Delights", desc: "Featured for creating clean label Indian sweets made for health conscious families, including those managing diabetes.", link: "https://thebetterindia.com/306747/kirti-yadav-kukclean-bengaluru-offers-plant-based-vegan-sugar-free-healthy-snacks-for-diabetes-patients/" },
-  { source: "HR Association of India", title: "Corporate Wellness Keynote", desc: "Invited to speak to HR leaders on why employee nutrition deserves a real seat at the corporate wellness table.", link: "https://www.hrai.in/" },
+  { source: "The Better India", title: "Losing 25 Kg Postpartum Weight Inspired Nutritionist's Sugar & Dairy-Free Food Startup", desc: "Featured for creating clean label Indian sweets made for health conscious families, including those managing diabetes.", link: "https://thebetterindia.com/306747/kirti-yadav-kukclean-bengaluru-offers-plant-based-vegan-sugar-free-healthy-snacks-for-diabetes-patients/" },
+  { source: "YourStory (SMBSStory)", title: "From a Facebook Group to a Vegan Snacking Marketplace", desc: "Featured on how a personal health journey grew into KuKClean, a bootstrapped, plant based snacking marketplace now reaching customers across India, the US, and Europe.", link: "https://yourstory.com/" },
   { source: "iStart Rajasthan", title: "Women Entrepreneurship Spotlight", desc: "Invited by the Rajasthan State Government to share my journey and inspire the next generation of women founders.", link: "https://www.youtube.com/shorts/d-f7dCJ-NMg" },
 ];
 
