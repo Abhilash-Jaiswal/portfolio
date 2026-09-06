@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
 import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
-import img3 from "../../assets/granolabar.jpg";
+import img3 from "../../assets/granolabar.webp";
 import img4 from "../../assets/peanutbutter.jpeg";
 import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
