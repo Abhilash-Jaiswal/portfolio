@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+ import { useEffect, useRef, useState } from "react";
 import img1 from "../../assets/WhatsApp Image 2026-07-24 at 21.04.49.jpeg";
 import img2 from "../../assets/WhatsApp Image 2026-07-24 at 21.05.09 (1).jpeg";
 import img3 from "../../assets/granolabar.webp";
@@ -7,7 +7,15 @@ import img5 from "../../assets/WhatsApp Image 2026-07-24 at 21.07.33.jpeg";
 import img6 from "../../assets/WhatsApp Image 2026-07-24 at 21.13.35.jpeg";
 import { Leaf, Sparkles, Heart, ChefHat, CheckCircle, TrendingUp, Award, ShieldCheck, Star } from "lucide-react";
 
-const wellnessImages = [img1, img2, img3, img4, img5, img6];
+// UPDATED: Array of objects with src and name
+const wellnessImages = [
+  { src: img1, name: "Almond Laddu" },
+  { src: img2, name: "Raagi Laddu" },
+  { src: img3, name: "Granola Bar" },
+  { src: img4, name: "Peanut Butter Chocolate" },
+  { src: img5, name: "Sweet & Sour Hamper" },
+  { src: img6, name: "Trail Mix" },
+];
 
 function useReveal(ref) {
   useEffect(() => {
@@ -291,7 +299,7 @@ export function KukCleanSection() {
           </div>
         </div>
 
-        {/* Product images */}
+        {/* Product images - UPDATED WITH HOVER OVERLAY */}
         <div className="pt-10">
           <div className="reveal text-center mb-10">
             <div
@@ -303,17 +311,23 @@ export function KukCleanSection() {
             <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>A Taste of KuKClean</h3>
           </div>
           <div className="reveal grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {wellnessImages.map((imageSrc, idx) => (
+            {wellnessImages.map((product, idx) => (
               <div
                 key={idx}
-                className="overflow-hidden rounded-3xl shadow-sm border hover:shadow-xl transition-all duration-300 group"
+                className="relative overflow-hidden rounded-3xl shadow-sm border hover:shadow-xl transition-all duration-300 group"
                 style={{ borderColor: `${theme.border}60` }}
               >
                 <img
-                  src={imageSrc}
-                  alt={`KuKClean product ${idx + 1}`}
+                  src={product.src}
+                  alt={product.name}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 max-h-96"
                 />
+                {/* Hover Overlay */}
+                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <span className="text-white font-serif text-xl font-bold tracking-widest text-center px-4">
+                    {product.name}
+                  </span>
+                </div>
               </div>
             ))}
           </div>
