@@ -412,7 +412,8 @@ export function AchievementsSection() {
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-contain bg-[#F9F1F3] transition-transform duration-500 group-hover:scale-[1.02]"
+                style={{ objectPosition: "center" }}
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-[#F4D9DE] to-[#E6BEC6] flex items-center justify-center">
