@@ -51,8 +51,7 @@ export function Footer() {
               <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Corporate Wellness</Link>
               <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Menopause Program</Link>
               <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Startup Mentoring</Link>
-              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">Brand Collaborations</Link>
-              <Link to="/work-with-me" className="hover:text-[#B55E79] transition-colors">School Programs</Link>
+              
             </div>
           </div>
 

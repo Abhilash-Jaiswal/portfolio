@@ -193,11 +193,9 @@ export function HomePage() {
               { num: "01", title: "Menopause Program", desc: "Real support through menopause, without having to figure it out alone." },
               { num: "02", title: "Corporate Wellness", desc: "Bringing real wellness, not just perks, into how a team works." },
               { num: "03", title: "Startup Mentoring", desc: "Empathy first, then the business side, for women building something of their own." },
-              { num: "04", title: "Lifestyle Transformation", desc: "A real, guided reset for your plate, at your pace, one on one." },
-              { num: "05", title: "Brand Collaborations", desc: "Partnering with brands built on real values, not hype." },
-              { num: "06", title: "School Programs", desc: "Teaching kids that healthy habits start early." }
+              { num: "04", title: "Lifestyle Transformation", desc: "A real, guided reset for your plate, at your pace, one on one." }
             ].map((item, idx) => (
-              <div key={idx} className="p-8 bg-white rounded-2xl border border-[#E8CDD3] shadow-sm hover:shadow-md transition-shadow">
+              <div key={`${item.num}-${idx}`} className="p-8 bg-white rounded-2xl border border-[#E8CDD3] shadow-sm hover:shadow-md transition-shadow">
                 <span className="text-[#B55E79] font-bold text-sm mb-4 block">{item.num}</span>
                 <h4 className="text-xl font-bold text-[#2E2326] mb-2">{item.title}</h4>
                 <p className="text-[#5F5358] mb-6">{item.desc}</p>
