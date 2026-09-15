@@ -53,11 +53,11 @@ const theme = {
 };
 
 const milestones = [
-  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: womenpreneurPitching },
-  { year: "2024", category: "Award", icon: Award, title: "Honored at ISRO", short: "Honored with an award at ISRO — a proud moment for the mission behind KuKClean.", image: womenpreneurSpeaking },
-  { year: "2024", category: "Felicitation", icon: Star, title: "Tumkur University Felicitation", short: "Honoured at Tumkur University, felicitated for the mentoring work with early-stage student founders.", image: womenpreneurJury },
-  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs GS10K — IIM Bangalore", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: womenpreneurIncubation },
-  { year: "2023", category: "Govt Grant", icon: Sprout, title: "Grant-in-Aid — RKVY-RAFTAAR", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: womenpreneurGrant },
+  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave IIT, Guwahati", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: womenpreneurPitching },
+  { year: "2024", category: "Award", icon: Award, title: "ISRO India ", short: "Honored with an award at ISRO — a proud moment for the mission behind KuKClean.", image: womenpreneurSpeaking },
+  { year: "2024", category: "Felicitation", icon: Star, title: "Turkur University Felicitation", short: "Honoured at Tumkur University, felicitated for the mentoring work with early-stage student founders.", image: womenpreneurJury },
+  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs 10k women", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: womenpreneurIncubation },
+  { year: "2023", category: "Govt Grant", icon: Sprout, title: "RKVY-RAFTAAR ,IIMR Nutrihub", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: womenpreneurGrant },
   { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image: womenpreneurAward },
 ];
 
