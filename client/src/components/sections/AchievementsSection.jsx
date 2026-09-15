@@ -53,12 +53,12 @@ const theme = {
 };
 
 const milestones = [
-  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave IIT, Guwahati", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: womenpreneurPitching },
+  { year: "2024", category: "Pitching", icon: Rocket, title: "Women Leadership Conclave — Pitcher", short: "Selected nationally — pitched before IIT Guwahati & Embassy of Israel.", image: womenpreneurAward },
   { year: "2024", category: "Award", icon: Award, title: "ISRO India ", short: "Honored with an award at ISRO — a proud moment for the mission behind KuKClean.", image: womenpreneurSpeaking },
-  { year: "2024", category: "Felicitation", icon: Star, title: "Turkur University Felicitation", short: "Honoured at Tumkur University, felicitated for the mentoring work with early-stage student founders.", image: womenpreneurJury },
-  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs 10k women", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: womenpreneurIncubation },
+  { year: "2024", category: "Felicitation", icon: Star, title: "Tumkur University Felicitation", short: "Honoured at Tumkur University, felicitated for the mentoring work with early-stage student founders.", image: womenpreneurPitching },
+  { year: "2023", category: "Incubation", icon: GraduationCap, title: "Goldman Sachs 10k Women", short: "Graduate of the GS 10,000 Women Entrepreneur Program at NSRCEL, IIMB.", image: womenpreneurJury },
   { year: "2023", category: "Govt Grant", icon: Sprout, title: "RKVY-RAFTAAR ,IIMR Nutrihub", short: "Recognised at International Nutri Cereal Convention 5.0 by ICAR-IIMR, Ministry of Agriculture.", image: womenpreneurGrant },
-  { year: "2024", category: "Award", icon: Award, title: "Womenpreneur Achievers Award 2024", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image: womenpreneurAward },
+  { year: "2024", category: "Award", icon: Award, title: "Women Leadership Conclave IIT, Guwahat", short: "Honoured alongside Karnataka's most distinguished women leaders in entrepreneurship.", image:womenpreneurIncubation },
 ];
 
 const credentials = [
@@ -384,64 +384,56 @@ export function AchievementsSection() {
          
 
         {/* Complete Timeline Cards Grid */}
-         <div className="border-t pt-16" style={{ borderColor: `${theme.border}60` }}>
-  <div className="reveal text-center mb-12">
-    <div
-      className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
-      style={{ borderColor: theme.primary }}
-    >
-      <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
-      <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Complete Recognition Timeline</span>
-    </div>
-    <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Every Milestone, in Sequence</h3>
-  </div>
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-    {milestones.map((item, idx) => {
-      const Icon = item.icon;
-      return (
-        <div
-          key={idx}
-          className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full overflow-hidden"
-          style={{ transitionDelay: `${(idx % 3) * 80}ms` }}
-        >
-          <div className="relative w-full h-52 overflow-hidden">
-            {item.image ? (
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-contain bg-[#F9F1F3] transition-transform duration-500 group-hover:scale-[1.02]"
-                style={{ objectPosition: "center" }}
-              />
-            ) : (
-              <div className="w-full h-full bg-gradient-to-br from-[#F4D9DE] to-[#E6BEC6] flex items-center justify-center">
-                <Icon className="w-12 h-12 text-[#B55E79]/50" strokeWidth={1.5} />
-              </div>
-            )}
-
-            {/* Category Badge */}
-            <div className="absolute top-3 right-3 z-10">
-              <span className="bg-white/90 backdrop-blur-sm text-[#B55E79] text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm">
-                {item.category}
-              </span>
+        <div className="border-t pt-16" style={{ borderColor: `${theme.border}60` }}>
+          <div className="reveal text-center mb-12">
+            <div
+              className="inline-flex items-center gap-2 border-t-[3px] pt-2 mb-4"
+              style={{ borderColor: theme.primary }}
+            >
+              <Award className="w-4 h-4 text-[#B55E79]" strokeWidth={1.5} />
+              <span className="font-bold text-sm tracking-[0.2em] uppercase" style={{ color: theme.primary }}>Complete Recognition Timeline</span>
             </div>
-
-            {/* Hover Overlay with Details */}
-            <div className="absolute inset-0 bg-[#2E2326]/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
-              <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                <h4 className="font-serif font-bold text-base mb-2 leading-snug">
-                  {item.title}
-                </h4>
-                <p className="text-xs font-light leading-relaxed text-white/80">
-                  {item.short}
-                </p>
-              </div>
-            </div>
+            <h3 className="font-serif text-2xl lg:text-3xl font-bold" style={{ color: theme.dark }}>Every Milestone, in Sequence</h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {milestones.map((item, idx) => {
+              const Icon = item.icon;
+              return (
+                <div
+                  key={idx}
+                  className="reveal shimmer-card bg-white/80 border border-[#E8CDD3] rounded-3xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group h-full overflow-hidden"
+                  style={{ transitionDelay: `${(idx % 3) * 80}ms` }}
+                >
+                  <div className="relative w-full h-52 overflow-hidden">
+                    {item.image ? (
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-full object-contain bg-[#F9F1F3] transition-transform duration-500 group-hover:scale-[1.02]"
+                        style={{ objectPosition: "center" }}
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-[#F4D9DE] to-[#E6BEC6] flex items-center justify-center">
+                        <Icon className="w-12 h-12 text-[#B55E79]/50" strokeWidth={1.5} />
+                      </div>
+                    )}
+                    <div className="absolute top-3 right-3 z-10">
+                      <span className="bg-white/90 backdrop-blur-sm text-[#B55E79] text-[9px] font-bold tracking-widest uppercase px-3 py-1.5 rounded-full shadow-sm">
+                        {item.category}
+                      </span>
+                    </div>
+                    <div className="absolute inset-0 bg-[#2E2326]/80 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-5">
+                      <div className="text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        <h4 className="font-serif font-bold text-base mb-2 leading-snug">{item.title}</h4>
+                        <p className="text-xs font-light leading-relaxed text-white/80">{item.short}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
-      );
-    })}
-  </div>
-</div>
 
       </div>
     </section>
